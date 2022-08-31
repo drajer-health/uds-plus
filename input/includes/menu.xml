@@ -1,0 +1,53 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">UDS Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">   
+      <li>
+        <a href="{{site.data.info.assets}}background.html">Implementation Guide Overview</a>
+      </li>
+      <li>
+        <a href="{{site.data.info.assets}}usecases.html">Use Cases and Workflows</a>
+      </li>
+      <li>
+        <a href="{{site.data.info.assets}}dataelements.html">UDS+ Data Elements and FHIR Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="reportingguidance.html">Reporting Guidance</a>
+      </li>
+      <li>
+        <a href="spec.html">FHIR API Based Reporting</a>
+      </li>
+      <li>
+        <a href="fileupload.html">File Upload Reporting</a>
+      </li>
+      <li>
+        <a href="hybrid.html">Reporting using FHIR API and File Upload</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      

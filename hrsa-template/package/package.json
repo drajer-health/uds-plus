@@ -1,0 +1,13 @@
+{
+   "name": "fhir.udsplus.hrsa.gov.template",
+   "version": "0.1.0",
+   "type": "fhir.template",
+   "license": "CC0-1.0",
+   "description": "HRSA UDS+ FHIR IG Template",
+   "author": "http://drajer.com",
+   "canonical": "http://fhir.udsplus.hrsa.gov/templates/fhir.udsplus.hrsa.gov.template",
+   "base": "fhir.base.template",
+   "dependencies": {
+      "fhir.base.template": "current"
+    }
+}

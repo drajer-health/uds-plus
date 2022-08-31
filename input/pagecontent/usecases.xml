@@ -1,0 +1,56 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  
+  <h3>Use Story1: Health centers submit data using FHIR APIs</h3>
+  <p>
+    Federally Qualified Health Centers' (FQHCs) EHRs have recorded patient data that fall under UDS reporting requirements. An internal timer on the BSA triggers a series of bulk FHIR requests that cover the encounters since the last reporting period. The BSA sends a series of requests to cover FHIR resources based on eligible patients and time parameters. The EHR notifies the BSA when the data is ready. The BSA invokes trust services to anonymize, pseudonymize, de-identify resources as required. The trust services anonymize, pseudonymize, de-identify resources as required. Trust services notifies the BSA that required operations are complete. BSA notifies HRSA that the resource files are ready and provides location.
+  </p>
+  <h3>Use Story2: Health centers submit data using File Upload</h3>
+  <p>
+    
+  </p>
+  <br/>
+  
+  <h3>Use Story3: Health centers submit data using hybrid approach of both FHIR APIs and File Upload</h3>
+  <p>
+    
+  </p>
+  <br/>
+  
+  <h3>Pre-Conditions for the User Stories</h3>
+	<p>
+	</p>
+	<br/>
+	
+	<h3>Post-Conditions for the User Stories</h3>
+	<p>
+	</p>
+	<br/>
+	
+	
+  <h3>Actors and Systems</h3>
+	<p>
+	</p>
+	<br/>
+	
+  <h3>Workflows and Interactions</h3>
+	<p>
+	</p>
+	<br/>
+	
+	<h3>Exception Handling</h3>
+	<p>
+	</p>
+	<br/>
+	
+	
+	<h3>Policy Considerations</h3>
+	<p>
+	</p>
+	<br/>
+	
+	<h3>Non Technical Considerations</h3>
+	<p>
+	</p>
+	<br/>
+	
+</div>
