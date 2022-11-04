@@ -71,7 +71,7 @@ This section identifies the different requirements for Data Source (e.g., EHRs) 
 
 This section identifies the different requirements for Data Submitter system supporting the Health Centers.
 
-* The Data Submitter SHALL support the scheduling of timers to kick off health center reporting based on HRSA Knowledge Artifact guidance.
+* The Data Submitter SHALL support the scheduling of timers to kick off health center reporting based on HRSA guidance.
 
 * The Data Submitter SHALL implement the client requirements per the Bulk Data Access IG to start the export of the data from the Data Source.
 
@@ -87,21 +87,25 @@ This section identifies the different requirements for Data Submitter system sup
 
 * The Data Submitter SHALL implement the following security protocols to protect the links being shared with HRSA.
 
-* The Data Submitter SHALL notify the HRSA Data Receiver when the export operation is completed.  
+* The Data Submitter SHALL notify the HRSA Data Receiver when the data is ready using the [$import](OperationDefinition-import.html) operation.  
 
 
 ##### Trust Service Provider Requirements
 This section identifies the different requirements for UDS+ Trust Service Provider that can be used for de-identification.
 
-* The Trust Service Provider SHALL support the de-identify operation for each type of resource per the Capability Statement.  
+* The Trust Service Provider SHALL support the de-identify operation for each type of resource per the Capability Statement. 
+
+* The Trust Service Provider SHALL create an identifier that is retained internally to link between identifiable and de-identifiable data.
+
+* The Trust Service Provider SHALL remove all identifiable data using the profiles specified in this IG and create NDJSON data based on the IG profiles.
 
 
 ##### Data Receiver Requirements
 This section identifies the different requirements for Data Receiver systems hosted by HRSA.
 
-* The Data Receiver SHALL implement the notify operation to receive notification of completed export for each health center.
+* The Data Receiver SHALL implement the [$import](OperationDefinition-import.html) operation to receive notification of completed export for each health center.
 
-* The Data Receiver SHALL download the NDJSON formatted, de-identified data from the health center using the links provided by the Data Submitter.
+* The Data Receiver SHALL download the NDJSON formatted, de-identified data from the health center using the links provided by the Data Submitter following the protocol specified in the manifest file.
 
 * The Data Receiver SHALL validate the received NDJSON data according the IG profiles.
 

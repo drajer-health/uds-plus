@@ -24,10 +24,5 @@ Actors and Systems asserting conformance to this implementation guide have to im
 
 #### System Actors, Requirements and Capability Statements
 
-##### FileUpload Client Requirements
-This section identifies the different requirements for UDS+ Client systems supporting the Health Centers.
-
-##### FileUpload Server Requirements
-This section identifies the different requirements for UDS+ Server systems hosted by HRSA.
-
+TBD.
  

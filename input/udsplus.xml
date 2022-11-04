@@ -13,7 +13,7 @@
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0"/>
   <name value="UdsPlusFhirIg"/>
-  <title value="Uniform Data System (UDS) Patient Level Submission (PLS) - UDS+ FHIR IG"/>
+  <title value="Uniform Data System (UDS) Patient Level Submission (PLS) - UDS+ IG"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HRSA UDS PLS Project"/>
@@ -73,14 +73,14 @@
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
  
-    <resource>
+  <!-- <resource>
       <reference>
         <reference value="Observation/example"/>
       </reference>
       <name value="Observation patient example"/>
       <description value="Example showing slicing"/>
       <exampleCanonical value="http://hrsa.gov/fhir/us/udsplus/StructureDefinition/myObservation"/>
-    </resource>
+    </resource> -->
       
   
 
