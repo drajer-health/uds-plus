@@ -44,9 +44,6 @@
       <a href="spec.html">FHIR API Based Reporting Specification</a> - Specifies detailed requirements for the FHIR API based UDS+ data submission.
     </li>
     <li>
-      <a href="fileupload.html">File Upload Reporting Specification</a> - Specifies detailed requirements for UDS+ data submission using File Upload option.
-    </li>
-    <li>
       <a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
     </li>
   </ul>

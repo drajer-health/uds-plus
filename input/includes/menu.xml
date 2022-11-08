@@ -28,12 +28,6 @@
       <li>
         <a href="spec.html">FHIR API Based Reporting</a>
       </li>
-      <li>
-        <a href="fileupload.html">File Upload Reporting</a>
-      </li>
-      <li>
-        <a href="hybrid.html">Reporting using FHIR API and File Upload</a>
-      </li>
     </ul>
   </li>
   <li><a href="artifacts.html">Artifact Index</a></li>

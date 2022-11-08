@@ -114,28 +114,6 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/> 
-        </extension> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="3"/> 
-        </extension>
-        <nameUrl value="fileupload.html"/>
-        <title value="File Upload Reporting Specification"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/> 
-        </extension> 
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="3"/> 
-        </extension>
-        <nameUrl value="hybrid.html"/>
-        <title value="Reporting using FHIR API and File Upload"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="usecases.html"/>
         <title value="Use Cases and Workflows"/>
         <generation value="markdown"/>
