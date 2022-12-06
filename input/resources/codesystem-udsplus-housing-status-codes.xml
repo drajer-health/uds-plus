@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="udsplus-housing-status-codes"/>
+  <url value="http://hl7.org/fhir/us/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+  <version value="1.0.0"/>
+  <name value="UDSPlusHousingStatusCodes"/>
+  <title value="UDS Plus Housing Status Codes"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-06"/>
+  <description value="The UDS Plus CodeSystem is a &#39;starter set&#39; of codes supported for identifying Housing status of patients in UDS+ program."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-housing-status"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="homeless-shelter"/>
+    <display value="Patients in Homeless Shelters"/>
+    <definition value="Patients who are living in a homeless shelter. "/>
+  </concept>
+  <concept>
+    <code value="transitional"/>
+    <display value="Patients in transitional state"/>
+    <definition value="Patients who do not have a house and are in a transitional state "/>
+  </concept>
+  <concept>
+    <code value="doubling-up"/>
+    <display value="Patients doubling up"/>
+    <definition value="Patients who are doubling up with others."/>
+  </concept>
+  <concept>
+    <code value="street"/>
+    <display value="Patients who are on the streets"/>
+    <definition value="Patients who do not have a house and are living on the streets "/>
+  </concept>
+  <concept>
+    <code value="permanent-supportive-housing"/>
+    <display value="Patients in permanent supportive housing"/>
+    <definition value="Patients who are living in a permanent supportive housing "/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Patients who have other kinds of accomodation"/>
+    <definition value="Patients who have other kinds of accomodation"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Patients with Unknown accomodation"/>
+    <definition value="Patients with Unknown accomodation"/>
+  </concept>
+ </CodeSystem>

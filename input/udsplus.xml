@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "udsplus" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
-  <!--<id value="example.fhir.uv.udsplus"/> -->
   <id value="udsplus"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/> 
@@ -9,9 +8,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/> 
   </extension>
-  <url value="http://hrsa.gov/fhir/us/udsplus/ImplementationGuide/udsplus"/>
+  <url value="http://hl7.org/fhir/us/uds-plus/ImplementationGuide/udsplus"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="UdsPlusFhirIg"/>
   <title value="Uniform Data System (UDS) Patient Level Submission (PLS) - UDS+ IG"/>
   <status value="draft"/>
@@ -55,12 +54,6 @@
     <uri value="http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"/>
     <packageId value="hl7.fhir.uv.smart-app-launch"/>
     <version value="2.0.0"/>
-  </dependsOn>
-
-  <dependsOn id="qicore">
-    <uri value="http://hl7.org/fhir/us/qi-core/ImplementationGuide/hl7.fhir.us.qicore"/>
-    <packageId value="hl7.fhir.us.qicore"/>
-    <version value="4.1.1"/>
   </dependsOn>
   
     <dependsOn id="deqm">
@@ -114,8 +107,24 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/> 
+        </extension> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+          <valueInteger value="3"/> 
+        </extension>
+        <nameUrl value="implementation.html"/>
+        <title value="Implementation Notes"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="usecases.html"/>
         <title value="Use Cases and Workflows"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="Change History"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -133,62 +142,25 @@
         <title value="Useful Downloads"/>
         <generation value="html"/>
       </page>
-      <page>
-        <nameUrl value="changes.html"/>
-        <title value="IG Change History"/>
-        <generation value="html"/>
-      </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
-      <value value="2022+"/>
+      <value value="2019+"/>
     </parameter>
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code value="releaselabel"/>
-      <value value="CI Build"/>
+      <value value="STU 2.0.0"/>
     </parameter>
     <parameter>
       <code value="find-other-resources"/>
       <value value="true"/>
     </parameter>
     <parameter>
-      <code value="path-resource"/>
-      <value value="input\history"/>
+      <code value="path-expansion-params"/>
+      <value value="terminology-settings.json"/>
     </parameter>
-    <parameter>
-      <code value="path-binary"/>
-      <value value="input\cql"/>
-    </parameter>
-    <parameter>
-      <code value="path-liquid"/>
-      <value value="templates\liquid"/>
-    </parameter>
-    <parameter>
-      <code value="shownav"/>
-      <value value="true"/>
-    </parameter>
-<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
-    <parameter>
-      <code value="excludexml"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludejson"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludettl"/>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code value="excludemap"/>
-      <value value="true"/>
-    </parameter>-->
-    <parameter>
-      <code value="showsource"/>
-      <value value="true"/>
-    </parameter>
+    
   </definition>
 </ImplementationGuide>

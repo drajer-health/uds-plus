@@ -10,7 +10,6 @@
   This Implementation Guide (IG) defines the specifications by which Health Center Program awardees can report the UDS+ data to HRSA using 
   <ul>
   <li><b>De-identified Patient data using FHIR APIs</b></li>
-   <li><b>De-identified Patient data using a File Upload option</b></li>
   </ul>
   </p>
 	<a name="technical"> </a>

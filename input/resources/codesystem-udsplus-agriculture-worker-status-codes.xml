@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="udsplus-agriculture-worker-status-codes"/>
+  <url value="http://hl7.org/fhir/us/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes"/>
+  <version value="1.0.0"/>
+  <name value="UDSPlusAgricultureWorkerStatusCodes"/>
+  <title value="UDS Plus Agriculter Worker Status Codes"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-06"/>
+  <description value="The UDS Plus CodeSystem is a &#39;starter set&#39; of codes supported for identifying agriculture worker status for UDS+ program."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-agriculture-worker-status"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="migratory"/>
+    <display value="Migratory Agriculture Worker"/>
+    <definition value="Patients whose principal employment is in agriculture and who establish a temporary home for the purposes of such employment as a migratory agricultural worker, "/>
+  </concept>
+  <concept>
+    <code value="seasonal"/>
+    <display value="Seasonal Agriculture Worker"/>
+    <definition value="Patients whose principal employment is in agriculture on a seasonal basis (e.g., picking fruit during the limited months of a picking season), but who DO NOT establish a temporary home for purposes of such employment"/>
+  </concept>
+ </CodeSystem>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="udsplus-insurance-codes"/>
+  <url value="http://hl7.org/fhir/us/uds-plus/CodeSystem/udsplus-insurance-codes"/>
+  <version value="1.0.0"/>
+  <name value="UDSPlusInsuranceCodes"/>
+  <title value="UDS Plus Insurance Codes"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-06"/>
+  <description value="The UDS Plus CodeSystem is a &#39;starter set&#39; of codes supported for identifying insurance types used by patients in UDS+ program."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-insurance"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="medicaid-title-19"/>
+    <display value="Medicaid Title X1X"/>
+    <definition value="Patients with Medicaid (Title X1X) insurance."/>
+  </concept>
+  <concept>
+    <code value="chip-medicaid"/>
+    <display value="CHIP Medicaid"/>
+    <definition value="Patients with CHIP Medicaid insurance."/>
+  </concept>
+  <concept>
+    <code value="dually-eligible"/>
+    <display value="Dually Eligible"/>
+    <definition value="Patients with both Medicare and Medicaid."/>
+  </concept>
+  <concept>
+    <code value="other-non-chip-public-insurance"/>
+    <display value="Other Non CHIP Public Insurance"/>
+    <definition value="Patients who have other public insurance which is non CHIP."/>
+  </concept>
+  <concept>
+    <code value="other-public-insurance-chip"/>
+    <display value="Other Public Insurance CHIP"/>
+    <definition value="Patients who have other public insurance which is CHIP "/>
+  </concept>
+ </CodeSystem>

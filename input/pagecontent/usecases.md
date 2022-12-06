@@ -62,23 +62,42 @@ The description of each step in the above interaction is outlined below:
 
 * Step 1: On an annual basis, the health center kicks off UDS+ reporting job using the Data Submitter. This job initiates an extraction from the data source.
 
+**Implementation Note** This step is expected to be kicked off by the Health Center or the EHR vendor using a scheduled job or a cron job or a timer. This job will initiate a [Bulk Data Export](http://hl7.org/fhir/uv/bulkdata/OperationDefinition-group-export.html) request from the EHR for the UDS Plus Group.
+
+
 * Step 2: The Data Submitter polls the Data Source to check if the extraction has completed. 
+
+**Implementation Note** This step is performed using the [Bulk Data Status Request]({{site.data.fhir.ver.bulkig}}/export/index.html#bulk-data-status-request).
 
 * Step 3: The Data Source provides the extracted data in an identified form by storing them in the Bulk Data Storage.
 
+**Implementation Note** This step is implemented by the EHR based on their internal implementation on how and where to store the data for download. Once the data is stored the links are submitted to the Data Submitter for download. 
+
 * Step 4: The Data Submitter checks completion status and gets notified of the data extracted. 
+
+**Implementation Note** This step is performed using the [Bulk Data Status Request]({{site.data.fhir.ver.bulkig}}/export/index.html#bulk-data-status-request).
 
 * Step 5: The Data Submitter accesses the data from the Bulk Data Storage.
 
+**Implementation Note** This step is happening within the environment (behind the firewall) of the Health Center and the data is downloaded using the [Bulk Data File Request]({{site.data.fhir.ver.bulkig}}/export/index.html#file-request)
+
 * Step 6: The Data Submitter submits the data for de-identification to the Trust Service Provider.
+
+**Implementation Note** This step is performed by the Data Submitter by invoking the de-identify operation of the [Trust Service Provider](spec.html#trust-service-provider-requirements)
 
 * Step 7: The Trust Service Provider submits the de-identified data back to the Data Submitter.
 
 * Step 8: The Data Submitter persists the data for HRSA in a Bulk Data Storage and creates links for HRSA to download the data.
 
+**Implementation Note** This data may be persisted outside of the EHR environment or within the EHR environment depending on the EHR. 
+
 * Step 9: The Data Submitter notifies the Data Receiver (HRSA) about the readiness of the data and provides the secured links to the Data Receiver for download.
 
+**Implementation Note** The Data Submitter creates the [Manifest file](StructureDefinition-uds-plus-import-manifest.html) and then notifies the HRSA system of the availability of the files using the [$import](OperationDefinition-import.html) operation.
+
 * Step 10: The Data Receiver downloads the data from the health center Bulk Data Storage and then proceeds with downstream processing. 
+
+**Implementation Note** The Data Receiver downloads the bulk files using the appropriate protocols and authorization. Currently this is done with HTTP protocols.
 
 
 #### UDS+ Actors/Systems and Definitions

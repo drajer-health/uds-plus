@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="uds-plus-encounter"/>
+    <meta>
+        <versionId value="12"/>
+        <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
+        <source value="#3LDMUQYYwafwTzqK"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-encounter"/>
+    <version value="1.0.0"/>
+    <name value="UDSPlusEncounter"/>
+    <title value="De-Identified UDS Plus Encounter"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="The UDS+ profile is based on the Encounter resource and establishes the core elements, extensions, vocabularies and value sets for representing encounters,visit information for UDS+ program."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Encounter"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Encounter">
+            <path value="Encounter"/>
+            <short value="De-Identified UDS Plus Encounter"/>
+            <definition value="The UDS+ profile is based on the Encounter resource and establishes the core elements, extensions, vocabularies and value sets for representing encounters,visit information for UDS+ program."/>
+        </element>
+        <element id="Encounter.extension:age">
+            <path value="Encounter.extension"/>
+            <short value="Age of the Patient computed using birthDate and the visit dates of the encounter"/>
+            <sliceName value="uds-plus-age-extension"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-age-extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.status">
+            <path value="Encounter.status"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>
+         <element id="Encounter.class">
+            <path value="Encounter.class"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>
+        <element id="Encounter.type">
+            <path value="Encounter.type"/>
+            <min value="1"/>
+            <max value="*"/>
+            <mustSupport value="true"/>  
+            <binding>
+                <strength value="extensible"/>
+                <description value="The set of codes indicating the type of encounter"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type"/>
+            </binding>
+        </element>
+        <element id="Encounter.subject">
+            <path value="Encounter.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant">
+            <path value="Encounter.participant"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant.type">
+            <path value="Encounter.participant.type"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant.period">
+            <path value="Encounter.participant.period"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant.individual">
+            <path value="Encounter.participant.individual"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.period">
+            <path value="Encounter.period"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/> 
+        </element>
+        <element id="Encounter.reasonCode">
+            <path value="Encounter.reasonCode"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.reasonReference">
+            <path value="Encounter.reasonReference"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-diagnosis"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.hospitalization">
+            <path value="Encounter.hospitalization"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.hospitalization.dischargeDisposition">
+            <path value="Encounter.hospitalization.dischargeDisposition"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.location">
+            <path value="Encounter.location"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.location.location">
+            <path value="Encounter.location.location"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.serviceProvider">
+            <path value="Encounter.serviceProvider"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

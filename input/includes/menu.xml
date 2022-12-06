@@ -31,6 +31,7 @@
     </ul>
   </li>
   <li><a href="artifacts.html">Artifact Index</a></li>
+  <li><a href="changes.html">Change History</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
       </b>
@@ -41,6 +42,9 @@
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="implementation.html">Implementation Notes</a>
       </li>
     </ul>
   </li>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OperationDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="udsplus-de-identify"/>
+  <url value="http://hl7.org/fhir/us/uds-plus/OperationDefinition/udsplus-de-identify"/>
+  <name value="UdsPlusDeIdentify"/>
+  <title value="Generate De-Identified data"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <date value="2020-11-19T21:48:56+10:00"/>
+  <publisher value="HL7 International - Public Health Work Group"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://www.hl7.org/Special/committees/phwg"/>
+    </telecom>
+  </contact>
+  <description value="Generates de-identified  data from identifiable data. The de-identification algorithm to be used is left to the implementers of the operation. Errors during the execution of the operation can be returned as OperationOutcome per the FHIR spec as a return parameter."/>
+  <code value="deidentify"/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="inputFileUrls"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Urls of the Input Files represented as Parameters, with the type of Resource and the URL to the NDJSON data."/>
+    <type value="Parameters"/>
+  </parameter>
+  <parameter>
+    <name value="deidentifiedFileUrls"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="Upon successful de-identification, the de-identified file Urls is returned back from the service."/>
+    <type value="Parameters"/>
+  </parameter>
+</OperationDefinition>
