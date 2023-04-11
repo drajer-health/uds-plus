@@ -1,0 +1,135 @@
+{
+  "resourceType": "Parameters",
+  "id": "example",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString": "UDS+ Manifest File Example"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown": "This is an example of a Manifest file submitted as a parameter to the UDS+ $import operation."
+      }
+    ],
+    "profile": [
+      "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-import-manifest"
+    ]
+  },
+  "parameter" : [
+  	{
+  		"name" : "inputFormat",
+  		"valueCode" : "application/ndjson"
+  	},
+  	{
+  		"name" : "inputSource",
+  		"valueUrl" : "http://www.fqhc.california.com"
+  	},
+  	{
+  		"name" : "storageDetail",
+  		"valueCode" : "https"
+  	},
+  	{
+  		"name" : "udsData",
+  		"part" : [
+  			{
+  				"name" : "type",
+  				"valueCode" : "Patient"
+  			},
+  			{
+  				"name" : "url",
+  				"valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Patient_1.ndjson"
+  			},
+  			{
+  				"name" : "expirationTime",
+  				"valueDateTime" : "2022-12-14T07:15:07-08:00"
+  			}
+  		]
+  	},
+  	{
+  		"name" : "udsData",
+  		"part" : [
+  			{
+  				"name" : "type",
+  				"valueCode" : "Patient"
+  			},
+  			{
+  				"name" : "url",
+  				"valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Patient_2.ndjson"
+  			},
+  			{
+  				"name" : "expirationTime",
+  				"valueDateTime" : "2022-12-14T07:15:07-08:00"
+  			}
+  		]
+  	},
+  	{
+  		"name" : "udsData",
+  		"part" : [
+  			{
+  				"name" : "type",
+  				"valueCode" : "Condition"
+  			},
+  			{
+  				"name" : "url",
+  				"valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Condition.ndjson"
+  			},
+  			{
+  				"name" : "expirationTime",
+  				"valueDateTime" : "2022-12-14T07:15:07-08:00"
+  			}
+  		]
+  	},
+  	{
+  		"name" : "udsData",
+  		"part" : [
+  			{
+  				"name" : "type",
+  				"valueCode" : "Coverage"
+  			},
+  			{
+  				"name" : "url",
+  				"valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Coverage.ndjson"
+  			},
+  			{
+  				"name" : "expirationTime",
+  				"valueDateTime" : "2022-12-14T07:15:07-08:00"
+  			}
+  		]
+  	},
+  	{
+  		"name" : "udsData",
+  		"part" : [
+  			{
+  				"name" : "type",
+  				"valueCode" : "Procedure"
+  			},
+  			{
+  				"name" : "url",
+  				"valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Procedure.ndjson"
+  			},
+  			{
+  				"name" : "expirationTime",
+  				"valueDateTime" : "2022-12-14T07:15:07-08:00"
+  			}
+  		]
+  	},
+  	{
+  		"name" : "udsData",
+  		"part" : [
+  			{
+  				"name" : "type",
+  				"valueCode" : "Encounter"
+  			},
+  			{
+  				"name" : "url",
+  				"valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Encounter.ndjson"
+  			},
+  			{
+  				"name" : "expirationTime",
+  				"valueDateTime" : "2022-12-14T07:15:07-08:00"
+  			}
+  		]
+  	}
+  ]
+}

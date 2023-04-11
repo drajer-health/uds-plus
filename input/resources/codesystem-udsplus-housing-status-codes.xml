@@ -23,12 +23,12 @@
   <concept>
     <code value="homeless-shelter"/>
     <display value="Patients in Homeless Shelters"/>
-    <definition value="Patients who are living in a homeless shelter. "/>
+    <definition value="Patients who are living in a homeless shelter"/>
   </concept>
   <concept>
     <code value="transitional"/>
     <display value="Patients in transitional state"/>
-    <definition value="Patients who do not have a house and are in a transitional state "/>
+    <definition value="Patients who do not have a house and are in a transitional state"/>
   </concept>
   <concept>
     <code value="doubling-up"/>
@@ -38,12 +38,12 @@
   <concept>
     <code value="street"/>
     <display value="Patients who are on the streets"/>
-    <definition value="Patients who do not have a house and are living on the streets "/>
+    <definition value="Patients who do not have a house and are living on the streets"/>
   </concept>
   <concept>
     <code value="permanent-supportive-housing"/>
     <display value="Patients in permanent supportive housing"/>
-    <definition value="Patients who are living in a permanent supportive housing "/>
+    <definition value="Patients who are living in a permanent supportive housing"/>
   </concept>
   <concept>
     <code value="other"/>

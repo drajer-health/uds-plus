@@ -23,7 +23,7 @@
   <concept>
     <code value="migratory"/>
     <display value="Migratory Agriculture Worker"/>
-    <definition value="Patients whose principal employment is in agriculture and who establish a temporary home for the purposes of such employment as a migratory agricultural worker, "/>
+    <definition value="Patients whose principal employment is in agriculture and who establish a temporary home for the purposes of such employment as a migratory agricultural worker,"/>
   </concept>
   <concept>
     <code value="seasonal"/>

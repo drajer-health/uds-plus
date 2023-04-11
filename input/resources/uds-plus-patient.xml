@@ -41,6 +41,20 @@
             <definition value="De-dentified patient identifier."/>
             <mustSupport value="true"/>
         </element>
+        <element id="Patient.text">
+            <path value="Patient.text"/>
+            <short value="Cannot include any text in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Patient.contained">
+            <path value="Patient.contained"/>
+            <short value="Cannot include any contained resources in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Patient.extension:race">
             <path value="Patient.extension"/>
             <sliceName value="us-core-race"/>
@@ -103,27 +117,34 @@
             <short value="Cannot include any identifier in the resource as part of the de-identified data."/>
             <min value="0"/>
             <max value="0"/>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Patient.name">
             <path value="Patient.name"/>
             <short value="Cannot include any name in the resource as part of the de-identified data."/>
             <min value="0"/>
             <max value="0"/>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Patient.telecom">
             <path value="Patient.telecom"/>
             <short value="Cannot include any telecom information in the resource as part of the de-identified data."/>
             <min value="0"/>
             <max value="0"/>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
             <short value="Cannot include any date of birth information in the resource as part of the de-identified data."/>
             <min value="0"/>
             <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Patient.deceased">
+            <path value="Patient.deceasedBoolean"/>
+            <short value="Can only have deceased boolean."/>
+            <min value="0"/>
+            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.address">
@@ -138,14 +159,14 @@
             <short value="Text cannot be included in the profile"/>
             <min value="0"/>
             <max value="0"/>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Patient.address.line">
             <path value="Patient.address.line"/>
             <short value="Street names cannot be included in the profile"/>
             <min value="0"/>
             <max value="0"/>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Patient.address.postalCode">
             <path value="Patient.address.postalCode"/>
@@ -153,6 +174,34 @@
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Patient.maritalStatus">
+            <path value="Patient.maritalStatus"/>
+            <short value="Cannot include information not required for UDS+"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Patient.multipleBirth">
+            <path value="Patient.multipleBirth[x]"/>
+            <short value="Cannot include information not required for UDS+"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Patient.photo">
+            <path value="Patient.photo"/>
+            <short value="Cannot include information not required for UDS+"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Patient.contact">
+            <path value="Patient.contact"/>
+            <short value="Cannot include information not required for UDS+"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Patient.communication.language">
             <path value="Patient.communication.language"/>
@@ -165,6 +214,27 @@
                 <description value="The set of languages that the patient uses"/>
                 <valueSet value="http://hl7.org/fhir/us/core/ValueSet/simple-language"/>
             </binding>
+        </element>
+        <element id="Patient.generalPractitioner">
+            <path value="Patient.generalPractitioner"/>
+            <short value="Cannot include information not required for UDS+"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Patient.managingOrganization">
+            <path value="Patient.managingOrganization"/>
+            <short value="Cannot include information not required for UDS+"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Patient.link">
+            <path value="Patient.link"/>
+            <short value="Cannot include information not required for UDS+"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>

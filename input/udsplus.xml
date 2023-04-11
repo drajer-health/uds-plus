@@ -10,7 +10,7 @@
   </extension>
   <url value="http://hl7.org/fhir/us/uds-plus/ImplementationGuide/udsplus"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="UdsPlusFhirIg"/>
   <title value="Uniform Data System (UDS) Patient Level Submission (PLS) - UDS+ IG"/>
   <status value="draft"/>
@@ -66,15 +66,78 @@
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
  
-  <!-- <resource>
+  <resource>
       <reference>
-        <reference value="Observation/example"/>
+        <reference value="Patient/example"/>
       </reference>
-      <name value="Observation patient example"/>
-      <description value="Example showing slicing"/>
-      <exampleCanonical value="http://hrsa.gov/fhir/us/udsplus/StructureDefinition/myObservation"/>
-    </resource> -->
-      
+      <name value="US Core Patient Example"/>
+      <description value="An Example of a conformant US Core Patient resource with identifiable information."/>
+      <exampleBoolean value="true"/>
+   </resource> 
+   <resource>
+      <reference>
+        <reference value="Patient/smallpop-example"/>
+      </reference>
+      <name value="US Core Patient Example of a patient residing in a zip code with small population (&lt;20000 people)"/>
+      <description value="An Example of a conformant US Core Patient resource with identifiable information."/>
+      <exampleBoolean value="true"/>
+   </resource>   
+   <resource>
+      <reference>
+        <reference value="Condition/example"/>
+      </reference>
+      <name value="US Core Condition Example"/>
+      <description value="An Example of a conformant US Core Condition resource with identifiable information capturing a Problem List Item."/>
+      <exampleBoolean value="true"/>
+   </resource> 
+   <resource>
+      <reference>
+        <reference value="Encounter/example"/>
+      </reference>
+      <name value="US Core Encounter Example"/>
+      <description value="An Example of a conformant US Core Encounter resource with identifiable information capturing a visit."/>
+      <exampleBoolean value="true"/>
+   </resource> 
+   <resource>
+      <reference>
+        <reference value="Parameters/example"/>
+      </reference>
+      <name value="Example of a Manifest file used for multiple operations in the context of HRSA UDS+ FHIR IG"/>
+      <description value="An Example of a conformant UDS+ Parameters resource representing a manifest file used by the $import and the $de-identify operation."/>
+      <exampleBoolean value="true"/>
+   </resource> 
+   <resource>
+      <reference>
+        <reference value="Patient/de-identified-example"/>
+      </reference>
+      <name value="UDS+ Patient Example"/>
+      <description value="An Example of a conformant UDS+ Patient resource which has been de-identified and is based on the US Core Patient small population example resource."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Patient/de-identified-smallpop-example"/>
+      </reference>
+      <name value="UDS+ Patient Example for a patient residing in a zip code with small population (&lt;20000 people)"/>
+      <description value="An Example of a conformant UDS+ Patient resource which has been de-identified and is based on the US Core Patient example resource."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Condition/de-identified-example"/>
+      </reference>
+      <name value="De-Identified Condition Example"/>
+      <description value="An Example of a conformant UDS+ Condition resource with de-identified information capturing a Problem List Item."/>
+      <exampleBoolean value="true"/>
+   </resource> 
+   <resource>
+      <reference>
+        <reference value="Encounter/de-identified-example"/>
+      </reference>
+      <name value="De-Identified Encounter Example"/>
+      <description value="An Example of a conformant UDS+ Encounter resource with de-identified information capturing the visit information."/>
+      <exampleBoolean value="true"/>
+   </resource>
   
 
     <page>

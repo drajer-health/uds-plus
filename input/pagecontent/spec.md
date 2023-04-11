@@ -55,7 +55,7 @@ This section outlines how the SMART on FHIR Backend Services Authorization will 
 
 ##### Data Source Requirements
 
-This section identifies the different requirements for Data Source (e.g., EHRs) systems supporting the Health Centers.
+This section identifies the different requirements for Data Source (e.g., EHRs) systems supporting the Health Centers. These requirements are only applicable to Data Sources that are planning to conform to Steps 1 through 5 of the use case workflow defined in [Data Submission workflow](usecases.html#uds-data-submission-workflow-using-fhir). If a Health Center chooses to implement Steps 1 through 5 using other mechanisms, these requirements would not be applicable to the Data Source. 
 
 * The Data Source SHALL support the [FHIR Base URL]/Group/[id]/$export as per the Bulk Data Access IG.
 
@@ -66,6 +66,28 @@ This section identifies the different requirements for Data Source (e.g., EHRs) 
 * The Data Source SHALL support the [FHIR Base URL]/Group/[id]/$export using the _type parameter as per the Bulk Data Access IG.
 
 * The Data Source SHALL support the SMART on FHIR Backend Services Authorization as outlined in the previous sections.
+
+* The Data Souce SHALL support scopes of system/*.read to enable UDS+ reporting. 
+
+* The Data Source SHALL support the following parameters for Bulk Export
+
+	* _outputFormat = application/ndjson
+	* _since 
+	* _type (Includes all resources identified in the Data Elements)
+	
+
+###### Group Management
+
+The extraction of data from a Data Source uses the Bulk Data Access IG /Group/[id]/$export functionality. This requires a Group resource instance to be created and maintained by the Data Source. 
+
+**Group Definition:** 
+
+All the Patients served by Health Center as per the UDS Manual on what qualifies for UDS reporting should be included in the Group. This includes a list of non duplicated patiens from qualified providers and non-providers, visits excluding screenings (covid-19, diabetes, hypertension etc), excluding outreach activities, excluding group visits except mental health, excluding tests, anciliary services and administering medicines, 
+
+**Dynamic Group vs static groups**  
+
+* Data Sources ** SHOULD ** use dynamic groups to identify the list of patients applicable for UDS+ reporting. The rationale for dynamic groups is to ensure that all the rules to identify the patients can be applied at a point in time. On the contrary Data Sources ** MAY ** choose to implement static groups, as long as it can be created/updated based on the data submission requirements. For e.g a Group can be created during the reporting period for the previous year. 
+
 
 ##### Data Submitter Requirements
 
@@ -85,11 +107,18 @@ This section identifies the different requirements for Data Submitter system sup
 
 * The Data Submitter SHALL validate the data for conformance to the IG.
 
-* The Data Submitter SHALL implement the following security protocols to protect the links being shared with HRSA.
+* The Data Submitter SHALL follow the Health Center security and privacy policies while creating the downloadable links for HRSA.
 
 * The Data Submitter SHALL notify the HRSA Data Receiver when the data is ready using the [$import](OperationDefinition-import.html) operation.  
 
+###### Data Capture Requirements 
 
+* Health Centers ** SHOULD ** follow the UDS Manual for capturing the following data elements 
+
+	* Patient's zip codes. 
+	* Insurance Category 
+	* Provider Category and specific specialty
+ 
 ##### Trust Service Provider Requirements
 This section identifies the different requirements for UDS+ Trust Service Provider that can be used for de-identification.
 
@@ -99,14 +128,34 @@ This section identifies the different requirements for UDS+ Trust Service Provid
 
 * The Trust Service Provider SHALL remove all identifiable data using the profiles specified in this IG and create NDJSON data based on the IG profiles.
 
+* The Trust Service Provider SHALL remove all data elements that are not identified as "SUPPORTED" in the UDS+ profile definitions. 
+
+**Implementation Note:** Common data elements which may have identifiable data have been explicitly mentioned in the profile with a cardinality of 0..0 which means they are not expected to be present. However other data elements which may be allowed in the resource may be included by the EHR including extensions. These additional data element and extensions that are not specified in the UDS+ profiles have to be removed explicitly by the Trust Service Provider implementation.
+
+* The Trust Service Provider SHALL implement the de-identification requirements as per the [HHS De-identification Guidance](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/understanding/coveredentities/De-identification/hhs_deid_guidance.pdf).
+
+* When choosing to implement the de-identification method using safe harbor provisions from the HHS De-identification Guidance, Trust Service Providers **SHALL** eliminate records related to the specific zip codes as specified in the guidance. 
+
+**Implementation Note:** Implementers are advised to refer to [Reporting Guidance](reportingguidance.html)
+ 
 
 ##### Data Receiver Requirements
 This section identifies the different requirements for Data Receiver systems hosted by HRSA.
 
-* The Data Receiver SHALL implement the [$import](OperationDefinition-import.html) operation to receive notification of completed export for each health center.
+* The Data Receiver SHALL implement the [$import](OperationDefinition-import.html) operation to receive a manifest file containing the UDS+ report for each health center.
 
 * The Data Receiver SHALL download the NDJSON formatted, de-identified data from the health center using the links provided by the Data Submitter following the protocol specified in the manifest file.
 
-* The Data Receiver SHALL validate the received NDJSON data according the IG profiles.
+* The Data Receiver SHALL validate the received NDJSON data according the UDS+ FHIR IG profiles and return OperationalOutcomes for each instance of conformance failure.
+
+* The Data Receiver SHALL apply necessary business rules to check data quality and provide feedback via OperationalOutcome for each data quality issue. These may be errors or warnings. 
+
+* The Data Receiver SHALL provide status polling capability to Health Centers as part of the HTTP Content Header  with a recommended polling interval. 
+
+* The Data Receiver SHALL update the status of the submission for each health center. 
+
+* The Data Receiver SHALL provide a mechanism to re-submit the entire submission by a Health Center as needed during the reporting period.
+
+* The Data Receiver SHALL discard previous submissions when a re-submission is made by the Health Center. 
 
  

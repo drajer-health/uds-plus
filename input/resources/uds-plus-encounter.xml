@@ -70,6 +70,12 @@
                 <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type"/>
             </binding>
         </element>
+        <element id="Encounter.type.text">
+            <path value="Encounter.type.text"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>  
+        </element>
         <element id="Encounter.subject">
             <path value="Encounter.subject"/>
             <min value="1"/>
@@ -79,6 +85,12 @@
                 <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.subject.display">
+            <path value="Encounter.subject.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Encounter.participant">
             <path value="Encounter.participant"/>
@@ -91,6 +103,12 @@
             <min value="0"/>
             <max value="*"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant.type.text">
+            <path value="Encounter.participant.type.text"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>  
         </element>
         <element id="Encounter.participant.period">
             <path value="Encounter.participant.period"/>
@@ -120,6 +138,12 @@
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Encounter.reasonCode.text">
+            <path value="Encounter.reasonCode.text"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Encounter.reasonReference">
             <path value="Encounter.reasonReference"/>
             <min value="0"/>
@@ -129,6 +153,12 @@
                 <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-diagnosis"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.reasonReference.display">
+            <path value="Encounter.reasonReference.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Encounter.hospitalization">
             <path value="Encounter.hospitalization"/>
@@ -142,6 +172,12 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Encounter.hospitalization.dischargeDisposition.text">
+            <path value="Encounter.hospitalization.dischargeDisposition.text"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Encounter.location">
             <path value="Encounter.location"/>
             <min value="0"/>
@@ -150,7 +186,7 @@
         </element>
         <element id="Encounter.location.location">
             <path value="Encounter.location.location"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>

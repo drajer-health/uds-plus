@@ -35,6 +35,26 @@
             <short value="De-Identified UDS Plus Diagnosis"/>
             <definition value="The UDS+ profile is based on the Condition resource and establishes the core elements, extensions, vocabularies and value sets for representing Diagnosis for UDS+ program."/>
         </element>
+        <element id="Condition.id">
+            <path value="Condition.id"/>
+            <short value="The de-identified Condition identifier created by the health center to send data to HRSA."/>
+            <definition value="De-dentified condition identifier."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Condition.text">
+            <path value="Condition.text"/>
+            <short value="Cannot include any text in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Condition.contained">
+            <path value="Condition.contained"/>
+            <short value="Cannot include any contained resources in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Condition.extension:assertedDate">
             <path value="Condition.extension"/>
             <sliceName value="assertedDate"/>
@@ -52,17 +72,35 @@
             <max value="1"/>
             <mustSupport value="true"/>  
         </element>
+        <element id="Condition.clinicalStatus.text">
+            <path value="Condition.clinicalStatus.text"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>  
+        </element>
         <element id="Condition.verificationStatus">
             <path value="Condition.verificationStatus"/>
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>  
         </element>
+        <element id="Condition.verificationStatus.text">
+            <path value="Condition.verificationStatus.text"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>  
+        </element>
         <element id="Condition.category">
             <path value="Condition.category"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>  
+        </element>
+        <element id="Condition.category.text">
+            <path value="Condition.category.text"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>  
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
@@ -75,6 +113,12 @@
                 <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>
             </binding> 
         </element>
+        <element id="Condition.code.text">
+            <path value="Condition.code.text"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>  
+        </element>
         <element id="Condition.subject">
             <path value="Condition.subject"/>
             <min value="1"/>
@@ -84,6 +128,28 @@
                 <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Condition.subject.display">
+            <path value="Condition.subject.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Condition.encounter">
+            <path value="Condition.encounter"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-encounter"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Condition.encounter.display">
+            <path value="Condition.encounter.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Condition.onset">
             <path value="Condition.onsetDateTime"/>

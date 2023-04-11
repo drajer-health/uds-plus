@@ -91,13 +91,31 @@ The description of each step in the above interaction is outlined below:
 
 **Implementation Note** This data may be persisted outside of the EHR environment or within the EHR environment depending on the EHR. 
 
-* Step 9: The Data Submitter notifies the Data Receiver (HRSA) about the readiness of the data and provides the secured links to the Data Receiver for download.
+* Step 9: The Data Submitter notifies the Data Receiver (HRSA) about the readiness of the data and provides the secured links to the Data Receiver for download. The Data Submitter provides a Content Location that can be polled by the Data Submitter to check on the status of the data submission.
 
-**Implementation Note** The Data Submitter creates the [Manifest file](StructureDefinition-uds-plus-import-manifest.html) and then notifies the HRSA system of the availability of the files using the [$import](OperationDefinition-import.html) operation.
+**Implementation Note** The Data Submitter creates the [Manifest file](StructureDefinition-uds-plus-import-manifest.html) and then notifies the HRSA system of the availability of the files using the [$import](OperationDefinition-import.html) operation. The Data Receiver creates a Content Location where the status of the upload is updated as the download progresses. The status fields will provide one of the following values "submitted, inprogress, completed, failed".
 
-* Step 10: The Data Receiver downloads the data from the health center Bulk Data Storage and then proceeds with downstream processing. 
+* Step 10a: The Data Receiver downloads the data from the health center Bulk Data Storage and then proceeds with downstream processing. 
 
-**Implementation Note** The Data Receiver downloads the bulk files using the appropriate protocols and authorization. Currently this is done with HTTP protocols.
+**Implementation Note** The Data Receiver downloads the bulk files using the appropriate protocols and authorization. Currently this is done with HTTP protocols and using secured signed links. 
+
+* Step 10b: The Data Submitter polls the Content Location provided in Step 9, to check on the status of the submission.  
+
+**Implementation Note** The Data Receiver provides an update on the status of the submission and may include a list of errors and warnings for the submission. If the submission status is failed, the Data Submitter has to re-submit the data after addressing the errors provided by the Data Receiver. 
+
+#### Alternative Approaches for Steps 1 through 8
+
+The proposed solution above leverages already existing standards implemented by CEHRT systems namely the Bulk API Group Export and the US Core profiles. However implementations may choose to use other methods to export data and de-identify the data. Health Centers and their technology vendors may choose any other method to export the necessary data from the data source and may use any algorithm to de-identify the data. Usage of the above workflow enables more standardization over time within the health center and less dependence of proprietary solutions for creating the UDS+ report.  
+
+#### Resubmissions of UDS+ reports
+
+Health Centers from time to time may submit a UDS+ report that is erroneous in terms of 
+
+* Data
+* Links
+* Conformance to the IG 
+
+In some or all of the above cases, the Data Receiver will submit a list of errors in the submission. These errors need to be addressed by the Health Center and then resubmit the UDS+ report. Within the allowed reporting timeframe, a health center may resubmit the report multiple times. The resubmission should be a full data set resubmission. All submissions prior to the latest submission will be discarded and will not be considered for Health Center UDS+ reporting. 
 
 
 #### UDS+ Actors/Systems and Definitions

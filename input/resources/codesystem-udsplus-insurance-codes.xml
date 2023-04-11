@@ -38,11 +38,11 @@
   <concept>
     <code value="other-non-chip-public-insurance"/>
     <display value="Other Non CHIP Public Insurance"/>
-    <definition value="Patients who have other public insurance which is non CHIP."/>
+    <definition value="Patients who have other public insurance which is non CHIP"/>
   </concept>
   <concept>
     <code value="other-public-insurance-chip"/>
     <display value="Other Public Insurance CHIP"/>
-    <definition value="Patients who have other public insurance which is CHIP "/>
+    <definition value="Patients who have other public insurance which is CHIP"/>
   </concept>
  </CodeSystem>

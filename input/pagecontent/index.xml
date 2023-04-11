@@ -20,8 +20,8 @@
 	This modified patient level UDS report is called UDS+. 
     In the context of the IG, there are two primary actors namely 
     <ul>
-    <li>Health Centers</li>
-    <li>HRSA</li>
+    <li>Health Centers: Responsible for creating the UDS+ de-identified report and submitting to HRSA.</li>
+    <li>HRSA: The Federal Agency responsible for accepting the UDS+ report, verifying, validating and processing the report.</li>
     </ul>
   </p>
   <a name="walkthrough"> </a>

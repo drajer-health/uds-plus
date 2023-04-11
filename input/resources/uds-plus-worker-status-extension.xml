@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="uds-plus-age-extension"/>
+    <id value="udsplus-agriculture-worker-status"/>
     <meta>
         <versionId value="2"/>
         <lastUpdated value="2022-07-12T02:03:21.911+00:00"/>
         <source value="#IqyJCmUTqk2pvKFb"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-age-extension"/>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/udsplus-agriculture-worker-status"/>
     <version value="0.1.0"/>
-    <name value="UDSPlusAgeExtension"/>
-    <title value="UDS Plus Age Extension"/>
+    <name value="UDSPlusAgricultureWorkerStatus"/>
+    <title value="UDS Plus Worker Agriculture Worker Status Extension"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-09-01"/>
@@ -21,7 +21,7 @@
             <value value="http://hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Indicates the age of the patient at a specific time"/>
+    <description value="Indicates the agriculture worker status of the patient at a specific time"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34,10 +34,6 @@
     <context>
         <type value="element"/>
         <expression value="Patient"/>
-    </context>
-    <context>
-        <type value="element"/>
-        <expression value="Encounter"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -55,14 +51,14 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-age-extension"/>
+            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/udsplus-agriculture-worker-status-extension"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="Quantity"/>
+                <code value="code"/>
             </type>
         </element>
     </differential>
