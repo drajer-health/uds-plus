@@ -1,3 +1,6 @@
+{:.stu-note}
+All canonical (Official) URLs will be changed in the future and are not available currently on the web.
+
 ### Introduction
 
 This profile is used to represent de-identified patient information. The de-identification process has to remove all data elements not explicitly identified as "SUPPORTED" in the profile. 
@@ -34,6 +37,28 @@ Codeable Concept text elements should be removed as part of the de-identificatio
 
 * Language
 * Gender Identity
+
+**Usage of Data Absent Reason Extension**
+
+For the UDS+ reporting, the patient data is de-identified and in the process zip codes may be masked to a value of "00000". In these cases the dataAbsentReason extension must be added to identify that the data is "masked".
+Similarly if the zip code is not known, a value of "00000" must be sent with a dataAbsentReason of "unknown".
+
+**Birth Sex Additional Constraints**
+
+NullFlavors are not allowed for BirthSex reporting for UDS+ even though they are allowed in US Core.
+
+**Race and Ethnicity Additional Constraints**
+
+US Core allows Race and Ethnicity to be described as only text or rolled up to the OMB categories, however for UDS+ reporting detailed race and ethnicity have to be captured and reported as part of the profile. If the reported race and ethncity values are not null flavors then detailed values are mandatory.
+
+**Sexual Orientation Additional Constraints**
+
+Health Centers which have not implemented the methods to capture Sexual Orientation, should use the null flavor coded value of "NASK" specifically. 
+
+**Gender Identity Additional Constraints**
+
+Health Centers which have not implemented the methods to capture Gender Identity, should use the null flavor coded value of "NASK" specifically. 
+  
 
 **Examples** 
 Examples of identifiable data and its corresponding de-identifiable data is present in [Reporting Guidance](reportingguidance.html).

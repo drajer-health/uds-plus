@@ -1,3 +1,6 @@
+{:.stu-note}
+All canonical (Official) URLs will be changed in the future and are not available currently on the web.
+
 ### Introduction
 
 The deidentify operation is to be used by the Health Centers to de-identify the data containing PHI/PII. The approach for de-identification is as follows:

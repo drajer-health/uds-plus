@@ -1,3 +1,6 @@
+{:.stu-note}
+All canonical (Official) URLs will be changed in the future and are not available currently on the web.
+
 ### Introduction
 
 The import operation is to be used by the Health Centers to submit data to HRSA. The import operation takes a [Manifest](StructureDefinition-uds-plus-import-manifest.html) which contains the links of all the data that needs to be submitted to HRSA. This import operation resembles the Bulk Import operation proposed by the Bulk Data team but is not currently part of the FHIR specifications or Implementation Guides.

@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Patient profile represents a Patient availing HRSA services. It is based on the **US Core Patient** profile and establishes the core elements, extensions, vocabularies and value sets for representing patients for UDS+ program."/>
+    <description value="This Patient profile represents a Patient availing HRSA services."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -58,7 +58,7 @@
         <element id="Patient.extension:race">
             <path value="Patient.extension"/>
             <sliceName value="us-core-race"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -69,7 +69,7 @@
         <element id="Patient.extension:ethnicity">
             <path value="Patient.extension"/>
             <sliceName value="us-core-ethnicity"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -80,7 +80,7 @@
         <element id="Patient.extension:birthSex">
             <path value="Patient.extension"/>
             <sliceName value="us-core-birthsex"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -150,7 +150,7 @@
         <element id="Patient.address">
             <path value="Patient.address"/>
             <short value="Included only to support zip code"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -171,8 +171,27 @@
         <element id="Patient.address.postalCode">
             <path value="Patient.address.postalCode"/>
             <short value="ZipCode must be included in the profile"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.address.postalCode.extension:dataAbsentReason">
+            <path value="Patient.address.postalCode.extension"/>
+            <sliceName value="dataAbsentReason"/>
+            <short value="Reason why the data is not present"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.address.postalCode.extension:dataAbsentReason.value[x]">
+            <path value="Patient.address.postalCode.extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.maritalStatus">

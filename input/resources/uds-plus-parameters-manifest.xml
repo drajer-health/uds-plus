@@ -69,52 +69,128 @@
             <type>
            	 	<code value="code"/>
             </type>
+            <fixedCode value="fhir+ndjson"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:inputSource">
+        <element id="Parameters.parameter:hcIdentifiers">
             <path value="Parameters.parameter"/>
-            <sliceName value="inputSource"/>
+            <sliceName value="hcIdentifiers"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:inputSource.name">
+        <element id="Parameters.parameter:hcIdentifiers.name">
             <path value="Parameters.parameter.name"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedString value="inputSource"/>
+            <fixedString value="hcIdentifiers"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:inputSource.value[x]">
-            <path value="Parameters.parameter.value[x]"/>
+        <element id="Parameters.parameter:hcIdentifiers.part">
+            <path value="Parameters.parameter.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcIdentifiers.part:ueiNumber">
+            <path value="Parameters.parameter.part"/>
+            <sliceName value="ueiNumber"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcIdentifiers.part:ueiNumber.name">
+            <path value="Parameters.parameter.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="uei"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcIdentifiers.part:ueiNumber.value[x]">
+            <path value="Parameters.parameter.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
-           	 	<code value="url"/>
+           	 	<code value="string"/>
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:storageDetail">
+        <element id="Parameters.parameter:hcIdentifiers.part:grantId">
+            <path value="Parameters.parameter.part"/>
+            <sliceName value="grantId"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcIdentifiers.part:grantId.name">
+            <path value="Parameters.parameter.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="grantNumber"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcIdentifiers.part:grantId.value[x]">
+            <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcIdentifiers.part:hcName">
+            <path value="Parameters.parameter.part"/>
+            <sliceName value="hcName"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcIdentifiers.part:hcName.name">
+            <path value="Parameters.parameter.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="hcName"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcIdentifiers.part:hcName.value[x]">
+            <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        
+        <element id="Parameters.parameter:importProtocol">
             <path value="Parameters.parameter"/>
             <sliceName value="storageDetail"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:storgeDetail.name">
+        <element id="Parameters.parameter:importProtocol.name">
             <path value="Parameters.parameter.name"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedString value="storageDetail"/>
+            <fixedString value="importProtocol"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:storageDetail.value[x]">
+        <element id="Parameters.parameter:importProtocol.value[x]">
             <path value="Parameters.parameter.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
            	 	<code value="code"/>
             </type>
+            <fixedCode value="https"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:udsData">
@@ -197,14 +273,14 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:udsData.part:resourceUrl.name">
+        <element id="Parameters.parameter:udsData.part:resourceUrlExpirationTime.name">
             <path value="Parameters.parameter.part.name"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="expirationTime"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:udsData.part:resourceUrl.value[x]">
+        <element id="Parameters.parameter:udsData.part:resourceUrlExpirationTime.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>

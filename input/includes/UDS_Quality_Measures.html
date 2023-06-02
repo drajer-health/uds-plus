@@ -2676,27 +2676,219 @@
         </td>
       </tr>
 	  <tr style='height:20px;'>
-        <td class="maptable16"></td>
-        <td class="maptable17"></td>
-        <td class="maptable17"></td>
+        <td class="maptable16">Patient Characteristic - Birth Date</td>
+        <td class="maptable17">QICorePatient.birthDate</td>
+        <td class="maptable17">None</td>
       </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Performed</td>
+        <td class="maptable17">QICoreEncounter</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Discharge Disposition</td>
+        <td class="maptable17">QICoreEncounter.dischargeDisposition</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Period</td>
+        <td class="maptable17">QICoreEncounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Diagnosis</td>
+        <td class="maptable17">QICoreCondition.code and QICoreCondition.category</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Diagnosis</td>
+        <td class="maptable17">QICoreCondition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Diagnosis Time (OnsetTime)</td>
+        <td class="maptable17">QICoreCondition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Procedure Performed</td>
+        <td class="maptable17">QICoreProcedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Procedure Performed DateTime</td>
+        <td class="maptable17">QICoreProcedure.performedDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Medication(Active)- Status</td>
+        <td class="maptable17">QICoreMedicationStatement.status</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">Medication(Active)- Code</td>
+        <td class="maptable17">QICoreMedicationStatement.medicationCodeableConcept</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">Medication(Active)- DateTime/Period</td>
+        <td class="maptable17">QICoreMedicationStatement.effectiveDateTime OR QICoreMedicationStatement.effectivePeriod</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Intervention Order - Code</td>
+        <td class="maptable17">QICoreServiceRequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">Intervention Order - AuthoredOn</td>
+        <td class="maptable17">QICoreServiceRequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">Intervention(Performed) - Code</td>
+        <td class="maptable17">QICoreProcedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">Intervention(Performed) - DateTime/Period</td>
+        <td class="maptable17">QICoreProcedure.performedDateTime OR QICoreProcedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">Intervention(Performed) - Recorded</td>
+        <td class="maptable17">QICoreProcedure.extension.qicore-recorded</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+      
 	  <tr style='height:20px;'>
         <td class="maptable13" colspan="3"><b>UDS Table : HIV Linkage to Care</b>
         </td>
       </tr>
+	  
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Performed</td>
+        <td class="maptable17">QICoreEncounter</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Discharge Disposition</td>
+        <td class="maptable17">QICoreEncounter.dischargeDisposition</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Period</td>
+        <td class="maptable17">QICoreEncounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Participant</td>
+        <td class="maptable17">QICoreEncounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Diagnosis</td>
+        <td class="maptable17">QICoreCondition.code and QICoreCondition.category</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Diagnosis</td>
+        <td class="maptable17">QICoreCondition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Diagnosis Time (OnsetTime)</td>
+        <td class="maptable17">QICoreCondition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Lab Test(Performed) - Code</td>
+        <td class="maptable17">QICoreObservation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
 	  <tr style='height:20px;'>
-        <td class="maptable16"></td>
-        <td class="maptable17"></td>
-        <td class="maptable17"></td>
+        <td class="maptable16">Lab Test(Performed) - DateTime/Period</td>
+        <td class="maptable17">QICoreObservation.effectiveDateTime OR QICoreObservation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">Lab Test(Performed) - Issued</td>
+        <td class="maptable17">QICoreObservation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Result - Code</td>
+        <td class="maptable17">QICoreObservation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">Result - Value</td>
+        <td class="maptable17">QICoreObservation.value[x] (valueQuantity/valueCodeableConcept/valueDateTime)</td>
+        <td class="maptable17">None</td>
+      </tr>  
+      <tr style='height:20px;'>
+        <td class="maptable16">Intervention Order - Referral</td>
+        <td class="maptable17">QICoreServiceRequest.code</td>
+        <td class="maptable17">None</td>
+      </tr> 
+	  <tr style='height:20px;'>
+        <td class="maptable16">Intervention Order - AuthoredOn</td>
+        <td class="maptable17">QICoreServiceRequest.authoredOn</td>
+        <td class="maptable17">None</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable13" colspan="3"><b>UDS Table : Dental Sealants for Children between 6-9 Years</b>
         </td>
       </tr>
+       <tr style='height:20px;'>
+        <td class="maptable16">Patient Characteristic - Birth Date</td>
+        <td class="maptable17">QICorePatient.birthDate</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Performed</td>
+        <td class="maptable17">QICoreEncounter</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Type</td>
+        <td class="maptable17">QICoreEncounter.type</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Period</td>
+        <td class="maptable17">QICoreEncounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Encounter Diagnosis</td>
+        <td class="maptable17">QICoreCondition.code and QICoreCondition.category</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Diagnosis</td>
+        <td class="maptable17">QICoreCondition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Diagnosis Time (OnsetTime)</td>
+        <td class="maptable17">QICoreCondition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Procedure Performed</td>
+        <td class="maptable17">QICoreProcedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Procedure Performed DateTime</td>
+        <td class="maptable17">QICoreProcedure.performedDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
 	  <tr style='height:20px;'>
-        <td class="maptable16"></td>
-        <td class="maptable17"></td>
-        <td class="maptable17"></td>
+        <td class="maptable16">Procedure(Performed) - Recorded</td>
+        <td class="maptable17">QICoreProcedure.extension.qicore-recorded</td>
+        <td class="maptable17">Missing in US Core profile</td>
       </tr>
     </tbody>
   </table>

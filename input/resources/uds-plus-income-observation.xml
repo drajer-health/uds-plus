@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="uds-plus-income-observation"/>
+    <id value="de-identified-uds-plus-income-observation"/>
     <meta>
         <versionId value="12"/>
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-income-observation"/>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-income-observation"/>
     <version value="1.0.0"/>
     <name value="UDSPlusIncome"/>
     <title value="De-Identified UDS Plus Income"/>
-    <status value="active"/>
-    <experimental value="false"/>
+    <status value="draft"/>
+    <experimental value="true"/>
     <publisher value="HL7 Public Health Work Group"/>
     <description value="The UDS+ profile is based on the Observation resource and establishes the core elements, extensions, vocabularies and value sets for representing Income ranges for UDS+ program."/>
     <jurisdiction>
@@ -79,6 +79,17 @@
             <max value="1"/>
             <type>
                 <code value="Range"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.valueRange.extension:dataAbsentReason">
+            <path value="Observation.valueRange.extension"/>
+            <sliceName value="dataAbsentReason"/>
+            <short value="Reason why the data is not present"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
             </type>
             <mustSupport value="true"/>
         </element>

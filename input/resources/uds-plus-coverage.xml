@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="uds-plus-coverage"/>
+    <id value="de-identified-uds-plus-coverage"/>
     <meta>
         <versionId value="12"/>
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-coverage"/>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-coverage"/>
     <version value="1.0.0"/>
-    <name value="UDSPlusCoverage"/>
-    <title value="UDS Plus Coverage"/>
+    <name value="DeIdentifiedUDSPlusCoverage"/>
+    <title value="DeIdentified UDS Plus Coverage"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="The UDS+ profile is based on the **QI Core Coverage profile and establishes the core elements, extensions, vocabularies and value sets for representing Coverage for UDS+ program."/>
+    <description value="The UDS+ profile establishes the core elements, extensions, vocabularies and value sets for representing Coverage for UDS+ program."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27,13 +27,117 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Coverage"/>
-    <baseDefinition value="http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coverage"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Coverage">
             <path value="Coverage"/>
             <short value="UDS Plus Coverage"/>
             <definition value="The UDS+ profile is based on the **QI Core Coverage profile and establishes the core elements, extensions, vocabularies and value sets for representing Coverage for UDS+ program."/>
+        </element>
+        <element id="Coverage.id">
+            <path value="Coverage.id"/>
+            <short value="The de-identified Coverage identifier created by the health center to send data to HRSA."/>
+            <definition value="De-dentified Coverage identifier."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Coverage.text">
+            <path value="Coverage.text"/>
+            <short value="Cannot include any text in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Coverage.contained">
+            <path value="Coverage.contained"/>
+            <short value="Cannot include any contained resources in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Coverage.extension:capitatedMemberMonths">
+            <path value="Coverage.extension"/>
+            <sliceName value="capitatedMemberMonths"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-capitated-member-months-extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Coverage.extension:feeForServiceMemberMonths">
+            <path value="Coverage.extension"/>
+            <sliceName value="feeForServiceMemberMonths"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Coverage.status">
+            <path value="Coverage.status"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <fixedCode value="active"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Coverage.type">
+            <path value="Coverage.type"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <description value="The set of codes to be used for UDS+ reporting."/>
+                <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-insurance-codes"/>
+            </binding>
+        </element>
+        <element id="Coverage.type.text">
+            <path value="Coverage.type.text"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>  
+        </element>
+        <element id="Coverage.beneficiary">
+            <path value="Coverage.beneficiary"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Coverage.beneficiary.display">
+            <path value="Coverage.beneficiary.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Coverage.period">
+            <path value="Coverage.period"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Coverage.payor">
+            <path value="Coverage.payor"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-relatedperson"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Coverage.payor.display">
+            <path value="Coverage.payor.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>

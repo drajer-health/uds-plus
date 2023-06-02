@@ -1,3 +1,6 @@
+{:.stu-note}
+All canonical (Official) URLs will be changed in the future and are not available currently on the web.
+
 ### Introduction
 
 This profile is used to represent de-identified Encounter information. The de-identification process has to remove all data elements not explicitly identified as "SUPPORTED" in the profile. 

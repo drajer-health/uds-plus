@@ -82,7 +82,13 @@
   "gender": "female",
   "address": [
     {
-      "postalCode": "00000"
+      "postalCode": "00000",
+      "_postalCode": {
+      "extension" : [ {
+      	"url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      	"valueCode" : "masked"
+   	}]
+      }
     }
   ]
 }
