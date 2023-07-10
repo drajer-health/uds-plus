@@ -41,7 +41,8 @@ Codeable Concept text elements should be removed as part of the de-identificatio
 **Usage of Data Absent Reason Extension**
 
 For the UDS+ reporting, the patient data is de-identified and in the process zip codes may be masked to a value of "00000". In these cases the dataAbsentReason extension must be added to identify that the data is "masked".
-Similarly if the zip code is not known, a value of "00000" must be sent with a dataAbsentReason of "unknown".
+If the zip code is not known, a value of "00000" must be sent with a dataAbsentReason of "unknown".
+If the zip code is outside the country, a value of "00000" must be sent with a dataAbsentReason of "unsupported".
 
 **Birth Sex Additional Constraints**
 

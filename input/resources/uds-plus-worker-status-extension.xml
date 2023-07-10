@@ -10,7 +10,7 @@
     <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/udsplus-agriculture-worker-status"/>
     <version value="0.1.0"/>
     <name value="UDSPlusAgricultureWorkerStatus"/>
-    <title value="UDS Plus Worker Agriculture Worker Status Extension"/>
+    <title value="UDS Plus Agriculture Worker Status Extension"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-09-01"/>
@@ -41,8 +41,8 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Indicates the age of the Patient."/>
-            <definition value="Indicates the age of the Patient computed based on date of birth at a specific time"/>
+            <short value="Indicates the agriculture worker status of the patient."/>
+            <definition value="Indicates the agriculture worker status of the patient."/>
             <min value="1"/>
             <max value="1"/>
         </element>
@@ -51,7 +51,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/udsplus-agriculture-worker-status-extension"/>
+            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/udsplus-agriculture-worker-status"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
@@ -60,6 +60,10 @@
             <type>
                 <code value="code"/>
             </type>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-agriculture-worker-status"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

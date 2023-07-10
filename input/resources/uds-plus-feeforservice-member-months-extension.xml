@@ -51,7 +51,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-member-months-extension"/>
+            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

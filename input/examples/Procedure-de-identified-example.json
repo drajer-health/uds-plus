@@ -1,0 +1,44 @@
+{
+    "resourceType": "Procedure",
+    "id": "de-identified-example",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-procedure"
+        ]
+    },
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "48387007",
+                "display": "Tracheotomy"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/de-identified-example"
+    },
+    "encounter": {
+        "reference": "Encounter/de-identified-example"
+    },
+    "performedDateTime": "2005",
+    "performer": [
+        {
+            "actor": {
+                "reference": "Practitioner/example"
+            }
+        }
+    ],
+    "bodySite": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44567001",
+                    "display": "Tracheal structure"
+                }
+            ]
+        }
+    ]
+}

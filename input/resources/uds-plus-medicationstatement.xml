@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="uds-plus-medicationstatement"/>
+    <meta>
+        <versionId value="12"/>
+        <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
+        <source value="#3LDMUQYYwafwTzqK"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-medicationstatement"/>
+    <version value="1.0.0"/>
+    <name value="UDSPlusMedicationStatement"/>
+    <title value="De-Identified UDS Plus MedicationStatement"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="The UDS+ profile is based on the MedicationStatement resource and establishes the core elements, extensions, vocabularies and value sets for representing MedicationStatement for UDS+ program."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="MedicationStatement"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="MedicationStatement">
+            <path value="MedicationStatement"/>
+            <short value="De-Identified UDS Plus MedicationStatement"/>
+            <definition value="The UDS+ profile is based on the MedicationStatement resource and establishes the core elements, extensions, vocabularies and value sets for representing medicationstatement for UDS+ program."/>
+        </element>
+        <element id="MedicationStatement.id">
+            <path value="MedicationStatement.id"/>
+            <short value="The de-identified MedicationStatement identifier created by the health center to send data to UDS+ Data Receiver"/>
+            <definition value="De-dentified MedicationStatement resource identifier."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.text">
+            <path value="MedicationStatement.text"/>
+            <short value="Cannot include any text in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="MedicationStatement.contained">
+            <path value="MedicationStatement.contained"/>
+            <short value="Cannot include any contained resources in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="MedicationStatement.status">
+            <path value="MedicationStatement.status"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>
+        <element id="MedicationStatement.medication[x]">
+            <path value="MedicationStatement.medication[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>
+        <element id="MedicationStatement.subject">
+            <path value="MedicationStatement.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.subject.display">
+            <path value="MedicationStatement.subject.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="MedicationStatement.effective[x]">
+            <path value="MedicationStatement.effective[x]"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.dateAsserted">
+            <path value="MedicationStatement.dateAsserted"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.dosage">
+            <path value="MedicationStatement.dosage"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

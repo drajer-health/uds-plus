@@ -1,0 +1,30 @@
+{
+    "resourceType": "Observation",
+    "id": "de-identified-income-example",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-income-observation"
+        ]
+    },
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "63058-2"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/de-identified-example"
+    },
+    "effectiveDateTime": "2016-03-28",
+    "valueRange": {
+    	"low": {
+    		"value": 101
+    	},
+    	"high": {
+    		"value": 150
+    	}
+    }
+}

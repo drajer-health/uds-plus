@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "udsplus" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
-  <id value="udsplus"/>
+  <id value="uds-plus"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/> 
   </extension> 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/> 
   </extension>
-  <url value="http://hl7.org/fhir/us/uds-plus/ImplementationGuide/udsplus"/>
+  <url value="http://hl7.org/fhir/us/uds-plus/ImplementationGuide/uds-plus"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="1.0.0"/>
+  <version value="0.4.1"/>
   <name value="UdsPlusFhirIg"/>
   <title value="DRAFT Uniform Data System (UDS) Patient Level Submission (PLS) - UDS+ IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="HRSA UDS PLS Project"/>
+  <publisher value="HRSA UDS PLUS Project"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
@@ -32,7 +32,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="fhir.us.udsplus"/>
+  <packageId value="fhir.us.uds-plus"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
@@ -56,11 +56,11 @@
     <version value="2.1.0"/>
   </dependsOn>
   
-    <dependsOn id="deqm">
-    <uri value="http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"/>
-    <packageId value="hl7.fhir.us.davinci-deqm"/>
-    <version value="3.0.0"/>
-  </dependsOn>
+ <!--  <dependsOn id="qiCore">
+    <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="5.0.0"/>
+  </dependsOn> -->
 
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
@@ -72,6 +72,110 @@
       </reference>
       <name value="US Core Patient Example"/>
       <description value="An Example of a conformant US Core Patient resource with identifiable information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Practitioner/example"/>
+      </reference>
+      <name value="US Core Practitioner Example"/>
+      <description value="An Example of a conformant US Core Practitioner resource with identifiable information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Parameters/de-identify-data-operation-urls-example"/>
+      </reference>
+      <name value="UDS Plus Parameters Example for $deidentify operation"/>
+      <description value="An Example of a conformant UDS Plus Parameters resource for sending input and receiving output from $deidentify operation."/>
+      <exampleBoolean value="true"/>
+   </resource>   
+   <resource>
+      <reference>
+        <reference value="RelatedPerson/de-identified-example"/>
+      </reference>
+      <name value="UDS Plus RelatedPerson Example"/>
+      <description value="An Example of a conformant UDS Plus Related Person resource with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource>  
+   <resource>
+      <reference>
+        <reference value="Coverage/de-identified-example"/>
+      </reference>
+      <name value="Uds Plus Coverage Example"/>
+      <description value="An Example of a conformant UDS Plus Coverage resource with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource> 
+   <resource>
+      <reference>
+        <reference value="Procedure/de-identified-example"/>
+      </reference>
+      <name value="Uds Plus Procedure Example"/>
+      <description value="An Example of a conformant UDS Plus Procedure resource with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="MedicationRequest/de-identified-example"/>
+      </reference>
+      <name value="Uds Plus MedicationRequest Example"/>
+      <description value="An Example of a conformant UDS Plus MedicationRequest resource with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="MedicationStatement/de-identified-example"/>
+      </reference>
+      <name value="Uds Plus MedicationStatement Example"/>
+      <description value="An Example of a conformant UDS Plus MedicationStatement resource with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Observation/de-identified-income-example"/>
+      </reference>
+      <name value="Uds Plus Income Observation Example"/>
+      <description value="An Example of a conformant UDS Plus Observation resource with de-identified income information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Observation/de-identified-sexual-orientation-example"/>
+      </reference>
+      <name value="Uds Plus Sexual Orientation Observation Example"/>
+      <description value="An Example of a conformant UDS Plus Observation resource with de-identified sexual orientation information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="ServiceRequest/de-identified-example"/>
+      </reference>
+      <name value="Uds Plus ServiceRequest Example"/>
+      <description value="An Example of a conformant UDS Plus ServiceRequest resource with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Immunization/de-identified-example"/>
+      </reference>
+      <name value="Uds Plus Immunization Example"/>
+      <description value="An Example of a conformant UDS Plus Immunization resource with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Observation/de-identified-example"/>
+      </reference>
+      <name value="Uds Plus Observation Lab Result Example"/>
+      <description value="An Example of a conformant UDS Plus Observation resource with de-identified information for a Lab Result."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Organization/acme-payer"/>
+      </reference>
+      <name value="US Core Organization Example for a Payer"/>
+      <description value="An Example of a conformant US Core Organization resource for a Payor entity."/>
       <exampleBoolean value="true"/>
    </resource> 
    <resource>
@@ -110,7 +214,7 @@
       <reference>
         <reference value="Patient/de-identified-example"/>
       </reference>
-      <name value="UDS+ Patient Example"/>
+      <name value="Uds Plus Patient Example"/>
       <description value="An Example of a conformant UDS+ Patient resource which has been de-identified and is based on the US Core Patient small population example resource."/>
       <exampleBoolean value="true"/>
    </resource>
@@ -118,7 +222,7 @@
       <reference>
         <reference value="Patient/de-identified-smallpop-example"/>
       </reference>
-      <name value="UDS+ Patient Example for a patient residing in a zip code with small population (&lt;20000 people)"/>
+      <name value="Uds Plus Patient Example for a patient residing in a zip code with small population (&lt;20000 people)"/>
       <description value="An Example of a conformant UDS+ Patient resource which has been de-identified and is based on the US Core Patient example resource."/>
       <exampleBoolean value="true"/>
    </resource>
@@ -126,7 +230,7 @@
       <reference>
         <reference value="Condition/de-identified-example"/>
       </reference>
-      <name value="De-Identified Condition Example"/>
+      <name value="Uds Plus De-Identified Condition Example"/>
       <description value="An Example of a conformant UDS+ Condition resource with de-identified information capturing a Problem List Item."/>
       <exampleBoolean value="true"/>
    </resource> 
@@ -134,7 +238,7 @@
       <reference>
         <reference value="Encounter/de-identified-example"/>
       </reference>
-      <name value="De-Identified Encounter Example"/>
+      <name value="Uds Plus De-Identified Encounter Example"/>
       <description value="An Example of a conformant UDS+ Encounter resource with de-identified information capturing the visit information."/>
       <exampleBoolean value="true"/>
    </resource>
@@ -235,7 +339,7 @@
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code value="releaselabel"/>
-      <value value="STU 1.0.0"/>
+      <value value="STU 0.4.1"/>
     </parameter>
     <parameter>
       <code value="find-other-resources"/>

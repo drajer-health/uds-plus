@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="uds-plus-immunization"/>
+    <meta>
+        <versionId value="12"/>
+        <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
+        <source value="#3LDMUQYYwafwTzqK"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-immunization"/>
+    <version value="1.0.0"/>
+    <name value="UDSPlusImmunization"/>
+    <title value="De-Identified UDS Plus Immunization"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="The UDS+ profile is based on the Immunization resource and establishes the core elements, extensions, vocabularies and value sets for representing immunizations for UDS+ program."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Immunization"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Immunization">
+            <path value="Immunization"/>
+            <short value="De-Identified UDS Plus Immunization"/>
+            <definition value="The UDS+ profile is based on the Immunization resource and establishes the core elements, extensions, vocabularies and value sets for representing Immunizations for UDS+ program."/>
+        </element>
+        <element id="Immunization.id">
+            <path value="Immunization.id"/>
+            <short value="The de-identified Immunization identifier created by the health center to send data to UDS+ Data Receiver"/>
+            <definition value="De-dentified immunization resource identifier."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Immunization.text">
+            <path value="Immunization.text"/>
+            <short value="Cannot include any text in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Immunization.contained">
+            <path value="Immunization.contained"/>
+            <short value="Cannot include any contained resources in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Immunization.status">
+            <path value="Immunization.status"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>  
+        <element id="Immunization.statusReason">
+            <path value="Immunization.statusReason"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>     
+        <element id="Immunization.vaccineCode">
+            <path value="Immunization.vaccineCode"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/> 
+        </element>
+        <element id="Immunization.patient">
+            <path value="Immunization.patient"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Immunization.occurrence[x]">
+            <path value="Immunization.occurrence[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Immunization.recorded">
+            <path value="Immunization.recorded"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Immunization.primarySource">
+            <path value="Immunization.primarySource"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

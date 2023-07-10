@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="uds-plus-agriculture-worker-status-extension"/>
+    <id value="uds-plus-capitated-member-months-extension"/>
     <meta>
         <versionId value="2"/>
         <lastUpdated value="2022-07-12T02:03:21.911+00:00"/>
         <source value="#IqyJCmUTqk2pvKFb"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-agriculture-worker-status-extension"/>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-capitated-member-months-extension"/>
     <version value="0.1.0"/>
-    <name value="UDSPlusAgricultureWorkerStatusExtension"/>
-    <title value="UDS Plus Agriculture Worker Status Extension"/>
+    <name value="UDSPlusCapitatedMemberMonthsExtension"/>
+    <title value="UDS Plus Capitated Member Months Extension"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-09-01"/>
@@ -21,7 +21,7 @@
             <value value="http://hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Indicates the Agriculture worker status of the patient at a specific time"/>
+    <description value="Indicates the number of capitated member months of the patient for the reporting year"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33,7 +33,7 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Patient"/>
+        <expression value="Coverage"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -41,8 +41,8 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Indicates the agriculture worker status of the Patient."/>
-            <definition value="Indicates the agriculture worker status of the Patient."/>
+            <short value="Indicates the capitated member months of the Patient."/>
+            <definition value="Indicates the capitated member months of the Patient. This is computed based on data obtaind by the Health Center from the plans."/>
             <min value="1"/>
             <max value="1"/>
         </element>
@@ -51,14 +51,14 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-agriculture-worker-status-extension"/>
+            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-capitated-member-months-extension"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="CodeableConcept"/>
+                <code value="Quantity"/>
             </type>
         </element>
     </differential>

@@ -1,0 +1,49 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "de-identified-example",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-medicationrequest"
+        ]
+    },
+    "status" : "active",
+ 	 "intent" : "order",
+ 	 "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "476872",
+      "display" : "Nizatidine 15 MG/ML Oral Solution"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/de-identified-example"
+  },
+  "encounter" : {
+    "reference" : "Encounter/de-identified-example"
+  },
+  "authoredOn" : "2008",
+  "requester" : {
+    "reference" : "Practitioner/example"
+  },
+  "dosageInstruction" : [{
+    "text" : "10 mL bid",
+    "timing" : {
+      "repeat" : {
+        "boundsPeriod" : {
+          "start" : "2008-04-05"
+        },
+        "frequency" : 2,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 10,
+        "unit" : "ml",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL"
+      }
+    }]
+  }]
+}

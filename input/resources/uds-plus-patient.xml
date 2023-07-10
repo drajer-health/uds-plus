@@ -112,6 +112,42 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Patient.extension:agriculture-worker-status">
+            <path value="Patient.extension"/>
+            <short value="Agriculture Status of the patient"/>
+            <sliceName value="uds-plus-agriculture-worker-status"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/udsplus-agriculture-worker-status"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.extension:housing-status">
+            <path value="Patient.extension"/>
+            <short value="Housing Status of the patient"/>
+            <sliceName value="uds-plus-housing-status"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-housing-status-extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.extension:veteran-status">
+            <path value="Patient.extension"/>
+            <short value="Veteran Status of the patient"/>
+            <sliceName value="uds-plus-veteran-status"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-veteran-status-extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Patient.identifier">
             <path value="Patient.identifier"/>
             <short value="Cannot include any identifier in the resource as part of the de-identified data."/>

@@ -37,8 +37,8 @@
         </element>
         <element id="Condition.id">
             <path value="Condition.id"/>
-            <short value="The de-identified Condition identifier created by the health center to send data to HRSA."/>
-            <definition value="De-dentified condition identifier."/>
+            <short value="The de-identified Condition identifier created by the health center to send data to UDS+ Data Receiver"/>
+            <definition value="De-dentified condition resource identifier."/>
             <mustSupport value="true"/>
         </element>
         <element id="Condition.text">

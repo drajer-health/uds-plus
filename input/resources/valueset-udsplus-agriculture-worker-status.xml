@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="udsplus-agriculture-worker-status"/> 
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
+    <source value="#3Te0anOrvocKgcow"/>
+    <profile
+             value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <url value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-agriculture-worker-status"/>
+  <version value="1.0.0"/>
+  <name value="UdsPlusAgricultureWorkerStatusCodes"/>
+  <title value="Uds Plus Agriculture Worker Status Codes"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2020-09-06"/>
+  <publisher value="HL7 PHWG"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+  <description value="The Uds Plus Agriculture Worker Status Codes is a &#39;starter set&#39; of codes for specifying agriculture worker status for Patients."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes"/>
+    </include>
+  </compose>
+</ValueSet>
+

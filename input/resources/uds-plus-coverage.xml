@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="de-identified-uds-plus-coverage"/>
+    <id value="uds-plus-coverage"/>
     <meta>
         <versionId value="12"/>
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-coverage"/>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-coverage"/>
     <version value="1.0.0"/>
     <name value="DeIdentifiedUDSPlusCoverage"/>
     <title value="DeIdentified UDS Plus Coverage"/>

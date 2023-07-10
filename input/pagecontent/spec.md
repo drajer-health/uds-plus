@@ -59,11 +59,15 @@ This section identifies the different requirements for Data Source (e.g., EHRs) 
 
 * The Data Source SHALL support the [FHIR Base URL]/Group/[id]/$export as per the Bulk Data Access IG.
 
-* The Data Source SHALL support the resources and profiles identified in the [Data Source Capability Statement]()
+* The Data Source SHALL support the resources and profiles identified in the [Data Source Capability Statement](CapabilityStatement-uds-plus-data-source.html)
 
 * The Data Source SHALL support the [FHIR Base URL]/Group/[id]/$export using the _since parameter as per the Bulk Data Access IG.
 
 * The Data Source SHALL support the [FHIR Base URL]/Group/[id]/$export using the _type parameter as per the Bulk Data Access IG.
+
+* The Data Source SHALL export the data for the reporting year following the code systems, value sets and rules outlined in the UDS Manual for the specific reporting year. 
+
+**NOTE:** The filtering of resources for the reporting year will be performed based on the patient and visit qualification rules within the UDS Manual for the reporting year.
 
 * The Data Source SHALL support the SMART on FHIR Backend Services Authorization as outlined in the previous sections.
 
@@ -95,21 +99,25 @@ This section identifies the different requirements for Data Submitter system sup
 
 * The Data Submitter SHALL support the scheduling of timers to kick off health center reporting based on HRSA guidance.
 
-* The Data Submitter SHALL implement the client requirements per the Bulk Data Access IG to start the export of the data from the Data Source.
+* The Data Submitter SHOULD implement the client requirements per the Bulk Data Access IG to start the export of the data from the Data Source.
 
-* The Data Submitter SHALL implement the monitoring of the export request per the Bulk Data Access IG. 
+* The Data Submitter SHOULD implement the monitoring of the export request per the Bulk Data Access IG. 
 
 * Once the export is completed, the Data Submitter SHALL download the exported data for de-identification.
 
-* The Data Submitter SHALL retain the patient linkages between the identifiable data and de-identified data.
+* The Data Submitter SHOULD retain the patient linkages between the identifiable data and de-identified data.
 
-* The Data Submitter SHALL de-identify the exported data using the Trust Service Provider services and then create the links for HRSA to download the data.
+* The Data Submitter SHALL de-identify the exported data using the Trust Service Provider services and then create the file download links for Data Receiver to download the NDJSON data. 
 
 * The Data Submitter SHALL validate the data for conformance to the IG.
 
-* The Data Submitter SHALL follow the Health Center security and privacy policies while creating the downloadable links for HRSA.
+* The Data Submitter SHALL follow the Health Center security and privacy policies while creating the NDJSON file links to be used by the Data Receiver to download the data.
 
 * The Data Submitter SHALL notify the HRSA Data Receiver when the data is ready using the [$import](OperationDefinition-import.html) operation.  
+
+* When the Data Receiver provides a failure status for the $import operation, the Data Submitter SHALL rectify the errors and perform a re-submission. 
+
+**NOTE:** The re-submission payload will be a complete payload and not a partial payload. 
 
 ###### Data Capture Requirements 
 
@@ -154,7 +162,7 @@ This section identifies the different requirements for Data Receiver systems hos
 
 * The Data Receiver SHALL update the status of the submission for each health center. 
 
-* The Data Receiver SHALL provide a mechanism to re-submit the entire submission by a Health Center as needed during the reporting period.
+* The Data Receiver SHALL process a re-submission by a Health Center as needed during the reporting period.
 
 * The Data Receiver SHALL discard previous submissions when a re-submission is made by the Health Center. 
 

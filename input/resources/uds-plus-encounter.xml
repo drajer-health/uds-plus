@@ -160,6 +160,28 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
+        <element id="Encounter.diagnosis">
+            <path value="Encounter.diagnosis"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.diagnosis.condition">
+            <path value="Encounter.diagnosis.condition"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-diagnosis"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.diagnosis.rank">
+            <path value="Encounter.diagnosis.rank"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Encounter.hospitalization">
             <path value="Encounter.hospitalization"/>
             <min value="0"/>
@@ -171,6 +193,11 @@
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="preferred"/>
+                <description value="The set of codes indicating the discharge disposition"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition"/>
+            </binding>
         </element>
         <element id="Encounter.hospitalization.dischargeDisposition.text">
             <path value="Encounter.hospitalization.dischargeDisposition.text"/>

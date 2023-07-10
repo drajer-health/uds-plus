@@ -35,9 +35,35 @@
             <short value="De-Identified UDS Plus Procedure"/>
             <definition value="The UDS+ profile is based on the Procedure resource and establishes the core elements, extensions, vocabularies and value sets for representing Procedures for UDS+ program."/>
         </element>
+        <element id="Procedure.id">
+            <path value="Procedure.id"/>
+            <short value="The de-identified Procedure identifier created by the health center to send data to UDS+ Data Receiver"/>
+            <definition value="De-dentified procedure resource identifier."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Procedure.text">
+            <path value="Procedure.text"/>
+            <short value="Cannot include any text in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Procedure.contained">
+            <path value="Procedure.contained"/>
+            <short value="Cannot include any contained resources in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Procedure.status">
             <path value="Procedure.status"/>
             <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element> 
+        <element id="Procedure.statusReason">
+            <path value="Procedure.statusReason"/>
+            <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>  
         </element>       
@@ -62,13 +88,32 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Condition.performed">
-            <path value="Condition.performedDateTime"/>
+        <element id="Procedure.encounter">
+            <path value="Procedure.encounter"/>
             <min value="0"/>
             <max value="1"/>
             <type>
-                <code value="dateTime"/>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-encounter"/>
             </type>
+            <mustSupport value="true"/>
+        </element>       
+        <element id="Procedure.performed[x]">
+            <path value="Procedure.performed[x]"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Procedure.performer">
+            <path value="Procedure.performer"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Procedure.bodySite">
+            <path value="Procedure.bodySite"/>
+            <min value="0"/>
+            <max value="*"/>
             <mustSupport value="true"/>
         </element>
     </differential>

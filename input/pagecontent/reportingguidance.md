@@ -9,9 +9,35 @@ This section provides details of the Step 9, Step 10a and Step 10b to be used by
 The diagram below details out the interactions between the Data Submitter and the Data Receiver for Step 9. This is following the FHIR Bulk Data Access/FHIR Async pattern.
 
 
-{% include img.html img="step9-detailed-interactions.png" caption="Step 9 UDS+ Reporting Workflow Detailed Interactions" %} 
+{% include img.html img="step9-detailed-Interactions.png" caption="Step 9 UDS+ Reporting Workflow Detailed Interactions" %} 
 
 For more information and examples on authentication mechanisms, refer to [SMART on FHIR IG Backend Services]({{site.data.fhir.smartapplaunch}}/backend-services.html).
+
+##### Security Protocol Details
+
+The following is a summary of the protocols used for authentication and authorization specified at [SMART on FHIR IG Backend Services]({{site.data.fhir.smartapplaunch}}/backend-services.html).
+
+* The Data Submitter clients (Health Centers) will be registered in the Authorization Server as part of the on-boarding process. There is no dynamic registration capability that is allowed. 
+
+* Asymmetric Keys (public and private keys) are used for authentication. Clients MUST be capable of protecting their private keys.
+
+* [RFC 5246](https://tools.ietf.org/html/rfc5246) - TLS 1.2 is used to protect all transactions.
+
+* Authorization Server supports RS384 or ES384 signature algorithms per [RFC7518](https://tools.ietf.org/html/rfc7518)
+
+* Authorization Server and Data Submitters MUST support Json Web Key Set per [RFC7517](https://www.rfc-editor.org/rfc/rfc7517.txt)
+
+* Authorization Servers and Data Submitters MUST support JSON Web Tokens per [RFC7519](https://tools.ietf.org/html/rfc7519) and [RFC7523](https://tools.ietf.org/html/rfc7523)
+
+* Authorization Server MUST support a .well-known/smart-configuration metadata for conformance
+
+* Data Submitters MUST submit the JWT assertions per the [RFC7521](https://tools.ietf.org/html/rfc7521)
+
+* Data Submitters MUST include the scopes to post the manifest file to the Data Receiver
+
+* Data Submitters SHOULD follow best practices and use links which are signed and expire to prevent malicious actors from downloading the data. Best practice includes auto-generation of the links and auto expiration and requiring tokens to be echoed back for access.
+
+* Data Submitters and Data Receivers MUST maintain audit logs for each submission and its corresponding responses. 
 
 #### Step 10a and Step 10b details
 
@@ -100,6 +126,12 @@ Implementers should follow the UDS Manual to identify the patient's zip code and
 ### Quality Measures and Reporting Approaches
 
 Quality Measure computation and reporting is a complex task and may involve multiple systems and human interventions to compute the measures properly. The quality reporting eco-system is rapidly evolving to utilize existing standards such as HL7 FHIR Measure Report (Individual and Summary), HL7 QRDA Category III (Summary or Aggregate), HL7 QRDA Category I (Individual) to automate reporting and processing of the reports. However computation of the Measure Reports or what data to be included in the individual report is still not automated widely in the industry.  HRSA recognizes this state of the industry where Quality Measure standards will continue to evolve and hence prescribes submitting de-identified information for Table 6B and Table 7 using the UDS+ profiles.
+
+The Patients for each measure will be qualified and tagged using the initial patient population criteria for the measure. When a Patient is qualified for multiple measures, they will be tagged using the [Patient Reporting Parameters](StructureDefinition-uds-plus-patient-reporting-parameters.html) profile.
+
+If a Health Center chooses to report on measures using aggregate data, the MeasureReport profile should be used to perform aggregate reporting. 
+
+
 
 ### Submit De-identified FHIR Resources associated with the Patients for the population
 

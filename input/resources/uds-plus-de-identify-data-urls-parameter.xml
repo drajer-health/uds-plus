@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="uds-plus-deidentify-data"/>
+    <id value="uds-plus-deidentify-operation-data-urls-parameter"/>
     <meta>
         <versionId value="12"/>
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-deidentify-data"/>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-deidentify-operation-data-urls-parameter"/>
     <version value="1.0.0"/>
-    <name value="UDSPlusDeIdentifyData"/>
-    <title value="UDS Plus DeIdentify Data Urls"/>
+    <name value="UDSPlusDeIdentifyDataUrlsParameter"/>
+    <title value="UDS Plus DeIdentify Data Urls Parameter"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="The UDS+ profile is based on the **Parameters FHIR Resource and establishes the core elements, extensions, vocabularies and value sets for representing the data for input and output for the DeIdentify operation for UDS+ import FHIR Operations."/>
+    <description value="The UDS+ profile is based on the **Parameters FHIR Resource and establishes the core elements, extensions, vocabularies and value sets for representing the data for sending input and receiving output for the DeIdentify operation of UDS+ ."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -109,7 +109,7 @@
             <path value="Parameters.parameter.part.name"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedString value="type"/>
+            <fixedString value="resourceType"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:udsData.part:resourceType.value[x]">
@@ -132,7 +132,7 @@
             <path value="Parameters.parameter.part.name"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedString value="url"/>
+            <fixedString value="resourceUrl"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:udsData.part:resourceUrl.value[x]">

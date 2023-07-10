@@ -1,0 +1,42 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "de-identified-example",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-servicerequest"
+        ]
+    },
+    "status": "completed",
+    "intent": "order",
+    "doNotPerform": false,
+    "subject": {
+        "reference": "Patient/de-identified-example"
+    },
+    "encounter": {
+        "reference": "Encounter/de-identified-example"
+    },
+    "authoredOn": "2017",
+    "requester": {
+        "reference": "Practitioner/example"
+    },
+    "bodySite": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "485005",
+                    "display": "Transverse colon structure"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "76164006",
+        "display": "Biopsy of colon (procedure)"
+      }
+    ]
+    }
+}

@@ -72,21 +72,21 @@
             <fixedCode value="fhir+ndjson"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers">
+        <element id="Parameters.parameter:hcInformation">
             <path value="Parameters.parameter"/>
-            <sliceName value="hcIdentifiers"/>
+            <sliceName value="hcInformation"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.name">
+        <element id="Parameters.parameter:hcInformation.name">
             <path value="Parameters.parameter.name"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedString value="hcIdentifiers"/>
+            <fixedString value="hcInformation"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part">
+        <element id="Parameters.parameter:hcInformation.part">
             <path value="Parameters.parameter.part"/>
             <min value="0"/>
             <max value="*"/>
@@ -99,21 +99,21 @@
             </slicing>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part:ueiNumber">
+        <element id="Parameters.parameter:hcInformation.part:ueiNumber">
             <path value="Parameters.parameter.part"/>
             <sliceName value="ueiNumber"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part:ueiNumber.name">
+        <element id="Parameters.parameter:hcInformation.part:ueiNumber.name">
             <path value="Parameters.parameter.part.name"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="uei"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part:ueiNumber.value[x]">
+        <element id="Parameters.parameter:hcInformation.part:ueiNumber.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>
@@ -122,21 +122,21 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part:grantId">
+        <element id="Parameters.parameter:hcInformation.part:grantNumber">
             <path value="Parameters.parameter.part"/>
-            <sliceName value="grantId"/>
+            <sliceName value="grantNumber"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part:grantId.name">
+        <element id="Parameters.parameter:hcInformation.part:grantNumber.name">
             <path value="Parameters.parameter.part.name"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="grantNumber"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part:grantId.value[x]">
+        <element id="Parameters.parameter:hcInformation.part:grantNumber.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>
@@ -145,21 +145,21 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part:hcName">
+        <element id="Parameters.parameter:hcInformation.part:hcName">
             <path value="Parameters.parameter.part"/>
             <sliceName value="hcName"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part:hcName.name">
+        <element id="Parameters.parameter:hcInformation.part:hcName.name">
             <path value="Parameters.parameter.part.name"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="hcName"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:hcIdentifiers.part:hcName.value[x]">
+        <element id="Parameters.parameter:hcInformation.part:hcName.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>
@@ -168,10 +168,151 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
+        <element id="Parameters.parameter:hcInformation.part:hcAddress">
+            <path value="Parameters.parameter.part"/>
+            <sliceName value="hcAddress"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcAddress.name">
+            <path value="Parameters.parameter.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="hcAddress"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcAdress.value[x]">
+            <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="Address"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcAdress.value[x].line">
+            <path value="Parameters.parameter.part.value[x].line"/>
+            <min value="1"/>
+            <max value="*"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcAdress.value[x].city">
+            <path value="Parameters.parameter.part.value[x].city"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcAdress.value[x].state">
+            <path value="Parameters.parameter.part.value[x].state"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcAdress.value[x].postalCode">
+            <path value="Parameters.parameter.part.value[x].postalCode"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcContactPerson">
+            <path value="Parameters.parameter.part"/>
+            <sliceName value="hcContactPerson"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcContactPerson.name">
+            <path value="Parameters.parameter.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="hcContactPerson"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcContactPerson.value[x]">
+            <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="HumanName"/>
+            </type>
+            <mustSupport value="true"/>
+        </element> 
+        <element id="Parameters.parameter:hcInformation.part:hcContactPerson.value[x].family">
+            <path value="Parameters.parameter.part.value[x].family"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcContactPerson.value[x].given">
+            <path value="Parameters.parameter.part.value[x].given"/>
+            <min value="1"/>
+            <max value="*"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcContactPhone">
+            <path value="Parameters.parameter.part"/>
+            <sliceName value="hcContactPhone"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcContactPhone.name">
+            <path value="Parameters.parameter.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="hcContactPhone"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcContactPhone.value[x]">
+            <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="ContactPoint"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>     
+        <element id="Parameters.parameter:hcInformation.part:hcContactPhone.value[x].system">
+            <path value="Parameters.parameter.part.value[x].system"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="code"/>
+            </type>
+            <fixedCode value="phone"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcContactPhone.value[x].value">
+            <path value="Parameters.parameter.part.value[x].value"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:importProtocol">
             <path value="Parameters.parameter"/>
-            <sliceName value="storageDetail"/>
+            <sliceName value="importProtocol"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
@@ -286,6 +427,29 @@
             <max value="1"/>
             <type>
            	 	<code value="dateTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:udsData.part:importAccessToken">
+            <path value="Parameters.parameter.part"/>
+            <sliceName value="importAccessToken"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:udsData.part:importAccessToken.name">
+            <path value="Parameters.parameter.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="bearer"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:udsData.part:importAccessToken.value[x]">
+            <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
             </type>
             <mustSupport value="true"/>
         </element>

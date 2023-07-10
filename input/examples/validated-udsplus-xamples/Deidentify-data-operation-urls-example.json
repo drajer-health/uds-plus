@@ -1,0 +1,28 @@
+{
+    "resourceType": "Parameters",
+    "id": "de-identify-data-operation-urls-example",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-deidentify-operation-data-urls-parameter"
+        ]
+    },
+    "parameter": [
+        {
+            "name": "format",
+            "valueCode": "fhir+ndjson"
+        },
+        {
+            "name": "udsData",
+            "part": [
+                {
+                    "name": "resourceType",
+                    "valueCode": "Patient"
+                },
+                {
+                    "name": "resourceUrl",
+                    "valueUrl": "http://example.com/Patient.ndjson"
+                }
+            ]
+        }
+    ]
+}
