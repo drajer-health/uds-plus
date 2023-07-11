@@ -72,6 +72,29 @@
             <fixedCode value="fhir+ndjson"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Parameters.parameter:submissionId">
+            <path value="Parameters.parameter"/>
+            <sliceName value="submissionId"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:submissionId.name">
+            <path value="Parameters.parameter.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="submissionId"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:submissionId.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:hcInformation">
             <path value="Parameters.parameter"/>
             <sliceName value="hcInformation"/>
