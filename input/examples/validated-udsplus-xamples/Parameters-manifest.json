@@ -22,6 +22,10 @@
   		"valueCode" : "fhir+ndjson"
   	},
   	{
+  		"name" : "submissionId",
+  		"valueString" : "234343-aaa-32432"
+  	},
+  	{
   		"name" : "hcInformation",
   		"part" : [
   			{
