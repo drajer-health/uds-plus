@@ -62,11 +62,6 @@
         <td class="maptable17">None</td>
       </tr>
 	  <tr style='height:20px;'>
-        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
-        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
-        <td class="maptable17">None</td>
-      </tr>
-	  <tr style='height:20px;'>
         <td class="maptable16">Encounter, Performed - Period</td>
         <td class="maptable17">uds-plus-encounter.period</td>
         <td class="maptable17">None</td>
@@ -111,15 +106,20 @@
         <td class="maptable17">uds-plus-procedure.extension.qicore-recorded</td>
         <td class="maptable17">Missing in US Core profile</td>
       </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Patient Age</td>
+        <td class="maptable17">uds-plus-patient.extension.uds-plus-age-extension</td>
+        <td class="maptable17">Computed from Patient.birthDate</td>
+      </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">Patient Characteristic, Payer - Payer</td>
         <td class="maptable17">uds-plus-coverage.payor</td>
-        <td class="maptable17">Missing in US Core profile</td>
+        <td class="maptable17">None</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">Patient Characteristic, Payer - Period</td>
         <td class="maptable17">uds-plus-coverage.period</td>
-        <td class="maptable17">Missing in US Core profile</td>
+        <td class="maptable17">None</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
@@ -2411,6 +2411,44 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">Symptom - ClinicalStatus</td>
         <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable13" colspan="3"><b>Prenatal Data</b>
+        </td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">Prenatal Patient Services by Delivery</td>
+        <td class="maptable17">UDS Manifest.hcPrenatalCareByReferralOnly</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">First Trimester, Second Trimester, Third Trimester</td>
+        <td class="maptable17">uds-plus-diagnosis.code & uds-plus-encounter.code & uds-plus-encounter.reasonCode</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable13" colspan="3"><b>Deliveries and Birth Weight Data</b>
+        </td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">HIV Positive Pregnant Patients</td>
+        <td class="maptable17">uds-plus-diagnosis.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Deliveries Performed by Health Center Providers</td>
+        <td class="maptable17">uds-plus-diagnosis.code & uds-plus-encounter.code & uds-plus-encounter.reasonCode</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Prenatal Care Patients who delivered during the year</td>
+        <td class="maptable17">uds-plus-diagnosis.code & uds-plus-encounter.code & uds-plus-encounter.reasonCode</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Live Birth Weight </td>
+        <td class="maptable17">uds-plus-observation.code & uds-plus-observation.value[x]</td>
         <td class="maptable17">None</td>
       </tr>
     </tbody>

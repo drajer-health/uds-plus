@@ -28,6 +28,14 @@
           }
         },
         {
+          "url" : "detailed",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2108-9",
+            "display" : "European"
+          }
+        },
+        {
           "url": "text",
           "valueString": "White"
         }
@@ -42,6 +50,14 @@
             "system": "urn:oid:2.16.840.1.113883.6.238",
             "code": "2135-2",
             "display": "Hispanic or Latino"
+          }
+        },
+        {
+          "url" : "detailed",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2184-0",
+            "display" : "Dominican"
           }
         },
         {

@@ -3,17 +3,17 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
   <id value="uds-plus"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/> 
+    <valueCode value="trial-use"/> 
   </extension> 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/> 
+    <valueInteger value="2"/> 
   </extension>
   <url value="http://hl7.org/fhir/us/uds-plus/ImplementationGuide/uds-plus"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.4.1"/>
+  <version value="1.0.0"/>
   <name value="UdsPlusFhirIg"/>
-  <title value="DRAFT Uniform Data System (UDS) Patient Level Submission (PLS) - UDS+ IG"/>
-  <status value="draft"/>
+  <title value="HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="HRSA UDS PLUS Project"/>
   <contact>
@@ -55,6 +55,18 @@
     <packageId value="hl7.fhir.uv.smart-app-launch"/>
     <version value="2.1.0"/>
   </dependsOn>
+  
+  <!-- <dependsOn id="usnlmvsac">
+    <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac" />
+    <packageId value="us.nlm.vsac" />
+    <version value="0.11.0" />
+  </dependsOn>
+  
+  <dependsOn id="uscdcphinvads">
+    <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads" />
+    <packageId value="us.cdc.phinvads" />
+    <version value="0.10.0" />
+  </dependsOn> -->
   
  <!--  <dependsOn id="qiCore">
     <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
@@ -247,14 +259,14 @@
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
       </extension>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
       	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
         </extension>
         <nameUrl value="index.html"/>
         <title value="UDS Plus Home Page"/>
@@ -262,7 +274,7 @@
       </page>
       <page>
       	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
         </extension>
         <nameUrl value="background.html"/>
         <title value="Background"/>
@@ -270,7 +282,7 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
         </extension> 
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
           <valueInteger value="1"/> 
@@ -281,7 +293,7 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
         </extension> 
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
           <valueInteger value="1"/> 
@@ -292,7 +304,7 @@
       </page>
       <page>
       	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
 	</extension>
         <nameUrl value="usecases.html"/>
         <title value="Use Cases and Workflows"/>
@@ -300,7 +312,7 @@
       </page>
       <page>
       	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
         </extension>
         <nameUrl value="changes.html"/>
         <title value="Change History"/>
@@ -308,7 +320,7 @@
       </page>
       <page>
       	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
         </extension>
         <nameUrl value="dataelements.html"/>
         <title value="Data Elements and FHIR Mappings"/>
@@ -316,7 +328,7 @@
       </page>
       <page>
       	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
         </extension>
         <nameUrl value="reportingguidance.html"/>
         <title value="Reporting Guidance"/>
@@ -324,7 +336,7 @@
       </page>
       <page>
       	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="draft"/> 
+          <valueCode value="trial-use"/> 
         </extension>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>
@@ -339,7 +351,7 @@
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code value="releaselabel"/>
-      <value value="STU 0.4.1"/>
+     <value value="STU1 Release 1 - Standard for Trial-Use"/>
     </parameter>
     <parameter>
       <code value="find-other-resources"/>

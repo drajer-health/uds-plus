@@ -67,7 +67,7 @@ This section identifies the different requirements for Data Source (e.g., EHRs) 
 
 * The Data Source SHALL export the data for the reporting year following the code systems, value sets and rules outlined in the UDS Manual for the specific reporting year. 
 
-**NOTE:** The filtering of resources for the reporting year will be performed based on the patient and visit qualification rules within the UDS Manual for the reporting year.
+**NOTE:** The filtering of resources for the reporting year will be performed based on the patient and visit qualification rules within the UDS Manual for the reporting year. Not all resources associated with a Patient compartment are relevant for an UDS+ submission. The UDS Manual specifically outlines types of visits that are eligible and types of visits that are not eligible. Similarly the UDS Manual identifies the types of services that can be included in an UDS+ report. Please refer to the UDS manual to determine the specifc codesystems and valuesets that should be used for filtering of the Patient data.
 
 * The Data Source SHALL support the SMART on FHIR Backend Services Authorization as outlined in the previous sections.
 
@@ -91,6 +91,12 @@ All the Patients served by Health Center as per the UDS Manual on what qualifies
 **Dynamic Group vs static groups**  
 
 * Data Sources ** SHOULD ** use dynamic groups to identify the list of patients applicable for UDS+ reporting. The rationale for dynamic groups is to ensure that all the rules to identify the patients can be applied at a point in time. On the contrary Data Sources ** MAY ** choose to implement static groups, as long as it can be created/updated based on the data submission requirements. For e.g a Group can be created during the reporting period for the previous year. 
+
+**Number of NDJSON files per resource type** 
+
+Data Sources exporting data using $export bulk data operation, create NDJSON files per resource type. For e.g Patient demographic data may be present in a file called Patient-1.ndjson and Patient-2.ndjson. A Data Source may create only one NDJSON file having all the patients or may have multiple NDJSON files each having a subset of the Patients. The number of patients to include per NDJSON  file is left to the Data Source and its performance. However some considerations that could be used as guidelines are:
+
+* Creating large files are difficult to create and receive for the Data Source, Data Submitter and the Data Receiver respectively. In order to help in managing performance of implementations we recommend a size of 10,000 records for each ndjson file. This may lead to a total file size between 1MB to 10MB depending on the data. Files of size 10MB should be easily processable by most technologies that are available currently. This is just a guidance and there are no specific limitations that is specified by this IG. In other words vendors may choose create NDJSON files for every 1000 records or 1000000 (a million) records also.
 
 
 ##### Data Submitter Requirements

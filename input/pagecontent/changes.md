@@ -2,9 +2,18 @@
 
 The following is a list of all the changes based on versions.
 
+#### Changes made from 0.4.1 to 1.0.0
+
+1. Added cardinality constraints for Healthcare information in the Manifest file.
+2. Enhanced Race and Ethnicity examples to included Detailed race and ethnicity codes.
+3. Removed text not allowed constraint from CodeableConcepts.
+4. Added prenatalReferralOnly Indicator to Manifest file.
+5. Added guidance in mapping tables for Prenatal data.
+6. Added guidance in mapping tables for Live Birth Weight data.
+
 #### Changes made from 0.4.0 to 0.4.1
 
-1. Changed grandId to grantNumber in Manifest file.
+1. Changed grantId to grantNumber in Manifest file.
 2. Added Health Center Contact Person Name, Health Center Address and Contact Person's Phone in Manifest.  
 3. Added support for bearer token as part of the protocol for each resource link.
 4. Added support for funding streams as part of the Reporting Parameters profile. 

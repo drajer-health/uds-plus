@@ -111,7 +111,7 @@
         </element>
         <element id="Parameters.parameter:hcInformation.part">
             <path value="Parameters.parameter.part"/>
-            <min value="0"/>
+            <min value="7"/>
             <max value="*"/>
             <slicing>
                 <discriminator>
@@ -330,6 +330,29 @@
             <max value="1"/>
             <type>
            	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcPrenatalCareByReferralOnly">
+            <path value="Parameters.parameter.part"/>
+            <sliceName value="hcPrenatalCareByReferralOnly"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcPrenatalCareByReferralOnly.name">
+            <path value="Parameters.parameter.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="hcPrenatalCareByReferralOnly"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:hcInformation.part:hcPrenatalCareByReferralOnly.value[x]">
+            <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
             </type>
             <mustSupport value="true"/>
         </element>
