@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-import-manifest"/>
+    <url value="http://hrsa.gov/fhir/udsplus/StructureDefinition/uds-plus-import-manifest"/>
     <version value="1.0.0"/>
     <name value="UDSPlusImportManifest"/>
     <title value="UDS Plus Import Manifest"/>

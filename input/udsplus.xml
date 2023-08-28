@@ -8,7 +8,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/> 
   </extension>
-  <url value="http://hl7.org/fhir/us/uds-plus/ImplementationGuide/udsplus"/>
+  <url value="http://hrsa.gov/fhir/udsplus/ImplementationGuide/udsplus"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.3.0"/>
   <name value="UdsPlusFhirIg"/>
@@ -32,7 +32,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="fhir.us.udsplus"/>
+  <packageId value="hrsa.fhir.udsplus"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
@@ -56,11 +56,12 @@
     <version value="2.0.0"/>
   </dependsOn>
   
+  <!-- 
     <dependsOn id="deqm">
     <uri value="http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"/>
     <packageId value="hl7.fhir.us.davinci-deqm"/>
     <version value="3.0.0"/>
-  </dependsOn>
+  </dependsOn> -->
 
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's

@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-coverage"/>
+    <url value="http://hrsa.gov/fhir/udsplus/StructureDefinition/uds-plus-coverage"/>
     <version value="1.0.0"/>
     <name value="UDSPlusCoverage"/>
     <title value="UDS Plus Coverage"/>
@@ -27,7 +27,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Coverage"/>
-    <baseDefinition value="http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coverage"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Coverage">

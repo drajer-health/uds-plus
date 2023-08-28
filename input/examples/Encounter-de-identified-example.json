@@ -14,7 +14,7 @@
     ],
     "lastUpdated": "2022-05-26T11:56:57.250-04:00",
     "profile": [
-      "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-encounter"
+      "http://hrsa.gov/fhir/udsplus/StructureDefinition/uds-plus-encounter"
     ]
   },
   "status": "finished",

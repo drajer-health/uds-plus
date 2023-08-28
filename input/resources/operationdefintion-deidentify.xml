@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OperationDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
   <id value="udsplus-de-identify"/>
-  <url value="http://hl7.org/fhir/us/uds-plus/OperationDefinition/udsplus-de-identify"/>
+  <url value="http://hrsa.gov/fhir/udsplus/OperationDefinition/udsplus-de-identify"/>
   <name value="UdsPlusDeIdentify"/>
   <title value="Generate De-Identified data"/>
   <status value="draft"/>

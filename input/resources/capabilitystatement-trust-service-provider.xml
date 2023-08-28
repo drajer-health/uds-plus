@@ -48,7 +48,7 @@
     </div>
   </text>
   
-  <url value="http://hl7.org/fhir/us/uds-plus/CapabilityStatement/uds-plus-trust-service-provider"/>
+  <url value="http://hrsa.gov/fhir/udsplus/CapabilityStatement/uds-plus-trust-service-provider"/>
   <name value="UdsPlusTrustServiceProvider"/>
   <title value="Uds Plus Trust Service Provider CapabilityStatement"/>
   <status value="draft"/>
@@ -72,7 +72,7 @@
     </security>
     <operation>
        <name value="deidentify"/> 
-       <definition value="http://hl7.org/fhir/us/uds-plus/OperationDefinition/udsplus-de-identify"/>
+       <definition value="http://hrsa.gov/fhir/udsplus/OperationDefinition/udsplus-de-identify"/>
     </operation>
   </rest>
 </CapabilityStatement>

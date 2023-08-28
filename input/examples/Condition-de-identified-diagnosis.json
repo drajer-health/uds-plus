@@ -13,7 +13,7 @@
       }
     ],
     "profile": [
-      "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-diagnosis"
+      "http://hrsa.gov/fhir/udsplus/StructureDefinition/uds-plus-diagnosis"
     ]
   },
   "extension": [

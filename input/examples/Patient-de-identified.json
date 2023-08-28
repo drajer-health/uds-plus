@@ -13,7 +13,7 @@
       }
     ],
     "profile": [
-      "http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"
+      "http://hrsa.gov/fhir/udsplus/StructureDefinition/de-identified-uds-plus-patient"
     ]
   },
   "extension": [
@@ -56,7 +56,7 @@
       "valueCode": "F"
     },
     {
-      "url": "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-age-extension",
+      "url": "http://hrsa.gov/fhir/udsplus/StructureDefinition/uds-plus-age-extension",
       "valueQuantity": {
       	"value" : 36,
     	"unit" : "yr",

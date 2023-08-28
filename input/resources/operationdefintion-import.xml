@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OperationDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
   <id value="import"/>
-  <url value="http://hl7.org/fhir/us/uds-plus/OperationDefinition/import"/>
+  <url value="http://hrsa.gov/fhir/udsplus/OperationDefinition/import"/>
   <name value="UdsPlusImport"/>
   <title value="UDS Plus Import"/>
   <status value="active"/>
@@ -16,7 +16,7 @@
   </contact>
   <description value="Notification from a Health Center about the availability of the data to HRSA using Bulk Import mechanism."/>
   <code value="notify"/>
-  <base value="http://hl7.org/fhir/us/uds-plus/OperationDefinition/import"/>
+  <base value="http://hrsa.gov/fhir/udsplus/OperationDefinition/import"/>
   <!--  <resource value="Group"/> -->
   <system value="true"/>
   <type value="false"/>

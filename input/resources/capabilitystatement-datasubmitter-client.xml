@@ -114,7 +114,7 @@
       
       <ul>
         <li>
-          <a href="http://hl7.org/fhir/us/uds-plus/OperationDefinition-import.html">Bulk Data Import ([BaseURL]/$import)</a>
+          <a href="http://hrsa.gov/fhir/udsplus/OperationDefinition-import.html">Bulk Data Import ([BaseURL]/$import)</a>
         </li>
       </ul>
       
@@ -199,7 +199,7 @@
     </div>
   </text>
   
-  <url value="http://hl7.org/fhir/us/uds-plus/CapabilityStatement/uds-plus-data-submitter-client"/>
+  <url value="http://hrsa.gov/fhir/udsplus/CapabilityStatement/uds-plus-data-submitter-client"/>
   <name value="UdsPlusDataSubmitter"/>
   <title value="Uds Plus Data Submitter CapabilityStatement"/>
   <status value="draft"/>
@@ -208,7 +208,7 @@
   <contact>
     <telecom>
       <system value="other"/>
-      <value value="https://www.cdc.gov/csels/phio/making-ehr-data-more-available.html"/>
+      <value value="https://www.hrsa.gov/about/organization/bureaus/bphc/index.html"/>
     </telecom>
   </contact>
   <description value="This is a CapabilityStatement that defines the expected capabilities of the Data Submitter actor."/>
@@ -227,7 +227,7 @@
     </operation>
     <operation>
        <name value="import"/> 
-       <definition value="http://hl7.org/fhir/us/uds-plus/OperationDefinition/import"/>
+       <definition value="http://hrsa.gov/fhir/udsplus/OperationDefinition/import"/>
     </operation>
   </rest>
 </CapabilityStatement>

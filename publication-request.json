@@ -1,0 +1,15 @@
+{
+  "package-id" : "hrsa.fhir.udsplus",
+  "version" : "0.1.0",
+  "path" : "http://hrsa.gov/fhir/udsplus/STU1",
+  "milestone" : "false",
+  "status" : "trial-use",
+  "sequence" : "STU1 Release 1",
+  "desc" : "This release is the first release of the MedMorph Reference Architecture which provides the framework and an architecture to use FHIR to support publichealth reporting and research data submission use cases.",
+  "changes" : "changes.html",
+  "first" : "true",
+  "title" : "HRSA UDS Plus Implementation Guide",
+  "ci-build" : "http://hrsa.gov/fhir",
+  "category" : "Financial",
+  "introduction" : "The implementation guide is used to provide guidance to Health Centers on using FHIR to report UDS+ line level de-identified patient information."
+}

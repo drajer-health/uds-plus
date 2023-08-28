@@ -49,7 +49,7 @@
     </div>
   </text>
   
-  <url value="http://hl7.org/fhir/us/uds-plus/CapabilityStatement/uds-plus-data-receiver-server"/>
+  <url value="http://hrsa.gov/fhir/udsplus/CapabilityStatement/uds-plus-data-receiver-server"/>
   <name value="UdsPlusDataReceiverServer"/>
   <title value="Uds Plus Data Receiver CapabilityStatement"/>
   <status value="draft"/>
@@ -74,7 +74,7 @@
     </security>
     <operation>
        <name value="import"/> 
-       <definition value="http://hl7.org/fhir/us/uds-plus/OperationDefinition/import"/>
+       <definition value="http://hrsa.gov/fhir/udsplus/OperationDefinition/import"/>
     </operation>
   </rest>
 </CapabilityStatement>

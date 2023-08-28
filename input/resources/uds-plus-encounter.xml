@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-encounter"/>
+    <url value="http://hrsa.gov/fhir/udsplus/StructureDefinition/uds-plus-encounter"/>
     <version value="1.0.0"/>
     <name value="UDSPlusEncounter"/>
     <title value="De-Identified UDS Plus Encounter"/>
@@ -43,7 +43,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-age-extension"/>
+                <profile value="http://hrsa.gov/fhir/udsplus/StructureDefinition/uds-plus-age-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -82,7 +82,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+                <targetProfile value="http://hrsa.gov/fhir/udsplus/StructureDefinition/de-identified-uds-plus-patient"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -150,7 +150,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-diagnosis"/>
+                <targetProfile value="http://hrsa.gov/fhir/udsplus/StructureDefinition/uds-plus-diagnosis"/>
             </type>
             <mustSupport value="true"/>
         </element>

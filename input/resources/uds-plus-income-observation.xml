@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-income-observation"/>
+    <url value="http://hrsa.gov/fhir/udsplus/StructureDefinition/uds-plus-income-observation"/>
     <version value="1.0.0"/>
     <name value="UDSPlusIncome"/>
     <title value="De-Identified UDS Plus Income"/>
@@ -60,7 +60,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+                <targetProfile value="http://hrsa.gov/fhir/udsplus/StructureDefinition/de-identified-uds-plus-patient"/>
             </type>
             <mustSupport value="true"/>
         </element>
