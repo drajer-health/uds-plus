@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "udsplus" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
-  <id value="uds-plus"/>
+  <id value="fhir.us.uds-plus"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/> 
   </extension> 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/> 
   </extension>
-  <url value="http://hl7.org/fhir/us/uds-plus/ImplementationGuide/uds-plus"/>
+  <url value="http://hl7.org/fhir/us/uds-plus/ImplementationGuide/fhir.us.uds-plus"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="1.0.0"/>
   <name value="UdsPlusFhirIg"/>
@@ -92,6 +92,30 @@
       </reference>
       <name value="US Core Practitioner Example"/>
       <description value="An Example of a conformant US Core Practitioner resource with identifiable information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Location/hospital"/>
+      </reference>
+      <name value="US Core Location Example"/>
+      <description value="An Example of a conformant US Core Location resource with identifiable information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Organization/holy-healthcare"/>
+      </reference>
+      <name value="US Core Healthcare Organization Example"/>
+      <description value="An Example of a conformant US Core Healthcare Organization resource with identifiable information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
+        <reference value="Parameters/reporting-parameters-example"/>
+      </reference>
+      <name value="UDS Plus Reporting Parameters Example"/>
+      <description value="An Example of a conformant UDS Plus Reporting Parameters resource with de-identifeid information."/>
       <exampleBoolean value="true"/>
    </resource>
    <resource>

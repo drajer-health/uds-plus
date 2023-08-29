@@ -62,6 +62,15 @@
             <fixedString value="patientReference"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Parameters.parameter:patientReference.value">
+            <path value="Parameters.parameter.valueReference"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="Reference"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:combinedFundingStreams">
             <path value="Parameters.parameter"/>
             <sliceName value="combinedFundingStreams"/>
@@ -69,14 +78,14 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:patientReference.name">
+        <element id="Parameters.parameter:combinedFundingStreams.name">
             <path value="Parameters.parameter.name"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="combinedFundingStreams"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:patientReference.value[x]">
+        <element id="Parameters.parameter:combinedFundingStreams.value[x]">
             <path value="Parameters.parameter.value[x]"/>
             <min value="1"/>
             <max value="1"/>

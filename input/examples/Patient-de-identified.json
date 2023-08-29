@@ -68,7 +68,7 @@
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
     },
     {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "url": "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-birthsex-extension",
       "valueCode": "F"
     },
     {
@@ -81,7 +81,7 @@
  	 }
     },
     {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity",
+      "url": "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-gender-identity-extension",
       "valueCodeableConcept": {
         "coding": [
           {

@@ -5,11 +5,10 @@ The following is a list of all the changes based on versions.
 #### Changes made from 0.4.1 to 1.0.0
 
 1. Added cardinality constraints for Healthcare information in the Manifest file.
-2. Enhanced Race and Ethnicity examples to included Detailed race and ethnicity codes.
-3. Removed text not allowed constraint from CodeableConcepts.
-4. Added prenatalReferralOnly Indicator to Manifest file.
-5. Added guidance in mapping tables for Prenatal data.
-6. Added guidance in mapping tables for Live Birth Weight data.
+2. Enhanced Race, Ethnicity, Birth Sex, Sexual Orientation, Gender Identity constraints for inferno based testing and updated examples. 
+3. Added prenatalReferralOnly Indicator to Manifest file.
+4. Added guidance in mapping tables for Prenatal data and Live Birth Weight data.
+
 
 #### Changes made from 0.4.0 to 0.4.1
 

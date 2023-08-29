@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="udsplus-insurance-codes"/>
-  <url value="http://hl7.org/fhir/us/uds-plus/CodeSystem/udsplus-insurance-codes"/>
+  <id value="uds-plus-insurance-codes"/>
+  <url value="http://hl7.org/fhir/us/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
   <version value="1.0.0"/>
   <name value="UDSPlusInsuranceCodes"/>
   <title value="UDS Plus Insurance Codes"/>
@@ -17,7 +17,7 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-insurance"/>
+  <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/uds-plus-insurance-codes"/>
   <content value="complete"/>
   <count value="9"/>
   <concept>

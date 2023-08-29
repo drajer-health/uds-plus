@@ -83,7 +83,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation"/>
+                <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/uds-plus-sexual-orientation-codes"/>
             </binding>
         </element>
     </differential>

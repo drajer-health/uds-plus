@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="uds-plus-insurance-codes"/> 
+  <id value="uds-plus-birthsex-codes"/> 
   <meta>
     <versionId value="1"/>
     <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
@@ -8,13 +8,13 @@
     <profile
              value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <url value="http://hl7.org/fhir/us/uds-plus/ValueSet/uds-plus-insurance-codes"/>
+  <url value="http://hl7.org/fhir/us/uds-plus/ValueSet/uds-plus-birthsex-codes"/>
   <version value="1.0.0"/>
-  <name value="UdsPlusInsuranceCodes"/>
-  <title value="Uds Plus Insurance Codes"/>
-  <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2020-09-06"/>
+  <name value="UdsPlusBirthSexCodes"/>
+  <title value="Uds Plus Birth Sex Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-08-25"/>
   <publisher value="HL7 PHWG"/>
 	<contact>
 		<telecom>
@@ -22,7 +22,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-  <description value="The Uds Plus Insurance Codes is a &#39;starter set&#39; of codes for identifying the source of the insurance for Patients."/>
+  <description value="The Uds Plus Birth Sex Codes is a set of codes for identifying the birth sex of Patients."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -32,7 +32,15 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+      <concept>
+      	<code value="F"/>
+      	<display value="Female"/>
+      </concept>
+      <concept>
+      	<code value="M"/>
+      	<display value="Male"/>
+      </concept>
     </include>
   </compose>
 </ValueSet>

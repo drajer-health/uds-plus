@@ -30,7 +30,7 @@
     "type": {
         "coding": [
             {
-                "system": "http://hl7.org/fhir/us/uds-plus/CodeSystem/udsplus-insurance-codes",
+                "system": "http://hl7.org/fhir/us/uds-plus/CodeSystem/uds-plus-insurance-codes",
                 "code": "private-insurance",
                 "display": "Private Insurance"
             }

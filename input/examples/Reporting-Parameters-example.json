@@ -9,7 +9,9 @@
     "parameter": [
         {
             "name": "patientReference",
-            "valueCode": "Patient/101"
+            "valueReference": {
+                "reference": "Patient/de-identified-example"
+                }
         },
         {
             "name": "combinedFundingStreams",

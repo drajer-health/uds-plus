@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="uds-plus-race-extension"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-07-12T02:03:21.911+00:00"/>
+        <source value="#IqyJCmUTqk2pvKFb"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-race-extension"/>
+    <version value="0.1.0"/>
+    <name value="UDSPlusRaceExtension"/>
+    <title value="UDS Plus Race Extension"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-09-01"/>
+    <publisher value="HL7 International - Public Health Work Group"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="Indicates the race of the patient."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Patient"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Indicates the race of the Patient."/>
+            <definition value="Indicates the race of the Patient"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.extension:detailed">
+            <path value="Extension.extension"/>
+            <sliceName value="detailed"/>
+            <min value="1"/>
+      		<max value="*"/>
+        </element>
+    </differential>
+</StructureDefinition>
