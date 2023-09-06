@@ -8,6 +8,10 @@ The following is a list of all the changes based on versions.
 2. Enhanced Race, Ethnicity, Birth Sex, Sexual Orientation, Gender Identity constraints for inferno based testing and updated examples. 
 3. Added prenatalReferralOnly Indicator to Manifest file.
 4. Added guidance in mapping tables for Prenatal data and Live Birth Weight data.
+5. Removed dependencies on QI core and enabled QI core extensions within UDS+ IG on Procedure.
+6. Added guidance for school based service location indication on Encounter page.
+7. Removed RelatedPerson demographics information as it is not needed for De-Identified Coverage.
+8. Fixed errors related to the Build to enable AdverseEvent, AllergyIntolerance and Observation profiles for Diagnostic Studies. 
 
 
 #### Changes made from 0.4.0 to 0.4.1
