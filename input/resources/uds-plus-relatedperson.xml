@@ -90,5 +90,54 @@
             <max value="0"/>
             <mustSupport value="false"/>  
         </element>
+        <element id="RelatedPerson.name">
+            <path value="RelatedPerson.name"/>
+            <short value="Cannot include any name in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="RelatedPerson.telecom">
+            <path value="RelatedPerson.telecom"/>
+            <short value="Cannot include any telecom information in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="RelatedPerson.gender">
+            <path value="RelatedPerson.gender"/>
+            <short value="Cannot include any gender information in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="RelatedPerson.birthDate">
+            <path value="RelatedPerson.birthDate"/>
+            <short value="Cannot include any date of birth information in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="RelatedPerson.address">
+            <path value="RelatedPerson.address"/>
+            <short value="Cannot include any address information in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="RelatedPerson.photo">
+            <path value="RelatedPerson.photo"/>
+            <short value="Cannot include any photo information in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="RelatedPerson.communication">
+            <path value="RelatedPerson.communication"/>
+            <short value="Cannot include any communication information in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
     </differential>
 </StructureDefinition>

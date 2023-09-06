@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="uds-plus-lab-observation"/>
+    <id value="uds-plus-clinical-result-observation"/>
     <meta>
         <versionId value="12"/>
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-lab-observation"/>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-clinical-result-observation"/>
     <version value="1.0.0"/>
-    <name value="UDSPlusLabObservation"/>
-    <title value="De-Identified UDS Plus Lab Observation"/>
+    <name value="UDSPlusClinicalResultObservation"/>
+    <title value="De-Identified UDS Plus Clinical Result Observation"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="The UDS+ profile is based on the Observation resource and establishes the core elements, extensions, vocabularies and value sets for representing lab observations for UDS+ program."/>
+    <description value="The UDS+ profile is based on the Observation resource and establishes the core elements, extensions, vocabularies and value sets for representing clinical result observations for UDS+ program."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -32,8 +32,8 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
-            <short value="De-Identified UDS Plus Lab Observation"/>
-            <definition value="The UDS+ profile is based on the Observation resource and establishes the core elements, extensions, vocabularies and value sets for representing Lab Observations for UDS+ program."/>
+            <short value="De-Identified UDS Plus Clinical Result Observation"/>
+            <definition value="The UDS+ profile is based on the Observation resource and establishes the core elements, extensions, vocabularies and value sets for representing clinical result Observations for UDS+ program."/>
         </element>
         <element id="Observation.id">
             <path value="Observation.id"/>
@@ -66,6 +66,11 @@
             <min value="1"/>
             <max value="*"/>
             <mustSupport value="true"/>  
+            <binding>
+                <strength value="extensible"/>
+                <description value="The set of codes indicating the category of the observation"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category"/>
+            </binding>            
         </element>       
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -75,7 +80,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="The set of codes indicating the Observations"/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
             </binding> 
         </element>
         <element id="Observation.subject">
@@ -154,7 +159,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="The set of codes indicating the Observations"/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
             </binding> 
         </element>
         <element id="Observation.component.value[x]">

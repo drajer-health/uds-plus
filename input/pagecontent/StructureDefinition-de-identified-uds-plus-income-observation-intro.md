@@ -17,13 +17,6 @@ Resource references cannot contain text element as it may contain PHI/PII. The t
 
 * subject
 
-
-**Codeable Concept**
-
-Codeable Concept text elements should be removed as part of the de-identification as they may contain PHI/PII. The list of elements to remove text are 
-
-* code
-
 **Representing Income Ranges**
 
 Income ranges are represented using the Observation.valueRange element. The following values can be used to represent the Income ranges: 

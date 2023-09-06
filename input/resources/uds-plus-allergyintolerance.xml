@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="uds-plus-allergyintolerance"/>
+    <meta>
+        <versionId value="12"/>
+        <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
+        <source value="#3LDMUQYYwafwTzqK"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-allergyintolerance"/>
+    <version value="1.0.0"/>
+    <name value="UDSPlusAllergyIntolerance"/>
+    <title value="De-Identified UDS Plus AllergyIntolerance"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="The UDS+ profile is based on the AllergyIntolerance resource and establishes the core elements, extensions, vocabularies and value sets for representing Allergies and Intolerances for UDS+ program."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="AllergyIntolerance"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="AllergyIntolerance">
+            <path value="AllergyIntolerance"/>
+            <short value="De-Identified UDS Plus AllergyIntolerance"/>
+            <definition value="The UDS+ profile is based on the AllergyIntolerance resource and establishes the core elements, extensions, vocabularies and value sets for representing AllergyIntolerance for UDS+ program."/>
+        </element>
+        <element id="AllergyIntolerance.id">
+            <path value="AllergyIntolerance.id"/>
+            <short value="The de-identified AllergyIntolerance identifier created by the health center to send data to UDS+ Data Receiver"/>
+            <definition value="De-dentified AllergyIntolerance resource identifier."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="AllergyIntolerance.text">
+            <path value="AllergyIntolerance.text"/>
+            <short value="Cannot include any text in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="AllergyIntolerance.contained">
+            <path value="AllergyIntolerance.contained"/>
+            <short value="Cannot include any contained resources in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="AllergyIntolerance.clinicalStatus">
+            <path value="AllergyIntolerance.clinicalStatus"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>
+        <element id="AllergyIntolerance.verificationStatus">
+            <path value="AllergyIntolerance.verificationStatus"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>
+        <element id="AllergyIntolerance.type">
+            <path value="AllergyIntolerance.type"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>
+        <element id="AllergyIntolerance.category">
+            <path value="AllergyIntolerance.category"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>  
+        </element>
+        <element id="AllergyIntolerance.criticality">
+            <path value="AllergyIntolerance.criticality"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>  
+        </element>
+        <element id="AllergyIntolerance.code">
+            <path value="AllergyIntolerance.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/> 
+            <binding>
+                <strength value="extensible"/>
+                <description value="The set of codes indicating the allergy or intolerance"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8"/>
+            </binding> 
+        </element>
+        <element id="AllergyIntolerance.patient">
+            <path value="AllergyIntolerance.patient"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="AllergyIntolerance.patient.display">
+            <path value="AllergyIntolerance.patient.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="AllergyIntolerance.onset[x]">
+            <path value="AllergyIntolerance.onset[x]"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="AllergyIntolerance.recordedDate">
+            <path value="AllergyIntolerance.recordedDate"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="AllergyIntolerance.reaction">
+            <path value="AllergyIntolerance.reaction"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="AllergyIntolerance.reaction.manifestation">
+            <path value="AllergyIntolerance.reaction.manifestation"/>
+            <min value="1"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="AllergyIntolerance.reaction.severity">
+            <path value="AllergyIntolerance.reaction.severity"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

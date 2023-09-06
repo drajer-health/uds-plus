@@ -27,9 +27,3 @@ The Data Submitter has to truncate the following dates to only have a precision 
 
 * authoredOn 
 
-**Codeable Concept**
-
-Codeable Concept text elements should be removed as part of the de-identification as they may contain PHI/PII. The list of elements to remove text are 
-
-* code
-* bodySite

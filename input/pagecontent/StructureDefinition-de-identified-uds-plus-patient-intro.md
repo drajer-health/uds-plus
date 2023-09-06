@@ -15,7 +15,7 @@ According to the HHS guidance the following data elements have to be removed or 
 	* First 3 digits of Zipcodes can be included if the population of all zipcodes starting with the same 3 digits are > 20000 people, in all other cases, the zipcodes have to be masked to 00000.
 	 
 * All dates should not have a precision of more than the year. This means month and day cannot be included.
-* Demographics including birthdate, deceased date
+* Demographics including birthdate, deceased indicator
 * Patient contact details such as telephone numbers, fax, email, URLs, 
 * Patient personal identifiers such as SSN, Drivers License, 
 * Business identifiers such as MRNs, certificate numbers, Account numbers
@@ -30,13 +30,6 @@ The Data Submitter has to compute the age based as of December 31st of the previ
 **Id Generation** 
 
 The original patient resource id should not be included in the De-identified patient instance. Instead a new id should be created and provided as part of the FHIR resource. This Data Submitter should be capable of using the generated id to relink the data to the original patient. All resource references to the Patient submitted as part of the UDS+ report should refer to newly generated de-identified id.
-
-**Codeable Concept**
-
-Codeable Concept text elements should be removed as part of the de-identification as they may contain PHI/PII. This is applicable to the following elements
-
-* Language
-* Gender Identity
 
 **Usage of Data Absent Reason Extension**
 

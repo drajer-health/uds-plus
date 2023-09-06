@@ -55,6 +55,17 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
+        <element id="Procedure.extension:assertedDate">
+            <path value="Procedure.extension"/>
+            <sliceName value="recordedDate"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-recordedDate-extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Procedure.status">
             <path value="Procedure.status"/>
             <min value="1"/>

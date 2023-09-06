@@ -15,6 +15,10 @@ In FHIR Resources, text elements and reference.display elements which provide hu
 
 The Data Submitter has to compute the age using the visit date of the encounter to be included in the UDS+ report.
 
+**Capturing Location Information**
+
+The Encounter.location.location points to a Location Resource.  The Location.type element can be used to indicate the type of location where the service was provided. The existing Location.type value set can be used to indicate that the service was provided in a SCHOOL based setting. This will be used to compute Table 4, LINE 24 of the UDS Report. For Table 4, Line 26 use the public-housing code defined in UDS+ value set that is referenced in the UDS+ Location profile.
+
 **Ids and References**
 
 The original Encounter resource id should not be included in the De-identified Encounter instance. Instead a new id should be created and provided as part of the FHIR resource. This Data Submitter should be capable of using the generated id to relink the data to the original Encounter. All resource references to the Encounter submitted as part of the UDS+ report should refer to newly generated id.
@@ -31,15 +35,6 @@ The Data Submitter has to truncate the following dates to only have a precision 
 
 * period and its sub elements.
 * participant.period
-
-**Codeable Concept**
-
-Codeable Concept text elements should be removed as part of the de-identification as they may contain PHI/PII. The list of elements to remove text are 
-
-* type
-* participant.type
-* reasonCode
-* hospitalization.dischargeDisposition
 
 **Examples**
  
