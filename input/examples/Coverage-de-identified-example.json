@@ -3,12 +3,12 @@
     "id": "de-identified-example",
     "meta": {
         "profile": [
-            "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-coverage"
+            "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-coverage"
         ]
     }, 
     "extension": [
         {
-            "url": "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-capitated-member-months-extension",
+            "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-capitated-member-months-extension",
             "valueQuantity": {
                 "value": 36,
                 "unit": "yr",
@@ -17,7 +17,7 @@
             }
         },
         {
-            "url": "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension",
+            "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension",
             "valueQuantity": {
                 "value": 36,
                 "unit": "yr",
@@ -30,7 +30,7 @@
     "type": {
         "coding": [
             {
-                "system": "http://hl7.org/fhir/us/uds-plus/CodeSystem/uds-plus-insurance-codes",
+                "system": "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
                 "code": "private-insurance",
                 "display": "Private Insurance"
             }

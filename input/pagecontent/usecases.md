@@ -67,7 +67,7 @@ The description of each step in the above interaction is outlined below:
 
 * Step 2: The Data Submitter polls the Data Source to check if the extraction has completed. 
 
-**Implementation Note** This step is performed using the [Bulk Data Status Request]({{site.data.fhir.ver.bulkig}}/export/index.html#bulk-data-status-request).
+**Implementation Note** This step is performed using the [Bulk Data Status Request]({{site.data.fhir.ver.bulkig}}/export.html#bulk-data-status-request).
 
 * Step 3: The Data Source provides the extracted data in an identified form by storing them in the Bulk Data Storage.
 
@@ -75,11 +75,11 @@ The description of each step in the above interaction is outlined below:
 
 * Step 4: The Data Submitter checks completion status and gets notified of the data extracted. 
 
-**Implementation Note** This step is performed using the [Bulk Data Status Request]({{site.data.fhir.ver.bulkig}}/export/index.html#bulk-data-status-request).
+**Implementation Note** This step is performed using the [Bulk Data Status Request]({{site.data.fhir.ver.bulkig}}/export.html#bulk-data-status-request).
 
 * Step 5: The Data Submitter accesses the data from the Bulk Data Storage.
 
-**Implementation Note** This step is happening within the environment (behind the firewall) of the Health Center and the data is downloaded using the [Bulk Data File Request]({{site.data.fhir.ver.bulkig}}/export/index.html#file-request)
+**Implementation Note** This step is happening within the environment (behind the firewall) of the Health Center and the data is downloaded using the [Bulk Data File Request]({{site.data.fhir.ver.bulkig}}/export.html#file-request)
 
 * Step 6: The Data Submitter submits the data for de-identification to the Trust Service Provider.
 

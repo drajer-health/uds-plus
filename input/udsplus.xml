@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "udsplus" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
-  <id value="fhir.us.uds-plus"/>
+  <id value="fhir.hrsa.uds-plus"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/> 
   </extension> 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/> 
   </extension>
-  <url value="http://hl7.org/fhir/us/uds-plus/ImplementationGuide/fhir.us.uds-plus"/>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="UdsPlusFhirIg"/>
-  <title value="HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG"/>
+  <title value="HRSA Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HRSA UDS PLUS Project"/>
@@ -32,7 +32,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="fhir.us.uds-plus"/>
+  <packageId value="fhir.hrsa.uds-plus"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
@@ -41,7 +41,7 @@
   <dependsOn id="uscoreR4">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="6.0.0"/>
+    <version value="6.1.0"/>
   </dependsOn>
   
   <dependsOn id="bulkig">
@@ -56,17 +56,17 @@
     <version value="2.1.0"/>
   </dependsOn>
   
-  <!-- <dependsOn id="usnlmvsac">
+  <dependsOn id="usnlmvsac">
     <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac" />
     <packageId value="us.nlm.vsac" />
-    <version value="0.11.0" />
+    <version value="0.15.0" />
   </dependsOn>
   
   <dependsOn id="uscdcphinvads">
     <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads" />
     <packageId value="us.cdc.phinvads" />
-    <version value="0.10.0" />
-  </dependsOn> -->
+    <version value="0.12.0" />
+  </dependsOn>
   
  <!--  <dependsOn id="qiCore">
     <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
@@ -134,6 +134,30 @@
       <description value="An Example of a conformant UDS Plus Related Person resource with de-identified information."/>
       <exampleBoolean value="true"/>
    </resource>  
+    <resource>
+      <reference>
+        <reference value="AdverseEvent/de-identified-example"/>
+      </reference>
+      <name value="UDS Plus AdverseEvent Example"/>
+      <description value="An Example of a conformant UDS Plus AdverseEvent resource with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource> 
+   <resource>
+      <reference>
+        <reference value="Observation/clinical-result-de-identified-example"/>
+      </reference>
+      <name value="UDS Plus ClinicalResult Example"/>
+      <description value="An Example of a conformant UDS Plus ClincialResult resource profile with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/de-identified-example"/>
+      </reference>
+      <name value="UDS Plus AllergyIntolerance Example"/>
+      <description value="An Example of a conformant UDS Plus AllergyIntolerance resource with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource> 
    <resource>
       <reference>
         <reference value="Coverage/de-identified-example"/>
@@ -364,13 +388,81 @@
         </extension>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
+      </page>
+       <page>
+      	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/> 
+        </extension>
+        <nameUrl value="credits.html"/>
+        <title value="Credits"/>
+        <generation value="markdown"/>
       </page>
     </page>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="AdverseEvent/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="AllergyIntolerance/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Observation/clinical-result-de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Condition/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Coverage/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Immunization/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Observation/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="MedicationRequest/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="MedicationStatement/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Patient/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Patient/de-identified-smallpop-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Procedure/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="RelatedPerson/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="ServiceRequest/de-identified-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Observation/de-identified-sexual-orientation-example"/>
+    </parameter>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
-      <value value="2019+"/>
+      <value value="2023+"/>
     </parameter>
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>

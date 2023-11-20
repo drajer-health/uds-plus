@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:21.911+00:00"/>
         <source value="#IqyJCmUTqk2pvKFb"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-location"/>
+    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-location"/>
     <version value="0.1.0"/>
     <name value="UDSPlusLocation"/>
     <title value="UDS Plus Location"/>
@@ -48,7 +48,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="The set of codes indicating the location of service"/>
-                <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/uds-plus-service-delivery-codes"/>
+                <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-service-delivery-codes"/>
             </binding>
         </element>
     </differential>

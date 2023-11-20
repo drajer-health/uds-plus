@@ -10,20 +10,6 @@
   },
   "identifier" : [
   {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction",
-      "valueCodeableConcept" : {
-        "coding" : [{
-          "system" : "https://www.usps.com/",
-          "code" : "MA"
-        }],
-        "text" : "Massachusetts"
-      }
-    }],
-    "system" : "http://www.acme.org/practitioners",
-    "value" : "25456"
-  },
-  {
     "system" : "http://hl7.org/fhir/sid/us-npi",
     "value" : "9941339100"
   }],

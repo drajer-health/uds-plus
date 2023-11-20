@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:21.911+00:00"/>
         <source value="#IqyJCmUTqk2pvKFb"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension"/>
+    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension"/>
     <version value="0.1.0"/>
     <name value="UDSPlusFeeForServiceMemberMonthsExtension"/>
     <title value="UDS Plus FeeForService Member Months Extension"/>
@@ -51,7 +51,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension"/>
+            <fixedUri value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

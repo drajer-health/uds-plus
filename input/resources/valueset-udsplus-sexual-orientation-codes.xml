@@ -8,7 +8,7 @@
     <profile
              value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <url value="http://hl7.org/fhir/us/uds-plus/ValueSet/uds-plus-sexual-orientation-codes"/>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-sexual-orientation-codes"/>
   <version value="1.0.0"/>
   <name value="UdsPlusSexualOrientationCodes"/>
   <title value="Uds Plus Sexual Orientation Codes"/>

@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-relatedperson"/>
+    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-relatedperson"/>
     <version value="1.0.0"/>
     <name value="DeIdentifiedUDSPlusRelatedPerson"/>
     <title value="De-Identified UDS Plus RelatedPerson"/>
@@ -65,7 +65,7 @@
             <path value="RelatedPerson.patient"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+                <targetProfile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
             </type>
             <mustSupport value="true"/>
         </element>

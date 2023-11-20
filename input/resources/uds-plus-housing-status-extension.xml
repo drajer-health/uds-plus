@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:21.911+00:00"/>
         <source value="#IqyJCmUTqk2pvKFb"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-housing-status-extension"/>
+    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-housing-status-extension"/>
     <version value="0.1.0"/>
     <name value="UDSPlusHousingStatusExtension"/>
     <title value="UDS Plus Housing Status Extension"/>
@@ -51,7 +51,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-housing-status-extension"/>
+            <fixedUri value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-housing-status-extension"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
@@ -62,7 +62,7 @@
             </type>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-housing-status"/>
+                <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-housing-status"/>
             </binding>
         </element>
     </differential>

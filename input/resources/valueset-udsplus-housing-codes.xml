@@ -8,7 +8,7 @@
     <profile
              value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <url value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-housing-status"/>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-housing-status"/>
   <version value="1.0.0"/>
   <name value="UdsPlusHousingStatusCodes"/>
   <title value="Uds Plus Housing Status Codes"/>
@@ -32,7 +32,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+      <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
     </include>
   </compose>
 </ValueSet>

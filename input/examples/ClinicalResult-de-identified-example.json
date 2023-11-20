@@ -1,9 +1,9 @@
 {
     "resourceType": "Observation",
-    "id": "de-identified-example",
+    "id": "clinical-result-de-identified-example",
     "meta": {
         "profile": [
-            "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-lab-observation"
+            "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-clinical-result-observation"
         ]
     },
     "status": "final",
@@ -12,8 +12,8 @@
             "coding": [
                 {
                     "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          			"code" : "laboratory",
-          			"display" : "Laboratory"
+          			"code" : "imaging",
+          			"display" : "Imaging"
                 }
             ]
         }
@@ -22,8 +22,8 @@
         "coding": [
             {
                 "system" : "http://loinc.org",
-		        "code" : "718-7",
-		        "display" : "Hemoglobin [Mass/volume] in Blood"
+		        "code" : "80940-0",
+		        "display" : "DXA Femur-L Z-score BMD"
             }
         ]
     },
@@ -41,18 +41,9 @@
         }
     ],
     "valueQuantity" : {
-    "value" : 17,
-    "unit" : "g/dL",
-    "system" : "http://unitsofmeasure.org"
-  	},
-    "bodySite": {
-        "coding": [
-            {
-                "system": "http://snomed.info/sct",
-                "code": "368208006",
-                "display": "Left upper arm structure"
-
-            }
-        ]
-    }
+    "value" : 0.05,
+    "unit" : "Z-Score",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{Z-Score}"
+  	}
 }

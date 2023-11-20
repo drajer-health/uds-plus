@@ -14,12 +14,12 @@
     ],
     "lastUpdated": "2022-05-26T11:56:57.250-04:00",
     "profile": [
-      "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-encounter"
+      "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-encounter"
     ]
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-age-extension",
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension",
       "valueQuantity": {
         "value": 36,
         "unit": "yr",

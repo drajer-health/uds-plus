@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-deidentify-operation-data-urls-parameter"/>
+    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentify-operation-data-urls-parameter"/>
     <version value="1.0.0"/>
     <name value="UDSPlusDeIdentifyDataUrlsParameter"/>
     <title value="UDS Plus DeIdentify Data Urls Parameter"/>

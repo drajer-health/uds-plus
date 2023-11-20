@@ -3,7 +3,7 @@
     "id": "de-identified-example",
     "meta": {
         "profile": [
-            "http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-relatedperson"
+            "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-relatedperson"
         ]
     },
     "patient": {

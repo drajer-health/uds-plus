@@ -3,9 +3,15 @@
     "id": "de-identified-example",
     "meta": {
         "profile": [
-            "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-procedure"
+            "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-procedure"
         ]
     },
+    "extension": [
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-recordedDate-extension",
+      "valueDateTime": "2005"
+    }
+  ],
     "status": "completed",
     "code": {
         "coding": [

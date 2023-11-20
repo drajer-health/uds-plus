@@ -7,7 +7,7 @@
         <lastUpdated value="2022-07-12T02:03:11.293+00:00"/>
         <source value="#3LDMUQYYwafwTzqK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
     <version value="1.0.0"/>
     <name value="DeIdentifiedUDSPlusPatient"/>
     <title value="De-Identified UDS Plus Patient"/>
@@ -62,7 +62,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-race-extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-race-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -73,7 +73,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-ethnicity-extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-ethnicity-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -84,7 +84,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-birthsex-extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-birthsex-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -96,7 +96,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-age-extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -108,7 +108,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-gender-identity-extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -120,7 +120,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/udsplus-agriculture-worker-status"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/udsplus-agriculture-worker-status"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -132,7 +132,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-housing-status-extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-housing-status-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -144,7 +144,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-veteran-status-extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-veteran-status-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>

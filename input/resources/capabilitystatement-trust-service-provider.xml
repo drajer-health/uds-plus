@@ -6,7 +6,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <h2>Data Source (e.g, EHR)</h2>
       <p>(Requirements Definition Capability Statement)</p>
-      <p>Canonical URL: http://hl7.org/fhir/us/uds-plus/CapabilityStatement/uds-plus-trust-service-provider</p>
+      <p>Canonical URL: http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-trust-service-provider</p>
       <p>Published by: <b>HL7 International - Public Health Work Group</b>
       </p>
       <p>This is a CapabilityStatement that defines the expected capabilities of the Trust Service Provider.  
@@ -48,7 +48,7 @@
     </div>
   </text>
   
-  <url value="http://hl7.org/fhir/us/uds-plus/CapabilityStatement/uds-plus-trust-service-provider"/>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-trust-service-provider"/>
   <name value="UdsPlusTrustServiceProvider"/>
   <title value="Uds Plus Trust Service Provider CapabilityStatement"/>
   <status value="draft"/>
@@ -72,7 +72,7 @@
     </security>
     <operation>
        <name value="deidentify"/> 
-       <definition value="http://hl7.org/fhir/us/uds-plus/OperationDefinition/udsplus-de-identify"/>
+       <definition value="http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/udsplus-de-identify"/>
     </operation>
   </rest>
 </CapabilityStatement>

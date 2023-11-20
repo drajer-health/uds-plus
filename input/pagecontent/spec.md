@@ -32,6 +32,7 @@ Actors and Systems asserting conformance to this implementation guide have to im
 * In situations where information on a particular data element is not present and the reason for absence is unknown, Systems SHALL NOT include the data elements in the resource instance returned from executing the API requests.
 * When accessing UDS+ data, Systems SHALL interpret missing data elements within resource instances returned from API requests as data not present.
 
+NOTE: There are data elements designated as MUST SUPPORT in the UDS+ profiles, but are not present in the mapping tables. These data elements have been designated as MUST SUPPORT to align with QI Core profiles which get used for Quality Measure Reporting. In cases where a Health Center does not have data elements tagged as MUST SUPPORT in their EHRs, they can omit sending these data elements as long as the  cardinality of the data element allows for the omission of the data element.  
 
 #### Profiles
 This specification makes significant use of [FHIR profiles]({{site.data.fhir.path}}profiling.html), search parameter definitions, and terminology artifacts to describe the content to be shared as part of UDS+ workflows. The implementation guide is based on [FHIR R4]({{site.data.fhir.path}}) and profiles are listed for each interaction.

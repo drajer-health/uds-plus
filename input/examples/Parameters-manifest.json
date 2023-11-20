@@ -13,7 +13,7 @@
       }
     ],
     "profile": [
-      "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-import-manifest"
+      "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-import-manifest"
     ]
   },
   "parameter" : [

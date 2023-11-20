@@ -3,7 +3,8 @@
   "id" : "hospital",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
+      "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-location"
     ]
   },
   "text" : {

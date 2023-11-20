@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="udsplus-service-delivery-codes"/>
-  <url value="http://hl7.org/fhir/us/uds-plus/CodeSystem/udsplus-service-delivery-codes"/>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes"/>
   <version value="1.0.0"/>
   <name value="UDSPlusServiceDeliveryCodes"/>
   <title value="UDS Plus Housing Service Delivery Codes"/>
@@ -17,7 +17,7 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/uds-plus-service-delivery-codes"/>
+ <!-- <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-service-delivery-codes"/> -->
   <content value="complete"/>
   <count value="1"/>
   <concept>

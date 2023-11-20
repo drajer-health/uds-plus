@@ -3,7 +3,7 @@
     "id": "reporting-parameters-example",
     "meta": {
         "profile": [
-            "http://hl7.org/fhir/us/uds-plus/StructureDefinition/uds-plus-patient-reporting-parameters"
+            "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-patient-reporting-parameters"
         ]
     },
     "parameter": [

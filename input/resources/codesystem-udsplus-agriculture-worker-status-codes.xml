@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="udsplus-agriculture-worker-status-codes"/>
-  <url value="http://hl7.org/fhir/us/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes"/>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes"/>
   <version value="1.0.0"/>
   <name value="UDSPlusAgricultureWorkerStatusCodes"/>
   <title value="UDS Plus Agriculter Worker Status Codes"/>
@@ -17,7 +17,7 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/us/uds-plus/ValueSet/udsplus-agriculture-worker-status"/>
+  <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-agriculture-worker-status"/>
   <content value="complete"/>
   <count value="2"/>
   <concept>

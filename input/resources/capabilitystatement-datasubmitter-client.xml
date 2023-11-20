@@ -6,7 +6,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <h2>Data Receiver</h2>
       <p>(Requirements Definition Capability Statement)</p>
-      <p>Canonical URL: http://hl7.org/fhir/us/uds-plus/CapabilityStatement/uds-plus-data-submitter-client</p>
+      <p>Canonical URL: http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-submitter-client</p>
       <p>Published by: <b>HL7 International - Public Health Work Group</b>
       </p>
       <p>This is a CapabilityStatement that defines the expected capabilities of the Data Submitter actor as a client.  
@@ -75,27 +75,6 @@
 			  <td>
               </td>
             </tr>
-            <tr>
-              <th>QI Core data APIs and Data elements</th>
-              <td>
-                <a title="Search for specific QI Core Resource instances." href="#QICore-search-type">SHALL</a>
-              </td>
-              <td>
-                <a title="Retrieve specific QI Core Resource instances." href="#QICore-read">SHALL</a>
-              </td>
-              <td>
-              </td>
-              <td>               
-              </td>
-              <td>
-              </td>
-              <td>
-              </td>
-              <td>
-              </td>
-			  <td>
-              </td>
-            </tr>
             
           </tbody>
         </table>
@@ -114,7 +93,7 @@
       
       <ul>
         <li>
-          <a href="http://hl7.org/fhir/us/uds-plus/OperationDefinition-import.html">Bulk Data Import ([BaseURL]/$import)</a>
+          <a href="http://fhir.org/guides/hrsa/uds-plus/OperationDefinition-import.html">Bulk Data Import ([BaseURL]/$import)</a>
         </li>
       </ul>
       
@@ -160,46 +139,11 @@
       <br/>
       <br/> 
       
-      <h3>
-        <a href="https://www.hl7.org/fhir/us/qicore/index.html">QI Core data elements</a>
-      </h3>
-      <p>Profiles: All QI Core profiles
-      </p>
-      <h4>Interactions</h4>
-      <div class="table-wrapper">
-        <table class="list">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>
-                <a name="QICore-search-type"> </a>
-                <span>search</span>
-              </th>
-              <td>
-                <p>Search for specific QI Core resource profile instances.</p>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a name="QICore-read"> </a>
-                <span>read</span>
-              </th>
-              <td>
-                <p>Retrieve QI Core resource profile instances</p>
-              </td>
-            </tr> 
-          </tbody>
-        </table>
-      </div>    
+    
     </div>
   </text>
   
-  <url value="http://hl7.org/fhir/us/uds-plus/CapabilityStatement/uds-plus-data-submitter-client"/>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-submitter-client"/>
   <name value="UdsPlusDataSubmitter"/>
   <title value="Uds Plus Data Submitter CapabilityStatement"/>
   <status value="draft"/>
@@ -227,7 +171,7 @@
     </operation>
     <operation>
        <name value="import"/> 
-       <definition value="http://hl7.org/fhir/us/uds-plus/OperationDefinition/import"/>
+       <definition value="http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/import"/>
     </operation>
   </rest>
 </CapabilityStatement>
