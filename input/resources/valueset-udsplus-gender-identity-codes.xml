@@ -32,7 +32,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <valueSet value="http://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.32"/>
+      <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.32"/>
     </include>
     <include>
       <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
