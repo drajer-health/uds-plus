@@ -31,8 +31,8 @@
     </coding>
   </jurisdiction>
   <compose>
-    <include>
-      <system value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.32"/>
+     <include>
+      <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.32"/>
     </include>
     <include>
       <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>

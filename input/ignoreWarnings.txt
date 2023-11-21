@@ -10,6 +10,8 @@ UCUM Codes that contain human readable annotations like {Z-Score} can be mislead
 
 # The Terminology Server does not have the CodeSystem loaded
 The definition for the Code System with URI 'http://www.ama-assn.org/go/cpt' doesnt provide any codes so the code cannot be validated
+The value set import https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.32 could not be found so cannot be checked
+Unable to find imported value set https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.32 (and Error from http://tx.fhir.org/r4: Unable to find value set "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.32")
 Code System URI 'http://www.nubc.org/patient-discharge' is unknown so the code cannot be validated
 Unable to check whether the code is in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition|6.1.0
 Code System URI 'http://www.nubc.org/patient-discharge' is unknown so the code cannot be validated; Unable to check whether the code is in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition|6.1.0
