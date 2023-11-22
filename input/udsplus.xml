@@ -15,12 +15,12 @@
   <title value="HRSA Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="HRSA UDS PLUS Project"/>
+  <publisher value="HRSA BPHC"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="url"/>
-      <value value="http://hl7.org/Special/committees/[something]"/>
+      <value value="https://bphc.hrsa.gov/"/>
     </telecom>
   </contact>
   <description value="A brief description of what udsplus is about (probably the same text as in your readme)"/>
@@ -396,6 +396,14 @@
         </extension>
         <nameUrl value="credits.html"/>
         <title value="Credits"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+      	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/> 
+        </extension>
+        <nameUrl value="license.html"/>
+        <title value="License"/>
         <generation value="markdown"/>
       </page>
     </page>
