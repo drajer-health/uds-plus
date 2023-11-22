@@ -2,6 +2,9 @@
 
 The following is a list of all the changes based on versions.
 
+#### Changes made from 1.0.0 to 1.0.1
+
+
 #### Changes made from 0.4.1 to 1.0.0
 
 1. Added cardinality constraints for Healthcare information in the Manifest file.
