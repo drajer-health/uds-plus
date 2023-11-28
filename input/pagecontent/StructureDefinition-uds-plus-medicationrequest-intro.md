@@ -1,5 +1,4 @@
-{:.stu-note}
-All canonical (Official) URLs will be changed in the future and are not available currently on the web.
+
 
 ### Introduction
 

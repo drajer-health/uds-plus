@@ -1,9 +1,6 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
   
-  <a style="background-color:Tomato;color:White;"><b>Note about Canoncial URLs in IG:</b> All canonical (Official) URLs such as the one above http://hl7.org/fhir/us/uds-plus/ImplementationGuide/udsplus will be changed in the future and are not available currently on the web.</a>
-  
-  
   <a name="intro"> </a>
   <h3>Introduction</h3>
 	<p>
@@ -11,10 +8,7 @@
     It is the source of non duplicated data for the entire scope of services included in the grant or designation for the calendar year. HRSA uses UDS data to assess the impact and performance of the Health Center Program, and to promote data-driven quality improvement. The current UDS data does not contain patient level information however through the UDS+ project HRSA intends to collect patient level de-identified data. This new patient level UDS report is called UDS+ report.
   </p>
   <p>
-  This DRAFT Implementation Guide (IG) defines the specifications by which Health Center Program awardees can report the UDS+ data to HRSA using 
-  <ul>
-  <li><b>De-identified Patient data using FHIR APIs</b></li>
-  </ul>
+  This Implementation Guide (IG) defines the specifications by which Health Center Program awardees can report the **de-identified patient level** data to HRSA to meet the UDS reporting program requirements.
   </p>
 	<a name="technical"> </a>
 	<h3>Technical Overview</h3>
@@ -42,6 +36,9 @@
     </li>
     <li>
       <a href="dataelements.html">UDS+ Data Elements and FHIR Mappings</a> - Specifies UDS+ data elements and their FHIR Mappings and differences from US Core.
+    </li>
+    <li>
+      <a href="artifacts.html">FHIR Artifacts</a> - Specifies detailed requirements for FHIR profiles, operations, code systems and value sets for UDS+ reporting.
     </li>
     <li>
       <a href="spec.html">FHIR API Based Reporting Specification</a> - Specifies detailed requirements for the FHIR API based UDS+ data submission.
