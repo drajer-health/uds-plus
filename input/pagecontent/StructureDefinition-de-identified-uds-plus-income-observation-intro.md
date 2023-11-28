@@ -23,8 +23,16 @@ Income ranges are represented using the Observation.valueRange element. The foll
 	* 100% and below : use valueRange.high to represent 100% (Includes 100)
 	* 101–150% : use valueRange.low to represent 101, valueRange.high to represent 150 (Includes 101 and 150)
 	* 151–200% : use valueRange.low to represent 151, valueRange.high to represent 200 (Includes 151 and 200)
-	* Over 200% : use valueRange.low to represent 200% and comparator of ">"
+	* Over 200% : use valueQuantity.value to represent 200, units of % and comparator of ">"
 	* For unknown use the dataAbsentReason
+	
+	
+**Date Truncation** 
+
+The Data Submitter has to truncate the following dates to only have a precision of year
+
+* effectiveDateTime.
+
 
 **Examples**
  

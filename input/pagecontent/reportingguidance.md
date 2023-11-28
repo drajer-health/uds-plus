@@ -129,9 +129,6 @@ Quality Measure computation and reporting is a complex task and may involve mult
 
 The Patients for each measure will be qualified and tagged using the initial patient population criteria for the measure. When a Patient is qualified for multiple measures, they will be tagged using the [Patient Reporting Parameters](StructureDefinition-uds-plus-patient-reporting-parameters.html) profile.
 
-If a Health Center chooses to report on measures using aggregate data, the MeasureReport profile should be used to perform aggregate reporting. 
-
-
 
 ### Submit De-identified FHIR Resources associated with the Patients for the population
 

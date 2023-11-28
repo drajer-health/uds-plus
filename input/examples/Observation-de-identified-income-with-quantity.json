@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "de-identified-income-example",
+    "id": "de-identified-income-with-quantity-example",
     "meta": {
         "profile": [
             "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-income-observation"
@@ -18,13 +18,12 @@
     "subject": {
         "reference": "Patient/de-identified-example"
     },
-    "effectiveDateTime": "2016",
-    "valueRange": {
-    	"low": {
-    		"value": 101
-    	},
-    	"high": {
-    		"value": 150
-    	}
+    "effectiveDateTime": "2018",
+    "valueQuantity": {
+    	"value": 200,
+    	"unit": "percent",
+    	"system": "http://unitsofmeasure.org",
+    	"code": "%",
+    	"comparator": ">"
     }
 }

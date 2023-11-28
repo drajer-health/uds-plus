@@ -5,6 +5,16 @@ The following is a list of all the changes based on versions.
 #### Changes made from 1.0.0 to 1.0.1
 
 1. Removed mentions of alternate submission mechanisms from Background.
+2. Clarified MUST SUPPORT definition in the specification to deal with data elements that may not be present in the mapping tables but are present in the UDS+ profiles.
+3. Updated Coverage to make capitatedMemberMonths and feeForServiceMemberMonths as optional.
+4. Added clarifications on Income Observation to represent > 200% using valueQuantity instead of valueRange.
+5. Change Income Observation to allow valueQuantity along with valueRange.
+6. Added explicit requirements to Data Submitter to not submit data elements not specified in the UDS+ profiles.
+7. Added explicit requirements to Data Receiever to reject submission when a Data Submitter submits data elements not specified in the UDS+ profiles.
+8. Removed aggregate reporting option from reporting guidance.
+9. Added clarification to Data Submitter quality reporting to include only patients who meet the criteria for the Initial Patient Population. 
+10. Added partial submission requirements as part of the Data Submitter requirements.
+11. Added partial submission requirement validation for Data Receiver.
 
 
 #### Changes made from 0.4.1 to 1.0.0

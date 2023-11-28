@@ -26,13 +26,13 @@ Actors and Systems asserting conformance to this implementation guide have to im
 
 ##### MUST SUPPORT Definition
 
-* Systems SHALL be capable of populating data elements as specified by the profiles and data elements are returned using the specified APIs in the capability statement.
-* Systems SHALL be capable of processing resource instances containing the MUST SUPPORT data elements without generating an error or causing the application to fail. 
-* Systems SHOULD be capable of displaying the MUST SUPPORT data elements for human use or storing it for other purposes.
-* In situations where information on a particular data element is not present and the reason for absence is unknown, Systems SHALL NOT include the data elements in the resource instance returned from executing the API requests.
-* When accessing UDS+ data, Systems SHALL interpret missing data elements within resource instances returned from API requests as data not present.
+* Systems **SHALL** be capable of populating data elements as specified by the profiles and data elements are returned using the specified APIs in the capability statement.
+* Systems **SHALL** be capable of processing resource instances containing the MUST SUPPORT data elements without generating an error or causing the application to fail. 
+* In situations where information on a particular data element is not present and the reason for absence is unknown, Systems **SHALL NOT** include the data elements in the resource instance returned from executing the API requests.
+* When accessing UDS+ data, Systems **SHALL** interpret missing data elements within resource instances returned from API requests as data not present.
+* Systems **SHALL NOT** include any data elements as part of the resource that is not tagged as mandatory or **MUST SUPPORT** in the profile.
 
-NOTE: There are data elements designated as MUST SUPPORT in the UDS+ profiles, but are not present in the mapping tables. These data elements have been designated as MUST SUPPORT to align with QI Core profiles which get used for Quality Measure Reporting. In cases where a Health Center does not have data elements tagged as MUST SUPPORT in their EHRs, they can omit sending these data elements as long as the  cardinality of the data element allows for the omission of the data element.  
+NOTE: There are data elements designated as **MUST SUPPORT** in the UDS+ profiles, but are not present in the mapping tables. These data elements have been designated as MUST SUPPORT to align with QI Core profiles which get used for Quality Measure Reporting. In cases where a Health Center does not have data elements tagged as MUST SUPPORT in their EHRs, they can omit sending these data elements as long as the  cardinality of the data element allows for the omission of the data element.  
 
 #### Profiles
 This specification makes significant use of [FHIR profiles]({{site.data.fhir.path}}profiling.html), search parameter definitions, and terminology artifacts to describe the content to be shared as part of UDS+ workflows. The implementation guide is based on [FHIR R4]({{site.data.fhir.path}}) and profiles are listed for each interaction.
@@ -58,23 +58,23 @@ This section outlines how the SMART on FHIR Backend Services Authorization will 
 
 This section identifies the different requirements for Data Source (e.g., EHRs) systems supporting the Health Centers. These requirements are only applicable to Data Sources that are planning to conform to Steps 1 through 5 of the use case workflow defined in [Data Submission workflow](usecases.html#uds-data-submission-workflow-using-fhir). If a Health Center chooses to implement Steps 1 through 5 using other mechanisms, these requirements would not be applicable to the Data Source. 
 
-* The Data Source SHALL support the [FHIR Base URL]/Group/[id]/$export as per the Bulk Data Access IG.
+* The Data Source **SHALL** support the [FHIR Base URL]/Group/[id]/$export as per the Bulk Data Access IG.
 
-* The Data Source SHALL support the resources and profiles identified in the [Data Source Capability Statement](CapabilityStatement-uds-plus-data-source.html)
+* The Data Source **SHALL** support the resources and profiles identified in the [Data Source Capability Statement](CapabilityStatement-uds-plus-data-source.html)
 
-* The Data Source SHALL support the [FHIR Base URL]/Group/[id]/$export using the _since parameter as per the Bulk Data Access IG.
+* The Data Source **SHALL** support the [FHIR Base URL]/Group/[id]/$export using the _since parameter as per the Bulk Data Access IG.
 
-* The Data Source SHALL support the [FHIR Base URL]/Group/[id]/$export using the _type parameter as per the Bulk Data Access IG.
+* The Data Source **SHALL** support the [FHIR Base URL]/Group/[id]/$export using the _type parameter as per the Bulk Data Access IG.
 
-* The Data Source SHALL export the data for the reporting year following the code systems, value sets and rules outlined in the UDS Manual for the specific reporting year. 
+* The Data Source **SHALL** export the data for the reporting year following the code systems, value sets and rules outlined in the UDS Manual for the specific reporting year. 
 
 **NOTE:** The filtering of resources for the reporting year will be performed based on the patient and visit qualification rules within the UDS Manual for the reporting year. Not all resources associated with a Patient compartment are relevant for an UDS+ submission. The UDS Manual specifically outlines types of visits that are eligible and types of visits that are not eligible. Similarly the UDS Manual identifies the types of services that can be included in an UDS+ report. Please refer to the UDS manual to determine the specifc codesystems and valuesets that should be used for filtering of the Patient data.
 
-* The Data Source SHALL support the SMART on FHIR Backend Services Authorization as outlined in the previous sections.
+* The Data Source **SHALL** support the SMART on FHIR Backend Services Authorization as outlined in the previous sections.
 
-* The Data Souce SHALL support scopes of system/*.read to enable UDS+ reporting. 
+* The Data Souce **SHALL** support scopes of system/*.read to enable UDS+ reporting. 
 
-* The Data Source SHALL support the following parameters for Bulk Export
+* The Data Source **SHALL** support the following parameters for Bulk Export
 
 	* _outputFormat = application/ndjson
 	* _since 
@@ -104,25 +104,41 @@ Data Sources exporting data using $export bulk data operation, create NDJSON fil
 
 This section identifies the different requirements for Data Submitter system supporting the Health Centers.
 
-* The Data Submitter SHALL support the scheduling of timers to kick off health center reporting based on HRSA guidance.
+* The Data Submitter **SHALL** support the scheduling of timers to kick off health center reporting based on HRSA guidance.
 
-* The Data Submitter SHOULD implement the client requirements per the Bulk Data Access IG to start the export of the data from the Data Source.
+* The Data Submitter **SHOULD** implement the client requirements per the Bulk Data Access IG to start the export of the data from the Data Source.
 
-* The Data Submitter SHOULD implement the monitoring of the export request per the Bulk Data Access IG. 
+* The Data Submitter **SHOULD** implement the monitoring of the export request per the Bulk Data Access IG. 
 
 * Once the export is completed, the Data Submitter SHALL download the exported data for de-identification.
 
-* The Data Submitter SHOULD retain the patient linkages between the identifiable data and de-identified data.
+* The Data Submitter **SHOULD** retain the patient linkages between the identifiable data and de-identified data.
 
-* The Data Submitter SHALL de-identify the exported data using the Trust Service Provider services and then create the file download links for Data Receiver to download the NDJSON data. 
+* The Data Submitter **SHALL** de-identify the exported data using the Trust Service Provider services and then create the file download links for Data Receiver to download the NDJSON data. 
 
-* The Data Submitter SHALL validate the data for conformance to the IG.
+* The Data Submitter **SHAL**L validate the data for conformance to the IG.
 
-* The Data Submitter SHALL follow the Health Center security and privacy policies while creating the NDJSON file links to be used by the Data Receiver to download the data.
+* The Data Submitter **SHALL** follow the Health Center security and privacy policies while creating the NDJSON file links to be used by the Data Receiver to download the data.
 
-* The Data Submitter SHALL notify the HRSA Data Receiver when the data is ready using the [$import](OperationDefinition-import.html) operation.  
+* The Data Submitter **SHALL** notify the HRSA Data Receiver when the data is ready using the [$import](OperationDefinition-import.html) operation.  
 
-* When the Data Receiver provides a failure status for the $import operation, the Data Submitter SHALL rectify the errors and perform a re-submission. 
+* When the Data Receiver provides a failure status for the $import operation, the Data Submitter **SHALL** rectify the errors and perform a re-submission. 
+
+* Data Submitters **SHOULD NOT** include any data elements that are not mandatory or are not specified as MUST SUPPORT in the UDS+ profiles.
+
+* Data Submitter **MAY** submit partial data as part of the $import operation for 2023 reporting cycle. 
+
+* When choosing to submit partial data, Data Submitters **SHALL** include data for the following tables 
+
+	* Patients By Zipcode table
+	* Table 3A
+	* Table 3B
+	* Table 4
+	* Table 6A
+	* Report data for at least 2 Quality Measures related to Table 6B 
+	* Report data for at least 2 Quality Measures related to Table 7
+	
+* For Quality Measure data reporting, Data Submitters **SHALL** include only patients who meet the Initial Patient Population criteria. In other words, Data Submitters should not submit data for all patients or for patients who only meet the numerator criteria. 
 
 **NOTE:** The re-submission payload will be a complete payload and not a partial payload. 
 
@@ -137,17 +153,17 @@ This section identifies the different requirements for Data Submitter system sup
 ##### Trust Service Provider Requirements
 This section identifies the different requirements for UDS+ Trust Service Provider that can be used for de-identification.
 
-* The Trust Service Provider SHALL support the de-identify operation for each type of resource per the Capability Statement. 
+* The Trust Service Provider **SHALL** support the de-identify operation for each type of resource per the Capability Statement. 
 
-* The Trust Service Provider SHALL create an identifier that is retained internally to link between identifiable and de-identifiable data.
+* The Trust Service Provider **SHALL** create an identifier that is retained internally to link between identifiable and de-identifiable data.
 
-* The Trust Service Provider SHALL remove all identifiable data using the profiles specified in this IG and create NDJSON data based on the IG profiles.
+* The Trust Service Provider **SHALL** remove all identifiable data using the profiles specified in this IG and create NDJSON data based on the IG profiles.
 
-* The Trust Service Provider SHALL remove all data elements that are not identified as "SUPPORTED" in the UDS+ profile definitions. 
+* The Trust Service Provider **SHALL** remove all data elements that are not identified as "SUPPORTED" in the UDS+ profile definitions. 
 
 **Implementation Note:** Common data elements which may have identifiable data have been explicitly mentioned in the profile with a cardinality of 0..0 which means they are not expected to be present. However other data elements which may be allowed in the resource may be included by the EHR including extensions. These additional data element and extensions that are not specified in the UDS+ profiles have to be removed explicitly by the Trust Service Provider implementation.
 
-* The Trust Service Provider SHALL implement the de-identification requirements as per the [HHS De-identification Guidance](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/understanding/coveredentities/De-identification/hhs_deid_guidance.pdf).
+* The Trust Service Provider **SHALL** implement the de-identification requirements as per the [HHS De-identification Guidance](https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/understanding/coveredentities/De-identification/hhs_deid_guidance.pdf).
 
 * When choosing to implement the de-identification method using safe harbor provisions from the HHS De-identification Guidance, Trust Service Providers **SHALL** eliminate records related to the specific zip codes as specified in the guidance. 
 
@@ -157,20 +173,32 @@ This section identifies the different requirements for UDS+ Trust Service Provid
 ##### Data Receiver Requirements
 This section identifies the different requirements for Data Receiver systems hosted by HRSA.
 
-* The Data Receiver SHALL implement the [$import](OperationDefinition-import.html) operation to receive a manifest file containing the UDS+ report for each health center.
+* The Data Receiver **SHALL** implement the [$import](OperationDefinition-import.html) operation to receive a manifest file containing the UDS+ report for each health center.
 
-* The Data Receiver SHALL download the NDJSON formatted, de-identified data from the health center using the links provided by the Data Submitter following the protocol specified in the manifest file.
+* The Data Receiver **SHALL** download the NDJSON formatted, de-identified data from the health center using the links provided by the Data Submitter following the protocol specified in the manifest file.
 
-* The Data Receiver SHALL validate the received NDJSON data according the UDS+ FHIR IG profiles and return OperationalOutcomes for each instance of conformance failure.
+* The Data Receiver **SHALL** validate the received NDJSON data according the UDS+ FHIR IG profiles and return OperationalOutcomes for each instance of conformance failure.
 
-* The Data Receiver SHALL apply necessary business rules to check data quality and provide feedback via OperationalOutcome for each data quality issue. These may be errors or warnings. 
+* The Data Receiver **SHALL** apply necessary business rules to check data quality and provide feedback via OperationalOutcome for each data quality issue. These may be errors or warnings. 
 
-* The Data Receiver SHALL provide status polling capability to Health Centers as part of the HTTP Content Header  with a recommended polling interval. 
+* The Data Receier **SHALL** reject submissions that do not meet the partial submission requirements which **MUST** include data for 
 
-* The Data Receiver SHALL update the status of the submission for each health center. 
+	* Patients By Zipcode table
+	* Table 3A
+	* Table 3B
+	* Table 4
+	* Table 6A
+	* Report data for at least 2 Quality Measures related to Table 6B 
+	* Report data for at least 2 Quality Measures related to Table 7
 
-* The Data Receiver SHALL process a re-submission by a Health Center as needed during the reporting period.
+* The Data Receiver **SHALL** provide status polling capability to Health Centers as part of the HTTP Content Header  with a recommended polling interval. 
 
-* The Data Receiver SHALL discard previous submissions when a re-submission is made by the Health Center. 
+* Data Receiver **SHOULD** reject resources containing data that are not mandatory or specified as MUST SUPPORT in the UDS+ profiles.
+
+* The Data Receiver **SHALL** update the status of the submission for each health center. 
+
+* The Data Receiver **SHALL** process a re-submission by a Health Center as needed during the reporting period.
+
+* The Data Receiver **SHALL** discard previous submissions when a re-submission is made by the Health Center. 
 
  

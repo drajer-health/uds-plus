@@ -73,17 +73,20 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.value">
-            <path value="Observation.valueRange"/>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
             <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Range"/>
             </type>
+            <type>
+                <code value="Quantity"/>
+            </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.valueRange.extension:dataAbsentReason">
-            <path value="Observation.valueRange.extension"/>
+        <element id="Observation.value[x].extension:dataAbsentReason">
+            <path value="Observation.value[x].extension"/>
             <sliceName value="dataAbsentReason"/>
             <short value="Reason why the data is not present"/>
             <max value="1"/>

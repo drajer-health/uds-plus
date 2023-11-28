@@ -58,7 +58,7 @@
         <element id="Coverage.extension:capitatedMemberMonths">
             <path value="Coverage.extension"/>
             <sliceName value="capitatedMemberMonths"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -69,7 +69,7 @@
         <element id="Coverage.extension:feeForServiceMemberMonths">
             <path value="Coverage.extension"/>
             <sliceName value="feeForServiceMemberMonths"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
