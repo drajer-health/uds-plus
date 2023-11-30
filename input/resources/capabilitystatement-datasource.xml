@@ -28,6 +28,8 @@
       </div>
       <h2>REST  behavior</h2>
       <p>The primary focus of the Data Source is to identify the population of patients whose data needs to be reported to UDS+ program, and allow the export of UDS+ data using US Core and UDS+ profiles and US Core APIs.
+      Data Sources that incorporate the Trust Service Provider and the Data Submitter modules **SHOULD** support the UDS+ profiles.
+      Data Sources that provide data to external Data Submitters and Trust Service Providers **SHOULD** support US Core profiles and **MAY** support UDS+ profiles.
       </p>
       <p>
         <b>Security:</b>
@@ -52,12 +54,12 @@
           </thead>
           <tbody>
             <tr>
-              <th>US Core data APIs and Data elements</th>
+              <th>UDS+ or US Core profiles</th>
               <td>
-                <a title="Allows search of a specific US Core Resource instances." href="#USCore-search-type">SHALL</a>
+                <a title="Allows search of a specific UDS+ or US Core profile instances." href="#UDS-search-type">SHALL</a>
               </td>
               <td>
-                <a title="Allows retrieval of a specific US Core Resource instances." href="#USCore-read">SHALL</a>
+                <a title="Allows retrieval of a specific UDS+ or US Core profile instances." href="#UDS-read">SHALL</a>
               </td>
               <td>
               </td>
@@ -89,9 +91,9 @@
       <br/>
       
       <h3>
-        <a href="https://www.hl7.org/fhir/us/core/index.html">US Core APIs and data elements</a>
+        <a href="artifacts.html">UDS+ profiles</a>
       </h3>
-      <p>Profiles: All US Core profiles
+      <p>Profiles: All UDS+ profiles
       </p>
       <h4>Interactions</h4>
       <div class="table-wrapper">
@@ -105,20 +107,20 @@
           <tbody>
             <tr>
               <th>
-                <a name="USCore-search-type"> </a>
+                <a name="UDS-search-type"> </a>
                 <span>search</span>
               </th>
               <td>
-                <p>Allows searching of specific US Core resource profile instances.</p>
+                <p>Allows searching of specific UDS+ or US Core profile instances.</p>
               </td>
             </tr>
             <tr>
               <th>
-                <a name="USCore-read"> </a>
+                <a name="UDS-read"> </a>
                 <span>read</span>
               </th>
               <td>
-                <p>Allows retrieval of specific US Core resource profile instances</p>
+                <p>Allows retrieval of specific UDS+ or US Core profile instances</p>
               </td>
             </tr> 
           </tbody>

@@ -11,7 +11,7 @@ According to the HHS guidance the following data elements have to be removed or 
 * Patient Name
 * Address that is more specific than a state
 	
-	* First 3 digits of Zipcodes can be included if the population of all zipcodes starting with the same 3 digits are > 20000 people, in all other cases, the zipcodes have to be masked to 00000.
+	* First 3 digits of Zipcodes can be included if the population of all zipcodes starting with the same 3 digits are > 20000 people and the last 2 digits should be masked with "00",  in all other cases, the zipcodes have to be masked to 00000.
 	 
 * All dates should not have a precision of more than the year. This means month and day cannot be included.
 * Demographics including birthdate, deceased indicator

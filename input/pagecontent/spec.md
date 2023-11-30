@@ -138,7 +138,8 @@ This section identifies the different requirements for Data Submitter system sup
 	* Report data for at least 2 Quality Measures related to Table 6B 
 	* Report data for at least 2 Quality Measures related to Table 7
 	
-* For Quality Measure data reporting, Data Submitters **SHALL** include only patients who meet the Initial Patient Population criteria. In other words, Data Submitters should not submit data for all patients or for patients who only meet the numerator criteria. 
+	
+* For Quality Measure data reporting, Data Submitters **SHALL** include only patients who meet the Initial Patient Population criteria. In other words, Data Submitters **should not** submit data for all patients visiting the HealthCenter or for patients who only meet the numerator criteria. 
 
 **NOTE:** The re-submission payload will be a complete payload and not a partial payload. 
 
@@ -190,6 +191,7 @@ This section identifies the different requirements for Data Receiver systems hos
 	* Table 6A
 	* Report data for at least 2 Quality Measures related to Table 6B 
 	* Report data for at least 2 Quality Measures related to Table 7
+	
 
 * The Data Receiver **SHALL** provide status polling capability to Health Centers as part of the HTTP Content Header  with a recommended polling interval. 
 

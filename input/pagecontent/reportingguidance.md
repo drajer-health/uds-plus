@@ -1,5 +1,15 @@
 This section provides implementation details for reporting the data elements identified in [UDS+ Data Elements](dataelements.html) to HRSA.
 
+### Health Center/HCCN On-boarding process
+
+The UDS+ program requires the Health Centers/HCCN's along with their EHR vendors need to be on-boarded to the UDS+ program to connect to the Data Receiver and submit the data. To initiate this process interested Health Centers and HCCN's and their EHR vendors can contact the HRSA support team using the [BPHC Contact Form](https://hrsa.my.site.com/support/s/). Some of the important activities performed as part of on-boarding include 
+
+* Submitting security information identifying servers that will connect to the HRSA network
+* Understanding the HRSA tools and environments that can be used for testing.
+* Getting Data Submitter IP Addresses added to the list of IP Addresses allowed to connect to HRSA and vice-versa if needed
+* Submitting necessary information to obtain a clientId that is used for the Authorization Protocols.
+* Preparing for synthetic data testing and Setting up testing times for executing tests.
+
 ### Interaction Flows
 
 This section provides details of the Step 9, Step 10a and Step 10b to be used by the Data Submitter and Data Receiver to successfully submit or re-submit a UDS+ report.
@@ -12,6 +22,24 @@ The diagram below details out the interactions between the Data Submitter and th
 {% include img.html img="step9-detailed-Interactions.png" caption="Step 9 UDS+ Reporting Workflow Detailed Interactions" %} 
 
 For more information and examples on authentication mechanisms, refer to [SMART on FHIR IG Backend Services]({{site.data.fhir.smartapplaunch}}/backend-services.html).
+
+#### Step 9 Request-Response Details
+
+When $import is invoked by the Data Submitter and a manifest file is submitted the following codes are returned routinely.
+
+* HTTP Status Code of 201 - Accepted : when the manifest file is valid.
+* HTTP Status code of 422 - Unprocessable Entity : When the manifest file is invalid along with OperationOutcome resources in the body
+* HTTP Status Code of 401 - Unauthorized : When the access token is not valid.
+
+There could be scenarios where the Data Submitters may receive other 4xx or 5xx HTTP error codes.
+
+For details on the request and response examples please refer to [RequestResponseExamples](requestresponseexamples.html).
+
+
+#### Step 9 Response: Content-Location Header
+
+Since the submission starts a FHIR async pattern request, the submitter has to poll for the status of the submission as the submissions is imported asynchronously. In order to poll for the status of the submission, the submitter has to parse the HTTTP Response Headers and extract the Content-Location header which contains the URL used for polling the status of the submission.
+
 
 ##### Security Protocol Details
 
@@ -45,6 +73,34 @@ The diagram below details out the interactions between the Data Submitter and th
 
 
 {% include img.html img="step10-detailed-interactions.png" caption="Step 10a and 10b UDS+ Reporting Detailed Interactions" %} 
+
+
+#### Step 10b Request-Response Details
+
+When GET /<Content-Location URL> is invoked by the Data Submitter the following codes are returned routinely.
+
+* HTTP Status Code of 200 - When the import is successful or is In-Progress
+* HTTP Status code of 422 - Unprocessable Entity : When there are errors in the processing
+* HTTP Status Code of 401 - Unauthorized : When the access token is not valid.
+* HTTP Status Code of 400 - Bad Request : When the URLs or access tokens provided are not valid.
+
+There could be scenarios where the Data Submitters may receive other 4xx or 5xx HTTP error codes.
+
+Data Submitters should always process the HTTP Response body to identify the specific errors which are returned as OperationOutcome resources.
+
+For details on the request and response examples please refer to [RequestResponseExamples](requestresponseexamples.html).
+
+##### Step 10b X-Progress HTTP Header 
+
+When Data Submitters invoke the Content-Location URL for the status of the submission, the X-Progress header can also be used to check on the overall status. The typcial values that the X-Progress Header contains are :
+
+* 0% complete - When the import is still in-progress
+* Failed - when the import fails due to any reason, the reason will be available in the body of the response
+* 100% complete - when the import is successful.
+
+For details on the request and response examples please refer to [RequestResponseExamples](requestresponseexamples.html).
+
+
 
 #### Creation of Groups
 
@@ -109,7 +165,7 @@ Implementers should follow the UDS Manual to identify the patient's zip code and
 
 	* Reporting the most recent zip code on file
 	* Using "Other zip code" for people with no US address 
-	* Patients' last insurance from teh last visit of the year
+	* Patients' last insurance from the last visit of the year
 
 ##### Table 3A
 

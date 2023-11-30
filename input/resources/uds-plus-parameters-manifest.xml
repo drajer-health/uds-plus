@@ -95,6 +95,29 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Parameters.parameter:submissionTime">
+            <path value="Parameters.parameter"/>
+            <sliceName value="submissionTime"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:submissionTime.name">
+            <path value="Parameters.parameter.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="submissionTime"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:submissionTime.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="dateTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:hcInformation">
             <path value="Parameters.parameter"/>
             <sliceName value="hcInformation"/>

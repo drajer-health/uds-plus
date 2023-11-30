@@ -15,7 +15,11 @@ The following is a list of all the changes based on versions.
 9. Added clarification to Data Submitter quality reporting to include only patients who meet the criteria for the Initial Patient Population. 
 10. Added partial submission requirements as part of the Data Submitter requirements.
 11. Added partial submission requirement validation for Data Receiver.
-
+12. Added information for on-boarding process as part of the reporting guidance.
+13. Added submissionTime to Manifest file. 
+14. Updated data mapping tables to remove blank rows and mappings not necessary.
+15. Added examples for Requests and Responses as part of the Implementation Guidance.
+16. Updated capability statements to use UDS+ profiles instead of US Core profiles.
 
 #### Changes made from 0.4.1 to 1.0.0
 

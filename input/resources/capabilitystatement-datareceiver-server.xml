@@ -27,7 +27,7 @@
         </table>
       </div>
       <h2>REST  behavior</h2>
-      <p>The primary focus of the Data Receiver as a Server is to receive the notification manifest which contains the links to the UDS+ data that has 
+      <p>The primary focus of the Data Receiver as a Server is to receive the manifest which contains the links to the UDS+ data that has 
       been extracted by the health center and is being made available to HRSA.
       </p>
       <p>
@@ -42,6 +42,9 @@
       <ul>
         <li>
           <a href="OperationDefinition-import.html">UDS+ Import Operation</a>
+        </li>
+        <li>
+          <a href="https://hl7.org/fhir/uv/bulkdata/export.html#bulk-data-status-request">Status Polling using Content-Location received for Bulk Data Import as part of the Content-Location HTTP Header</a>
         </li>
       </ul>
       <br/>

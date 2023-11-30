@@ -18,12 +18,12 @@ Resource references cannot contain text element as it may contain PHI/PII. The t
 
 **Representing Income Ranges**
 
-Income ranges are represented using the Observation.valueRange element. The following values can be used to represent the Income ranges: 
+Income ranges are represented using the Observation.valueRange or Observation.valueQuanity element. The following values can be used to represent the Income ranges: 
 
 	* 100% and below : use valueRange.high to represent 100% (Includes 100)
 	* 101–150% : use valueRange.low to represent 101, valueRange.high to represent 150 (Includes 101 and 150)
 	* 151–200% : use valueRange.low to represent 151, valueRange.high to represent 200 (Includes 151 and 200)
-	* Over 200% : use valueQuantity.value to represent 200, units of % and comparator of ">"
+	* Over 200% : use valueQuantity.value to represent 200, units of % and comparator of ">", valueRange cannot be used for representing more than 200%.
 	* For unknown use the dataAbsentReason
 	
 	

@@ -26,6 +26,10 @@
   		"valueString" : "234343-aaa-32432"
   	},
   	{
+  		"name" : "submissionTime",
+  		"valueDateTime" : "2023-01-14T07:15:07-08:00"
+  	},
+  	{
   		"name" : "hcInformation",
   		"part" : [
   			{

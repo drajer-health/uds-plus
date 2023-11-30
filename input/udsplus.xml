@@ -12,7 +12,7 @@
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="1.0.1"/>
   <name value="UdsPlusFhirIg"/>
-  <title value="HRSA Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG"/>
+  <title value="HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HRSA BPHC"/>
@@ -412,6 +412,14 @@
         </extension>
         <nameUrl value="license.html"/>
         <title value="License"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+      	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/> 
+        </extension>
+        <nameUrl value="requestresponseexamples.html"/>
+        <title value="RequestResponseExamples"/>
         <generation value="markdown"/>
       </page>
     </page>

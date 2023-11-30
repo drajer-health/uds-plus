@@ -55,12 +55,12 @@
           </thead>
           <tbody>
             <tr>
-              <th>US Core data APIs and Data elements</th>
+              <th>UDS+ profiles</th>
               <td>
-                <a title="Search for specific US Core Resource instances." href="#USCore-search-type">SHALL</a>
+                <a title="Search for specific UDS+ Resource instances." href="#UDS-search-type">SHALL</a>
               </td>
               <td>
-                <a title="Retrieve specific US Core Resource instances." href="#USCore-read">SHALL</a>
+                <a title="Retrieve specific UDS+ Resource instances." href="#UDS-read">SHALL</a>
               </td>
               <td>
               </td>
@@ -101,9 +101,9 @@
       <br/>
       
       <h3>
-        <a href="https://www.hl7.org/fhir/us/core/index.html">US Core APIs and data elements</a>
+        <a href="artifacts.html">UDS+ profiles</a>
       </h3>
-      <p>Profiles: All US Core profiles
+      <p>Profiles: All UDS+ profiles
       </p>
       <h4>Interactions</h4>
       <div class="table-wrapper">
@@ -117,20 +117,20 @@
           <tbody>
             <tr>
               <th>
-                <a name="USCore-search-type"> </a>
+                <a name="UDS-search-type"> </a>
                 <span>search</span>
               </th>
               <td>
-                <p>Search for specific US Core resource profile instances.</p>
+                <p>Search for specific UDS+ resource profile instances.</p>
               </td>
             </tr>
             <tr>
               <th>
-                <a name="USCore-read"> </a>
+                <a name="UDS-read"> </a>
                 <span>read</span>
               </th>
               <td>
-                <p>Retrieve specific US Core resource profile instances</p>
+                <p>Retrieve specific UDS+ resource profile instances</p>
               </td>
             </tr> 
           </tbody>
