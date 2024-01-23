@@ -1,47 +1,47 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a role="button" href="index.html">IG Home</a></li>
+  <li><a role="button" href="toc.html">Table of Contents</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">UDS Background<b class="caret">
+    <a role="button" data-toggle="dropdown" role="button" href="#" class="dropdown-toggle">UDS Background<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">   
       <li>
-        <a href="{{site.data.info.assets}}background.html">Implementation Guide Overview</a>
+        <a role="button" href="{{site.data.info.assets}}background.html">Implementation Guide Overview</a>
       </li>
       <li>
-        <a href="{{site.data.info.assets}}usecases.html">Use Cases and Workflows</a>
+        <a role="button" href="{{site.data.info.assets}}usecases.html">Use Cases and Workflows</a>
       </li>
       <li>
-        <a href="{{site.data.info.assets}}dataelements.html">UDS+ Data Elements and FHIR Mappings</a>
+        <a role="button" href="{{site.data.info.assets}}dataelements.html">UDS+ Data Elements and FHIR Mappings</a>
       </li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+    <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="reportingguidance.html">Implementation Guidance</a>
+        <a role="button" href="reportingguidance.html">Implementation Guidance</a>
       </li>
       <li>
-        <a href="spec.html">FHIR API Based Reporting</a>
+        <a role="button" href="spec.html">FHIR API Based Reporting</a>
       </li>
     </ul>
   </li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li><a href="changes.html">Change History</a></li>
+  <li><a role="button" href="artifacts.html">Artifact Index</a></li>
+  <li><a role="button" href="changes.html">Change History</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+    <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+        <a role="button" target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
       <li>
-        <a href="downloads.html">Downloads</a>
+        <a role="button" href="downloads.html">Downloads</a>
       </li>
     </ul>
   </li>

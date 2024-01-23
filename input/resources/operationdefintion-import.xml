@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description value="Notification from a Health Center about the availability of the data to HRSA using Bulk Import mechanism."/>
-  <code value="notify"/>
+  <code value="import"/>
   <base value="http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/import"/>
   <!--  <resource value="Group"/> -->
   <system value="true"/>

@@ -1,7 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
   
-  <a name="intro"> </a>
+  <a role="button" name="intro"> </a>
   <h3>Introduction</h3>
 	<p>
     Each calendar year, HRSA Health Center Program awardees and look-alikes are required to report a core set of information, including data on patient characteristics, services provided, clinical processes and health outcomes, patients' use of services, staffing, costs, and revenues as part of a standardized reporting system known as the Uniform Data System (UDS). The UDS is a standard data set that is reported annually and provides consistent information about health centers. 
@@ -10,7 +10,7 @@
   <p>
   This Implementation Guide (IG) defines the specifications by which Health Center Program awardees can report the **de-identified patient level** data to HRSA to meet the UDS reporting program requirements.
   </p>
-	<a name="technical"> </a>
+	<a role="button" name="technical"> </a>
 	<h3>Technical Overview</h3>
 	<p>
 	Currently UDS data is submitted using a tabular data format via participating health centers. The submission mechanisms include portals, sftp and other mechanisms.
@@ -28,7 +28,7 @@
   </p>
   <ul>
     <li>
-      <a href="background.html">Background</a> - Provides business context for the implementation guide and information that implementers should be
+      <a role="button" href="background.html">Background</a> - Provides business context for the implementation guide and information that implementers should be
       familiar with before reading the remainder of the IG. This identifies the context of the IG and the various reporting mechanisms.
     </li>
     <li>
@@ -48,7 +48,7 @@
     </li>
   </ul>
   
-  <a name="Roadmap"> </a>
+  <a role="button" name="Roadmap"> </a>
  <h3>Roadmap and Support</h3>
 	<p>
 	This implementation guide was built to support the Health Resources and Services Administration HRSA Uniform Data System (UDS) Modernization in collaboration with the Office of the National Coordinator for Health IT (ONC). 
