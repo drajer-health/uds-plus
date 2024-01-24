@@ -2,7 +2,7 @@
   <li><a role="button" href="index.html">IG Home</a></li>
   <li><a role="button" href="toc.html">Table of Contents</a></li>
   <li class="dropdown">
-    <a role="button" data-toggle="dropdown" role="button" href="#" class="dropdown-toggle">UDS Background<b class="caret">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" role="button" href="#" class="dropdown-toggle">UDS Background<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">   
@@ -18,7 +18,7 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
@@ -33,7 +33,7 @@
   <li><a role="button" href="artifacts.html">Artifact Index</a></li>
   <li><a role="button" href="changes.html">Change History</a></li>
   <li class="dropdown">
-    <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">

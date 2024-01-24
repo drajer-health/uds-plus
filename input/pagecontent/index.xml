@@ -32,19 +32,19 @@
       familiar with before reading the remainder of the IG. This identifies the context of the IG and the various reporting mechanisms.
     </li>
     <li>
-      <a href="usecases.html">Use Cases</a> - Defines the  use case, workflows, actors and systems that will be used for UDS+ reporting.
+      <a role="button" href="usecases.html">Use Cases</a> - Defines the  use case, workflows, actors and systems that will be used for UDS+ reporting.
     </li>
     <li>
-      <a href="dataelements.html">UDS+ Data Elements and FHIR Mappings</a> - Specifies UDS+ data elements and their FHIR Mappings and differences from US Core.
+      <a role="button" href="dataelements.html">UDS+ Data Elements and FHIR Mappings</a> - Specifies UDS+ data elements and their FHIR Mappings and differences from US Core.
     </li>
     <li>
-      <a href="artifacts.html">FHIR Artifacts</a> - Specifies detailed requirements for FHIR profiles, operations, code systems and value sets for UDS+ reporting.
+      <a role="button" href="artifacts.html">FHIR Artifacts</a> - Specifies detailed requirements for FHIR profiles, operations, code systems and value sets for UDS+ reporting.
     </li>
     <li>
-      <a href="spec.html">FHIR API Based Reporting Specification</a> - Specifies detailed requirements for the FHIR API based UDS+ data submission.
+      <a role="button" href="spec.html">FHIR API Based Reporting Specification</a> - Specifies detailed requirements for the FHIR API based UDS+ data submission.
     </li>
     <li>
-      <a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
+      <a role="button" href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
     </li>
   </ul>
   
