@@ -8,5 +8,7 @@ The Project Management Committee and the PMC Chair decides on the change managem
 
 ## PMC Chair
 
-Matthew Rahn - Matthew.Rahn@hhs.gov
-Haleh Sepasi - HSepasi@hrsa.gov
+
+* Matthew Rahn - Matthew.Rahn@hhs.gov
+* Haleh Sepasi - HSepasi@hrsa.gov
+  
