@@ -10,7 +10,7 @@
   </extension>
   <url value="http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="1.0.1"/>
+  <version value="1.0.2"/>
   <name value="UdsPlusFhirIg"/>
   <title value="HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG"/>
   <status value="active"/>
@@ -296,6 +296,14 @@
    </resource>
    <resource>
       <reference>
+        <reference value="Patient/de-identified-age89-example"/>
+      </reference>
+      <name value="Uds Plus Patient Example for a patient with age (&gt; 89 )"/>
+      <description value="An Example of a conformant UDS+ Patient resource which has been de-identified and is based on the US Core Patient example resource."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
         <reference value="Condition/de-identified-example"/>
       </reference>
       <name value="Uds Plus De-Identified Condition Example"/>
@@ -466,6 +474,10 @@
     <parameter>
       <code value="no-narrative"/>
       <value value="Patient/de-identified-smallpop-example"/>
+    </parameter>
+        <parameter>
+      <code value="no-narrative"/>
+      <value value="Patient/de-identified-age89-example"/>
     </parameter>
     <parameter>
       <code value="no-narrative"/>

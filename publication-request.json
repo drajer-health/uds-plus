@@ -1,8 +1,8 @@
 {
   "package-id" : "fhir.hrsa.uds-plus",
-  "version" : "1.0.1",
+  "version" : "1.0.2",
   "path" : "http://fhir.org/guides/hrsa/uds-plus/STU1",
-  "title" : "HRSA Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+ or uds-plus) FHIR IG",
+  "title" : "HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+ or uds-plus) FHIR IG",
   "introduction" : "UDS+ is part of HRSA's modernization initiatives and requires health centers to report data annually as part of the funding grants.  UDS is a standard data set that provides consistent information about Federally Qualified Health Centers. It is the source of non duplicated data for the entire scope of services included in the grant or designation for the calendar year. HRSA uses UDS data to assess the impact and performance of the Health Center Program, and to promote data-driven quality improvement",
   "mode" : "milestone",
   "category" : "Govt Reporting",
