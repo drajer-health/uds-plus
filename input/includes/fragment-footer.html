@@ -3,4 +3,4 @@ Links: <a style="color: var(--footer-hyperlink-text-color)" href="{{site.data.in
        <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
        {% for feedbacklink in site.data.features.feedback %}{% if feedbacklink.dashboard %} | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" aria-label="{{feedbacklink.dashboard.label}}" href="{{feedbacklink.dashboard.url}}">{{feedbacklink.dashboard.label}}</a>{% endif %}{% endfor %}
 
-       | <a style="color: var(--footer-hyperlink-text-color)" aria-lable="Version History" target="_blank" href="{{site.data.fhir.canonical}}/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+       | <a style="color: var(--footer-hyperlink-text-color)" aria-lable="Version History" target="_blank" href="{{site.data.fhir.canonical}}/history.html">Version History</a> |
