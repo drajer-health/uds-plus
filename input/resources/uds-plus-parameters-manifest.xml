@@ -37,7 +37,7 @@
         </element>
         <element id="Parameters.parameter">
             <path value="Parameters.parameter"/>
-            <min value="2"/>
+            <min value="6"/>
             <max value="*"/>
             <slicing>
                 <discriminator>
@@ -51,12 +51,14 @@
         <element id="Parameters.parameter:inputFormat">
             <path value="Parameters.parameter"/>
             <sliceName value="inputFormat"/>
+            <short value="Parameter used to define the Mime Type of the data contained within the submitted files"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:inputFormat.name">
             <path value="Parameters.parameter.name"/>
+            <short value="The parameter name for the Mime Type"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="inputFormat"/>
@@ -64,6 +66,7 @@
         </element>
         <element id="Parameters.parameter:inputFormat.value[x]">
             <path value="Parameters.parameter.value[x]"/>
+            <short value="The Mime type of the data contained within the submitted files"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -75,12 +78,14 @@
         <element id="Parameters.parameter:submissionId">
             <path value="Parameters.parameter"/>
             <sliceName value="submissionId"/>
+            <short value="Parameter to convey the unique submission identifier"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:submissionId.name">
             <path value="Parameters.parameter.name"/>
+            <short value="The Parameter name for submission identifier"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="submissionId"/>
@@ -88,6 +93,7 @@
         </element>
         <element id="Parameters.parameter:submissionId.value[x]">
             <path value="Parameters.parameter.value[x]"/>
+            <short value="Submission Identifier value"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -98,12 +104,14 @@
         <element id="Parameters.parameter:submissionTime">
             <path value="Parameters.parameter"/>
             <sliceName value="submissionTime"/>
+            <short value="Parameter to convey the submission time of the manifest resource to '$import' operation"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:submissionTime.name">
             <path value="Parameters.parameter.name"/>
+            <short value="Name of the parameter to convey the submission time"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="submissionTime"/>
@@ -111,6 +119,7 @@
         </element>
         <element id="Parameters.parameter:submissionTime.value[x]">
             <path value="Parameters.parameter.value[x]"/>
+            <short value="Submission Time value"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -118,15 +127,95 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Parameters.parameter:replaceSubmissionId">
+            <path value="Parameters.parameter"/>
+            <sliceName value="replaceSubmissionId"/>
+            <short value="Parameer to identify the previous submission data that needs to be replaced with this submission"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:replaceSubmissionId.name">
+            <path value="Parameters.parameter.name"/>
+            <short value="Name of the parameter to convey the submission that needs to be replaced"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="replaceSubmissionId"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:replaceSubmissionId.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <short value="Actual value of the previous submission that needs to be replaced"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:partialSubmission">
+            <path value="Parameters.parameter"/>
+            <sliceName value="partialSubmission"/>
+            <short value="Parameter to indicate if the submission has to be treated as a partial submission for the Health Center"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:partialSubmission.name">
+            <path value="Parameters.parameter.name"/>
+            <short value="The Parameter name to indicate that this ia a partial submission"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="partialSubmission"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:partialSubmission.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <short value="Actual value indicating if this is a partial submission"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:partialSubmissionName">
+            <path value="Parameters.parameter"/>
+            <sliceName value="partialSubmissionName"/>
+            <short value="Parameter that can be used by the Health Center to identify the partial submission, for e.g EHR product name or site name"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:partialSubmissionName.name">
+            <path value="Parameters.parameter.name"/>
+            <short value="The Parameter name to convey the partial submission name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="partialSubmissionName"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:partialSubmissionName.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <short value="Actual partial submission name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:hcInformation">
             <path value="Parameters.parameter"/>
             <sliceName value="hcInformation"/>
+            <short value="Parameters to convey the Health Center information"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:hcInformation.name">
             <path value="Parameters.parameter.name"/>
+            <short value="Parameter that holds the Health Center information"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="hcInformation"/>
@@ -148,12 +237,14 @@
         <element id="Parameters.parameter:hcInformation.part:ueiNumber">
             <path value="Parameters.parameter.part"/>
             <sliceName value="ueiNumber"/>
+            <short value="Parameter to convey the UEI number for the Health Center"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:hcInformation.part:ueiNumber.name">
             <path value="Parameters.parameter.part.name"/>
+            <short value="Parameter that indicates this is an UEI number"/>
             <min value="1"/>
             <max value="1"/>
             <fixedString value="uei"/>
@@ -161,6 +252,7 @@
         </element>
         <element id="Parameters.parameter:hcInformation.part:ueiNumber.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
+            <short value="Actual UEI value"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -171,6 +263,7 @@
         <element id="Parameters.parameter:hcInformation.part:grantNumber">
             <path value="Parameters.parameter.part"/>
             <sliceName value="grantNumber"/>
+            <short value="Parameter to convey the GRANT number of the Health Center"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
@@ -406,7 +499,7 @@
         <element id="Parameters.parameter:udsData">
             <path value="Parameters.parameter"/>
             <sliceName value="udsData"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
@@ -519,6 +612,29 @@
             <max value="1"/>
             <type>
            	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:udsData.part:incrementalData">
+            <path value="Parameters.parameter.part"/>
+            <sliceName value="incrementalData"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:udsData.part:incrementalData.name">
+            <path value="Parameters.parameter.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="incrementalData"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:udsData.part:incrementalData.value[x]">
+            <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
             </type>
             <mustSupport value="true"/>
         </element>
