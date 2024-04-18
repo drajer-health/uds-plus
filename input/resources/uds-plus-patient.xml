@@ -176,9 +176,9 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
-        <element id="Patient.deceased">
-            <path value="Patient.deceasedBoolean"/>
-            <short value="Can only have deceased boolean."/>
+        <element id="Patient.deceased[x]">
+            <path value="Patient.deceased[x]"/>
+            <short value="Indicates if the Patient is deceased, it can be either a Boolean or a Date with a precision of year only."/>
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>

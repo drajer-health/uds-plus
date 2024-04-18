@@ -303,6 +303,157 @@
            	 	<code value="boolean"/>
             </type>
             <mustSupport value="true"/>
+        </element>       
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line10-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line10-Childhood-Immunization-Status-CMS117-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexp">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line10-denexp"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexp.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line10-Childhood-Immunization-Status-CMS117-denexp"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexp.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line10-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line10-Childhood-Immunization-Status-CMS117-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line10-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line10-Childhood-Immunization-Status-CMS117-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexp">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line10-numexp"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexp.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line10-Childhood-Immunization-Status-CMS117-numexp"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexp.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line10-numexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line10-Childhood-Immunization-Status-CMS117-numexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line11">
             <path value="Parameters.parameter.part"/>
