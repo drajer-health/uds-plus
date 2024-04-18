@@ -1,0 +1,51 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='de-identified-uds-plus-income-observation' %}
+
+{% include fragment-pagebegin.html %}
+<div style="counter-reset: section 4" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='de-identified-uds-plus-income-observation' active='definition' %}
+
+<a name="root"> </a>
+<h2 id="root">{{modelType}}: UDSPlusIncome - Detailed Descriptions</h2>
+{% include fragment-simpletable.html %}
+
+<p>Definitions for the de-identified-uds-plus-income-observation {{modelType | downcase}}.</p>
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='StructureDefinition' id='de-identified-uds-plus-income-observation' %}
+
+  <div id="tabs">
+    <ul>
+      <li>
+        <a href="#tabs-diff">Differential Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-key">Key Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-snap">Snapshot Elements Table</a>
+      </li>
+    </ul>
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      {%include StructureDefinition-de-identified-uds-plus-income-observation-dict-diff.xhtml%}
+    </div>
+    <a name="tabs-key"> </a>
+    <div id="tabs-key">
+      {%include StructureDefinition-de-identified-uds-plus-income-observation-dict-key.xhtml%}
+    </div>
+    <a name="tabs-snap"> </a>
+    <div id="tabs-snap">
+      {%include StructureDefinition-de-identified-uds-plus-income-observation-dict.xhtml%}
+    </div>
+  </div>
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='StructureDefinition' id='de-identified-uds-plus-income-observation' %}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

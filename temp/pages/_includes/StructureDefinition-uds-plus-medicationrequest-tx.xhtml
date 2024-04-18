@@ -1,0 +1,35 @@
+{% raw %}<h4>Terminology Bindings</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td></tr>
+<tr><td>MedicationRequest.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    </td>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
+    </td>
+  </tr>
+</table>
+</td></tr>
+<tr><td>MedicationRequest.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="A coded concept specifying the state of the prescribing event. Describes the lifecycle of the prescription."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">medicationrequest Status</a></td></tr>
+<tr><td>MedicationRequest.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Identifies the reasons for a given status."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">medicationRequest Status Reason Codes</a></td></tr>
+<tr><td>MedicationRequest.intent</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The kind of medication order."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">medicationRequest Intent</a></td></tr>
+<tr><td>MedicationRequest.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept identifying the category of medication request.  For example, where the medication is to be consumed or administered, or the type of medication treatment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">medicationRequest Category Codes</a></td></tr>
+<tr><td>MedicationRequest.priority</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Identifies the level of importance to be assigned to actioning the request."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a></td></tr>
+<tr><td>MedicationRequest.medication[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept identifying substance or product that can be ordered."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a></td></tr>
+<tr><td>MedicationRequest.subject.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Aa resource (or, for logical models, the URI of the logical model)."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a></td></tr>
+<tr><td>MedicationRequest.encounter.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Aa resource (or, for logical models, the URI of the logical model)."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a></td></tr>
+<tr><td>MedicationRequest.performerType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Identifies the type of individual that is desired to administer the medication."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a></td></tr>
+<tr><td>MedicationRequest.reasonCode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept indicating why the medication was ordered."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a></td></tr>
+<tr><td>MedicationRequest.courseOfTherapyType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Identifies the overall pattern of medication administratio."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">medicationRequest Course of Therapy Codes</a></td></tr>
+<tr><td>MedicationRequest.substitution.allowed[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Identifies the type of substitution allowed."><a style="opacity: 1.0" href="http://terminology.hl7.org/5.0.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html">ActSubstanceAdminSubstitutionCode</a></td></tr>
+<tr><td>MedicationRequest.substitution.reason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="A coded concept describing the reason that a different medication should (or should not) be substituted from what was prescribed."><a style="opacity: 1.0" href="http://terminology.hl7.org/5.0.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html">SubstanceAdminSubstitutionReason</a></td></tr>
+</table>
+{% endraw %}

@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "731e2483-00a3-4098-aa56-f838fdaa030b-120",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/731e2483-00a3-4098-aa56-f838fdaa030b-120",
+  "name" : "IntersectionUdsPlusServiceDeliveryCodesAndUdsPlusServiceDeliveryCodes",
+  "title" : "Intersection of Uds Plus Service Delivery Codes And Uds Plus Service Delivery Codes",
+  "status" : "active",
+  "date" : "2024-04-18T11:54:36+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      
+    },
+    {
+      "concept" : [{
+        "code" : "public-housing",
+        "display" : "Care was delivered in a Location that is considered public housing"
+      }]
+    }]
+  }
+}

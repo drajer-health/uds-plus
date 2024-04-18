@@ -1,0 +1,62 @@
+{% raw %}<pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a>" : "uds-plus-data-submitter-client",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n      &lt;h2&gt;Data Receiver&lt;/h2&gt;\n      &lt;p&gt;(Requirements Definition Capability Statement)&lt;/p&gt;\n      &lt;p&gt;Canonical URL: http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-submitter-client&lt;/p&gt;\n      &lt;p&gt;Published by: &lt;b&gt;HL7 International - Public Health Work Group&lt;/b&gt;\n      &lt;/p&gt;\n      &lt;p&gt;This is a CapabilityStatement that defines the expected capabilities of the Data Submitter actor as a client.  \n      &lt;/p&gt;\n      &lt;h2&gt;General&lt;/h2&gt;\n      &lt;div class=\&quot;table-wrapper\&quot;&gt;\n        &lt;table&gt;\n          &lt;tbody&gt;\n            &lt;tr&gt;\n              &lt;th&gt;FHIR Version:&lt;/th&gt;\n              &lt;td&gt;4.0.1&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n              &lt;th&gt;Supported formats:&lt;/th&gt;\n              &lt;td&gt;json&lt;/td&gt;\n            &lt;/tr&gt;\n          &lt;/tbody&gt;\n        &lt;/table&gt;\n      &lt;/div&gt;\n      &lt;h2&gt;REST  behavior&lt;/h2&gt;\n      &lt;p&gt;The primary focus of the Data Submitter actor as a client is to invoke the Group/$export operation identified below and extract the UDS+ data using US Core and QI Core profiles.\n      In certain cases, the Data Submitter MAY have to invoke individual patient api's to extract the necessary UDS+ data when the Data Source does not support Group/$export operation.  \n      data.\n      &lt;/p&gt;\n      &lt;p&gt;\n        &lt;b&gt;Security:&lt;/b&gt;\n      &lt;/p&gt;\n      &lt;p&gt;Implementations must meet the general security requirements documented in FHIR &lt;a href=\&quot;http://hl7.org/fhir/security.html\&quot;&gt;Security guidance&lt;/a&gt;.&lt;/p&gt;\n      &lt;p&gt;In addition the Data Submitter actor as a client needs to meet the security requirements as outlined in the &lt;a href=\&quot;spec.html#smart-on-fhir-backend-services-authorization\&quot;&gt;SMART on FHIR Backend Services Authorization&lt;/a&gt;&lt;/p&gt;\n      \n      &lt;h3&gt;Resource summary&lt;/h3&gt;\n      &lt;div class=\&quot;table-wrapper\&quot;&gt;\n        &lt;table class=\&quot;grid\&quot;&gt;\n          &lt;thead&gt;\n            &lt;tr&gt;\n              &lt;th&gt;Resource&lt;/th&gt;\n              &lt;th&gt;Search&lt;/th&gt;\n              &lt;th&gt;Read&lt;/th&gt;\n              &lt;th&gt;Read Version&lt;/th&gt;\n              &lt;th&gt;Instance History&lt;/th&gt;\n              &lt;th&gt;Resource History&lt;/th&gt;\n              &lt;th&gt;Create&lt;/th&gt;\n              &lt;th&gt;Update&lt;/th&gt;\n              &lt;th&gt;Delete&lt;/th&gt;\n            &lt;/tr&gt;\n          &lt;/thead&gt;\n          &lt;tbody&gt;\n            &lt;tr&gt;\n              &lt;th&gt;UDS+ profiles&lt;/th&gt;\n              &lt;td&gt;\n                &lt;a href=\&quot;#UDS-search-type\&quot; title=\&quot;Search for specific UDS+ Resource instances.\&quot;&gt;SHALL&lt;/a&gt;\n              &lt;/td&gt;\n              &lt;td&gt;\n                &lt;a href=\&quot;#UDS-read\&quot; title=\&quot;Retrieve specific UDS+ Resource instances.\&quot;&gt;SHALL&lt;/a&gt;\n              &lt;/td&gt;\n              &lt;td&gt;\n              &lt;/td&gt;\n              &lt;td&gt;               \n              &lt;/td&gt;\n              &lt;td&gt;\n              &lt;/td&gt;\n              &lt;td&gt;\n              &lt;/td&gt;\n              &lt;td&gt;\n              &lt;/td&gt;\n\t\t\t  &lt;td&gt;\n              &lt;/td&gt;\n            &lt;/tr&gt;\n            \n          &lt;/tbody&gt;\n        &lt;/table&gt;\n      &lt;/div&gt;\n     \n        &lt;h3&gt;FHIR Operations summary&lt;/h3&gt;\n        &lt;p&gt;As a client, the Data Submitter has to be capable of invoking the below operation on the Data Source.&lt;/p&gt;\n      \n      &lt;ul&gt;\n        &lt;li&gt;\n          &lt;a href=\&quot;http://hl7.org/fhir/uv/bulkdata/OperationDefinition-group-export.html\&quot;&gt;Bulk Data Export ([BaseURL]/Group/[Id]/$export)&lt;/a&gt;\n        &lt;/li&gt;\n      &lt;/ul&gt;\n      \n      &lt;p&gt;As a client, the Data Submitter has to be capable of invoking the below operation on the Data Receiver to submit the manifest file.&lt;/p&gt;\n      \n      &lt;ul&gt;\n        &lt;li&gt;\n          &lt;a href=\&quot;http://fhir.org/guides/hrsa/uds-plus/OperationDefinition-import.html\&quot;&gt;Bulk Data Import ([BaseURL]/$import)&lt;/a&gt;\n        &lt;/li&gt;\n      &lt;/ul&gt;\n      \n      &lt;br/&gt;\n      &lt;br/&gt;\n      \n      &lt;h3&gt;\n        &lt;a href=\&quot;artifacts.html\&quot;&gt;UDS+ profiles&lt;/a&gt;\n      &lt;/h3&gt;\n      &lt;p&gt;Profiles: All UDS+ profiles\n      &lt;/p&gt;\n      &lt;h4&gt;Interactions&lt;/h4&gt;\n      &lt;div class=\&quot;table-wrapper\&quot;&gt;\n        &lt;table class=\&quot;list\&quot;&gt;\n          &lt;thead&gt;\n            &lt;tr&gt;\n              &lt;th&gt;Name&lt;/th&gt;\n              &lt;th&gt;Description&lt;/th&gt;\n            &lt;/tr&gt;\n          &lt;/thead&gt;\n          &lt;tbody&gt;\n            &lt;tr&gt;\n              &lt;th&gt;\n                &lt;a name=\&quot;UDS-search-type\&quot;&gt;\u00a0&lt;/a&gt;\n                &lt;span&gt;search&lt;/span&gt;\n              &lt;/th&gt;\n              &lt;td&gt;\n                &lt;p&gt;Search for specific UDS+ resource profile instances.&lt;/p&gt;\n              &lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n              &lt;th&gt;\n                &lt;a name=\&quot;UDS-read\&quot;&gt;\u00a0&lt;/a&gt;\n                &lt;span&gt;read&lt;/span&gt;\n              &lt;/th&gt;\n              &lt;td&gt;\n                &lt;p&gt;Retrieve specific UDS+ resource profile instances&lt;/p&gt;\n              &lt;/td&gt;\n            &lt;/tr&gt; \n          &lt;/tbody&gt;\n        &lt;/table&gt;\n      &lt;/div&gt;\n      &lt;br/&gt;\n      &lt;br/&gt; \n      \n    \n    &lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a>" : "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-submitter-client",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a>" : "1.0.2",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">name</a>" : "UdsPlusDataSubmitter",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a>" : "Uds Plus Data Submitter CapabilityStatement",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2020-12-06",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "HRSA BPHC",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://bphc.hrsa.gov/"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.description">description</a>" : "This is a CapabilityStatement that defines the expected capabilities of the Data Submitter actor.",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "001"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "requirements",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a>" : "4.0.1",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">format</a>" : [
+    "json"
+  ],
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">rest</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a>" : "client",
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.documentation">documentation</a>" : "The primary focus of the Data Submitter is to invoke the Group/[id]/$export operation and gather the UDS+ data using US Core and QI Core profiles.",
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">security</a>" : {
+        "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.description">description</a>" : "Implementations must meet the general security requirements documented in the security section of the implementation guide."
+      },
+      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.operation">operation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.operation.name">name</a>" : "export",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.operation.definition">definition</a>" : "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/group-export"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.operation.name">name</a>" : "import",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.operation.definition">definition</a>" : "http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/import"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+{% endraw %}

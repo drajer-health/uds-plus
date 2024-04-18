@@ -1,0 +1,182 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/Patient/example> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Patient Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This is a patient example for the *US Core Patient Profile*." ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Amy V. Baxter </b> female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (USUAL))</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ] ;
+         fhir:display [ fhir:v "White" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1002-5" ] ;
+         fhir:display [ fhir:v "American Indian or Alaska Native" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2028-9" ] ;
+         fhir:display [ fhir:v "Asian" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "detailed"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1586-7" ] ;
+         fhir:display [ fhir:v "Shoshone" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "detailed"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2036-2" ] ;
+         fhir:display [ fhir:v "Filipino" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Mixed" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2135-2" ] ;
+         fhir:display [ fhir:v "Hispanic or Latino" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "detailed"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2184-0" ] ;
+         fhir:display [ fhir:v "Dominican" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "detailed"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2148-5" ] ;
+         fhir:display [ fhir:v "Mexican" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Hispanic or Latino" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "F" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ASKU" ] ;
+         fhir:display [ fhir:v "asked but unknown" ]
+       ] ) ;
+       fhir:text [ fhir:v "asked but unknown" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical Record Number" ]
+       ] ) ;
+       fhir:text [ fhir:v "Medical Record Number" ]
+     ] ;
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1032702" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "old" ] ;
+     fhir:family [ fhir:v "Shaw" ] ;
+     fhir:given ( [ fhir:v "Amy" ] [ fhir:v "V." ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "2016-12-06"^^xsd:date ] ;
+       fhir:end [ fhir:v "2020-07-22"^^xsd:date ]
+     ]
+  ] [
+     fhir:family [ fhir:v "Baxter" ] ;
+     fhir:given ( [ fhir:v "Amy" ] [ fhir:v "V." ] ) ;
+     fhir:suffix ( [ fhir:v "PharmD" ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-07-22"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "555-555-5555" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "amy.shaw@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1987-02-20"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "old" ] ;
+     fhir:line ( [ fhir:v "49 Meadow St" ] ) ;
+     fhir:city [ fhir:v "Alstead" ] ;
+     fhir:state [ fhir:v "NH" ] ;
+     fhir:postalCode [ fhir:v "03602" ] ;
+     fhir:country [ fhir:v "US" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2016-12-06"^^xsd:date ] ;
+       fhir:end [ fhir:v "2020-07-22"^^xsd:date ]
+     ]
+  ] [
+     fhir:line ( [ fhir:v "183 Mountain View St" ] ) ;
+     fhir:city [ fhir:v "Alstead" ] ;
+     fhir:state [ fhir:v "NH" ] ;
+     fhir:postalCode [ fhir:v "03602" ] ;
+     fhir:country [ fhir:v "US" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-07-22"^^xsd:date ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

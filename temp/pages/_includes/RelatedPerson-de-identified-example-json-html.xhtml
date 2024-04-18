@@ -1,0 +1,25 @@
+{% raw %}<pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson">resourceType</a>" : "RelatedPerson",
+  "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson.id">id</a>" : "de-identified-example",
+  "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-relatedperson"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson.patient">patient</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/de-identified-example"
+  },
+  "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson.relationship">relationship</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "FAMMEMB",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "family member"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+{% endraw %}

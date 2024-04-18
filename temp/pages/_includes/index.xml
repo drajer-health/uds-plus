@@ -1,0 +1,58 @@
+<div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#intro">Introduction</a></li><li><a href="#technical">Technical Overview</a></li><li><a href="#Roadmap">Roadmap and Support</a></li></ul></div>
+  <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
+  
+  <a role="button" name="intro">  </a>
+  <h3>Introduction</h3>
+	<p>
+    Each calendar year, HRSA Health Center Program awardees and look-alikes are required to report a core set of information, including data on patient characteristics, services provided, clinical processes and health outcomes, patients' use of services, staffing, costs, and revenues as part of a standardized reporting system known as the Uniform Data System (UDS). The UDS is a standard data set that is reported annually and provides consistent information about health centers. 
+    It is the source of non duplicated data for the entire scope of services included in the grant or designation for the calendar year. HRSA uses UDS data to assess the impact and performance of the Health Center Program, and to promote data-driven quality improvement. The current UDS data does not contain patient level information however through the UDS+ project HRSA intends to collect patient level de-identified data. This new patient level UDS report is called UDS+ report.
+  </p>
+  <p>
+  This Implementation Guide (IG) defines the specifications by which Health Center Program awardees can report the **de-identified patient level** data to HRSA to meet the UDS reporting program requirements.
+  </p>
+	<a role="button" name="technical">  </a>
+	<h3>Technical Overview</h3>
+	<p>
+	Currently UDS data is submitted using a tabular data format via participating health centers. The submission mechanisms include portals, sftp and other mechanisms.
+	The data submitted is aggregated at the sites and is submitted to HRSA's UDS systems. In order to improve the efficiency, quality and timeliness of the data, The Bureau of Primary Health Care (BPHC) will transition most of the UDS data to de-identified patient-level data.
+	This modified patient level UDS report is called UDS+. 
+    In the context of the IG, there are two primary actors namely 
+    <ul>
+    <li>Health Centers: Responsible for creating the UDS+ de-identified report and submitting to HRSA.</li>
+    <li>HRSA: The Federal Agency responsible for accepting the UDS+ report, verifying, validating and processing the report.</li>
+    </ul>
+  </p>
+  <a name="walkthrough">  </a>
+  <p>
+    The main sections of this IG are:
+  </p>
+  <ul>
+    <li>
+      <a role="button" href="background.html">Background</a> - Provides business context for the implementation guide and information that implementers should be
+      familiar with before reading the remainder of the IG. This identifies the context of the IG and the various reporting mechanisms.
+    </li>
+    <li>
+      <a role="button" href="usecases.html">Use Cases</a> - Defines the  use case, workflows, actors and systems that will be used for UDS+ reporting.
+    </li>
+    <li>
+      <a role="button" href="dataelements.html">UDS+ Data Elements and FHIR Mappings</a> - Specifies UDS+ data elements and their FHIR Mappings and differences from US Core.
+    </li>
+    <li>
+      <a role="button" href="artifacts.html">FHIR Artifacts</a> - Specifies detailed requirements for FHIR profiles, operations, code systems and value sets for UDS+ reporting.
+    </li>
+    <li>
+      <a role="button" href="spec.html">FHIR API Based Reporting Specification</a> - Specifies detailed requirements for the FHIR API based UDS+ data submission.
+    </li>
+    <li>
+      <a role="button" href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
+    </li>
+  </ul>
+  
+  <a role="button" name="Roadmap">  </a>
+ <h3>Roadmap and Support</h3>
+	<p>
+	This implementation guide was built to support the Health Resources and Services Administration HRSA Uniform Data System (UDS) Modernization in collaboration with the Office of the National Coordinator for Health IT (ONC). 
+    The IG is published using Creative Commons CC0 1.0 Universal license. Feedback and contributions are welcome and can be submitted using the New Issue link in the footer of every page. Discussions on the use of this IG take place regularly on the HRSA UDS+ UTC calls.  To attend the calls implementers can request the information using the <a href="https://hrsa.my.site.com/support/s/">BPHC Contact Form</a>.
+	Many of the implementers participate in the discussions and development of the IG and are part the testing activities.   
+  </p>
+</div>

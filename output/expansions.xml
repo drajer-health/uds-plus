@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="000e18e7-0bbb-474c-b137-0bc8ca57fd3f"/>
+  <meta>
+    <lastUpdated value="2024-04-18T11:53:23.729+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-agriculture-worker-status"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
+          <source value="#3Te0anOrvocKgcow"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-udsplus-agriculture-worker-status-codes.html">UDS Plus Agriculter Worker Status Codes v1.0.2 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-udsplus-agriculture-worker-status-codes-migratory"> </a>  
+                  <a href="CodeSystem-udsplus-agriculture-worker-status-codes.html#udsplus-agriculture-worker-status-codes-migratory">migratory</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes</td>
+                <td>Migratory Agriculture Worker</td>
+                <td>
+                  <div>
+                    <p>Patients whose principal employment is in agriculture and who establish a temporary home for the purposes of such employment as a migratory agricultural worker,</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-udsplus-agriculture-worker-status-codes-seasonal"> </a>  
+                  <a href="CodeSystem-udsplus-agriculture-worker-status-codes.html#udsplus-agriculture-worker-status-codes-seasonal">seasonal</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes</td>
+                <td>Seasonal Agriculture Worker</td>
+                <td>
+                  <div>
+                    <p>Patients whose principal employment is in agriculture on a seasonal basis (e.g., picking fruit during the limited months of a picking season), but who DO NOT establish a temporary home for purposes of such employment</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-agriculture-worker-status"/>
+        <version value="1.0.2"/>
+        <name value="UdsPlusAgricultureWorkerStatusCodes"/>
+        <title value="Uds Plus Agriculture Worker Status Codes"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2020-09-06"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2cbee57a-853e-450d-b548-b0366c9c36b6"/>
+          <timestamp value="2024-04-18T11:56:56+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes|1.0.2"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes"/>
+            <code value="migratory"/>
+            <display value="Migratory Agriculture Worker"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes"/>
+            <code value="seasonal"/>
+            <display value="Seasonal Agriculture Worker"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-birthsex-codes"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
+          <source value="#3Te0anOrvocKgcow"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-AdministrativeGender.html">AdministrativeGender v2.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-AdministrativeGender-F"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-AdministrativeGender.html#v3-AdministrativeGender-F">F</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender</td>
+                <td>Female</td>
+                <td>
+                  <div>
+                    <p>Female</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-AdministrativeGender-M"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-AdministrativeGender.html#v3-AdministrativeGender-M">M</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender</td>
+                <td>Male</td>
+                <td>
+                  <div>
+                    <p>Male</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-birthsex-codes"/>
+        <version value="1.0.2"/>
+        <name value="UdsPlusBirthSexCodes"/>
+        <title value="Uds Plus Birth Sex Codes"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-08-25"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f08b6872-eae3-47df-99e6-7fb5d222839d"/>
+          <timestamp value="2024-04-18T11:56:57+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender|2.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+            <code value="F"/>
+            <display value="Female"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+            <code value="M"/>
+            <display value="Male"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-gender-identity-codes"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
+          <source value="#3Te0anOrvocKgcow"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.101/expansion">Gender Identity USCDI core v20220316 (ValueSet)</a>
+                </li>
+                <li>
+                  <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1114.17/expansion">Asked but Unknown and Other v20220316 (ValueSet)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.32/expansion">Gender Identity v20220316 (ValueSet)</a>
+                </li>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-ASKU"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU">ASKU</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>asked but unknown</td>
+                <td>
+                  <div>
+                    <p>Information was sought but not found (e.g., patient was asked but didn't know)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>other</td>
+                <td>
+                  <div>
+                    <p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+                    </p>
+
+                    <p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-407376001"> </a>  
+                  <a href="http://snomed.info/id/407376001">407376001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Male-to-female transsexual (finding)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-407377005"> </a>  
+                  <a href="http://snomed.info/id/407377005">407377005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Female-to-male transsexual (finding)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-446131000124102"> </a>  
+                  <a href="http://snomed.info/id/446131000124102">446131000124102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Identifies as non-conforming gender (finding)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-446141000124107"> </a>  
+                  <a href="http://snomed.info/id/446141000124107">446141000124107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Identifies as female gender (finding)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-446151000124109"> </a>  
+                  <a href="http://snomed.info/id/446151000124109">446151000124109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Identifies as male gender (finding)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-NASK"> </a>  
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NASK">NASK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Not Asked</td>
+                <td>
+                  <div>
+                    <p>This information has not been sought (e.g., patient was not asked)</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-gender-identity-codes"/>
+        <version value="1.0.2"/>
+        <name value="UdsPlusGenderIdentityCodes"/>
+        <title value="Uds Plus Gender Identity Codes"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-08-25"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:57318d21-d82c-427b-aa65-0eec0ba4d0fd"/>
+          <timestamp value="2024-04-18T11:56:57+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.32|20220316"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1114.17|20220316"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.101|20220316"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="ASKU"/>
+            <display value="asked but unknown"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="other"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="407376001"/>
+            <display value="Male-to-female transsexual (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="407377005"/>
+            <display value="Female-to-male transsexual (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="446131000124102"/>
+            <display value="Identifies as non-conforming gender (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="446141000124107"/>
+            <display value="Identifies as female gender (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="446151000124109"/>
+            <display value="Identifies as male gender (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="NASK"/>
+            <display value="Not Asked"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-housing-status"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
+          <source value="#3Te0anOrvocKgcow"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-udsplus-housing-status-codes.html">UDS Plus Housing Status Codes v1.0.2 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-udsplus-housing-status-codes-homeless-shelter"> </a>  
+                  <a href="CodeSystem-udsplus-housing-status-codes.html#udsplus-housing-status-codes-homeless-shelter">homeless-shelter</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes</td>
+                <td>Patients in Homeless Shelters</td>
+                <td>
+                  <div>
+                    <p>Patients who are living in a homeless shelter</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-udsplus-housing-status-codes-transitional"> </a>  
+                  <a href="CodeSystem-udsplus-housing-status-codes.html#udsplus-housing-status-codes-transitional">transitional</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes</td>
+                <td>Patients in transitional state</td>
+                <td>
+                  <div>
+                    <p>Patients who do not have a house and are in a transitional state</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-udsplus-housing-status-codes-doubling-up"> </a>  
+                  <a href="CodeSystem-udsplus-housing-status-codes.html#udsplus-housing-status-codes-doubling-up">doubling-up</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes</td>
+                <td>Patients doubling up</td>
+                <td>
+                  <div>
+                    <p>Patients who are doubling up with others.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-udsplus-housing-status-codes-street"> </a>  
+                  <a href="CodeSystem-udsplus-housing-status-codes.html#udsplus-housing-status-codes-street">street</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes</td>
+                <td>Patients who are on the streets</td>
+                <td>
+                  <div>
+                    <p>Patients who do not have a house and are living on the streets</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-udsplus-housing-status-codes-permanent-supportive-housing"> </a>  
+                  <a href="CodeSystem-udsplus-housing-status-codes.html#udsplus-housing-status-codes-permanent-supportive-housing">permanent-supportive-housing</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes</td>
+                <td>Patients in permanent supportive housing</td>
+                <td>
+                  <div>
+                    <p>Patients who are living in a permanent supportive housing</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-udsplus-housing-status-codes-other"> </a>  
+                  <a href="CodeSystem-udsplus-housing-status-codes.html#udsplus-housing-status-codes-other">other</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes</td>
+                <td>Patients who have other kinds of accomodation</td>
+                <td>
+                  <div>
+                    <p>Patients who have other kinds of accomodation</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-udsplus-housing-status-codes-unknown"> </a>  
+                  <a href="CodeSystem-udsplus-housing-status-codes.html#udsplus-housing-status-codes-unknown">unknown</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes</td>
+                <td>Patients with Unknown accomodation</td>
+                <td>
+                  <div>
+                    <p>Patients with Unknown accomodation</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-housing-status"/>
+        <version value="1.0.2"/>
+        <name value="UdsPlusHousingStatusCodes"/>
+        <title value="Uds Plus Housing Status Codes"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2020-09-06"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7548b703-7744-4460-bb17-4287d4547c94"/>
+          <timestamp value="2024-04-18T11:56:57+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes|1.0.2"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+            <code value="homeless-shelter"/>
+            <display value="Patients in Homeless Shelters"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+            <code value="transitional"/>
+            <display value="Patients in transitional state"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+            <code value="doubling-up"/>
+            <display value="Patients doubling up"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+            <code value="street"/>
+            <display value="Patients who are on the streets"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+            <code value="permanent-supportive-housing"/>
+            <display value="Patients in permanent supportive housing"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+            <code value="other"/>
+            <display value="Patients who have other kinds of accomodation"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+            <code value="unknown"/>
+            <display value="Patients with Unknown accomodation"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
+          <source value="#3Te0anOrvocKgcow"/>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 9 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-uds-plus-insurance-codes.html">UDS Plus Insurance Codes v1.0.2 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-uds-plus-insurance-codes-none-or-uninsured"> </a>  
+                  <a href="CodeSystem-uds-plus-insurance-codes.html#uds-plus-insurance-codes-none-or-uninsured">none-or-uninsured</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</td>
+                <td>None or Uninsured</td>
+                <td>
+                  <div>
+                    <p>Patient does not have insurance</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-uds-plus-insurance-codes-medicaid-title-19-21"> </a>  
+                  <a href="CodeSystem-uds-plus-insurance-codes.html#uds-plus-insurance-codes-medicaid-title-19-21">medicaid-title-19-21</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</td>
+                <td>Medicaid Title X1X</td>
+                <td>
+                  <div>
+                    <p>Patients with Medicaid (Title X1X) insurance</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-uds-plus-insurance-codes-chip-medicaid"> </a>  
+                  <a href="CodeSystem-uds-plus-insurance-codes.html#uds-plus-insurance-codes-chip-medicaid">chip-medicaid</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</td>
+                <td>CHIP Medicaid</td>
+                <td>
+                  <div>
+                    <p>Patients with CHIP Medicaid insurance</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-uds-plus-insurance-codes-medicare"> </a>  
+                  <a href="CodeSystem-uds-plus-insurance-codes.html#uds-plus-insurance-codes-medicare">medicare</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</td>
+                <td>Medicare</td>
+                <td>
+                  <div>
+                    <p>Patients with Medicare insurance</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-uds-plus-insurance-codes-dually-eligible-medicaid-medicare"> </a>  
+                  <a href="CodeSystem-uds-plus-insurance-codes.html#uds-plus-insurance-codes-dually-eligible-medicaid-medicare">dually-eligible-medicaid-medicare</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</td>
+                <td>Dually Eligible</td>
+                <td>
+                  <div>
+                    <p>Patients with both Medicare and Medicaid</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-uds-plus-insurance-codes-medicare-and-private"> </a>  
+                  <a href="CodeSystem-uds-plus-insurance-codes.html#uds-plus-insurance-codes-medicare-and-private">medicare-and-private</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</td>
+                <td>Medicare and Private</td>
+                <td>
+                  <div>
+                    <p>Patients with both Medicare and Private insurance such as Medigap</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-uds-plus-insurance-codes-other-non-chip-public-insurance"> </a>  
+                  <a href="CodeSystem-uds-plus-insurance-codes.html#uds-plus-insurance-codes-other-non-chip-public-insurance">other-non-chip-public-insurance</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</td>
+                <td>Other Non CHIP Public Insurance</td>
+                <td>
+                  <div>
+                    <p>Patients who have other public insurance which is non CHIP</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-uds-plus-insurance-codes-other-public-insurance-chip"> </a>  
+                  <a href="CodeSystem-uds-plus-insurance-codes.html#uds-plus-insurance-codes-other-public-insurance-chip">other-public-insurance-chip</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</td>
+                <td>Other Public Insurance CHIP</td>
+                <td>
+                  <div>
+                    <p>Patients who have other public insurance which is CHIP</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.org-guides-hrsa-uds-plus-CodeSystem-uds-plus-insurance-codes-private-insurance"> </a>  
+                  <a href="CodeSystem-uds-plus-insurance-codes.html#uds-plus-insurance-codes-private-insurance">private-insurance</a>
+                </td>
+                <td>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</td>
+                <td>Private Insurance</td>
+                <td>
+                  <div>
+                    <p>Patients has Private Insurance</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes"/>
+        <version value="1.0.2"/>
+        <name value="UdsPlusInsuranceCodes"/>
+        <title value="Uds Plus Insurance Codes"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2020-09-06"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:0ca64268-7c7d-4a10-af5e-a8d0a8ef455d"/>
+          <timestamp value="2024-04-18T11:56:58+00:00"/>
+          <total value="9"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes|1.0.2"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+            <code value="none-or-uninsured"/>
+            <display value="None or Uninsured"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+            <code value="medicaid-title-19-21"/>
+            <display value="Medicaid Title X1X"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+            <code value="chip-medicaid"/>
+            <display value="CHIP Medicaid"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+            <code value="medicare"/>
+            <display value="Medicare"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+            <code value="dually-eligible-medicaid-medicare"/>
+            <display value="Dually Eligible"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+            <code value="medicare-and-private"/>
+            <display value="Medicare and Private"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+            <code value="other-non-chip-public-insurance"/>
+            <display value="Other Non CHIP Public Insurance"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+            <code value="other-public-insurance-chip"/>
+            <display value="Other Public Insurance CHIP"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+            <code value="private-insurance"/>
+            <display value="Private Insurance"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

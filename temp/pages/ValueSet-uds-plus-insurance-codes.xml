@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="uds-plus-insurance-codes"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
+    <source value="#3Te0anOrvocKgcow"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-uds-plus-insurance-codes.html"><code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</code></a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes"/>
+  <version value="1.0.2"/>
+  <name value="UdsPlusInsuranceCodes"/>
+  <title value="Uds Plus Insurance Codes"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2020-09-06"/>
+  <publisher value="HRSA BPHC"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bphc.hrsa.gov/"/>
+    </telecom>
+  </contact>
+  <description value="The Uds Plus Insurance Codes is a 'starter set' of codes for identifying the source of the insurance for Patients."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
+    </include>
+  </compose>
+</ValueSet>

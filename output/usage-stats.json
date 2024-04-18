@@ -1,0 +1,417 @@
+{
+  "package": "fhir.hrsa.uds-plus",
+  "version": "1.0.2",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension",
+      "title": "UDS Plus Age Extension",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-birthsex-extension",
+      "title": "UDS Plus Birth Sex Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-capitated-member-months-extension",
+      "title": "UDS Plus Capitated Member Months Extension",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-ethnicity-extension",
+      "title": "UDS Plus Ethnicity Extension",
+      "types": [
+        "Coding",
+        "Coding",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension",
+      "title": "UDS Plus FeeForService Member Months Extension",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension",
+      "title": "UDS Plus Gender Identity Extension",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-housing-status-extension",
+      "title": "UDS Plus Housing Status Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-race-extension",
+      "title": "UDS Plus Race Extension",
+      "types": [
+        "Coding",
+        "Coding",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-recordedDate-extension",
+      "title": "UDS Plus RecordedDate Extension",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-veteran-status-extension",
+      "title": "UDS Plus Veteran Status Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/udsplus-agriculture-worker-status",
+      "title": "UDS Plus Agriculture Worker Status Extension",
+      "types": [
+        "code"
+      ]
+    }
+  ],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-sexual-orientation-observation",
+        "title": "De-Identified UDS Plus Sexual Orientation"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-patient",
+        "title": "De-Identified UDS Plus Patient"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-relatedperson",
+        "title": "De-Identified UDS Plus RelatedPerson"
+      }
+    ],
+    "AdverseEvent": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-adverseevent",
+        "title": "De-Identified UDS Plus AdverseEvent"
+      }
+    ],
+    "AllergyIntolerance": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-allergyintolerance",
+        "title": "De-Identified UDS Plus AllergyIntolerance"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-coverage",
+        "title": "DeIdentified UDS Plus Coverage"
+      }
+    ],
+    "Parameters": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-patient-reporting-parameters",
+        "title": "UDS Plus Patient Reporting Parameters"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-diagnosis",
+        "title": "De-Identified UDS Plus Diagnosis"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-encounter",
+        "title": "De-Identified UDS Plus Encounter"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-immunization",
+        "title": "De-Identified UDS Plus Immunization"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-location",
+        "title": "UDS Plus Location"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-medicationrequest",
+        "title": "De-Identified UDS Plus MedicationRequest"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-medicationstatement",
+        "title": "De-Identified UDS Plus MedicationStatement"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-procedure",
+        "title": "De-Identified UDS Plus Procedure"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-servicerequest",
+        "title": "De-Identified UDS Plus ServiceRequest"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension": [
+      "Encounter",
+      "Patient"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-birthsex-extension": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-capitated-member-months-extension": [
+      "Coverage"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-ethnicity-extension": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension": [
+      "Coverage"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-housing-status-extension": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-race-extension": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-recordedDate-extension": [
+      "Procedure"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-veteran-status-extension": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/udsplus-agriculture-worker-status": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Observation.value[x]",
+      "Patient.address.postalCode"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "Condition.meta",
+      "Encounter.meta",
+      "Parameters.meta",
+      "Patient.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "Condition.meta",
+      "Encounter.meta",
+      "Parameters.meta",
+      "Patient.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "ImplementationGuide",
+      "ImplementationGuide.definition.page.page",
+      "OperationDefinition",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CodeSystem",
+      "ImplementationGuide",
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "OperationDefinition",
+      "StructureDefinition",
+      "StructureDefinition.snapshot.element",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
+      "StructureDefinition.snapshot.element"
+    ]
+  }
+}

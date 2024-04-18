@@ -1,0 +1,52 @@
+{% raw %}<pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure">resourceType</a>" : "Procedure",
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.id">id</a>" : "de-identified-example",
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-procedure"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-recordedDate-extension",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2005"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.status">status</a>" : "completed",
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.code">code</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "48387007",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Tracheotomy"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/de-identified-example"
+  },
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.encounter">encounter</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/de-identified-example"
+  },
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performed[x]">performedDateTime</a>" : "2005",
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performer">performer</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performer.actor">actor</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/example"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.bodySite">bodySite</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "44567001",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Tracheal structure"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+{% endraw %}

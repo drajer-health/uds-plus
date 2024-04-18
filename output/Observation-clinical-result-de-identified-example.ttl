@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/Observation/clinical-result-de-identified-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "clinical-result-de-identified-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-clinical-result-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-clinical-result-observation>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "imaging" ] ;
+       fhir:display [ fhir:v "Imaging" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:80940-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80940-0" ] ;
+       fhir:display [ fhir:v "DXA Femur-L Z-score BMD" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/Patient/de-identified-example> ;
+     fhir:reference [ fhir:v "Patient/de-identified-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/Encounter/de-identified-example> ;
+     fhir:reference [ fhir:v "Encounter/de-identified-example" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2005"^^xsd:gYear] ; # 
+  fhir:issued [ fhir:v "2005-04-03T15:30:10+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/Practitioner/example> ;
+     fhir:reference [ fhir:v "Practitioner/example" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0.05"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Z-Score" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "{Z-Score}" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

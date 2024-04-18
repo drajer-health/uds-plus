@@ -1,0 +1,201 @@
+﻿UdsPlusFhirIg : Validation Results
+=========================================
+
+err = 0, warn = 2, info = 30
+IG Publisher Version: 1.3.9 Out of date - current version is 1.6.5
+Generated Thu Apr 18 11:59:05 UTC 2024. FHIR version 4.0.1 for fhir.hrsa.uds-plus#1.0.2 (canonical = http://fhir.org/guides/hrsa/uds-plus)
+ Build Errors : 0 / 0 / 0
+ C:\Users\Administrator\git\uds-plus\input\examples\AdverseEvent-deidentified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\AllergyIntolerance-deidentified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\ClinicalResult-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Condition-de-identified-diagnosis : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Condition-us-core-diagnosis : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Coverage-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Deidentify-data-operation-urls-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Encounter-de-identified-example : 0 / 0 / 2
+ C:\Users\Administrator\git\uds-plus\input\examples\Encounter-example : 0 / 0 / 2
+ C:\Users\Administrator\git\uds-plus\input\examples\Immunization-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\LabObservation-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Location. : 0 / 0 / 4
+ C:\Users\Administrator\git\uds-plus\input\examples\MedicationRequest-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\MedicationStatement-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Observation-de-identified-income : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Observation-de-identified-income-with-quantity : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Organization : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Organization-healthcare-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Parameters-manifest : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Patient-de-identified : 0 / 0 / 5
+ C:\Users\Administrator\git\uds-plus\input\examples\Patient-de-identified-age89 : 0 / 0 / 5
+ C:\Users\Administrator\git\uds-plus\input\examples\Patient-de-identified-smallpop : 0 / 0 / 5
+ C:\Users\Administrator\git\uds-plus\input\examples\Patient-us-core-example : 0 / 0 / 9
+ C:\Users\Administrator\git\uds-plus\input\examples\Patient-us-core-example-smallpop : 0 / 0 / 9
+ C:\Users\Administrator\git\uds-plus\input\examples\Practitioner-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Procedure-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\RelatedPerson-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\Reporting-Parameters-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\ServiceRequest-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\examples\SexualOrientation-de-identified-example : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\capabilitystatement-datareceiver-server : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\capabilitystatement-datasource : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\capabilitystatement-datasubmitter-client : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\capabilitystatement-trust-service-provider : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\codesystem-udsplus-agriculture-worker-status-codes : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\codesystem-udsplus-housing-status-codes : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\codesystem-udsplus-insurance-codes : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\codesystem-udsplus-service-delivery-codes : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\operationdefintion-deidentify : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\operationdefintion-import : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-adverseevent : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-age-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-allergyintolerance : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-birthsex-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-capitated-member-months-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-clinical-result-observation : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-coverage : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-de-identify-data-urls-parameter : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-diagnosis : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-encounter : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-ethnicity-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-feeforservice-member-months-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-gender-identity-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-housing-status-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-immunization : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-income-observation : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-lab-observation : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-location : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-medicationrequest : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-medicationstatement : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-observation : 0 / 1 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-parameters-manifest : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-patient : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-patient-reporting-parameters : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-procedure : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-race-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-recordedDate-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-relatedperson : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-servicerequest : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-sexual-orientation-observation : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-veteran-status-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\uds-plus-worker-status-extension : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\valueset-udsplus-agriculture-worker-status : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\valueset-udsplus-birthsex-codes : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\valueset-udsplus-gender-identity-codes : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\valueset-udsplus-housing-codes : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\valueset-udsplus-insurance-codes : 0 / 0 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\valueset-udsplus-service-delivery-codes : 0 / 1 / 1
+ C:\Users\Administrator\git\uds-plus\input\resources\valueset-udsplus-sexual-orientation-codes : 0 / 1 / 1
+ C:\Users\Administrator\git\uds-plus\input\udsplus : 0 / 1 / 1
+</table>
+== n/a ==
+== input\examples\AdverseEvent-deidentified-example.json ==
+== input\examples\AllergyIntolerance-deidentified-example.json ==
+== input\examples\ClinicalResult-de-identified-example.json ==
+== input\examples\Condition-de-identified-diagnosis.json ==
+== input\examples\Condition-us-core-diagnosis.json ==
+== input\examples\Coverage-de-identified-example.json ==
+== input\examples\Deidentify-data-operation-urls-example.json ==
+== input\examples\Encounter-de-identified-example.json ==
+INFORMATION: Encounter/de-identified-example: Encounter.hospitalization.dischargeDisposition.coding[0]: Code System URI 'http://www.nubc.org/patient-discharge' is unknown so the code cannot be validated
+== input\examples\Encounter-example.json ==
+INFORMATION: Encounter/example: Encounter.hospitalization.dischargeDisposition.coding[0]: Code System URI 'http://www.nubc.org/patient-discharge' is unknown so the code cannot be validated
+== input\examples\Immunization-de-identified-example.json ==
+== input\examples\LabObservation-de-identified-example.json ==
+== input\examples\Location..json ==
+== input\examples\MedicationRequest-de-identified-example.json ==
+== input\examples\MedicationStatement-de-identified-example.json ==
+== input\examples\Observation-de-identified-income.json ==
+== input\examples\Observation-de-identified-income-with-quantity.json ==
+== input\examples\Organization.json ==
+== input\examples\Organization-healthcare-example.json ==
+== input\examples\Parameters-manifest.json ==
+== input\examples\Patient-de-identified.json ==
+INFORMATION: Patient/de-identified-example: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/de-identified-example: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/de-identified-example: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/de-identified-example: Patient.extension[1].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+== input\examples\Patient-de-identified-age89.json ==
+INFORMATION: Patient/de-identified-age89-example: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/de-identified-age89-example: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/de-identified-age89-example: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/de-identified-age89-example: Patient.extension[1].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+== input\examples\Patient-de-identified-smallpop.json ==
+INFORMATION: Patient/de-identified-smallpop-example: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/de-identified-smallpop-example: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/de-identified-smallpop-example: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/de-identified-smallpop-example: Patient.extension[1].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+== input\examples\Patient-us-core-example.json ==
+INFORMATION: Patient/example: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/example: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/example: Patient.extension[0].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/example: Patient.extension[0].extension[3].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/example: Patient.extension[0].extension[4].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/example: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/example: Patient.extension[1].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/example: Patient.extension[1].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+== input\examples\Patient-us-core-example-smallpop.json ==
+INFORMATION: Patient/smallpop-example: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/smallpop-example: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/smallpop-example: Patient.extension[0].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/smallpop-example: Patient.extension[0].extension[3].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/smallpop-example: Patient.extension[0].extension[4].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/smallpop-example: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/smallpop-example: Patient.extension[1].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/smallpop-example: Patient.extension[1].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+== input\examples\Practitioner-example.json ==
+== input\examples\Procedure-de-identified-example.json ==
+== input\examples\RelatedPerson-de-identified-example.json ==
+== input\examples\Reporting-Parameters-example.json ==
+== input\examples\ServiceRequest-de-identified-example.json ==
+== input\examples\SexualOrientation-de-identified-example.json ==
+== input\resources\capabilitystatement-datareceiver-server.xml ==
+== input\resources\capabilitystatement-datasource.xml ==
+== input\resources\capabilitystatement-datasubmitter-client.xml ==
+== input\resources\capabilitystatement-trust-service-provider.xml ==
+== input\resources\codesystem-udsplus-agriculture-worker-status-codes.xml ==
+== input\resources\codesystem-udsplus-housing-status-codes.xml ==
+== input\resources\codesystem-udsplus-insurance-codes.xml ==
+== input\resources\codesystem-udsplus-service-delivery-codes.xml ==
+== input\resources\operationdefintion-deidentify.xml ==
+== input\resources\operationdefintion-import.xml ==
+== input\resources\uds-plus-adverseevent.xml ==
+== input\resources\uds-plus-age-extension.xml ==
+== input\resources\uds-plus-allergyintolerance.xml ==
+== input\resources\uds-plus-birthsex-extension.xml ==
+== input\resources\uds-plus-capitated-member-months-extension.xml ==
+== input\resources\uds-plus-clinical-result-observation.xml ==
+== input\resources\uds-plus-coverage.xml ==
+== input\resources\uds-plus-de-identify-data-urls-parameter.xml ==
+== input\resources\uds-plus-diagnosis.xml ==
+== input\resources\uds-plus-encounter.xml ==
+== input\resources\uds-plus-ethnicity-extension.xml ==
+== input\resources\uds-plus-feeforservice-member-months-extension.xml ==
+== input\resources\uds-plus-gender-identity-extension.xml ==
+== input\resources\uds-plus-housing-status-extension.xml ==
+== input\resources\uds-plus-immunization.xml ==
+== input\resources\uds-plus-income-observation.xml ==
+== input\resources\uds-plus-lab-observation.xml ==
+== input\resources\uds-plus-location.xml ==
+== input\resources\uds-plus-medicationrequest.xml ==
+== input\resources\uds-plus-medicationstatement.xml ==
+== input\resources\uds-plus-observation.xml ==
+WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-observation'): The Implementation Guide contains no examples for this profile
+== input\resources\uds-plus-parameters-manifest.xml ==
+== input\resources\uds-plus-patient.xml ==
+== input\resources\uds-plus-patient-reporting-parameters.xml ==
+== input\resources\uds-plus-procedure.xml ==
+== input\resources\uds-plus-race-extension.xml ==
+== input\resources\uds-plus-recordedDate-extension.xml ==
+== input\resources\uds-plus-relatedperson.xml ==
+== input\resources\uds-plus-servicerequest.xml ==
+== input\resources\uds-plus-sexual-orientation-observation.xml ==
+== input\resources\uds-plus-veteran-status-extension.xml ==
+== input\resources\uds-plus-worker-status-extension.xml ==
+== input\resources\valueset-udsplus-agriculture-worker-status.xml ==
+== input\resources\valueset-udsplus-birthsex-codes.xml ==
+== input\resources\valueset-udsplus-gender-identity-codes.xml ==
+== input\resources\valueset-udsplus-housing-codes.xml ==
+== input\resources\valueset-udsplus-insurance-codes.xml ==
+== input\resources\valueset-udsplus-service-delivery-codes.xml ==
+== input\resources\valueset-udsplus-sexual-orientation-codes.xml ==
+== input\udsplus.xml ==
+WARNING: C:\Users\Administrator\git\uds-plus\input\udsplus: Unknown Parameters: [apply-wg]

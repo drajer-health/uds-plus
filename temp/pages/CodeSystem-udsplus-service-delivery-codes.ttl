@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "udsplus-service-delivery-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">public-housing<a name=\"udsplus-service-delivery-codes-public-housing\"> </a></td><td>Care was delivered in a Location that is considered public housing</td><td>Care was delivered in a Location that is considered public housing</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"^^xsd:anyURI ;
+           fhir:link <http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.2"] ; # 
+  fhir:name [ fhir:v "UDSPlusServiceDeliveryCodes"] ; # 
+  fhir:title [ fhir:v "UDS Plus Housing Service Delivery Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HRSA BPHC"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://bphc.hrsa.gov/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "public-housing" ] ;
+     fhir:display [ fhir:v "Care was delivered in a Location that is considered public housing" ] ;
+     fhir:definition [ fhir:v "Care was delivered in a Location that is considered public housing" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

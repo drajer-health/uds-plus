@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="uds-plus-sexual-orientation-codes"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
+    <source value="#3Te0anOrvocKgcow"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation</code></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NASK">NASK</a></td><td>Not Asked</td><td>This information has not been sought (e.g., patient was not asked)</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-sexual-orientation-codes"/>
+  <version value="1.0.2"/>
+  <name value="UdsPlusSexualOrientationCodes"/>
+  <title value="Uds Plus Sexual Orientation Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-08-25"/>
+  <publisher value="HRSA BPHC"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bphc.hrsa.gov/"/>
+    </telecom>
+  </contact>
+  <description value="The Uds Plus Sexual Orientation Codes is a 'starter set' of codes for identifying the sexual orientation of Patients."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation"/>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+        <code value="NASK"/>
+        <display value="Not Asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

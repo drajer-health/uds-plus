@@ -1,0 +1,40 @@
+{% raw %}<pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/adverseevent.html#AdverseEvent">resourceType</a>" : "AdverseEvent",
+  "<a href="http://hl7.org/fhir/R4/adverseevent.html#AdverseEvent.id">id</a>" : "de-identified-example",
+  "<a href="http://hl7.org/fhir/R4/adverseevent.html#AdverseEvent.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2017-05-26T11:56:57.250-04:00",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-adverseevent"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/adverseevent.html#AdverseEvent.actuality">actuality</a>" : "actual",
+  "<a href="http://hl7.org/fhir/R4/adverseevent.html#AdverseEvent.category">category</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "medication-mishap",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Medication Mishap"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Medication Mishap - Wrong Dose"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/adverseevent.html#AdverseEvent.event">event</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "140004",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Chronic Pharyngitis"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Chronic Pharyngitis"
+  },
+  "<a href="http://hl7.org/fhir/R4/adverseevent.html#AdverseEvent.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/de-identified-example"
+  },
+  "<a href="http://hl7.org/fhir/R4/adverseevent.html#AdverseEvent.date">date</a>" : "2015-11-01T17:00:14-05:00",
+  "<a href="http://hl7.org/fhir/R4/adverseevent.html#AdverseEvent.recordedDate">recordedDate</a>" : "2017-11-01T17:00:14-05:00"
+}</code></pre>
+{% endraw %}

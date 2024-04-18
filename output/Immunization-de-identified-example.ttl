@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/Immunization/de-identified-example> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "de-identified-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-immunization>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:statusReason [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] )
+  ] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "197" ] ;
+       fhir:display [ fhir:v "influenza, high-dose, quadrivalent" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/Patient/de-identified-example> ;
+     fhir:reference [ fhir:v "Patient/de-identified-example" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2023"^^xsd:gYear] ; # 
+  fhir:recorded [ fhir:v "2023"^^xsd:gYear] ; # 
+  fhir:primarySource [ fhir:v "true"^^xsd:boolean] . # 
+
+# -------------------------------------------------------------------------------------
+

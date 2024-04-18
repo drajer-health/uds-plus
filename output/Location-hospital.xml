@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="hospital"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-location"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b> Location</b><a name="Holy Family hospital"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;hospital&quot; </p><p style="margin-bottom: 0px"></p></div><p><b>status</b>: active</p><p><b>name</b>: Holy Family Hospital</p><p><b>telecom</b>: ph: 9786870156</p><p><b>address</b>: 70 EAST STREET METHUEN MA 01844 US </p><p><b>managingOrganization</b>: <a href="Organization-holy-healthcare.html">Organization/holy-healthcare: Holy Healthcare</a> &quot;Holy Healthcare&quot;</p></div>
+  </text>
+  <status value="active"/>
+  <name value="Holy Family Hospital"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="9786870156"/>
+  </telecom>
+  <address>
+    <line value="70 EAST STREET"/>
+    <city value="METHUEN"/>
+    <state value="MA"/>
+    <postalCode value="01844"/>
+    <country value="US"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/holy-healthcare"/>
+    <display value="Holy Healthcare"/>
+  </managingOrganization>
+</Location>

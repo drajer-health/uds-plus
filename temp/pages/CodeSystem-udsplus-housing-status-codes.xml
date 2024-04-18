@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="udsplus-housing-status-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">homeless-shelter<a name="udsplus-housing-status-codes-homeless-shelter"> </a></td><td>Patients in Homeless Shelters</td><td>Patients who are living in a homeless shelter</td></tr><tr><td style="white-space:nowrap">transitional<a name="udsplus-housing-status-codes-transitional"> </a></td><td>Patients in transitional state</td><td>Patients who do not have a house and are in a transitional state</td></tr><tr><td style="white-space:nowrap">doubling-up<a name="udsplus-housing-status-codes-doubling-up"> </a></td><td>Patients doubling up</td><td>Patients who are doubling up with others.</td></tr><tr><td style="white-space:nowrap">street<a name="udsplus-housing-status-codes-street"> </a></td><td>Patients who are on the streets</td><td>Patients who do not have a house and are living on the streets</td></tr><tr><td style="white-space:nowrap">permanent-supportive-housing<a name="udsplus-housing-status-codes-permanent-supportive-housing"> </a></td><td>Patients in permanent supportive housing</td><td>Patients who are living in a permanent supportive housing</td></tr><tr><td style="white-space:nowrap">other<a name="udsplus-housing-status-codes-other"> </a></td><td>Patients who have other kinds of accomodation</td><td>Patients who have other kinds of accomodation</td></tr><tr><td style="white-space:nowrap">unknown<a name="udsplus-housing-status-codes-unknown"> </a></td><td>Patients with Unknown accomodation</td><td>Patients with Unknown accomodation</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"/>
+  <version value="1.0.2"/>
+  <name value="UDSPlusHousingStatusCodes"/>
+  <title value="UDS Plus Housing Status Codes"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-06"/>
+  <publisher value="HRSA BPHC"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bphc.hrsa.gov/"/>
+    </telecom>
+  </contact>
+  <description value="The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying Housing status of patients in UDS+ program."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-housing-status"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="homeless-shelter"/>
+    <display value="Patients in Homeless Shelters"/>
+    <definition value="Patients who are living in a homeless shelter"/>
+  </concept>
+  <concept>
+    <code value="transitional"/>
+    <display value="Patients in transitional state"/>
+    <definition value="Patients who do not have a house and are in a transitional state"/>
+  </concept>
+  <concept>
+    <code value="doubling-up"/>
+    <display value="Patients doubling up"/>
+    <definition value="Patients who are doubling up with others."/>
+  </concept>
+  <concept>
+    <code value="street"/>
+    <display value="Patients who are on the streets"/>
+    <definition value="Patients who do not have a house and are living on the streets"/>
+  </concept>
+  <concept>
+    <code value="permanent-supportive-housing"/>
+    <display value="Patients in permanent supportive housing"/>
+    <definition value="Patients who are living in a permanent supportive housing"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Patients who have other kinds of accomodation"/>
+    <definition value="Patients who have other kinds of accomodation"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Patients with Unknown accomodation"/>
+    <definition value="Patients with Unknown accomodation"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,352 @@
+[
+  {
+    "id" : "uds-plus-data-receiver-server",
+    "type" : "CapabilityStatement",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-receiver-server",
+    "version" : "1.0.2",
+    "name" : "UdsPlusDataReceiverServer"
+  },
+  {
+    "id" : "uds-plus-data-source",
+    "type" : "CapabilityStatement",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-source",
+    "version" : "1.0.2",
+    "name" : "UdsPlusDataSource"
+  },
+  {
+    "id" : "uds-plus-data-submitter-client",
+    "type" : "CapabilityStatement",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-submitter-client",
+    "version" : "1.0.2",
+    "name" : "UdsPlusDataSubmitter"
+  },
+  {
+    "id" : "uds-plus-trust-service-provider",
+    "type" : "CapabilityStatement",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-trust-service-provider",
+    "version" : "1.0.2",
+    "name" : "UdsPlusTrustServiceProvider"
+  },
+  {
+    "id" : "uds-plus-insurance-codes",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+    "version" : "1.0.2",
+    "name" : "UDSPlusInsuranceCodes"
+  },
+  {
+    "id" : "udsplus-agriculture-worker-status-codes",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAgricultureWorkerStatusCodes"
+  },
+  {
+    "id" : "udsplus-housing-status-codes",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+    "version" : "1.0.2",
+    "name" : "UDSPlusHousingStatusCodes"
+  },
+  {
+    "id" : "udsplus-service-delivery-codes",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes",
+    "version" : "1.0.2",
+    "name" : "UDSPlusServiceDeliveryCodes"
+  },
+  {
+    "id" : "fhir.hrsa.uds-plus",
+    "type" : "ImplementationGuide",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus",
+    "version" : "1.0.2",
+    "name" : "UdsPlusFhirIg"
+  },
+  {
+    "id" : "import",
+    "type" : "OperationDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/import",
+    "version" : "1.0.2",
+    "name" : "UdsPlusImport"
+  },
+  {
+    "id" : "udsplus-de-identify",
+    "type" : "OperationDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/udsplus-de-identify",
+    "version" : "1.0.2",
+    "name" : "UdsPlusDeIdentify"
+  },
+  {
+    "id" : "de-identified-uds-plus-income-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-income-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusIncome"
+  },
+  {
+    "id" : "de-identified-uds-plus-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-patient",
+    "version" : "1.0.2",
+    "name" : "DeIdentifiedUDSPlusPatient"
+  },
+  {
+    "id" : "de-identified-uds-plus-relatedperson",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-relatedperson",
+    "version" : "1.0.2",
+    "name" : "DeIdentifiedUDSPlusRelatedPerson"
+  },
+  {
+    "id" : "uds-plus-adverseevent",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-adverseevent",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAdverseEvent"
+  },
+  {
+    "id" : "uds-plus-age-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAgeExtension"
+  },
+  {
+    "id" : "uds-plus-allergyintolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-allergyintolerance",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAllergyIntolerance"
+  },
+  {
+    "id" : "uds-plus-birthsex-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-birthsex-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusBirthSexExtension"
+  },
+  {
+    "id" : "uds-plus-capitated-member-months-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-capitated-member-months-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusCapitatedMemberMonthsExtension"
+  },
+  {
+    "id" : "uds-plus-clinical-result-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-clinical-result-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusClinicalResultObservation"
+  },
+  {
+    "id" : "uds-plus-coverage",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-coverage",
+    "version" : "1.0.2",
+    "name" : "DeIdentifiedUDSPlusCoverage"
+  },
+  {
+    "id" : "uds-plus-deidentify-operation-data-urls-parameter",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentify-operation-data-urls-parameter",
+    "version" : "1.0.2",
+    "name" : "UDSPlusDeIdentifyDataUrlsParameter"
+  },
+  {
+    "id" : "uds-plus-diagnosis",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-diagnosis",
+    "version" : "1.0.2",
+    "name" : "UDSPlusDiagnosis"
+  },
+  {
+    "id" : "uds-plus-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-encounter",
+    "version" : "1.0.2",
+    "name" : "UDSPlusEncounter"
+  },
+  {
+    "id" : "uds-plus-ethnicity-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-ethnicity-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusEthnicityExtension"
+  },
+  {
+    "id" : "uds-plus-feeforservice-member-months-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusFeeForServiceMemberMonthsExtension"
+  },
+  {
+    "id" : "uds-plus-gender-identity-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusGenderIdentityExtension"
+  },
+  {
+    "id" : "uds-plus-housing-status-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-housing-status-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusHousingStatusExtension"
+  },
+  {
+    "id" : "uds-plus-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-immunization",
+    "version" : "1.0.2",
+    "name" : "UDSPlusImmunization"
+  },
+  {
+    "id" : "uds-plus-import-manifest",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-import-manifest",
+    "version" : "1.0.2",
+    "name" : "UDSPlusImportManifest"
+  },
+  {
+    "id" : "uds-plus-lab-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-lab-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusLabObservation"
+  },
+  {
+    "id" : "uds-plus-location",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-location",
+    "version" : "1.0.2",
+    "name" : "UDSPlusLocation"
+  },
+  {
+    "id" : "uds-plus-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-medicationrequest",
+    "version" : "1.0.2",
+    "name" : "UDSPlusMedicationRequest"
+  },
+  {
+    "id" : "uds-plus-medicationstatement",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-medicationstatement",
+    "version" : "1.0.2",
+    "name" : "UDSPlusMedicationStatement"
+  },
+  {
+    "id" : "uds-plus-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusObservation"
+  },
+  {
+    "id" : "uds-plus-patient-reporting-parameters",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-patient-reporting-parameters",
+    "version" : "1.0.2",
+    "name" : "UDSPlusPatientReportingParameters"
+  },
+  {
+    "id" : "uds-plus-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-procedure",
+    "version" : "1.0.2",
+    "name" : "UDSPlusProcedure"
+  },
+  {
+    "id" : "uds-plus-race-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-race-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusRaceExtension"
+  },
+  {
+    "id" : "uds-plus-recordedDate-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-recordedDate-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusRecordedDateExtension"
+  },
+  {
+    "id" : "uds-plus-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-servicerequest",
+    "version" : "1.0.2",
+    "name" : "UDSPlusServiceRequest"
+  },
+  {
+    "id" : "uds-plus-sexual-orientation-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-sexual-orientation-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusSexualOrientation"
+  },
+  {
+    "id" : "uds-plus-veteran-status-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-veteran-status-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusVeteranStatusExtension"
+  },
+  {
+    "id" : "udsplus-agriculture-worker-status",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/udsplus-agriculture-worker-status",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAgricultureWorkerStatus"
+  },
+  {
+    "id" : "uds-plus-birthsex-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-birthsex-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusBirthSexCodes"
+  },
+  {
+    "id" : "uds-plus-gender-identity-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-gender-identity-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusGenderIdentityCodes"
+  },
+  {
+    "id" : "uds-plus-insurance-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusInsuranceCodes"
+  },
+  {
+    "id" : "uds-plus-service-delivery-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-service-delivery-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusServiceDeliveryCodes"
+  },
+  {
+    "id" : "uds-plus-sexual-orientation-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-sexual-orientation-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusSexualOrientationCodes"
+  },
+  {
+    "id" : "udsplus-agriculture-worker-status",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-agriculture-worker-status",
+    "version" : "1.0.2",
+    "name" : "UdsPlusAgricultureWorkerStatusCodes"
+  },
+  {
+    "id" : "udsplus-housing-status",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-housing-status",
+    "version" : "1.0.2",
+    "name" : "UdsPlusHousingStatusCodes"
+  }
+]

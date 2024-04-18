@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/Patient/de-identified-example> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "de-identified-example"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "De-identified Patient Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This is a patient example for the *UDS+ Patient Profile*." ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-patient>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ] ;
+         fhir:display [ fhir:v "White" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "detailed"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2108-9" ] ;
+         fhir:display [ fhir:v "European" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "White" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2135-2" ] ;
+         fhir:display [ fhir:v "Hispanic or Latino" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "detailed"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2184-0" ] ;
+         fhir:display [ fhir:v "Dominican" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Hispanic or Latino" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-birthsex-extension"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "F" ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "36"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "yr" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "a" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ASKU" ] ;
+         fhir:display [ fhir:v "asked but unknown" ]
+       ] ) ;
+       fhir:text [ fhir:v "asked but unknown" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/udsplus-agriculture-worker-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "migratory" ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-housing-status-extension"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "permanent-supportive-housing" ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-veteran-status-extension"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:address ( [
+     fhir:postalCode [ fhir:v "03600" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

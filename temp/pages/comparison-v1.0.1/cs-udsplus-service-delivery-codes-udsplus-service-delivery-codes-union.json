@@ -1,0 +1,20 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "731e2483-00a3-4098-aa56-f838fdaa030b-11",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/731e2483-00a3-4098-aa56-f838fdaa030b-11",
+  "name" : "UnionUDSPlusServiceDeliveryCodesAndUDSPlusServiceDeliveryCodes",
+  "title" : "Union of UDS Plus Housing Service Delivery Codes And UDS Plus Housing Service Delivery Codes",
+  "status" : "active",
+  "date" : "2024-04-18T11:54:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "concept" : [{
+    "code" : "public-housing",
+    "display" : "Care was delivered in a Location that is considered public housing",
+    "definition" : "Care was delivered in a Location that is considered public housing"
+  }]
+}

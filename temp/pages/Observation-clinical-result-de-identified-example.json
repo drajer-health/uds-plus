@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Observation",
+  "id" : "clinical-result-de-identified-example",
+  "meta" : {
+    "profile" : ["http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-clinical-result-observation"]
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "imaging",
+      "display" : "Imaging"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "80940-0",
+      "display" : "DXA Femur-L Z-score BMD"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/de-identified-example"
+  },
+  "encounter" : {
+    "reference" : "Encounter/de-identified-example"
+  },
+  "effectiveDateTime" : "2005",
+  "issued" : "2005-04-03T15:30:10+01:00",
+  "performer" : [{
+    "reference" : "Practitioner/example"
+  }],
+  "valueQuantity" : {
+    "value" : 0.05,
+    "unit" : "Z-Score",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{Z-Score}"
+  }
+}

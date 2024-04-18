@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="de-identify-data-operation-urls-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentify-operation-data-urls-parameter"/>
+  </meta>
+  <parameter>
+    <name value="format"/>
+    <valueCode value="fhir+ndjson"/>
+  </parameter>
+  <parameter>
+    <name value="udsData"/>
+    <part>
+      <name value="resourceType"/>
+      <valueCode value="Patient"/>
+    </part>
+    <part>
+      <name value="resourceUrl"/>
+      <valueUrl value="http://example.com/Patient.ndjson"/>
+    </part>
+  </parameter>
+</Parameters>

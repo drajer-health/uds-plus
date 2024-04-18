@@ -1,0 +1,11 @@
+{
+  "releaselabel":"STU1 Release 1 - Standard for Trial-Use",
+  "copyrightyear":"2023+",
+  "shownav":"N",
+  "excludexml":"N",
+  "excludejson":"N",
+  "excludettl":"N",
+  "excludelogbinaryformat":"y",
+  "excludemap":"N",
+  "fmm-definition":"http://hl7.org/fhir/versions.html#maturity"
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Condition",
+  "id" : "de-identified-example",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "De-identified Diagnosis Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This example of a UDS+ Diagnosis profile which illustrates its use to capture de-identified information about a patient's diagnosis."
+    }],
+    "profile" : ["http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-diagnosis"]
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+    "valueDateTime" : "2007"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "problem-list-item",
+      "display" : "Problem List Item"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "B18.2",
+      "display" : "Chronic viral hepatitis C"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/de-identified-example"
+  },
+  "onsetDateTime" : "2007",
+  "recordedDate" : "2007"
+}

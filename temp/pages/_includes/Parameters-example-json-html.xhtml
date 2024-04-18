@@ -1,0 +1,214 @@
+{% raw %}<pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters">resourceType</a>" : "Parameters",
+  "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.id">id</a>" : "example",
+  "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "UDS+ Manifest File Example"
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>" : "This is an example of a Manifest file submitted as a parameter to the UDS+ $import operation."
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-import-manifest"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter">parameter</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "inputFormat",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "fhir+ndjson"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "submissionId",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "234343-aaa-32432"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "submissionTime",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueDateTime</a>" : "2023-01-14T07:15:07-08:00"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "hcInformation",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.part">part</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "uei",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "12343434"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "grantNumber",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "H80CS34333"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "hcName",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "Example FQHC"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "hcAddress",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueAddress</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
+              "123 Rocky point place"
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Atlanta",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "GA",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "23434",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a>" : "US"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "hcContactPerson",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueHumanName</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Taylor",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+              "Elizabeth"
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "hcContactPhone",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueContactPoint</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "234-234-5648"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "hcPrenatalCareByReferralOnly",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueBoolean</a>" : true
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "importProtocol",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "https"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "udsData",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.part">part</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "type",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "Patient"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueUrl</a>" : "http://www.fqhc.california.com/udsplus/storage/2023/Patient_1.ndjson"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "expirationTime",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueDateTime</a>" : "2022-12-14T07:15:07-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "bearer",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "adfadfr3dsag3443"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "udsData",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.part">part</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "type",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "Patient"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueUrl</a>" : "http://www.fqhc.california.com/udsplus/storage/2023/Patient_2.ndjson"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "expirationTime",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueDateTime</a>" : "2022-12-14T07:15:07-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "bearer",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "adfadfr3dsag3443"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "udsData",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.part">part</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "type",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "Condition"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueUrl</a>" : "http://www.fqhc.california.com/udsplus/storage/2023/Condition.ndjson"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "expirationTime",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueDateTime</a>" : "2022-12-14T07:15:07-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "bearer",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "adfadfr3dsag3443"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "udsData",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.part">part</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "type",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "Coverage"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueUrl</a>" : "http://www.fqhc.california.com/udsplus/storage/2023/Coverage.ndjson"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "expirationTime",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueDateTime</a>" : "2022-12-14T07:15:07-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "bearer",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "adfadfr3dsag3443"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "udsData",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.part">part</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "type",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "Procedure"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueUrl</a>" : "http://www.fqhc.california.com/udsplus/storage/2023/Procedure.ndjson"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "expirationTime",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueDateTime</a>" : "2022-12-14T07:15:07-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "bearer",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "adfadfr3dsag3443"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "udsData",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.part">part</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "type",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "Encounter"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueUrl</a>" : "http://www.fqhc.california.com/udsplus/storage/2023/Encounter.ndjson"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "expirationTime",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueDateTime</a>" : "2022-12-14T07:15:07-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "bearer",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueString</a>" : "adfadfr3dsag3443"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+{% endraw %}

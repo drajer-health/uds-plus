@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Reporting Guidance - HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG v1.0.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hrsa.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <div id="project-nav">
+  <a id="hrsa-logo" no-external="true" href="https://hrsa.gov">
+    <img height="71" alt="Visit the website" src="hrsa-logo.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="fhir-logo.png"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG</span>
+            <br/>
+            <span style="display:inline-block;">1.0.2 - STU1 Release 1 - Standard for Trial-Use
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a role="button" href="index.html">IG Home</a></li>
+  <li><a role="button" href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" role="button" href="#" class="dropdown-toggle">UDS Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">   
+      <li>
+        <a role="button" href="background.html">Implementation Guide Overview</a>
+      </li>
+      <li>
+        <a role="button" href="usecases.html">Use Cases and Workflows</a>
+      </li>
+      <li>
+        <a role="button" href="dataelements.html">UDS+ Data Elements and FHIR Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a role="button" href="reportingguidance.html">Implementation Guidance</a>
+      </li>
+      <li>
+        <a role="button" href="spec.html">FHIR API Based Reporting</a>
+      </li>
+    </ul>
+  </li>
+  <li><a role="button" href="artifacts.html">Artifact Index</a></li>
+  <li><a role="button" href="changes.html">Change History</a></li>
+  <li class="dropdown">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a role="button" target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a role="button" href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Reporting Guidance</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG - Local Development build (v1.0.2). See the <a href="http://fhir.org/guides/hrsa/uds-plus/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Reporting Guidance</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#health-centerhccn-on-boarding-process" id="markdown-toc-health-centerhccn-on-boarding-process">Health Center/HCCN On-boarding process</a></li>
+  <li><a href="#interaction-flows" id="markdown-toc-interaction-flows">Interaction Flows</a></li>
+  <li><a href="#quality-measures-and-reporting-approaches" id="markdown-toc-quality-measures-and-reporting-approaches">Quality Measures and Reporting Approaches</a></li>
+  <li><a href="#submit-de-identified-fhir-resources-associated-with-the-patients-for-the-population" id="markdown-toc-submit-de-identified-fhir-resources-associated-with-the-patients-for-the-population">Submit De-identified FHIR Resources associated with the Patients for the population</a></li>
+</ul>
+
+</div>
+<p>This section provides implementation details for reporting the data elements identified in <a href="dataelements.html">UDS+ Data Elements</a> to HRSA.</p>
+
+<h3 id="health-centerhccn-on-boarding-process">Health Center/HCCN On-boarding process</h3>
+
+<p>The UDS+ program requires the Health Centers/HCCN’s along with their EHR vendors need to be on-boarded to the UDS+ program to connect to the Data Receiver and submit the data. To initiate this process interested Health Centers and HCCN’s and their EHR vendors can contact the HRSA support team using the <a href="https://hrsa.my.site.com/support/s/">BPHC Contact Form</a>. Some of the important activities performed as part of on-boarding include</p>
+
+<ul>
+  <li>Submitting security information identifying servers that will connect to the HRSA network</li>
+  <li>Understanding the HRSA tools and environments that can be used for testing.</li>
+  <li>Getting Data Submitter IP Addresses added to the list of IP Addresses allowed to connect to HRSA and vice-versa if needed</li>
+  <li>Submitting necessary information to obtain a clientId that is used for the Authorization Protocols.</li>
+  <li>Preparing for synthetic data testing and Setting up testing times for executing tests.</li>
+</ul>
+
+<h3 id="interaction-flows">Interaction Flows</h3>
+
+<p>This section provides details of the Step 9, Step 10a and Step 10b to be used by the Data Submitter and Data Receiver to successfully submit or re-submit a UDS+ report.</p>
+
+<h4 id="step-9-details">Step 9 details</h4>
+
+<p>The diagram below details out the interactions between the Data Submitter and the Data Receiver for Step 9. This is following the FHIR Bulk Data Access/FHIR Async pattern.</p>
+
+<!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Step 9 UDS+ Reporting Workflow Detailed Interactions</strong></figcaption>
+  <img src="step9-detailed-Interactions.png" class="figure-img img-responsive img-rounded center-block" alt="step9-detailed-Interactions.png" />
+</figure>
+
+<p></p>
+</div>
+
+<p>For more information and examples on authentication mechanisms, refer to <a href="http://hl7.org/fhir/smart-app-launch/backend-services.html">SMART on FHIR IG Backend Services</a>.</p>
+
+<h4 id="step-9-request-response-details">Step 9 Request-Response Details</h4>
+
+<p>When $import is invoked by the Data Submitter and a manifest file is submitted the following codes are returned routinely.</p>
+
+<ul>
+  <li>HTTP Status Code of 201 - Accepted : when the manifest file is valid.</li>
+  <li>HTTP Status code of 422 - Unprocessable Entity : When the manifest file is invalid along with OperationOutcome resources in the body</li>
+  <li>HTTP Status Code of 401 - Unauthorized : When the access token is not valid.</li>
+</ul>
+
+<p>There could be scenarios where the Data Submitters may receive other 4xx or 5xx HTTP error codes.</p>
+
+<p>For details on the request and response examples please refer to <a href="requestresponseexamples.html">RequestResponseExamples</a>.</p>
+
+<h4 id="step-9-response-content-location-header">Step 9 Response: Content-Location Header</h4>
+
+<p>Since the submission starts a FHIR async pattern request, the submitter has to poll for the status of the submission as the submissions is imported asynchronously. In order to poll for the status of the submission, the submitter has to parse the HTTTP Response Headers and extract the Content-Location header which contains the URL used for polling the status of the submission.</p>
+
+<h5 id="security-protocol-details">Security Protocol Details</h5>
+
+<p>The following is a summary of the protocols used for authentication and authorization specified at <a href="http://hl7.org/fhir/smart-app-launch/backend-services.html">SMART on FHIR IG Backend Services</a>.</p>
+
+<ul>
+  <li>
+    <p>The Data Submitter clients (Health Centers) will be registered in the Authorization Server as part of the on-boarding process. There is no dynamic registration capability that is allowed.</p>
+  </li>
+  <li>
+    <p>Asymmetric Keys (public and private keys) are used for authentication. Clients MUST be capable of protecting their private keys.</p>
+  </li>
+  <li>
+    <p><a href="https://tools.ietf.org/html/rfc5246">RFC 5246</a> - TLS 1.2 is used to protect all transactions.</p>
+  </li>
+  <li>
+    <p>Authorization Server supports RS384 or ES384 signature algorithms per <a href="https://tools.ietf.org/html/rfc7518">RFC7518</a></p>
+  </li>
+  <li>
+    <p>Authorization Server and Data Submitters MUST support Json Web Key Set per <a href="https://www.rfc-editor.org/rfc/rfc7517.txt">RFC7517</a></p>
+  </li>
+  <li>
+    <p>Authorization Servers and Data Submitters MUST support JSON Web Tokens per <a href="https://tools.ietf.org/html/rfc7519">RFC7519</a> and <a href="https://tools.ietf.org/html/rfc7523">RFC7523</a></p>
+  </li>
+  <li>
+    <p>Authorization Server MUST support a .well-known/smart-configuration metadata for conformance</p>
+  </li>
+  <li>
+    <p>Data Submitters MUST submit the JWT assertions per the <a href="https://tools.ietf.org/html/rfc7521">RFC7521</a></p>
+  </li>
+  <li>
+    <p>Data Submitters MUST include the scopes to post the manifest file to the Data Receiver</p>
+  </li>
+  <li>
+    <p>Data Submitters SHOULD follow best practices and use links which are signed and expire to prevent malicious actors from downloading the data. Best practice includes auto-generation of the links and auto expiration and requiring tokens to be echoed back for access.</p>
+  </li>
+  <li>
+    <p>Data Submitters and Data Receivers MUST maintain audit logs for each submission and its corresponding responses.</p>
+  </li>
+</ul>
+
+<h4 id="step-10a-and-step-10b-details">Step 10a and Step 10b details</h4>
+
+<p>The diagram below details out the interactions between the Data Submitter and the Data Receiver for Step 10a and Step 10b. This is following the FHIR Bulk Data Access/FHIR Async pattern.</p>
+
+<!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Step 10a and 10b UDS+ Reporting Detailed Interactions</strong></figcaption>
+  <img src="step10-detailed-interactions.png" class="figure-img img-responsive img-rounded center-block" alt="step10-detailed-interactions.png" />
+</figure>
+
+<p></p>
+</div>
+
+<h4 id="step-10b-request-response-details">Step 10b Request-Response Details</h4>
+
+<p>When GET /<Content-Location URL=""> is invoked by the Data Submitter the following codes are returned routinely.</Content-Location></p>
+
+<ul>
+  <li>HTTP Status Code of 200 - When the import is successful or is In-Progress</li>
+  <li>HTTP Status code of 422 - Unprocessable Entity : When there are errors in the processing</li>
+  <li>HTTP Status Code of 401 - Unauthorized : When the access token is not valid.</li>
+  <li>HTTP Status Code of 400 - Bad Request : When the URLs or access tokens provided are not valid.</li>
+</ul>
+
+<p>There could be scenarios where the Data Submitters may receive other 4xx or 5xx HTTP error codes.</p>
+
+<p>Data Submitters should always process the HTTP Response body to identify the specific errors which are returned as OperationOutcome resources.</p>
+
+<p>For details on the request and response examples please refer to <a href="requestresponseexamples.html">RequestResponseExamples</a>.</p>
+
+<h5 id="step-10b-x-progress-http-header">Step 10b X-Progress HTTP Header</h5>
+
+<p>When Data Submitters invoke the Content-Location URL for the status of the submission, the X-Progress header can also be used to check on the overall status. The typcial values that the X-Progress Header contains are :</p>
+
+<ul>
+  <li>0% complete - When the import is still in-progress</li>
+  <li>Failed - when the import fails due to any reason, the reason will be available in the body of the response</li>
+  <li>100% complete - when the import is successful.</li>
+</ul>
+
+<p>For details on the request and response examples please refer to <a href="requestresponseexamples.html">RequestResponseExamples</a>.</p>
+
+<h4 id="creation-of-groups">Creation of Groups</h4>
+
+<ul>
+  <li>Typically one Group should be created by the EHR vendor or the Health Center for UDS Plus reporting.</li>
+  <li>All the patients who qualify for UDS Plus Reporting should be added to this group. Qualification of Patients for UDS reporting is outlined in the UDS Manual.</li>
+</ul>
+
+<h5 id="population-and-updation-of-groups">Population and Updation of Groups</h5>
+
+<ul>
+  <li>All the patients who qualify for UDS Plus Reporting should be added to this group. As patients visit the facility and avail healthcare services, the Group has to be updated with unique patients who are not present in the group already.</li>
+  <li>An alternative way of implementing the Group would be to have a dynamic database query that would identify the patients based on the services availed at the facility.</li>
+  <li>In all cases, the Group has to be available prior to the start of the reporting process each year.</li>
+</ul>
+
+<h5 id="enabling-exporting-of-data-from-groups">Enabling Exporting of data from Groups</h5>
+
+<ul>
+  <li>
+    <p>EHRs which are playing the role of both Data Source and Data Submitter may provide a button or some kind of capability to the Health Center user to kick of the reporting cycle.</p>
+  </li>
+  <li>If the Data Source and Data Submitter are two different systems, then the Data Submitter has to be provisioned as an SMART on FHIR Application within the Data Source’s FHIR Authorization Server.</li>
+  <li>As part of the provisioning process, the Data Submitter should be granted permissions to export using the Group Id created for UDS Reporting.</li>
+  <li>When the Data Submitter is an external application, it may call the $export operations on one or more data sources. Each data source may provide one or more Group Ids. So a Data Submitter has to be configurable with multiple data sources and multiple groups per data source to be able to extract all the data.</li>
+</ul>
+
+<h5 id="implementation-of-export-functionality">Implementation of Export Functionality</h5>
+
+<ul>
+  <li>EHRs have to use the Patient Compartment to identify all the resources required for the UDS Plus reporting. The resources to be included are identified by the various data elements in the UDS Plus data element mappings.</li>
+</ul>
+
+<h5 id="implementation-of-de-identification-process">Implementation of De-identification process</h5>
+
+<p>The first version of the IG prescribes the de-identification process as simply removing all identifiable elements in the profiles. This can be accomplished by translating the incoming US Core compliant profile into a UDS Plus De-identified resource profile.</p>
+
+<h4 id="tables-to-be-reported-using-fhir-apis">Tables to be reported using FHIR APIs</h4>
+
+<p>The following tables are expected to be reported through UDS+ FHIR APIs.</p>
+
+<ul>
+  <li>Table 3A</li>
+  <li>Table 3B</li>
+  <li>Table 4</li>
+  <li>Table 6A</li>
+  <li>Table 6B</li>
+  <li>Table 7</li>
+</ul>
+
+<h4 id="tables-to-be-reported-using-existing-mechanisms">Tables to be reported using existing mechanisms</h4>
+
+<p>The following tables are expected to be reported using the existing UDS reporting mechanisms as they are not directly related to the patient’s clinical data.</p>
+
+<ul>
+  <li>Table 5</li>
+  <li>Table 8A</li>
+  <li>Table 9D</li>
+  <li>Table 9E</li>
+</ul>
+
+<p><strong>Feedback Requested</strong></p>
+
+<p>The FHIR APIs, FHIR Resources and FHIR profiles to be used are specified as part of the IG, creation of a Parameters Resource profile to specify Tables 5, 8A, 9D and 9E is possible. We would like feedback on this approach as this would essentially make it possible to accept all existing UDS data using FHIR APIs.</p>
+
+<h4 id="table-specific-data-export-requirements">Table Specific Data Export Requirements</h4>
+
+<h5 id="table-patients-by-zip-code">Table Patients By Zip Code</h5>
+
+<p>Implementers should follow the UDS Manual to identify the patient’s zip code and insurance which includes</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Reporting the most recent zip code on file
+* Using "Other zip code" for people with no US address 
+* Patients' last insurance from the last visit of the year
+</code></pre></div></div>
+
+<h5 id="table-3a">Table 3A</h5>
+
+<ul>
+  <li>
+    <p>For Table 3A, the age calculation should be based on December 31st of the previous year as per the UDS Manual.</p>
+  </li>
+  <li>
+    <p>When race is captured, but no ethnicity is captured, it should be defaulted “Not Hispanic or Latino”</p>
+  </li>
+</ul>
+
+<h5 id="table-4">Table 4</h5>
+
+<ul>
+  <li>
+    <p>The income reported should have been captured within 12 months of the last visit for the pateint.</p>
+  </li>
+  <li>
+    <p>The income has to be translated to percentages as per Federal Poverty Guidelines.</p>
+  </li>
+</ul>
+
+<h3 id="quality-measures-and-reporting-approaches">Quality Measures and Reporting Approaches</h3>
+
+<p>Quality Measure computation and reporting is a complex task and may involve multiple systems and human interventions to compute the measures properly. The quality reporting eco-system is rapidly evolving to utilize existing standards such as HL7 FHIR Measure Report (Individual and Summary), HL7 QRDA Category III (Summary or Aggregate), HL7 QRDA Category I (Individual) to automate reporting and processing of the reports. However computation of the Measure Reports or what data to be included in the individual report is still not automated widely in the industry.  HRSA recognizes this state of the industry where Quality Measure standards will continue to evolve and hence prescribes submitting de-identified information for Table 6B and Table 7 using the UDS+ profiles.</p>
+
+<p>The Patients for each measure will be qualified and tagged using the initial patient population criteria for the measure. When a Patient is qualified for multiple measures, they will be tagged using the <a href="StructureDefinition-uds-plus-patient-reporting-parameters.html">Patient Reporting Parameters</a> profile.</p>
+
+<h3 id="submit-de-identified-fhir-resources-associated-with-the-patients-for-the-population">Submit De-identified FHIR Resources associated with the Patients for the population</h3>
+
+<p>The Health Centers are expected to work with their Data Sources (e.g., EHR vendors) to extract the data required for the computation of the different measures as identified in the <a href="dataelements.html#analysis-of-the-table-6b-and-7-quality-of-care-measures-and-health-outcomes-and-disparities">UDS+ Data Elements and FHIR Mapping</a>. These resources when extracted from the EHR will contain identifiable data and has to be de-identified before submitting to HRSA. Once HRSA receives the data, quality measure computation will be performed using the submitted data.</p>
+
+<p>To help the implementers, the following table shows examples of FHIR resources that contain identifiable information and their corresponding de-identified versions of the resources. These are examples and not specific requirements.</p>
+
+<style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .maptable17{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable18{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#262626;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable12{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#4f81bd;text-align:center;font-weight:bold;color:#ffffff;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable15{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable112{background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable11{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#4f81bd;text-align:center;font-weight:bold;color:#ffffff;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable10{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#4f81bd;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable111{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#c6d9f0;text-align:left;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable14{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable13{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#c6d9f0;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px;}.ritz .waffle .maptable110{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:left;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable16{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#c6d9f0;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable19{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable113{background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}</style>
+
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr style="height:20px;">
+        <td class="maptable11">FHIR Resource</td>
+        <td class="maptable11">FHIR Resource with identifiable data</td>
+        <td class="maptable11">De-Identified version of FHIR Resource</td>
+        <td class="maptable11">De-Identification Notes</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Patient</td>
+        <td class="maptable17"><a href="Patient-example.html"><div><span style="color:blue;">US Core Patient instance with identifiable information</span></div></a></td>
+        <td class="maptable17"><a href="Patient-de-identified-example.html"><div><span style="color:blue;">UDS+ Patient instance which is de-identified</span></div></a></td>
+        <td class="maptable17">Notice the zip code representation to meet the HHS Safe Harbor guidance for de-identification. Only 3 digit zip codes are allowed.</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Patient</td>
+        <td class="maptable17"><a href="Patient-smallpop-example.html"><div><span style="color:blue;">US Core Patient instance living in a zip code with small population</span></div></a></td>
+        <td class="maptable17"><a href="Patient-de-identified-smallpop-example.html"><div><span style="color:blue;">UDS+ Patient instance which is de-identified</span></div></a></td>
+        <td class="maptable17">Notice the zip code representation to meet the HHS Safe Harbor guidance for de-identification. The zip code is masked completely.</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Condition</td>
+        <td class="maptable17"><a href="Condition-example.html"><div><span style="color:blue;">US Core Condition instance with patient name.</span></div></a></td>
+        <td class="maptable17"><a href="Condition-de-identified-example.html"><div><span style="color:blue;">UDS+ Condition instance which is de-identified</span></div></a></td>
+        <td class="maptable17">Notice the patient reference is pointing to the de-identified patient and the name is removed, onset, recorded asserted dates are abstracted to a precision of year and the month and day and times are removed.Also the note element has been removed as it is not a "SUPPORTED" element in UDS+ diagnosis profile.</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter</td>
+        <td class="maptable17"><a href="Encounter-example.html"><div><span style="color:blue;">US Core Encounter instance with patient name.</span></div></a></td>
+        <td class="maptable17"><a href="Encounter-de-identified-example.html"><div><span style="color:blue;">UDS+ Encounter instance which is de-identified</span></div></a></td>
+        <td class="maptable17">Notice the patient reference is pointing to the de-identified patient and the name is removed, meta.lastupdated and period dates are abstracted to a precision of year and the month and day and times are removed.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://bphc.hrsa.gov/">HRSA BPHC</a>.  Package fhir.hrsa.uds-plus#1.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 18, 2024 11:53+0000">2024-04-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+       <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="license.html">License</a> |
+       <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+        | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" aria-label="New Issue" href="https://github.com/drajer-health/uds-plus/issues/new">New Issue</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" aria-label="Issues" href="https://github.com/drajer-health/uds-plus/issues">Issues</a>
+
+       | <a style="color: var(--footer-hyperlink-text-color)" aria-lable="Version History" target="_blank" href="http://fhir.org/guides/hrsa/uds-plus/history.html">Version History</a> |
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

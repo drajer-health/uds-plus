@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="de-identified-example"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="De-Identified Encounter Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is an encounter example for the *US Core Encounter Profile*."/>
+    </extension>
+    <lastUpdated value="2022-05-26T11:56:57.250-04:00"/>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-encounter"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="de-identified-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;de-identified-example&quot; Updated &quot;2022-05-26 11:56:57-0400&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-uds-plus-encounter.html">De-Identified UDS Plus Encounter</a></p></div><p><b>UDS Plus Age Extension</b>: 36 yr<span style="background: LightGoldenRodYellow"> (Details: UCUM code a = 'a')</span></p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html">Current Procedural Terminology (CPT®)</a>#99202)</span></p><p><b>subject</b>: <a href="Patient-de-identified-example.html">Patient/de-identified-example</a></p><p><b>period</b>: 2022 --&gt; 2022</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td>Discharged to Home <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (patient-discharge#01)</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href="Location-hospital.html">Location/hospital: Holy Family Hospital</a> &quot;Holy Family Hospital&quot;</td></tr></table></div>
+  </text>
+  <extension url="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension">
+    <valueQuantity>
+      <value value="36"/>
+      <unit value="yr"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="a"/>
+    </valueQuantity>
+  </extension>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+    <display value="ambulatory"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://www.ama-assn.org/go/cpt"/>
+      <code value="99202"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/de-identified-example"/>
+  </subject>
+  <period>
+    <start value="2022"/>
+    <end value="2022"/>
+  </period>
+  <hospitalization>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://www.nubc.org/patient-discharge"/>
+        <code value="01"/>
+        <display value="Discharged to Home"/>
+      </coding>
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/hospital"/>
+      <display value="Holy Family Hospital"/>
+    </location>
+  </location>
+</Encounter>

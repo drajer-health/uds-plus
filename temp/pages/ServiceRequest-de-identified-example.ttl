@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/ServiceRequest/de-identified-example> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "de-identified-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-servicerequest"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-servicerequest>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:doNotPerform [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:76164006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76164006" ] ;
+       fhir:display [ fhir:v "Biopsy of colon (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/Patient/de-identified-example> ;
+     fhir:reference [ fhir:v "Patient/de-identified-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/Encounter/de-identified-example> ;
+     fhir:reference [ fhir:v "Encounter/de-identified-example" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2017"^^xsd:gYear] ; # 
+  fhir:requester [
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/Practitioner/example> ;
+     fhir:reference [ fhir:v "Practitioner/example" ]
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       a sct:485005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "485005" ] ;
+       fhir:display [ fhir:v "Transverse colon structure" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

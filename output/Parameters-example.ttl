@@ -1,0 +1,168 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/Parameters/example> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "UDS+ Manifest File Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This is an example of a Manifest file submitted as a parameter to the UDS+ $import operation." ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-import-manifest"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-import-manifest>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "inputFormat" ] ;
+     fhir:value [ fhir:v "fhir+ndjson" ]
+  ] [
+     fhir:name [ fhir:v "submissionId" ] ;
+     fhir:value [ fhir:v "234343-aaa-32432" ]
+  ] [
+     fhir:name [ fhir:v "submissionTime" ] ;
+     fhir:value [ fhir:v "2023-01-14T07:15:07-08:00"^^xsd:dateTime ]
+  ] [
+     fhir:name [ fhir:v "hcInformation" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "uei" ] ;
+       fhir:value [ fhir:v "12343434" ]
+     ] [
+       fhir:name [ fhir:v "grantNumber" ] ;
+       fhir:value [ fhir:v "H80CS34333" ]
+     ] [
+       fhir:name [ fhir:v "hcName" ] ;
+       fhir:value [ fhir:v "Example FQHC" ]
+     ] [
+       fhir:name [ fhir:v "hcAddress" ] ;
+       fhir:value [
+         a fhir:Address ;
+         fhir:line ( [ fhir:v "123 Rocky point place" ] ) ;
+         fhir:city [ fhir:v "Atlanta" ] ;
+         fhir:state [ fhir:v "GA" ] ;
+         fhir:postalCode [ fhir:v "23434" ] ;
+         fhir:country [ fhir:v "US" ]
+       ]
+     ] [
+       fhir:name [ fhir:v "hcContactPerson" ] ;
+       fhir:value [
+         a fhir:HumanName ;
+         fhir:family [ fhir:v "Taylor" ] ;
+         fhir:given ( [ fhir:v "Elizabeth" ] )
+       ]
+     ] [
+       fhir:name [ fhir:v "hcContactPhone" ] ;
+       fhir:value [
+         a fhir:ContactPoint ;
+         fhir:system [ fhir:v "phone" ] ;
+         fhir:value [ fhir:v "234-234-5648" ]
+       ]
+     ] [
+       fhir:name [ fhir:v "hcPrenatalCareByReferralOnly" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "importProtocol" ] ;
+     fhir:value [ fhir:v "https" ]
+  ] [
+     fhir:name [ fhir:v "udsData" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "type" ] ;
+       fhir:value [ fhir:v "Patient" ]
+     ] [
+       fhir:name [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.fqhc.california.com/udsplus/storage/2023/Patient_1.ndjson"^^xsd:anyURI ]
+     ] [
+       fhir:name [ fhir:v "expirationTime" ] ;
+       fhir:value [ fhir:v "2022-12-14T07:15:07-08:00"^^xsd:dateTime ]
+     ] [
+       fhir:name [ fhir:v "bearer" ] ;
+       fhir:value [ fhir:v "adfadfr3dsag3443" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "udsData" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "type" ] ;
+       fhir:value [ fhir:v "Patient" ]
+     ] [
+       fhir:name [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.fqhc.california.com/udsplus/storage/2023/Patient_2.ndjson"^^xsd:anyURI ]
+     ] [
+       fhir:name [ fhir:v "expirationTime" ] ;
+       fhir:value [ fhir:v "2022-12-14T07:15:07-08:00"^^xsd:dateTime ]
+     ] [
+       fhir:name [ fhir:v "bearer" ] ;
+       fhir:value [ fhir:v "adfadfr3dsag3443" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "udsData" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "type" ] ;
+       fhir:value [ fhir:v "Condition" ]
+     ] [
+       fhir:name [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.fqhc.california.com/udsplus/storage/2023/Condition.ndjson"^^xsd:anyURI ]
+     ] [
+       fhir:name [ fhir:v "expirationTime" ] ;
+       fhir:value [ fhir:v "2022-12-14T07:15:07-08:00"^^xsd:dateTime ]
+     ] [
+       fhir:name [ fhir:v "bearer" ] ;
+       fhir:value [ fhir:v "adfadfr3dsag3443" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "udsData" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "type" ] ;
+       fhir:value [ fhir:v "Coverage" ]
+     ] [
+       fhir:name [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.fqhc.california.com/udsplus/storage/2023/Coverage.ndjson"^^xsd:anyURI ]
+     ] [
+       fhir:name [ fhir:v "expirationTime" ] ;
+       fhir:value [ fhir:v "2022-12-14T07:15:07-08:00"^^xsd:dateTime ]
+     ] [
+       fhir:name [ fhir:v "bearer" ] ;
+       fhir:value [ fhir:v "adfadfr3dsag3443" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "udsData" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "type" ] ;
+       fhir:value [ fhir:v "Procedure" ]
+     ] [
+       fhir:name [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.fqhc.california.com/udsplus/storage/2023/Procedure.ndjson"^^xsd:anyURI ]
+     ] [
+       fhir:name [ fhir:v "expirationTime" ] ;
+       fhir:value [ fhir:v "2022-12-14T07:15:07-08:00"^^xsd:dateTime ]
+     ] [
+       fhir:name [ fhir:v "bearer" ] ;
+       fhir:value [ fhir:v "adfadfr3dsag3443" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "udsData" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "type" ] ;
+       fhir:value [ fhir:v "Encounter" ]
+     ] [
+       fhir:name [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.fqhc.california.com/udsplus/storage/2023/Encounter.ndjson"^^xsd:anyURI ]
+     ] [
+       fhir:name [ fhir:v "expirationTime" ] ;
+       fhir:value [ fhir:v "2022-12-14T07:15:07-08:00"^^xsd:dateTime ]
+     ] [
+       fhir:name [ fhir:v "bearer" ] ;
+       fhir:value [ fhir:v "adfadfr3dsag3443" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/Parameters/reporting-parameters-example> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "reporting-parameters-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-patient-reporting-parameters"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-patient-reporting-parameters>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "patientReference" ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.org/guides/hrsa/uds-plus/Patient/de-identified-example> ;
+       fhir:reference [ fhir:v "Patient/de-identified-example" ]
+     ]
+  ] [
+     fhir:name [ fhir:v "combinedFundingStreams" ] ;
+     fhir:value [ fhir:v "CHC,MHC" ]
+  ] [
+     fhir:name [ fhir:v "reportNames" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "patientsByZip" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table3A" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table3B" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table4" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6A" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line1-6-Age-Of-Prenatal-Care-Patients" ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line7-9-Early-Entry-Into-Prenatal-Care" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line10-Childhood-Immunization-Status-CMS117" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line11-Cervical-Cancer-Screening-CMS124" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line11a-Breast-Cancer-Screening-CMS125" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line12-Weight-Assessment-And-Counselling-CMS155" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line13-Preventive-Care-And-Screening-BMI-CMS69" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line14a-Preventive-Care-And-Screening-Tobacco-Use-CMS138" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line17a-Statin-Therapy-CMS347" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line18-Ischmic-Vascular-Disease-CMS164" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line19-Colorectal-Cancer-Screening-CMS130" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line20-HIV-Linkage-To-Care" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line20a-HIV-Screening-CMS349" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line21-Preventive-Care-And-Screening-For-Depression-CMS2" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line21a-Depression-Remission-At-Twelve-Months-CMS159" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table6B-Line22-Dental-Sealants-For-Children-CMS277" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table7-Line0-HIV-Positive-Pregnant-Patients" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table7-Line2-Deliveries-Performed-By-Health-Center" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table7-Line1a-d-Prenatal-Care-Patient-Deliveries" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table7-Line2a-c-Controlling-High-Blood-Pressure-CMS165" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:name [ fhir:v "table7-Line3a-f-HbA1c-Poor-Control-CMS122" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

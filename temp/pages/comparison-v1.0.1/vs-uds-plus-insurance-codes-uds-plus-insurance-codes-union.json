@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "731e2483-00a3-4098-aa56-f838fdaa030b-116",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/731e2483-00a3-4098-aa56-f838fdaa030b-116",
+  "name" : "UnionUdsPlusInsuranceCodesAndUdsPlusInsuranceCodes",
+  "title" : "Union of Uds Plus Insurance Codes And Uds Plus Insurance Codes",
+  "status" : "draft",
+  "date" : "2024-04-18T11:54:36+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "code" : "none-or-uninsured",
+      "display" : "None or Uninsured"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "code" : "medicaid-title-19-21",
+      "display" : "Medicaid Title X1X"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "code" : "chip-medicaid",
+      "display" : "CHIP Medicaid"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "code" : "medicare",
+      "display" : "Medicare"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "code" : "dually-eligible-medicaid-medicare",
+      "display" : "Dually Eligible"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "code" : "medicare-and-private",
+      "display" : "Medicare and Private"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "code" : "other-non-chip-public-insurance",
+      "display" : "Other Non CHIP Public Insurance"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "code" : "other-public-insurance-chip",
+      "display" : "Other Public Insurance CHIP"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "code" : "private-insurance",
+      "display" : "Private Insurance"
+    }]
+  }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="de-identified-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-lab-observation"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="718-7"/>
+      <display value="Hemoglobin [Mass/volume] in Blood"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/de-identified-example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/de-identified-example"/>
+  </encounter>
+  <effectiveDateTime value="2005"/>
+  <issued value="2005-04-03T15:30:10+01:00"/>
+  <performer>
+    <reference value="Practitioner/example"/>
+  </performer>
+  <valueQuantity>
+    <value value="17"/>
+    <unit value="g/dL"/>
+    <system value="http://unitsofmeasure.org"/>
+  </valueQuantity>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="368208006"/>
+      <display value="Left upper arm structure"/>
+    </coding>
+  </bodySite>
+</Observation>

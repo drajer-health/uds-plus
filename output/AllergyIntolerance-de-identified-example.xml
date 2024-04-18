@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="de-identified-example"/>
+  <meta>
+    <lastUpdated value="2017-05-26T11:56:57.250-04:00"/>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-allergyintolerance"/>
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category value="medication"/>
+  <criticality value="high"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="387406002"/>
+      <display value="Sulfonamide (substance)"/>
+    </coding>
+    <text value="sulfonamide antibacterial"/>
+  </code>
+  <patient>
+    <reference value="Patient/de-identified-example"/>
+  </patient>
+  <onsetDateTime value="2015-11-01T17:00:14-05:00"/>
+  <recordedDate value="2017-11-01T17:00:14-05:00"/>
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271807003"/>
+        <display value="skin rash"/>
+      </coding>
+      <text value="skin rash"/>
+    </manifestation>
+    <severity value="mild"/>
+  </reaction>
+</AllergyIntolerance>

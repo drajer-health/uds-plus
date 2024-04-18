@@ -1,0 +1,2836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Data Elements and FHIR Mappings - HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG v1.0.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hrsa.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <div id="project-nav">
+  <a id="hrsa-logo" no-external="true" href="https://hrsa.gov">
+    <img height="71" alt="Visit the website" src="hrsa-logo.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="fhir-logo.png"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG</span>
+            <br/>
+            <span style="display:inline-block;">1.0.2 - STU1 Release 1 - Standard for Trial-Use
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a role="button" href="index.html">IG Home</a></li>
+  <li><a role="button" href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" role="button" href="#" class="dropdown-toggle">UDS Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">   
+      <li>
+        <a role="button" href="background.html">Implementation Guide Overview</a>
+      </li>
+      <li>
+        <a role="button" href="usecases.html">Use Cases and Workflows</a>
+      </li>
+      <li>
+        <a role="button" href="dataelements.html">UDS+ Data Elements and FHIR Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a role="button" href="reportingguidance.html">Implementation Guidance</a>
+      </li>
+      <li>
+        <a role="button" href="spec.html">FHIR API Based Reporting</a>
+      </li>
+    </ul>
+  </li>
+  <li><a role="button" href="artifacts.html">Artifact Index</a></li>
+  <li><a role="button" href="changes.html">Change History</a></li>
+  <li class="dropdown">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a role="button" target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a role="button" href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Data Elements and FHIR Mappings</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG - Local Development build (v1.0.2). See the <a href="http://fhir.org/guides/hrsa/uds-plus/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Data Elements and FHIR Mappings</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#uds-data-elements" id="markdown-toc-uds-data-elements">UDS+ Data Elements</a></li>
+  <li><a href="#analysis-of-the-zip-code-data-table-table-3a-table-3b-table-4-and-table-6a" id="markdown-toc-analysis-of-the-zip-code-data-table-table-3a-table-3b-table-4-and-table-6a">Analysis of the Zip Code Data Table, Table 3A, Table 3B, Table 4 and Table 6A</a></li>
+  <li><a href="#analysis-of-the-table-6b-and-7-quality-of-care-measures-and-health-outcomes-and-disparities" id="markdown-toc-analysis-of-the-table-6b-and-7-quality-of-care-measures-and-health-outcomes-and-disparities">Analysis of the Table 6B and 7 (Quality of Care Measures and Health Outcomes and Disparities</a></li>
+</ul>
+
+</div>
+<p>This section provides an overview of the UDS+ data elements and their mappings to US Core and QI Core and other IGs as needed.</p>
+
+<h3 id="uds-data-elements">UDS+ Data Elements</h3>
+
+<p>The UDS+ data elements have been identified in the UDS Reporting Manuals. For the UDS+ project, the following data elements identified in the below UDS tables will be considered for reporting.</p>
+
+<ul>
+  <li>Elements in the Zip Code Data Table</li>
+  <li>Table 3A: Patients by Age and by Sex Assigned at Birth</li>
+  <li>Table 3B: Demographic Characteristics</li>
+  <li>Table 4: Selected Patient Characteristics</li>
+  <li>Table 6A: Selected Diagnoses and Services Rendered</li>
+  <li>Table 6B: Quality of Care Measures</li>
+  <li>Table 7: Health Outcomes and Disparities</li>
+</ul>
+
+<h3 id="analysis-of-the-zip-code-data-table-table-3a-table-3b-table-4-and-table-6a">Analysis of the Zip Code Data Table, Table 3A, Table 3B, Table 4 and Table 6A</h3>
+
+<p>The data elements from the above tables have been analyzed to understand the additional data elements that would be needed to be supported by certified EHR technologies as part of the FHIR APIs. This analysis is presented in the table below which identifies the UDS data element, the profiles to be used for UDS+ reporting and the differences between US Core/USCDIv2 and UDS+.</p>
+
+<style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .maptable17{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable18{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#262626;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable12{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#4f81bd;text-align:center;font-weight:bold;color:#ffffff;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable15{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable112{background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable11{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#4f81bd;text-align:center;font-weight:bold;color:#ffffff;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable10{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#4f81bd;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable111{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#c6d9f0;text-align:left;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable14{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable13{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#c6d9f0;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px;}.ritz .waffle .maptable110{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:left;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable16{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#c6d9f0;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable19{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable113{background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}</style>
+
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr style="height:20px;">
+        <td class="maptable11">UDS Data Element</td>
+        <td class="maptable11">UDS+ Reporting FHIR Profile Mapping</td>
+        <td class="maptable11">Differences with US Core - 6.1.0/USCDIv3</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3">UDS Table : Patients By Zip Code Table
+        </td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Zip Code</td>
+        <td class="maptable17">de-identified-uds-plus-patient.address.postalCode</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Insurance Type</td>
+        <td class="maptable17">uds-plus-coverage.type</td>
+        <td class="maptable17">Value Set specific to UDS+ reporting</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3">UDS Table 3A: Patients By Age and By Sex Assigned at Birth
+        </td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Age</td>
+        <td class="maptable17">de-identified-uds-plus-patient.extension (uds-plus-plus-age-extension)</td>
+        <td class="maptable17">Populated using the birthDate of the patient.</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Sex Assigned at Birth</td>
+        <td class="maptable17">de-identified-uds-plus-patient.extension (uds-plus-birthsex-extension)</td>
+        <td class="maptable17">NullFlavor values are not allowed for UDS+ reporting.</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3">UDS Table 3B: Demographic Characteristics 
+        </td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Race</td>
+        <td class="maptable17">de-identified-uds-plus-patient.extension (uds-plus-race-extension)</td>
+        <td class="maptable17">Require both ombCategory and Detailed Race codes for UDS+ reporting</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Ethnicity</td>
+        <td class="maptable17">de-identified-uds-plus-patient.extension (uds-plus-ethnicity)</td>
+        <td class="maptable17">Require both ombCategory and Detailed Ethnicity codes for UDS+ reporting</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Preferred Language</td>
+        <td class="maptable17">de-identified-uds-plus-patient.communication.language</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Sexual Orientation</td>
+        <td class="maptable17">uds-plus-sexual-orientation-observation.valueCodeableConcept</td>
+        <td class="maptable17">Additional NullFlavor concept of NASK has been added for UDS+ reporting</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Gender Identity</td>
+        <td class="maptable17">uds-plus-patient.extension (uds-plus-gender-identity-extension)</td>
+        <td class="maptable17">Additional NullFlavor concept of NASK has to be supported</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3">UDS Table 4: Selected Patient Characteristics
+        </td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Income</td>
+        <td class="maptable17">uds-plus-income-observation.code &amp; uds-plus-income-observation.valueRange</td>
+        <td class="maptable17">Income is modeled as an observation and is not present in US Core.</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Insurance</td>
+        <td class="maptable17">uds-plus-coverage.type</td>
+        <td class="maptable17">Value Set specific to UDS+ reporting</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Managed Care Utilization</td>
+        <td class="maptable17">uds-plus-coverage.extension (uds-plus-capitated-member-months-extension, uds-plus-feeforservice-member-months-extension)</td>
+        <td class="maptable17">Extensions added for UDS+ reporting as they are not present in US Core</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Special Population - Migratory/Seasonal worker</td>
+        <td class="maptable17">uds-plus-patient.extension (uds-plus-plus-agriculture-worker-status)</td>
+        <td class="maptable17">Extension added for UDS+ reporting as it is not present in US Core</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Special Population - Homeless</td>
+        <td class="maptable17">uds-plus-patient.extension (uds-plus-plus-housing-status)</td>
+        <td class="maptable17">Extension added for UDS+ reporting as it is not present in US Core</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Special Population - Veterans</td>
+        <td class="maptable17">uds-plus-patient.extension (uds-plus-plus-veteran-status)</td>
+        <td class="maptable17">Extension added for UDS+ reporting as it is not present in US Core</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3">UDS Table 6A: Selected Diagnoses and Services Rendered
+        </td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis</td>
+        <td class="maptable17">uds-plus-diagnosis.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis Date</td>
+        <td class="maptable17">uds-plus-diagnosis.assertedDate</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Date</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Patient Visit</td>
+        <td class="maptable17">uds-plus-encounter.subject, uds-plus-diagnosis.subject, uds-plus-diagnosis.code &amp; uds-plus-encounter.code &amp; uds-plus-encounter.reasonCode</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Procedure/Test</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Procedure/Test Date</td>
+        <td class="maptable17">uds-plus-procedure.performedDate</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Procedure/Test Patient</td>
+        <td class="maptable17">uds-plus-procedure.subject</td>
+        <td class="maptable17">None</td>
+      </tr> 
+    </tbody>
+  </table>
+</div>
+
+<h3 id="analysis-of-the-table-6b-and-7-quality-of-care-measures-and-health-outcomes-and-disparities">Analysis of the Table 6B and 7 (Quality of Care Measures and Health Outcomes and Disparities</h3>
+
+<p>UDS+ reports require data to be reported for Quality of Care Measures and also for Health Outcomes and Disparities measures. In order to compute the various populations that fall into the patient population, numerators, denominators, exclusions for the measures the required data elements were identified from the Quality Measure eCQM definitions. These data elements are based of the QDM data elements. These QDM data elements are then mapped to QI Core or UDS+ profiles for reporting purposes. In addition analysis was performed to identify the delta between US Core/USCDIv2 and the data elements required for the computation of the quality measures. This analysis will aid in the decision making on how to best align the ONC USCDI+ data elements to Federal Agency requirements in future versions of USCDI and USCDI+.</p>
+
+<p>The analysis is presented in the table below.</p>
+
+<style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .maptable17{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable18{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#262626;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable12{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#4f81bd;text-align:center;font-weight:bold;color:#ffffff;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable15{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable112{background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable11{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#4f81bd;text-align:center;font-weight:bold;color:#ffffff;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable10{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#4f81bd;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable111{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#c6d9f0;text-align:left;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable14{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable13{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#c6d9f0;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px;}.ritz .waffle .maptable110{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:left;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable16{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#c6d9f0;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable19{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable113{background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}</style>
+
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr style="height:20px;">
+        <td class="maptable11">UDS Data Element</td>
+        <td class="maptable11">FHIR Profile Mapping</td>
+        <td class="maptable11">Differences with US Core 6.1.0</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Childhood Immunization Status (CMS117v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Immunization, Administered - Status</td>
+        <td class="maptable17">uds-plus-Immunization.status</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Immunization, Administered - Vaccination Code</td>
+        <td class="maptable17">uds-plus-Immunization.vaccineCode</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Immunization, Administered - Occurrence DateTime</td>
+        <td class="maptable17">uds-plus-Immunization.occurrenceDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Patient Age</td>
+        <td class="maptable17">uds-plus-patient.extension.uds-plus-age-extension, uds-plus-encounter.extension.uds-plus-age-extnesion</td>
+        <td class="maptable17">Computed from Patient.birthDate and if required visit date</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Cervical Cancer Screening (CMS124v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - Sex</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-birthsex</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Breast Cancer Screening (CMS125v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Device, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Device, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition Present On Admission</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.use</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnostic Study, Performed - Code</td>
+        <td class="maptable17">uds-plus-clinical-result-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnostic Study, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-clinical-result-observation.effectiveDateTime OR uds-plus-clinical-result-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnostic Study, Performed - Issued</td>
+        <td class="maptable17">uds-plus-clinical-result-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Status</td>
+        <td class="maptable17">uds-plus-medicationstatement.status</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Code</td>
+        <td class="maptable17">uds-plus-medicationstatement.medicationCodeableConcept</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - DateTime/Period</td>
+        <td class="maptable17">uds-plus-medicationstatement.effectiveDateTime OR uds-plus-medicationstatement.effectivePeriod</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic - Sex</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-birthsex</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Onset DateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Abatement DateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Weight Assessment and Counselling for Nutrition and Physical Activity for Children/Adolescents (CMS155v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Physical Exam, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Physical Exam, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Physical Exam, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan (CMS69v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td> 
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - Code</td>
+        <td class="maptable17">uds-plus-medicationrequest.medicationCodeableConcept</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - Timing</td>
+        <td class="maptable17">uds-plus-medicationrequest.dosageInstruction.timing</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-medicationrequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Physical Exam, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Physical Exam, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Physical Exam, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>  
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention (CMS138v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Status</td>
+        <td class="maptable17">uds-plus-medicationstatement.status</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Code</td>
+        <td class="maptable17">uds-plus-medicationstatement.medicationCodeableConcept</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - DateTime/Period</td>
+        <td class="maptable17">uds-plus-medicationstatement.effectiveDateTime OR uds-plus-medicationstatement.effectivePeriod</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - Code</td>
+        <td class="maptable17">uds-plus-medicationrequest.medicationCodeableConcept</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - Timing</td>
+        <td class="maptable17">uds-plus-medicationrequest.dosageInstruction.timing</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-medicationrequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Statin Therapy for the Prevention and Treatment of Cardiovascular Disease (CMS347v6)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Adverse Event - Event</td>
+        <td class="maptable17">uds-plus-adverseevent.event</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Adverse Event - Date</td>
+        <td class="maptable17">uds-plus-adverseevent.date</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Adverse Event - Recorded</td>
+        <td class="maptable17">uds-plus-adverseevent.recordedDate</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Allergy Intolerance - Code</td>
+        <td class="maptable17">uds-plus-allergyintolerance.code, uds-plus-allergyintolerance.type</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Allergy Intolerance - Onset</td>
+        <td class="maptable17">uds-plus-allergyintolerance.onsetPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Allergy Intolerance - Recorded</td>
+        <td class="maptable17">uds-plus-allergyintolerance.recordedDate</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Status</td>
+        <td class="maptable17">uds-plus-medicationstatement.status</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Code</td>
+        <td class="maptable17">uds-plus-medicationstatement.medicationCodeableConcept</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - DateTime/Period</td>
+        <td class="maptable17">uds-plus-medicationstatement.effectiveDateTime OR uds-plus-medicationstatement.effectivePeriod</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - Code</td>
+        <td class="maptable17">uds-plus-medicationrequest.medicationCodeableConcept</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - Timing</td>
+        <td class="maptable17">uds-plus-medicationrequest.dosageInstruction.timing</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-medicationrequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>	  
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Colorectal Cancer Screening (CMS130v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Device, Order- Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Device, Order- AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition Present On Admission</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.use</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnostic Study, Performed - Code</td>
+        <td class="maptable17">uds-plus-clinical-result-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnostic Study, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-clinical-result-observation.effectiveDateTime OR uds-plus-clinical-result-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnostic Study, Performed - Issued</td>
+        <td class="maptable17">uds-plus-clinical-result-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Status</td>
+        <td class="maptable17">uds-plus-medicationstatement.status</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Code</td>
+        <td class="maptable17">uds-plus-medicationstatement.medicationCodeableConcept</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - DateTime/Period</td>
+        <td class="maptable17">uds-plus-medicationstatement.effectiveDateTime OR uds-plus-medicationstatement.effectivePeriod</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Result - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Result - Value</td>
+        <td class="maptable17">uds-plus-observation.value[x] (valueQuantity/valueCodeableConcept/valueDateTime)</td>
+        <td class="maptable17">None</td>
+      </tr>	  
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Onset DateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Abatement DateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : HIV Screening (CMS349v5)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Preventive Care and Screening: Screening for Depression and Follow-Up Plan (CMS2v12)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr> 
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - Code</td>
+        <td class="maptable17">uds-plus-medicationrequest.medicationCodeableConcept</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - Timing</td>
+        <td class="maptable17">uds-plus-medicationrequest.dosageInstruction.timing</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-medicationrequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Depression Remission at Twelve Months (CMS159v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic - Birth Date</td>
+        <td class="maptable17">uds-plus-patient.extension (age)</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic - Expired</td>
+        <td class="maptable17">uds-plus-patient.deceasedBoolean</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet (CMS164v7)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic - Birth Date</td>
+        <td class="maptable17">uds-plus-patient.extension (age)</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Performed</td>
+        <td class="maptable17">uds-plus-encounter</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Discharge Disposition</td>
+        <td class="maptable17">uds-plus-encounter.dischargeDisposition</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Diagnosis</td>
+        <td class="maptable17">uds-plus-condition.code and uds-plus-condition.category</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis Time (OnsetTime)</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Procedure Performed</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Procedure Performed DateTime</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Medication(Active) - Status</td>
+        <td class="maptable17">uds-plus-medicationstatement.status</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication(Active) - Code</td>
+        <td class="maptable17">uds-plus-medicationstatement.medicationCodeableConcept</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication(Active) - DateTime/Period</td>
+        <td class="maptable17">uds-plus-medicationstatement.effectiveDateTime OR uds-plus-medicationstatement.effectivePeriod</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Intervention Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention(Performed) - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention(Performed) - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention(Performed) - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+      
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : HIV Linkage to Care</b>
+        </td>
+      </tr>
+	  
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Performed</td>
+        <td class="maptable17">uds-plus-encounter</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Discharge Disposition</td>
+        <td class="maptable17">uds-plus-encounter.dischargeDisposition</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Diagnosis</td>
+        <td class="maptable17">uds-plus-condition.code and uds-plus-condition.category</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis Time (OnsetTime)</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Result - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Result - Value</td>
+        <td class="maptable17">uds-plus-observation.value[x] (valueQuantity/valueCodeableConcept/valueDateTime)</td>
+        <td class="maptable17">None</td>
+      </tr>  
+      <tr style="height:20px;">
+        <td class="maptable16">Intervention Order - Referral</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr> 
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Dental Sealants for Children between 6-9 Years (CMS277v0)</b>
+        </td>
+      </tr>
+       <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic - Birth Date</td>
+        <td class="maptable17">uds-plus-patient.extension (age)</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Performed</td>
+        <td class="maptable17">uds-plus-encounter</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Type</td>
+        <td class="maptable17">uds-plus-encounter.type</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Encounter Diagnosis</td>
+        <td class="maptable17">uds-plus-condition.code and uds-plus-condition.category</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis Time (OnsetTime)</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Procedure Performed</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Procedure Performed DateTime</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure(Performed) - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Controlling High Blood Pressure (CMS165v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Device, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Device, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition Present On Admission</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.use</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Author DateTime</td>
+        <td class="maptable17"></td>
+        <td class="maptable17">Missing in US Core &amp; QI Core profiles</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Status</td>
+        <td class="maptable17">uds-plus-medicationstatement.status</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Code</td>
+        <td class="maptable17">uds-plus-medicationstatement.medicationCodeableConcept</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - DateTime/Period</td>
+        <td class="maptable17">uds-plus-medicationstatement.effectiveDateTime OR uds-plus-medicationstatement.effectivePeriod</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Physical Exam, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Physical Exam, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Physical Exam, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Procedure, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Result - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Result - Value</td>
+        <td class="maptable17">uds-plus-observation.value[x] (valueQuantity/valueCodeableConcept/valueDateTime)</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Onset DateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Abatement DateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>UDS Table : Diabetes: Hemoglobin A1c (HbA1c) Poor Control (&gt; 9%) (CMS122v11)</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed  - Result</td>
+        <td class="maptable17">uds-plus-observation.value[x]</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Assessment, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Device, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Device, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnoses - Condition Present On Admission</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.use</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - OnsetDateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - AbatementDateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Diagnosis - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Participant</td>
+        <td class="maptable17">uds-plus-encounter.participant.individual</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.condition</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Diagnosis Rank</td>
+        <td class="maptable17">uds-plus-encounter.diagnosis.rank</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Period</td>
+        <td class="maptable17">uds-plus-encounter.period</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Encounter, Performed - Author DateTime</td>
+        <td class="maptable17"></td>
+        <td class="maptable17">Missing in US Core &amp; QI Core profiles</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - Code</td>
+        <td class="maptable17">uds-plus-servicerequest.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Order - AuthoredOn</td>
+        <td class="maptable17">uds-plus-servicerequest.authoredOn</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Code</td>
+        <td class="maptable17">uds-plus-procedure.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-procedure.performedDateTime OR uds-plus-procedure.performedPeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Intervention, Performed - Recorded</td>
+        <td class="maptable17">uds-plus-procedure.extension(uds-plus-recordedDate extension)</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - DateTime/Period</td>
+        <td class="maptable17">uds-plus-observation.effectiveDateTime OR uds-plus-observation.effectivePeriod</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Laboratory Test, Performed - Issued</td>
+        <td class="maptable17">uds-plus-observation.issued</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Status</td>
+        <td class="maptable17">uds-plus-medicationstatement.status</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - Code</td>
+        <td class="maptable17">uds-plus-medicationstatement.medicationCodeableConcept</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Medication, Active - DateTime/Period</td>
+        <td class="maptable17">uds-plus-medicationstatement.effectiveDateTime OR uds-plus-medicationstatement.effectivePeriod</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Payer</td>
+        <td class="maptable17">uds-plus-coverage.payor</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Payer - Period</td>
+        <td class="maptable17">uds-plus-coverage.period</td>
+        <td class="maptable17">Missing in US Core profile</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Ethnicity - Ethnicity</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-ethnicity</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Race - Race</td>
+        <td class="maptable17">uds-plus-patient.extension.us-core-race</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Patient Characteristic, Sex - ONC Administrative Sex</td>
+        <td class="maptable17">uds-plus-patient.gender</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Result - Code</td>
+        <td class="maptable17">uds-plus-observation.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Result - Value</td>
+        <td class="maptable17">uds-plus-observation.value[x] (valueQuantity/valueCodeableConcept/valueDateTime)</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Code</td>
+        <td class="maptable17">uds-plus-condition.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Onset DateTime</td>
+        <td class="maptable17">uds-plus-condition.onsetDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - Abatement DateTime</td>
+        <td class="maptable17">uds-plus-condition.abatementDateTime</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Symptom - ClinicalStatus</td>
+        <td class="maptable17">uds-plus-condition.clinicalStatus</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>Prenatal Data</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">Prenatal Patient Services by Delivery</td>
+        <td class="maptable17">UDS Manifest.hcPrenatalCareByReferralOnly</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">First Trimester, Second Trimester, Third Trimester</td>
+        <td class="maptable17">uds-plus-diagnosis.code &amp; uds-plus-encounter.code &amp; uds-plus-encounter.reasonCode</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable13" colspan="3"><b>Deliveries and Birth Weight Data</b>
+        </td>
+      </tr>
+	  <tr style="height:20px;">
+        <td class="maptable16">HIV Positive Pregnant Patients</td>
+        <td class="maptable17">uds-plus-diagnosis.code</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Deliveries Performed by Health Center Providers</td>
+        <td class="maptable17">uds-plus-diagnosis.code &amp; uds-plus-encounter.code &amp; uds-plus-encounter.reasonCode</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Prenatal Care Patients who delivered during the year</td>
+        <td class="maptable17">uds-plus-diagnosis.code &amp; uds-plus-encounter.code &amp; uds-plus-encounter.reasonCode</td>
+        <td class="maptable17">None</td>
+      </tr>
+      <tr style="height:20px;">
+        <td class="maptable16">Live Birth Weight </td>
+        <td class="maptable17">uds-plus-observation.code &amp; uds-plus-observation.value[x], Use LOINC code of 8339-4 for capturing the weight.</td>
+        <td class="maptable17">None</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://bphc.hrsa.gov/">HRSA BPHC</a>.  Package fhir.hrsa.uds-plus#1.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 18, 2024 11:53+0000">2024-04-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+       <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="license.html">License</a> |
+       <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+        | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" aria-label="New Issue" href="https://github.com/drajer-health/uds-plus/issues/new">New Issue</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" aria-label="Issues" href="https://github.com/drajer-health/uds-plus/issues">Issues</a>
+
+       | <a style="color: var(--footer-hyperlink-text-color)" aria-lable="Version History" target="_blank" href="http://fhir.org/guides/hrsa/uds-plus/history.html">Version History</a> |
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

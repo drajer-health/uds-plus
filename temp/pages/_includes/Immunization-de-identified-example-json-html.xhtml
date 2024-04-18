@@ -1,0 +1,36 @@
+{% raw %}<pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization">resourceType</a>" : "Immunization",
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.id">id</a>" : "de-identified-example",
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-immunization"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.status">status</a>" : "completed",
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.statusReason">statusReason</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/condition-category",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "encounter-diagnosis",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Encounter Diagnosis"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode">vaccineCode</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/sid/cvx",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "197",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "influenza, high-dose, quadrivalent"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.patient">patient</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/de-identified-example"
+  },
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.occurrence[x]">occurrenceDateTime</a>" : "2023",
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.recorded">recorded</a>" : "2023",
+  "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.primarySource">primarySource</a>" : true
+}</code></pre>
+{% endraw %}

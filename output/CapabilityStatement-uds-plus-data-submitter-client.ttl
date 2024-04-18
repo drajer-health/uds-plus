@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-submitter-client> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uds-plus-data-submitter-client"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <h2>Data Receiver</h2>\n      <p>(Requirements Definition Capability Statement)</p>\n      <p>Canonical URL: http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-submitter-client</p>\n      <p>Published by: <b>HL7 International - Public Health Work Group</b>\n      </p>\n      <p>This is a CapabilityStatement that defines the expected capabilities of the Data Submitter actor as a client.  \n      </p>\n      <h2>General</h2>\n      <div class=\"table-wrapper\">\n        <table>\n          <tbody>\n            <tr>\n              <th>FHIR Version:</th>\n              <td>4.0.1</td>\n            </tr>\n            <tr>\n              <th>Supported formats:</th>\n              <td>json</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n      <h2>REST  behavior</h2>\n      <p>The primary focus of the Data Submitter actor as a client is to invoke the Group/$export operation identified below and extract the UDS+ data using US Core and QI Core profiles.\n      In certain cases, the Data Submitter MAY have to invoke individual patient api's to extract the necessary UDS+ data when the Data Source does not support Group/$export operation.  \n      data.\n      </p>\n      <p>\n        <b>Security:</b>\n      </p>\n      <p>Implementations must meet the general security requirements documented in FHIR <a href=\"http://hl7.org/fhir/security.html\">Security guidance</a>.</p>\n      <p>In addition the Data Submitter actor as a client needs to meet the security requirements as outlined in the <a href=\"spec.html#smart-on-fhir-backend-services-authorization\">SMART on FHIR Backend Services Authorization</a></p>\n      \n      <h3>Resource summary</h3>\n      <div class=\"table-wrapper\">\n        <table class=\"grid\">\n          <thead>\n            <tr>\n              <th>Resource</th>\n              <th>Search</th>\n              <th>Read</th>\n              <th>Read Version</th>\n              <th>Instance History</th>\n              <th>Resource History</th>\n              <th>Create</th>\n              <th>Update</th>\n              <th>Delete</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <th>UDS+ profiles</th>\n              <td>\n                <a href=\"#UDS-search-type\" title=\"Search for specific UDS+ Resource instances.\">SHALL</a>\n              </td>\n              <td>\n                <a href=\"#UDS-read\" title=\"Retrieve specific UDS+ Resource instances.\">SHALL</a>\n              </td>\n              <td>\n              </td>\n              <td>               \n              </td>\n              <td>\n              </td>\n              <td>\n              </td>\n              <td>\n              </td>\n			  <td>\n              </td>\n            </tr>\n            \n          </tbody>\n        </table>\n      </div>\n     \n        <h3>FHIR Operations summary</h3>\n        <p>As a client, the Data Submitter has to be capable of invoking the below operation on the Data Source.</p>\n      \n      <ul>\n        <li>\n          <a href=\"http://hl7.org/fhir/uv/bulkdata/OperationDefinition-group-export.html\">Bulk Data Export ([BaseURL]/Group/[Id]/$export)</a>\n        </li>\n      </ul>\n      \n      <p>As a client, the Data Submitter has to be capable of invoking the below operation on the Data Receiver to submit the manifest file.</p>\n      \n      <ul>\n        <li>\n          <a href=\"http://fhir.org/guides/hrsa/uds-plus/OperationDefinition-import.html\">Bulk Data Import ([BaseURL]/$import)</a>\n        </li>\n      </ul>\n      \n      <br/>\n      <br/>\n      \n      <h3>\n        <a href=\"artifacts.html\">UDS+ profiles</a>\n      </h3>\n      <p>Profiles: All UDS+ profiles\n      </p>\n      <h4>Interactions</h4>\n      <div class=\"table-wrapper\">\n        <table class=\"list\">\n          <thead>\n            <tr>\n              <th>Name</th>\n              <th>Description</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <th>\n                <a name=\"UDS-search-type\"> </a>\n                <span>search</span>\n              </th>\n              <td>\n                <p>Search for specific UDS+ resource profile instances.</p>\n              </td>\n            </tr>\n            <tr>\n              <th>\n                <a name=\"UDS-read\"> </a>\n                <span>read</span>\n              </th>\n              <td>\n                <p>Retrieve specific UDS+ resource profile instances</p>\n              </td>\n            </tr> \n          </tbody>\n        </table>\n      </div>\n      <br/>\n      <br/> \n      \n    \n    </div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-submitter-client"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.2"] ; # 
+  fhir:name [ fhir:v "UdsPlusDataSubmitter"] ; # 
+  fhir:title [ fhir:v "Uds Plus Data Submitter CapabilityStatement"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2020-12-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HRSA BPHC"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://bphc.hrsa.gov/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is a CapabilityStatement that defines the expected capabilities of the Data Submitter actor."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "json"] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "client" ] ;
+     fhir:documentation [ fhir:v "The primary focus of the Data Submitter is to invoke the Group/[id]/$export operation and gather the UDS+ data using US Core and QI Core profiles." ] ;
+     fhir:security [
+       fhir:description [ fhir:v "Implementations must meet the general security requirements documented in the security section of the implementation guide." ]
+     ] ;
+     fhir:operation ( [
+       fhir:name [ fhir:v "export" ] ;
+       fhir:definition [
+         fhir:v "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/group-export"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/bulkdata/OperationDefinition/group-export>
+       ]
+     ] [
+       fhir:name [ fhir:v "import" ] ;
+       fhir:definition [
+         fhir:v "http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/import"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/import>
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

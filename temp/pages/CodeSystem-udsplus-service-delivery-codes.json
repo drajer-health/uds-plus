@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "udsplus-service-delivery-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">public-housing<a name=\"udsplus-service-delivery-codes-public-housing\"> </a></td><td>Care was delivered in a Location that is considered public housing</td><td>Care was delivered in a Location that is considered public housing</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+      }]
+    }
+  }],
+  "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes",
+  "version" : "1.0.2",
+  "name" : "UDSPlusServiceDeliveryCodes",
+  "title" : "UDS Plus Housing Service Delivery Codes",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-06",
+  "publisher" : "HRSA BPHC",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://bphc.hrsa.gov/"
+    }]
+  }],
+  "description" : "The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "public-housing",
+    "display" : "Care was delivered in a Location that is considered public housing",
+    "definition" : "Care was delivered in a Location that is considered public housing"
+  }]
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "731e2483-00a3-4098-aa56-f838fdaa030b-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/731e2483-00a3-4098-aa56-f838fdaa030b-6",
+  "name" : "IntersectionUDSPlusAgricultureWorkerStatusCodesAndUDSPlusAgricultureWorkerStatusCodes",
+  "title" : "Intersection of UDS Plus Agriculter Worker Status Codes And UDS Plus Agriculter Worker Status Codes",
+  "status" : "active",
+  "date" : "2024-04-18T11:54:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "concept" : [{
+    "code" : "migratory",
+    "display" : "Migratory Agriculture Worker",
+    "definition" : "Patients whose principal employment is in agriculture and who establish a temporary home for the purposes of such employment as a migratory agricultural worker,"
+  },
+  {
+    "code" : "seasonal",
+    "display" : "Seasonal Agriculture Worker",
+    "definition" : "Patients whose principal employment is in agriculture on a seasonal basis (e.g., picking fruit during the limited months of a picking season), but who DO NOT establish a temporary home for purposes of such employment"
+  }]
+}

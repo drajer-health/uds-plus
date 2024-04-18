@@ -1,0 +1,21 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='uds-plus-gender-identity-extension' %}
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='uds-plus-gender-identity-extension' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{modelType}}: UDSPlusGenderIdentityExtension - Change History</h2>
+{% include fragment-simpletable.html %}
+  <p>Changes in the uds-plus-gender-identity-extension {{modelType | downcase}}.</p>
+
+  {%include StructureDefinition-uds-plus-gender-identity-extension-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

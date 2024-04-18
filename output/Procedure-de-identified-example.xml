@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="de-identified-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-procedure"/>
+  </meta>
+  <extension url="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-recordedDate-extension">
+    <valueDateTime value="2005"/>
+  </extension>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="48387007"/>
+      <display value="Tracheotomy"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/de-identified-example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/de-identified-example"/>
+  </encounter>
+  <performedDateTime value="2005"/>
+  <performer>
+    <actor>
+      <reference value="Practitioner/example"/>
+    </actor>
+  </performer>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="44567001"/>
+      <display value="Tracheal structure"/>
+    </coding>
+  </bodySite>
+</Procedure>

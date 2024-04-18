@@ -1,0 +1,188 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "example",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "UDS+ Manifest File Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is an example of a Manifest file submitted as a parameter to the UDS+ $import operation."
+    }],
+    "profile" : ["http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-import-manifest"]
+  },
+  "parameter" : [{
+    "name" : "inputFormat",
+    "valueCode" : "fhir+ndjson"
+  },
+  {
+    "name" : "submissionId",
+    "valueString" : "234343-aaa-32432"
+  },
+  {
+    "name" : "submissionTime",
+    "valueDateTime" : "2023-01-14T07:15:07-08:00"
+  },
+  {
+    "name" : "hcInformation",
+    "part" : [{
+      "name" : "uei",
+      "valueString" : "12343434"
+    },
+    {
+      "name" : "grantNumber",
+      "valueString" : "H80CS34333"
+    },
+    {
+      "name" : "hcName",
+      "valueString" : "Example FQHC"
+    },
+    {
+      "name" : "hcAddress",
+      "valueAddress" : {
+        "line" : ["123 Rocky point place"],
+        "city" : "Atlanta",
+        "state" : "GA",
+        "postalCode" : "23434",
+        "country" : "US"
+      }
+    },
+    {
+      "name" : "hcContactPerson",
+      "valueHumanName" : {
+        "family" : "Taylor",
+        "given" : ["Elizabeth"]
+      }
+    },
+    {
+      "name" : "hcContactPhone",
+      "valueContactPoint" : {
+        "system" : "phone",
+        "value" : "234-234-5648"
+      }
+    },
+    {
+      "name" : "hcPrenatalCareByReferralOnly",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "name" : "importProtocol",
+    "valueCode" : "https"
+  },
+  {
+    "name" : "udsData",
+    "part" : [{
+      "name" : "type",
+      "valueCode" : "Patient"
+    },
+    {
+      "name" : "url",
+      "valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Patient_1.ndjson"
+    },
+    {
+      "name" : "expirationTime",
+      "valueDateTime" : "2022-12-14T07:15:07-08:00"
+    },
+    {
+      "name" : "bearer",
+      "valueString" : "adfadfr3dsag3443"
+    }]
+  },
+  {
+    "name" : "udsData",
+    "part" : [{
+      "name" : "type",
+      "valueCode" : "Patient"
+    },
+    {
+      "name" : "url",
+      "valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Patient_2.ndjson"
+    },
+    {
+      "name" : "expirationTime",
+      "valueDateTime" : "2022-12-14T07:15:07-08:00"
+    },
+    {
+      "name" : "bearer",
+      "valueString" : "adfadfr3dsag3443"
+    }]
+  },
+  {
+    "name" : "udsData",
+    "part" : [{
+      "name" : "type",
+      "valueCode" : "Condition"
+    },
+    {
+      "name" : "url",
+      "valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Condition.ndjson"
+    },
+    {
+      "name" : "expirationTime",
+      "valueDateTime" : "2022-12-14T07:15:07-08:00"
+    },
+    {
+      "name" : "bearer",
+      "valueString" : "adfadfr3dsag3443"
+    }]
+  },
+  {
+    "name" : "udsData",
+    "part" : [{
+      "name" : "type",
+      "valueCode" : "Coverage"
+    },
+    {
+      "name" : "url",
+      "valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Coverage.ndjson"
+    },
+    {
+      "name" : "expirationTime",
+      "valueDateTime" : "2022-12-14T07:15:07-08:00"
+    },
+    {
+      "name" : "bearer",
+      "valueString" : "adfadfr3dsag3443"
+    }]
+  },
+  {
+    "name" : "udsData",
+    "part" : [{
+      "name" : "type",
+      "valueCode" : "Procedure"
+    },
+    {
+      "name" : "url",
+      "valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Procedure.ndjson"
+    },
+    {
+      "name" : "expirationTime",
+      "valueDateTime" : "2022-12-14T07:15:07-08:00"
+    },
+    {
+      "name" : "bearer",
+      "valueString" : "adfadfr3dsag3443"
+    }]
+  },
+  {
+    "name" : "udsData",
+    "part" : [{
+      "name" : "type",
+      "valueCode" : "Encounter"
+    },
+    {
+      "name" : "url",
+      "valueUrl" : "http://www.fqhc.california.com/udsplus/storage/2023/Encounter.ndjson"
+    },
+    {
+      "name" : "expirationTime",
+      "valueDateTime" : "2022-12-14T07:15:07-08:00"
+    },
+    {
+      "name" : "bearer",
+      "valueString" : "adfadfr3dsag3443"
+    }]
+  }]
+}

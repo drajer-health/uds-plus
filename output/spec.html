@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FHIR API Reporting Specification - HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG v1.0.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hrsa.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <div id="project-nav">
+  <a id="hrsa-logo" no-external="true" href="https://hrsa.gov">
+    <img height="71" alt="Visit the website" src="hrsa-logo.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="fhir-logo.png"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG</span>
+            <br/>
+            <span style="display:inline-block;">1.0.2 - STU1 Release 1 - Standard for Trial-Use
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a role="button" href="index.html">IG Home</a></li>
+  <li><a role="button" href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" role="button" href="#" class="dropdown-toggle">UDS Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">   
+      <li>
+        <a role="button" href="background.html">Implementation Guide Overview</a>
+      </li>
+      <li>
+        <a role="button" href="usecases.html">Use Cases and Workflows</a>
+      </li>
+      <li>
+        <a role="button" href="dataelements.html">UDS+ Data Elements and FHIR Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a role="button" href="reportingguidance.html">Implementation Guidance</a>
+      </li>
+      <li>
+        <a role="button" href="spec.html">FHIR API Based Reporting</a>
+      </li>
+    </ul>
+  </li>
+  <li><a role="button" href="artifacts.html">Artifact Index</a></li>
+  <li><a role="button" href="changes.html">Change History</a></li>
+  <li class="dropdown">
+    <a role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a role="button" target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a role="button" href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>FHIR API Reporting Specification</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG - Local Development build (v1.0.2). See the <a href="http://fhir.org/guides/hrsa/uds-plus/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>FHIR API Reporting Specification</h2>
+  
+
+
+
+
+
+  <table class="colstu">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
+        
+      </td>
+  
+  
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
+      </td>
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>This section defines the specific requirements for systems wishing to conform to actors specified in this UDS+ IG and use HL7 FHIR for reporting.</p>
+
+<h3 id="context">Context</h3>
+
+<h4 id="pre-reading">Pre-reading</h4>
+<p>Before reading this formal specification, implementers should first be familiar with two other key portions of the specification:</p>
+
+<ul>
+  <li>
+    <p>The <a href="usecases.html">Use Cases</a> page provides the business context and general process flow enabled by the formal specification.</p>
+  </li>
+  <li>
+    <p>The <a href="background.html">Background</a> page provides information about the underlying specifications and indicates what portions of each should be reviewed in order to have the necessary foundation to understand the constraints and usage guidance described in this detailed specification.</p>
+  </li>
+</ul>
+
+<h4 id="conventions">Conventions</h4>
+<p>This implementation guide uses specific terminology to flag statements that have relevance for the evaluation of conformance with the guide:</p>
+
+<ul>
+  <li>
+    <p><strong>SHALL</strong> indicates requirements that must be met to be conformant with the specification.</p>
+  </li>
+  <li>
+    <p><strong>SHOULD</strong> indicates behaviors that are strongly recommended (and which may result in interoperability issues or sub-optimal behavior if not adhered to), but which do not, for this version of the specification, affect the determination of specification conformance.</p>
+  </li>
+  <li>
+    <p><strong>MAY</strong> describes optional behaviors that are free to consider but where the is no recommendation for or against adoption.</p>
+  </li>
+</ul>
+
+<h4 id="claiming-conformance">Claiming Conformance</h4>
+
+<p>Actors and Systems asserting conformance to this implementation guide have to implement the requirements outlined in the corresponding capability statements. The following definition of MUST SUPPORT is to be used in the implementation of the requirements.</p>
+
+<h5 id="must-support-definition">MUST SUPPORT Definition</h5>
+
+<ul>
+  <li>Systems <strong>SHALL</strong> be capable of populating data elements as specified by the profiles and data elements are returned using the specified APIs in the capability statement.</li>
+  <li>Systems <strong>SHALL</strong> be capable of processing resource instances containing the MUST SUPPORT data elements without generating an error or causing the application to fail.</li>
+  <li>In situations where information on a particular data element is not present and the reason for absence is unknown, Systems <strong>SHALL NOT</strong> include the data elements in the resource instance returned from executing the API requests.</li>
+  <li>When accessing UDS+ data, Systems <strong>SHALL</strong> interpret missing data elements within resource instances returned from API requests as data not present.</li>
+  <li>Systems <strong>SHALL NOT</strong> include any data elements as part of the resource that is not tagged as mandatory or <strong>MUST SUPPORT</strong> in the profile.</li>
+</ul>
+
+<p>NOTE: There are data elements designated as <strong>MUST SUPPORT</strong> in the UDS+ profiles, but are not present in the mapping tables. These data elements have been designated as MUST SUPPORT to align with QI Core profiles which get used for Quality Measure Reporting. In cases where a Health Center does not have data elements tagged as MUST SUPPORT in their EHRs, they can omit sending these data elements as long as the  cardinality of the data element allows for the omission of the data element.</p>
+
+<h4 id="profiles">Profiles</h4>
+<p>This specification makes significant use of <a href="http://hl7.org/fhir/R4/profiling.html">FHIR profiles</a>, search parameter definitions, and terminology artifacts to describe the content to be shared as part of UDS+ workflows. The implementation guide is based on <a href="http://hl7.org/fhir/R4/">FHIR R4</a> and profiles are listed for each interaction.</p>
+
+<p>The full set of profiles defined in this implementation guide can be found by following the links on the <a href="artifacts.html">UDS+ FHIR Artifacts</a> page.</p>
+
+<h4 id="smart-on-fhir-backend-services-authorization">SMART on FHIR Backend Services Authorization</h4>
+<p>This section outlines how the SMART on FHIR Backend Services Authorization will be used by the UDS+ implementation guide.</p>
+
+<ul>
+  <li>
+    <p>When conforming to the SMART Backend Services Authorization, System Actors SHALL include token_endpoint, scopes_supported, token_endpoint_auth_methods_supported and token_endpoint_auth_signing_alg_values_supported as defined in the <a href="http://hl7.org/fhir/smart-app-launch/backend-services.html">SMART on FHIR IG Backend Services</a> specification.</p>
+  </li>
+  <li>
+    <p>When System Actors act as clients, they SHOULD share their JSON Web Key Set (JWKS) with the server System Actors using Uniform Resource Locators (URLs) as defined in the <a href="http://hl7.org/fhir/smart-app-launch/backend-services.html">SMART on FHIR IG Backend Services</a> specification.</p>
+  </li>
+  <li>
+    <p>Client System Actors SHALL obtain the access token as defined in the <a href="http://hl7.org/fhir/smart-app-launch/backend-services.html">SMART on FHIR Backend Services</a> specification.</p>
+  </li>
+  <li>
+    <p>Data Sources SHALL support the system/*.read scope so that the necessary data can be extracted for UDS+ submissions.</p>
+  </li>
+</ul>
+
+<h4 id="system-actors-requirements-and-capability-statements">System Actors, Requirements and Capability Statements</h4>
+
+<h5 id="data-source-requirements">Data Source Requirements</h5>
+
+<p>This section identifies the different requirements for Data Source (e.g., EHRs) systems supporting the Health Centers. These requirements are only applicable to Data Sources that are planning to conform to Steps 1 through 5 of the use case workflow defined in <a href="usecases.html#uds-data-submission-workflow-using-fhir">Data Submission workflow</a>. If a Health Center chooses to implement Steps 1 through 5 using other mechanisms, these requirements would not be applicable to the Data Source.</p>
+
+<ul>
+  <li>
+    <p>The Data Source <strong>SHALL</strong> support the [FHIR Base URL]/Group/[id]/$export as per the Bulk Data Access IG.</p>
+  </li>
+  <li>
+    <p>The Data Source <strong>SHALL</strong> support the resources and profiles identified in the <a href="CapabilityStatement-uds-plus-data-source.html">Data Source Capability Statement</a></p>
+  </li>
+  <li>
+    <p>The Data Source <strong>SHALL</strong> support the [FHIR Base URL]/Group/[id]/$export using the _since parameter as per the Bulk Data Access IG.</p>
+  </li>
+  <li>
+    <p>The Data Source <strong>SHALL</strong> support the [FHIR Base URL]/Group/[id]/$export using the _type parameter as per the Bulk Data Access IG.</p>
+  </li>
+  <li>
+    <p>The Data Source <strong>SHALL</strong> export the data for the reporting year following the code systems, value sets and rules outlined in the UDS Manual for the specific reporting year.</p>
+  </li>
+</ul>
+
+<p><strong>NOTE:</strong> The filtering of resources for the reporting year will be performed based on the patient and visit qualification rules within the UDS Manual for the reporting year. Not all resources associated with a Patient compartment are relevant for an UDS+ submission. The UDS Manual specifically outlines types of visits that are eligible and types of visits that are not eligible. Similarly the UDS Manual identifies the types of services that can be included in an UDS+ report. Please refer to the UDS manual to determine the specifc codesystems and valuesets that should be used for filtering of the Patient data.</p>
+
+<ul>
+  <li>
+    <p>The Data Source <strong>SHALL</strong> support the SMART on FHIR Backend Services Authorization as outlined in the previous sections.</p>
+  </li>
+  <li>
+    <p>The Data Souce <strong>SHALL</strong> support scopes of system/*.read to enable UDS+ reporting.</p>
+  </li>
+  <li>
+    <p>The Data Source <strong>SHALL</strong> support the following parameters for Bulk Export</p>
+
+    <ul>
+      <li>_outputFormat = application/ndjson</li>
+      <li>_since</li>
+      <li>_type (Includes all resources identified in the Data Elements)</li>
+    </ul>
+  </li>
+</ul>
+
+<h6 id="group-management">Group Management</h6>
+
+<p>The extraction of data from a Data Source uses the Bulk Data Access IG /Group/[id]/$export functionality. This requires a Group resource instance to be created and maintained by the Data Source.</p>
+
+<p><strong>Group Definition:</strong></p>
+
+<p>All the Patients served by Health Center as per the UDS Manual on what qualifies for UDS reporting should be included in the Group. This includes a list of non duplicated patiens from qualified providers and non-providers, visits excluding screenings (covid-19, diabetes, hypertension etc), excluding outreach activities, excluding group visits except mental health, excluding tests, anciliary services and administering medicines,</p>
+
+<p><strong>Dynamic Group vs static groups</strong></p>
+
+<ul>
+  <li>Data Sources ** SHOULD ** use dynamic groups to identify the list of patients applicable for UDS+ reporting. The rationale for dynamic groups is to ensure that all the rules to identify the patients can be applied at a point in time. On the contrary Data Sources ** MAY ** choose to implement static groups, as long as it can be created/updated based on the data submission requirements. For e.g a Group can be created during the reporting period for the previous year.</li>
+</ul>
+
+<p><strong>Number of NDJSON files per resource type</strong></p>
+
+<p>Data Sources exporting data using $export bulk data operation, create NDJSON files per resource type. For e.g Patient demographic data may be present in a file called Patient-1.ndjson and Patient-2.ndjson. A Data Source may create only one NDJSON file having all the patients or may have multiple NDJSON files each having a subset of the Patients. The number of patients to include per NDJSON  file is left to the Data Source and its performance. However some considerations that could be used as guidelines are:</p>
+
+<ul>
+  <li>Creating large files are difficult to create and receive for the Data Source, Data Submitter and the Data Receiver respectively. In order to help in managing performance of implementations we recommend a size of 10,000 records for each ndjson file. This may lead to a total file size between 1MB to 10MB depending on the data. Files of size 10MB should be easily processable by most technologies that are available currently. This is just a guidance and there are no specific limitations that is specified by this IG. In other words vendors may choose create NDJSON files for every 1000 records or 1000000 (a million) records also.</li>
+</ul>
+
+<h5 id="data-submitter-requirements">Data Submitter Requirements</h5>
+
+<p>This section identifies the different requirements for Data Submitter system supporting the Health Centers.</p>
+
+<ul>
+  <li>
+    <p>The Data Submitter <strong>SHALL</strong> support the scheduling of timers to kick off health center reporting based on HRSA guidance.</p>
+  </li>
+  <li>
+    <p>The Data Submitter <strong>SHOULD</strong> implement the client requirements per the Bulk Data Access IG to start the export of the data from the Data Source.</p>
+  </li>
+  <li>
+    <p>The Data Submitter <strong>SHOULD</strong> implement the monitoring of the export request per the Bulk Data Access IG.</p>
+  </li>
+  <li>
+    <p>Once the export is completed, the Data Submitter SHALL download the exported data for de-identification.</p>
+  </li>
+  <li>
+    <p>The Data Submitter <strong>SHOULD</strong> retain the patient linkages between the identifiable data and de-identified data.</p>
+  </li>
+  <li>
+    <p>The Data Submitter <strong>SHALL</strong> de-identify the exported data using the Trust Service Provider services and then create the file download links for Data Receiver to download the NDJSON data.</p>
+  </li>
+  <li>
+    <p>The Data Submitter <strong>SHAL</strong>L validate the data for conformance to the IG.</p>
+  </li>
+  <li>
+    <p>The Data Submitter <strong>SHALL</strong> follow the Health Center security and privacy policies while creating the NDJSON file links to be used by the Data Receiver to download the data.</p>
+  </li>
+  <li>
+    <p>The Data Submitter <strong>SHALL</strong> notify the HRSA Data Receiver when the data is ready using the <a href="OperationDefinition-import.html">$import</a> operation.</p>
+  </li>
+  <li>
+    <p>When the Data Receiver provides a failure status for the $import operation, the Data Submitter <strong>SHALL</strong> rectify the errors and perform a re-submission.</p>
+  </li>
+  <li>
+    <p>Data Submitters <strong>SHOULD NOT</strong> include any data elements that are not mandatory or are not specified as MUST SUPPORT in the UDS+ profiles.</p>
+  </li>
+  <li>
+    <p>Data Submitter <strong>MAY</strong> submit partial data as part of the $import operation for 2023 reporting cycle.</p>
+  </li>
+  <li>
+    <p>When choosing to submit partial data, Data Submitters <strong>SHALL</strong> include data for the following tables</p>
+
+    <ul>
+      <li>Patients By Zipcode table</li>
+      <li>Table 3A</li>
+      <li>Table 3B</li>
+      <li>Table 4</li>
+      <li>Table 6A</li>
+      <li>Report data for at least 2 Quality Measures related to Table 6B</li>
+      <li>Report data for at least 2 Quality Measures related to Table 7</li>
+    </ul>
+  </li>
+  <li>
+    <p>For Quality Measure data reporting, Data Submitters <strong>SHALL</strong> include only patients who meet the Initial Patient Population criteria. In other words, Data Submitters <strong>should not</strong> submit data for all patients visiting the HealthCenter or for patients who only meet the numerator criteria.</p>
+  </li>
+</ul>
+
+<p><strong>NOTE:</strong> The re-submission payload will be a complete payload and not a partial payload.</p>
+
+<h6 id="data-capture-requirements">Data Capture Requirements</h6>
+
+<ul>
+  <li>
+    <p>Health Centers ** SHOULD ** follow the UDS Manual for capturing the following data elements</p>
+
+    <ul>
+      <li>Patient’s zip codes.</li>
+      <li>Insurance Category</li>
+      <li>Provider Category and specific specialty</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="trust-service-provider-requirements">Trust Service Provider Requirements</h5>
+<p>This section identifies the different requirements for UDS+ Trust Service Provider that can be used for de-identification.</p>
+
+<ul>
+  <li>
+    <p>The Trust Service Provider <strong>SHALL</strong> support the de-identify operation for each type of resource per the Capability Statement.</p>
+  </li>
+  <li>
+    <p>The Trust Service Provider <strong>SHALL</strong> create an identifier that is retained internally to link between identifiable and de-identifiable data.</p>
+  </li>
+  <li>
+    <p>The Trust Service Provider <strong>SHALL</strong> remove all identifiable data using the profiles specified in this IG and create NDJSON data based on the IG profiles.</p>
+  </li>
+  <li>
+    <p>The Trust Service Provider <strong>SHALL</strong> remove all data elements that are not identified as “SUPPORTED” in the UDS+ profile definitions.</p>
+  </li>
+</ul>
+
+<p><strong>Implementation Note:</strong> Common data elements which may have identifiable data have been explicitly mentioned in the profile with a cardinality of 0..0 which means they are not expected to be present. However other data elements which may be allowed in the resource may be included by the EHR including extensions. These additional data element and extensions that are not specified in the UDS+ profiles have to be removed explicitly by the Trust Service Provider implementation.</p>
+
+<ul>
+  <li>
+    <p>The Trust Service Provider <strong>SHALL</strong> implement the de-identification requirements as per the <a href="https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/understanding/coveredentities/De-identification/hhs_deid_guidance.pdf">HHS De-identification Guidance</a>.</p>
+  </li>
+  <li>
+    <p>When choosing to implement the de-identification method using safe harbor provisions from the HHS De-identification Guidance, Trust Service Providers <strong>SHALL</strong> eliminate records related to the specific zip codes as specified in the guidance.</p>
+  </li>
+</ul>
+
+<p><strong>Implementation Note:</strong> Implementers are advised to refer to <a href="reportingguidance.html">Reporting Guidance</a></p>
+
+<h5 id="data-receiver-requirements">Data Receiver Requirements</h5>
+<p>This section identifies the different requirements for Data Receiver systems hosted by HRSA.</p>
+
+<ul>
+  <li>
+    <p>The Data Receiver <strong>SHALL</strong> implement the <a href="OperationDefinition-import.html">$import</a> operation to receive a manifest file containing the UDS+ report for each health center.</p>
+  </li>
+  <li>
+    <p>The Data Receiver <strong>SHALL</strong> download the NDJSON formatted, de-identified data from the health center using the links provided by the Data Submitter following the protocol specified in the manifest file.</p>
+  </li>
+  <li>
+    <p>The Data Receiver <strong>SHALL</strong> validate the received NDJSON data according the UDS+ FHIR IG profiles and return OperationalOutcomes for each instance of conformance failure.</p>
+  </li>
+  <li>
+    <p>The Data Receiver <strong>SHALL</strong> apply necessary business rules to check data quality and provide feedback via OperationalOutcome for each data quality issue. These may be errors or warnings.</p>
+  </li>
+  <li>
+    <p>The Data Receier <strong>SHALL</strong> reject submissions that do not meet the partial submission requirements which <strong>MUST</strong> include data for</p>
+
+    <ul>
+      <li>Patients By Zipcode table</li>
+      <li>Table 3A</li>
+      <li>Table 3B</li>
+      <li>Table 4</li>
+      <li>Table 6A</li>
+      <li>Report data for at least 2 Quality Measures related to Table 6B</li>
+      <li>Report data for at least 2 Quality Measures related to Table 7</li>
+    </ul>
+  </li>
+  <li>
+    <p>The Data Receiver <strong>SHALL</strong> provide status polling capability to Health Centers as part of the HTTP Content Header  with a recommended polling interval.</p>
+  </li>
+  <li>
+    <p>Data Receiver <strong>SHOULD</strong> reject resources containing data that are not mandatory or specified as MUST SUPPORT in the UDS+ profiles.</p>
+  </li>
+  <li>
+    <p>The Data Receiver <strong>SHALL</strong> update the status of the submission for each health center.</p>
+  </li>
+  <li>
+    <p>The Data Receiver <strong>SHALL</strong> process a re-submission by a Health Center as needed during the reporting period.</p>
+  </li>
+  <li>
+    <p>The Data Receiver <strong>SHALL</strong> discard previous submissions when a re-submission is made by the Health Center.</p>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://bphc.hrsa.gov/">HRSA BPHC</a>.  Package fhir.hrsa.uds-plus#1.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 18, 2024 11:53+0000">2024-04-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+       <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="license.html">License</a> |
+       <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+        | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" aria-label="New Issue" href="https://github.com/drajer-health/uds-plus/issues/new">New Issue</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" aria-label="Issues" href="https://github.com/drajer-health/uds-plus/issues">Issues</a>
+
+       | <a style="color: var(--footer-hyperlink-text-color)" aria-lable="Version History" target="_blank" href="http://fhir.org/guides/hrsa/uds-plus/history.html">Version History</a> |
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

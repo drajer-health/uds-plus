@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="udsplus-service-delivery-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">public-housing<a name="udsplus-service-delivery-codes-public-housing"> </a></td><td>Care was delivered in a Location that is considered public housing</td><td>Care was delivered in a Location that is considered public housing</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes"/>
+  <version value="1.0.2"/>
+  <name value="UDSPlusServiceDeliveryCodes"/>
+  <title value="UDS Plus Housing Service Delivery Codes"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-09-06"/>
+  <publisher value="HRSA BPHC"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bphc.hrsa.gov/"/>
+    </telecom>
+  </contact>
+  <description value="The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="public-housing"/>
+    <display value="Care was delivered in a Location that is considered public housing"/>
+    <definition value="Care was delivered in a Location that is considered public housing"/>
+  </concept>
+</CodeSystem>

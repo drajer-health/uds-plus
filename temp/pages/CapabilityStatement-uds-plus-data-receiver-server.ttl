@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-receiver-server> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uds-plus-data-receiver-server"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <h2>Data Receiver</h2>\n      <p>(Requirements Definition Capability Statement)</p>\n      <p>Canonical URL: http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-receiver-server</p>\n      <p>Published by: <b>HL7 International - Public Health Work Group</b>\n      </p>\n      <p>This is a CapabilityStatement that defines the expected capabilities of the Data Receiver Server actor.  \n      </p>\n      <h2>General</h2>\n      <div class=\"table-wrapper\">\n        <table>\n          <tbody>\n            <tr>\n              <th>FHIR Version:</th>\n              <td>4.0.1</td>\n            </tr>\n            <tr>\n              <th>Supported formats:</th>\n              <td>json</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n      <h2>REST  behavior</h2>\n      <p>The primary focus of the Data Receiver as a Server is to receive the manifest which contains the links to the UDS+ data that has \n      been extracted by the health center and is being made available to HRSA.\n      </p>\n      <p>\n        <b>Security:</b>\n      </p>\n      <p>Implementations must meet the general security requirements documented in FHIR <a href=\"http://hl7.org/fhir/security.html\">Security guidance</a>.</p>\n      <p>In addition the Data Receiver actor needs to meet the security requirements as outlined in the <a href=\"spec.html#smart-on-fhir-backend-services-authorization\">SMART on FHIR Backend Services Authorization</a></p>\n     \n        <h3>FHIR Operations summary</h3>\n        <p>The following FHIR operations SHALL be supported by the Data Source.</p>\n      \n      <ul>\n        <li>\n          <a href=\"OperationDefinition-import.html\">UDS+ Import Operation</a>\n        </li>\n        <li>\n          <a href=\"https://hl7.org/fhir/uv/bulkdata/export.html#bulk-data-status-request\">Status Polling using Content-Location received for Bulk Data Import as part of the Content-Location HTTP Header</a>\n        </li>\n      </ul>\n      <br/>\n      <br/> \n    </div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-receiver-server"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.2"] ; # 
+  fhir:name [ fhir:v "UdsPlusDataReceiverServer"] ; # 
+  fhir:title [ fhir:v "Uds Plus Data Receiver CapabilityStatement"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2020-12-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HRSA BPHC"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://bphc.hrsa.gov/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is a CapabilityStatement that defines the expected capabilities of the Data Receiver actor as a Server."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "json"] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "server" ] ;
+     fhir:documentation [ fhir:v "The primary focus of the Data Receiver as a Server is to receive the notification manifest which contains the links to the UDS+ data that has        been extracted by the health center and is being made available to HRSA." ] ;
+     fhir:security [
+       fhir:description [ fhir:v "Implementations must meet the general security requirements documented in the security section of the implementation guide." ]
+     ] ;
+     fhir:operation ( [
+       fhir:name [ fhir:v "import" ] ;
+       fhir:definition [
+         fhir:v "http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/import"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/import>
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

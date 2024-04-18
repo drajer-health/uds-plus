@@ -1,0 +1,30 @@
+{% raw %}<pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters">resourceType</a>" : "Parameters",
+  "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.id">id</a>" : "de-identify-data-operation-urls-example",
+  "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentify-operation-data-urls-parameter"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter">parameter</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "format",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "fhir+ndjson"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "udsData",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.part">part</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "resourceType",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueCode</a>" : "Patient"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "resourceUrl",
+          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value[x]">valueUrl</a>" : "http://example.com/Patient.ndjson"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+{% endraw %}

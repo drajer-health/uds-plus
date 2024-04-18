@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="de-identified-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-medicationstatement"/>
+  </meta>
+  <status value="active"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="476872"/>
+      <display value="Nizatidine 15 MG/ML Oral Solution"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/de-identified-example"/>
+  </subject>
+  <effectiveDateTime value="2008"/>
+  <dateAsserted value="2008"/>
+  <dosage>
+    <text value="10 mL bid"/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2008-04-05"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="10"/>
+        <unit value="ml"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+</MedicationStatement>

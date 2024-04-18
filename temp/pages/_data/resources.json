@@ -1,0 +1,1995 @@
+{
+  "ImplementationGuide/fhir.hrsa.uds-plus" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 0,
+    "source" : "C:\\Users\\Administrator\\git\\uds-plus\\input\\udsplus.xml",
+    "sourceTail" : "udsplus.xml",
+    "path" : "ImplementationGuide-fhir.hrsa.uds-plus.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus",
+    "version" : "1.0.2",
+    "name" : "UdsPlusFhirIg",
+    "title" : "HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "A brief description of what udsplus is about (probably the same text as in your readme)",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2"
+  },
+  "AdverseEvent/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "input/examples/AdverseEvent-deidentified-example.json",
+    "sourceTail" : "AdverseEvent-deidentified-example.json",
+    "path" : "AdverseEvent-de-identified-example.html"
+  },
+  "AllergyIntolerance/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "input/examples/AllergyIntolerance-deidentified-example.json",
+    "sourceTail" : "AllergyIntolerance-deidentified-example.json",
+    "path" : "AllergyIntolerance-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Observation/clinical-result-de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 3,
+    "source" : "input/examples/ClinicalResult-de-identified-example.json",
+    "sourceTail" : "ClinicalResult-de-identified-example.json",
+    "path" : "Observation-clinical-result-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Condition/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 4,
+    "source" : "input/examples/Condition-de-identified-diagnosis.json",
+    "sourceTail" : "Condition-de-identified-diagnosis.json",
+    "path" : "Condition-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Condition/example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 5,
+    "source" : "input/examples/Condition-us-core-diagnosis.json",
+    "sourceTail" : "Condition-us-core-diagnosis.json",
+    "path" : "Condition-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Coverage/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 6,
+    "source" : "input/examples/Coverage-de-identified-example.json",
+    "sourceTail" : "Coverage-de-identified-example.json",
+    "path" : "Coverage-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Parameters/de-identify-data-operation-urls-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 7,
+    "source" : "input/examples/Deidentify-data-operation-urls-example.json",
+    "sourceTail" : "Deidentify-data-operation-urls-example.json",
+    "path" : "Parameters-de-identify-data-operation-urls-example.html"
+  },
+  "Encounter/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 8,
+    "source" : "input/examples/Encounter-de-identified-example.json",
+    "sourceTail" : "Encounter-de-identified-example.json",
+    "path" : "Encounter-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Encounter/example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 9,
+    "source" : "input/examples/Encounter-example.json",
+    "sourceTail" : "Encounter-example.json",
+    "path" : "Encounter-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Immunization/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 10,
+    "source" : "input/examples/Immunization-de-identified-example.json",
+    "sourceTail" : "Immunization-de-identified-example.json",
+    "path" : "Immunization-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Observation/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 11,
+    "source" : "input/examples/LabObservation-de-identified-example.json",
+    "sourceTail" : "LabObservation-de-identified-example.json",
+    "path" : "Observation-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Location/hospital" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 12,
+    "source" : "input/examples/Location..json",
+    "sourceTail" : "Location..json",
+    "path" : "Location-hospital.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "MedicationRequest/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 13,
+    "source" : "input/examples/MedicationRequest-de-identified-example.json",
+    "sourceTail" : "MedicationRequest-de-identified-example.json",
+    "path" : "MedicationRequest-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "MedicationStatement/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 14,
+    "source" : "input/examples/MedicationStatement-de-identified-example.json",
+    "sourceTail" : "MedicationStatement-de-identified-example.json",
+    "path" : "MedicationStatement-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Observation/de-identified-income-with-quantity-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 15,
+    "source" : "input/examples/Observation-de-identified-income-with-quantity.json",
+    "sourceTail" : "Observation-de-identified-income-with-quantity.json",
+    "path" : "Observation-de-identified-income-with-quantity-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Observation/de-identified-income-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 16,
+    "source" : "input/examples/Observation-de-identified-income.json",
+    "sourceTail" : "Observation-de-identified-income.json",
+    "path" : "Observation-de-identified-income-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Organization/holy-healthcare" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 17,
+    "source" : "input/examples/Organization-healthcare-example.json",
+    "sourceTail" : "Organization-healthcare-example.json",
+    "path" : "Organization-holy-healthcare.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Organization/acme-payer" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 18,
+    "source" : "input/examples/Organization.json",
+    "sourceTail" : "Organization.json",
+    "path" : "Organization-acme-payer.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Parameters/example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 19,
+    "source" : "input/examples/Parameters-manifest.json",
+    "sourceTail" : "Parameters-manifest.json",
+    "path" : "Parameters-example.html"
+  },
+  "Patient/de-identified-age89-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 20,
+    "source" : "input/examples/Patient-de-identified-age89.json",
+    "sourceTail" : "Patient-de-identified-age89.json",
+    "path" : "Patient-de-identified-age89-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Patient/de-identified-smallpop-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 21,
+    "source" : "input/examples/Patient-de-identified-smallpop.json",
+    "sourceTail" : "Patient-de-identified-smallpop.json",
+    "path" : "Patient-de-identified-smallpop-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Patient/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 22,
+    "source" : "input/examples/Patient-de-identified.json",
+    "sourceTail" : "Patient-de-identified.json",
+    "path" : "Patient-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Patient/smallpop-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 23,
+    "source" : "input/examples/Patient-us-core-example-smallpop.json",
+    "sourceTail" : "Patient-us-core-example-smallpop.json",
+    "path" : "Patient-smallpop-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Patient/example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 24,
+    "source" : "input/examples/Patient-us-core-example.json",
+    "sourceTail" : "Patient-us-core-example.json",
+    "path" : "Patient-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Practitioner/example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 25,
+    "source" : "input/examples/Practitioner-example.json",
+    "sourceTail" : "Practitioner-example.json",
+    "path" : "Practitioner-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Procedure/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 26,
+    "source" : "input/examples/Procedure-de-identified-example.json",
+    "sourceTail" : "Procedure-de-identified-example.json",
+    "path" : "Procedure-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "RelatedPerson/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 27,
+    "source" : "input/examples/RelatedPerson-de-identified-example.json",
+    "sourceTail" : "RelatedPerson-de-identified-example.json",
+    "path" : "RelatedPerson-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Parameters/reporting-parameters-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 28,
+    "source" : "input/examples/Reporting-Parameters-example.json",
+    "sourceTail" : "Reporting-Parameters-example.json",
+    "path" : "Parameters-reporting-parameters-example.html"
+  },
+  "ServiceRequest/de-identified-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 29,
+    "source" : "input/examples/ServiceRequest-de-identified-example.json",
+    "sourceTail" : "ServiceRequest-de-identified-example.json",
+    "path" : "ServiceRequest-de-identified-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "Observation/de-identified-sexual-orientation-example" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 30,
+    "source" : "input/examples/SexualOrientation-de-identified-example.json",
+    "sourceTail" : "SexualOrientation-de-identified-example.json",
+    "path" : "Observation-de-identified-sexual-orientation-example.html",
+    "status" : {
+      "class" : "colsi",
+      "standards-status" : "informative"
+    }
+  },
+  "CapabilityStatement/uds-plus-data-receiver-server" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 31,
+    "source" : "input/resources/capabilitystatement-datareceiver-server.xml",
+    "sourceTail" : "capabilitystatement-datareceiver-server.xml",
+    "path" : "CapabilityStatement-uds-plus-data-receiver-server.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-receiver-server",
+    "version" : "1.0.2",
+    "name" : "UdsPlusDataReceiverServer",
+    "title" : "Uds Plus Data Receiver CapabilityStatement",
+    "date" : "2020-12-06",
+    "description" : "This is a CapabilityStatement that defines the expected capabilities of the Data Receiver actor as a Server.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Draft"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "CapabilityStatement/uds-plus-data-source" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 32,
+    "source" : "input/resources/capabilitystatement-datasource.xml",
+    "sourceTail" : "capabilitystatement-datasource.xml",
+    "path" : "CapabilityStatement-uds-plus-data-source.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-source",
+    "version" : "1.0.2",
+    "name" : "UdsPlusDataSource",
+    "title" : "Uds Plus Data Source CapabilityStatement",
+    "date" : "2020-12-06",
+    "description" : "This is a CapabilityStatement that defines the expected capabilities of the Data Source actor.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Draft"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "CapabilityStatement/uds-plus-data-submitter-client" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 33,
+    "source" : "input/resources/capabilitystatement-datasubmitter-client.xml",
+    "sourceTail" : "capabilitystatement-datasubmitter-client.xml",
+    "path" : "CapabilityStatement-uds-plus-data-submitter-client.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-submitter-client",
+    "version" : "1.0.2",
+    "name" : "UdsPlusDataSubmitter",
+    "title" : "Uds Plus Data Submitter CapabilityStatement",
+    "date" : "2020-12-06",
+    "description" : "This is a CapabilityStatement that defines the expected capabilities of the Data Submitter actor.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Draft"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "CapabilityStatement/uds-plus-trust-service-provider" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 34,
+    "source" : "input/resources/capabilitystatement-trust-service-provider.xml",
+    "sourceTail" : "capabilitystatement-trust-service-provider.xml",
+    "path" : "CapabilityStatement-uds-plus-trust-service-provider.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-trust-service-provider",
+    "version" : "1.0.2",
+    "name" : "UdsPlusTrustServiceProvider",
+    "title" : "Uds Plus Trust Service Provider CapabilityStatement",
+    "date" : "2020-12-06",
+    "description" : "This is a CapabilityStatement that defines the expected capabilities of the Trust Service Provider actor.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Draft"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "CodeSystem/udsplus-agriculture-worker-status-codes" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 35,
+    "source" : "input/resources/codesystem-udsplus-agriculture-worker-status-codes.xml",
+    "sourceTail" : "codesystem-udsplus-agriculture-worker-status-codes.xml",
+    "path" : "CodeSystem-udsplus-agriculture-worker-status-codes.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAgricultureWorkerStatusCodes",
+    "title" : "UDS Plus Agriculter Worker Status Codes",
+    "experimental" : true,
+    "date" : "2022-09-06",
+    "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying agriculture worker status for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "informative",
+      "status" : "Active"
+    }
+  },
+  "CodeSystem/udsplus-housing-status-codes" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 36,
+    "source" : "input/resources/codesystem-udsplus-housing-status-codes.xml",
+    "sourceTail" : "codesystem-udsplus-housing-status-codes.xml",
+    "path" : "CodeSystem-udsplus-housing-status-codes.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+    "version" : "1.0.2",
+    "name" : "UDSPlusHousingStatusCodes",
+    "title" : "UDS Plus Housing Status Codes",
+    "experimental" : true,
+    "date" : "2022-09-06",
+    "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying Housing status of patients in UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "informative",
+      "status" : "Active"
+    }
+  },
+  "CodeSystem/uds-plus-insurance-codes" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 37,
+    "source" : "input/resources/codesystem-udsplus-insurance-codes.xml",
+    "sourceTail" : "codesystem-udsplus-insurance-codes.xml",
+    "path" : "CodeSystem-uds-plus-insurance-codes.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+    "version" : "1.0.2",
+    "name" : "UDSPlusInsuranceCodes",
+    "title" : "UDS Plus Insurance Codes",
+    "experimental" : true,
+    "date" : "2022-09-06",
+    "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying insurance types used by patients in UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "informative",
+      "status" : "Active"
+    }
+  },
+  "CodeSystem/udsplus-service-delivery-codes" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 38,
+    "source" : "input/resources/codesystem-udsplus-service-delivery-codes.xml",
+    "sourceTail" : "codesystem-udsplus-service-delivery-codes.xml",
+    "path" : "CodeSystem-udsplus-service-delivery-codes.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes",
+    "version" : "1.0.2",
+    "name" : "UDSPlusServiceDeliveryCodes",
+    "title" : "UDS Plus Housing Service Delivery Codes",
+    "experimental" : true,
+    "date" : "2022-09-06",
+    "description" : "The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "informative",
+      "status" : "Active"
+    }
+  },
+  "OperationDefinition/udsplus-de-identify" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 39,
+    "source" : "input/resources/operationdefintion-deidentify.xml",
+    "sourceTail" : "operationdefintion-deidentify.xml",
+    "path" : "OperationDefinition-udsplus-de-identify.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/udsplus-de-identify",
+    "version" : "1.0.2",
+    "name" : "UdsPlusDeIdentify",
+    "title" : "Generate De-Identified data",
+    "date" : "2020-11-19T21:48:56+10:00",
+    "description" : "Generates de-identified  data from identifiable data. The de-identification algorithm to be used is left to the implementers of the operation. Errors during the execution of the operation can be returned as OperationOutcome per the FHIR spec as a return parameter.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "OperationDefinition/import" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 40,
+    "source" : "input/resources/operationdefintion-import.xml",
+    "sourceTail" : "operationdefintion-import.xml",
+    "path" : "OperationDefinition-import.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/import",
+    "version" : "1.0.2",
+    "name" : "UdsPlusImport",
+    "title" : "UDS Plus Import",
+    "date" : "2021-07-22T21:48:56+10:00",
+    "description" : "Notification from a Health Center about the availability of the data to HRSA using Bulk Import mechanism.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-adverseevent" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 41,
+    "source" : "input/resources/uds-plus-adverseevent.xml",
+    "sourceTail" : "uds-plus-adverseevent.xml",
+    "path" : "StructureDefinition-uds-plus-adverseevent.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-adverseevent",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAdverseEvent",
+    "title" : "De-Identified UDS Plus AdverseEvent",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the AdverseEvent resource and establishes the core elements, extensions, vocabularies and value sets for representing Allergies and Intolerances for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-age-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 42,
+    "source" : "input/resources/uds-plus-age-extension.xml",
+    "sourceTail" : "uds-plus-age-extension.xml",
+    "path" : "StructureDefinition-uds-plus-age-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAgeExtension",
+    "title" : "UDS Plus Age Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the age of the patient at a specific time",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-allergyintolerance" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 43,
+    "source" : "input/resources/uds-plus-allergyintolerance.xml",
+    "sourceTail" : "uds-plus-allergyintolerance.xml",
+    "path" : "StructureDefinition-uds-plus-allergyintolerance.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-allergyintolerance",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAllergyIntolerance",
+    "title" : "De-Identified UDS Plus AllergyIntolerance",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the AllergyIntolerance resource and establishes the core elements, extensions, vocabularies and value sets for representing Allergies and Intolerances for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-birthsex-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 44,
+    "source" : "input/resources/uds-plus-birthsex-extension.xml",
+    "sourceTail" : "uds-plus-birthsex-extension.xml",
+    "path" : "StructureDefinition-uds-plus-birthsex-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-birthsex-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusBirthSexExtension",
+    "title" : "UDS Plus Birth Sex Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the birth sex of the patient",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-capitated-member-months-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 45,
+    "source" : "input/resources/uds-plus-capitated-member-months-extension.xml",
+    "sourceTail" : "uds-plus-capitated-member-months-extension.xml",
+    "path" : "StructureDefinition-uds-plus-capitated-member-months-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-capitated-member-months-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusCapitatedMemberMonthsExtension",
+    "title" : "UDS Plus Capitated Member Months Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the number of capitated member months of the patient for the reporting year",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-clinical-result-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 46,
+    "source" : "input/resources/uds-plus-clinical-result-observation.xml",
+    "sourceTail" : "uds-plus-clinical-result-observation.xml",
+    "path" : "StructureDefinition-uds-plus-clinical-result-observation.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-clinical-result-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusClinicalResultObservation",
+    "title" : "De-Identified UDS Plus Clinical Result Observation",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the Observation resource and establishes the core elements, extensions, vocabularies and value sets for representing clinical result observations for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-coverage" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 47,
+    "source" : "input/resources/uds-plus-coverage.xml",
+    "sourceTail" : "uds-plus-coverage.xml",
+    "path" : "StructureDefinition-uds-plus-coverage.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-coverage",
+    "version" : "1.0.2",
+    "name" : "DeIdentifiedUDSPlusCoverage",
+    "title" : "DeIdentified UDS Plus Coverage",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile establishes the core elements, extensions, vocabularies and value sets for representing Coverage for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-deidentify-operation-data-urls-parameter" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 48,
+    "source" : "input/resources/uds-plus-de-identify-data-urls-parameter.xml",
+    "sourceTail" : "uds-plus-de-identify-data-urls-parameter.xml",
+    "path" : "StructureDefinition-uds-plus-deidentify-operation-data-urls-parameter.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentify-operation-data-urls-parameter",
+    "version" : "1.0.2",
+    "name" : "UDSPlusDeIdentifyDataUrlsParameter",
+    "title" : "UDS Plus DeIdentify Data Urls Parameter",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the **Parameters FHIR Resource and establishes the core elements, extensions, vocabularies and value sets for representing the data for sending input and receiving output for the DeIdentify operation of UDS+ .",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-diagnosis" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 49,
+    "source" : "input/resources/uds-plus-diagnosis.xml",
+    "sourceTail" : "uds-plus-diagnosis.xml",
+    "path" : "StructureDefinition-uds-plus-diagnosis.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-diagnosis",
+    "version" : "1.0.2",
+    "name" : "UDSPlusDiagnosis",
+    "title" : "De-Identified UDS Plus Diagnosis",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the Condition resource and establishes the core elements, extensions, vocabularies and value sets for representing Diagnosis for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-encounter" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 50,
+    "source" : "input/resources/uds-plus-encounter.xml",
+    "sourceTail" : "uds-plus-encounter.xml",
+    "path" : "StructureDefinition-uds-plus-encounter.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-encounter",
+    "version" : "1.0.2",
+    "name" : "UDSPlusEncounter",
+    "title" : "De-Identified UDS Plus Encounter",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the Encounter resource and establishes the core elements, extensions, vocabularies and value sets for representing encounters,visit information for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-ethnicity-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 51,
+    "source" : "input/resources/uds-plus-ethnicity-extension.xml",
+    "sourceTail" : "uds-plus-ethnicity-extension.xml",
+    "path" : "StructureDefinition-uds-plus-ethnicity-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-ethnicity-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusEthnicityExtension",
+    "title" : "UDS Plus Ethnicity Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the ethnicity of the patient.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-feeforservice-member-months-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 52,
+    "source" : "input/resources/uds-plus-feeforservice-member-months-extension.xml",
+    "sourceTail" : "uds-plus-feeforservice-member-months-extension.xml",
+    "path" : "StructureDefinition-uds-plus-feeforservice-member-months-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-feeforservice-member-months-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusFeeForServiceMemberMonthsExtension",
+    "title" : "UDS Plus FeeForService Member Months Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the number of FeeForService member months of the patient for the reporting year",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-gender-identity-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 53,
+    "source" : "input/resources/uds-plus-gender-identity-extension.xml",
+    "sourceTail" : "uds-plus-gender-identity-extension.xml",
+    "path" : "StructureDefinition-uds-plus-gender-identity-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusGenderIdentityExtension",
+    "title" : "UDS Plus Gender Identity Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the gender identity of the patient at a specific time",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-housing-status-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 54,
+    "source" : "input/resources/uds-plus-housing-status-extension.xml",
+    "sourceTail" : "uds-plus-housing-status-extension.xml",
+    "path" : "StructureDefinition-uds-plus-housing-status-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-housing-status-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusHousingStatusExtension",
+    "title" : "UDS Plus Housing Status Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the housing status of the patient at a specific time",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-immunization" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 55,
+    "source" : "input/resources/uds-plus-immunization.xml",
+    "sourceTail" : "uds-plus-immunization.xml",
+    "path" : "StructureDefinition-uds-plus-immunization.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-immunization",
+    "version" : "1.0.2",
+    "name" : "UDSPlusImmunization",
+    "title" : "De-Identified UDS Plus Immunization",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the Immunization resource and establishes the core elements, extensions, vocabularies and value sets for representing immunizations for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/de-identified-uds-plus-income-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 56,
+    "source" : "input/resources/uds-plus-income-observation.xml",
+    "sourceTail" : "uds-plus-income-observation.xml",
+    "path" : "StructureDefinition-de-identified-uds-plus-income-observation.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-income-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusIncome",
+    "title" : "De-Identified UDS Plus Income",
+    "experimental" : true,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the Observation resource and establishes the core elements, extensions, vocabularies and value sets for representing Income ranges for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "informative",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/uds-plus-lab-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 57,
+    "source" : "input/resources/uds-plus-lab-observation.xml",
+    "sourceTail" : "uds-plus-lab-observation.xml",
+    "path" : "StructureDefinition-uds-plus-lab-observation.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-lab-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusLabObservation",
+    "title" : "De-Identified UDS Plus Lab Observation",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the Observation resource and establishes the core elements, extensions, vocabularies and value sets for representing lab observations for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-location" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 58,
+    "source" : "input/resources/uds-plus-location.xml",
+    "sourceTail" : "uds-plus-location.xml",
+    "path" : "StructureDefinition-uds-plus-location.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-location",
+    "version" : "1.0.2",
+    "name" : "UDSPlusLocation",
+    "title" : "UDS Plus Location",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the location where the care was provided",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-medicationrequest" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 59,
+    "source" : "input/resources/uds-plus-medicationrequest.xml",
+    "sourceTail" : "uds-plus-medicationrequest.xml",
+    "path" : "StructureDefinition-uds-plus-medicationrequest.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-medicationrequest",
+    "version" : "1.0.2",
+    "name" : "UDSPlusMedicationRequest",
+    "title" : "De-Identified UDS Plus MedicationRequest",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the MedicationRequest resource and establishes the core elements, extensions, vocabularies and value sets for representing MedicationRequest for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-medicationstatement" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 60,
+    "source" : "input/resources/uds-plus-medicationstatement.xml",
+    "sourceTail" : "uds-plus-medicationstatement.xml",
+    "path" : "StructureDefinition-uds-plus-medicationstatement.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-medicationstatement",
+    "version" : "1.0.2",
+    "name" : "UDSPlusMedicationStatement",
+    "title" : "De-Identified UDS Plus MedicationStatement",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the MedicationStatement resource and establishes the core elements, extensions, vocabularies and value sets for representing MedicationStatement for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 61,
+    "source" : "input/resources/uds-plus-observation.xml",
+    "sourceTail" : "uds-plus-observation.xml",
+    "path" : "StructureDefinition-uds-plus-observation.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusObservation",
+    "title" : "De-Identified UDS Plus Observation",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the Observation resource and establishes the core elements, extensions, vocabularies and value sets for representing assessments, vitals and other social history observations for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-import-manifest" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 62,
+    "source" : "input/resources/uds-plus-parameters-manifest.xml",
+    "sourceTail" : "uds-plus-parameters-manifest.xml",
+    "path" : "StructureDefinition-uds-plus-import-manifest.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-import-manifest",
+    "version" : "1.0.2",
+    "name" : "UDSPlusImportManifest",
+    "title" : "UDS Plus Import Manifest",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the **Parameters FHIR Resource and establishes the core elements, extensions, vocabularies and value sets for representing the Manifest for UDS+ import FHIR Operations.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-patient-reporting-parameters" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 63,
+    "source" : "input/resources/uds-plus-patient-reporting-parameters.xml",
+    "sourceTail" : "uds-plus-patient-reporting-parameters.xml",
+    "path" : "StructureDefinition-uds-plus-patient-reporting-parameters.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-patient-reporting-parameters",
+    "version" : "1.0.2",
+    "name" : "UDSPlusPatientReportingParameters",
+    "title" : "UDS Plus Patient Reporting Parameters",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the **Parameters FHIR Resource and establishes the core elements, extensions, vocabularies and value sets for representing the Patients and if they are counted for the various reports.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/de-identified-uds-plus-patient" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 64,
+    "source" : "input/resources/uds-plus-patient.xml",
+    "sourceTail" : "uds-plus-patient.xml",
+    "path" : "StructureDefinition-de-identified-uds-plus-patient.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-patient",
+    "version" : "1.0.2",
+    "name" : "DeIdentifiedUDSPlusPatient",
+    "title" : "De-Identified UDS Plus Patient",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "This Patient profile represents a Patient availing HRSA services.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-procedure" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 65,
+    "source" : "input/resources/uds-plus-procedure.xml",
+    "sourceTail" : "uds-plus-procedure.xml",
+    "path" : "StructureDefinition-uds-plus-procedure.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-procedure",
+    "version" : "1.0.2",
+    "name" : "UDSPlusProcedure",
+    "title" : "De-Identified UDS Plus Procedure",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the Procedure resource and establishes the core elements, extensions, vocabularies and value sets for representing procedures for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-race-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 66,
+    "source" : "input/resources/uds-plus-race-extension.xml",
+    "sourceTail" : "uds-plus-race-extension.xml",
+    "path" : "StructureDefinition-uds-plus-race-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-race-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusRaceExtension",
+    "title" : "UDS Plus Race Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the race of the patient.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-recordedDate-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 67,
+    "source" : "input/resources/uds-plus-recordedDate-extension.xml",
+    "sourceTail" : "uds-plus-recordedDate-extension.xml",
+    "path" : "StructureDefinition-uds-plus-recordedDate-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-recordedDate-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusRecordedDateExtension",
+    "title" : "UDS Plus RecordedDate Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the recorded date of a clinical event",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/de-identified-uds-plus-relatedperson" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 68,
+    "source" : "input/resources/uds-plus-relatedperson.xml",
+    "sourceTail" : "uds-plus-relatedperson.xml",
+    "path" : "StructureDefinition-de-identified-uds-plus-relatedperson.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-relatedperson",
+    "version" : "1.0.2",
+    "name" : "DeIdentifiedUDSPlusRelatedPerson",
+    "title" : "De-Identified UDS Plus RelatedPerson",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "This Patient profile represents a RelatedPerson of a Patient availing HRSA services.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-servicerequest" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 69,
+    "source" : "input/resources/uds-plus-servicerequest.xml",
+    "sourceTail" : "uds-plus-servicerequest.xml",
+    "path" : "StructureDefinition-uds-plus-servicerequest.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-servicerequest",
+    "version" : "1.0.2",
+    "name" : "UDSPlusServiceRequest",
+    "title" : "De-Identified UDS Plus ServiceRequest",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the ServiceRequest resource and establishes the core elements, extensions, vocabularies and value sets for representing ServiceRequest for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-sexual-orientation-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 70,
+    "source" : "input/resources/uds-plus-sexual-orientation-observation.xml",
+    "sourceTail" : "uds-plus-sexual-orientation-observation.xml",
+    "path" : "StructureDefinition-uds-plus-sexual-orientation-observation.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-sexual-orientation-observation",
+    "version" : "1.0.2",
+    "name" : "UDSPlusSexualOrientation",
+    "title" : "De-Identified UDS Plus Sexual Orientation",
+    "experimental" : false,
+    "date" : "2024-04-18T11:53:23+00:00",
+    "description" : "The UDS+ profile is based on the **US Core Sexual Orientation Observation profile and establishes the core elements, extensions, vocabularies and value sets for representing Sexual Orientation for UDS+ program.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/uds-plus-veteran-status-extension" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 71,
+    "source" : "input/resources/uds-plus-veteran-status-extension.xml",
+    "sourceTail" : "uds-plus-veteran-status-extension.xml",
+    "path" : "StructureDefinition-uds-plus-veteran-status-extension.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-veteran-status-extension",
+    "version" : "1.0.2",
+    "name" : "UDSPlusVeteranStatusExtension",
+    "title" : "UDS Plus Veteran Status Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the Veteran status of the patient.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "StructureDefinition/udsplus-agriculture-worker-status" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 72,
+    "source" : "input/resources/uds-plus-worker-status-extension.xml",
+    "sourceTail" : "uds-plus-worker-status-extension.xml",
+    "path" : "StructureDefinition-udsplus-agriculture-worker-status.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/udsplus-agriculture-worker-status",
+    "version" : "1.0.2",
+    "name" : "UDSPlusAgricultureWorkerStatus",
+    "title" : "UDS Plus Agriculture Worker Status Extension",
+    "experimental" : false,
+    "date" : "2019-09-01",
+    "description" : "Indicates the agriculture worker status of the patient at a specific time",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "ValueSet/udsplus-agriculture-worker-status" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 73,
+    "source" : "input/resources/valueset-udsplus-agriculture-worker-status.xml",
+    "sourceTail" : "valueset-udsplus-agriculture-worker-status.xml",
+    "path" : "ValueSet-udsplus-agriculture-worker-status.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-agriculture-worker-status",
+    "version" : "1.0.2",
+    "name" : "UdsPlusAgricultureWorkerStatusCodes",
+    "title" : "Uds Plus Agriculture Worker Status Codes",
+    "experimental" : true,
+    "date" : "2020-09-06",
+    "description" : "The Uds Plus Agriculture Worker Status Codes is a 'starter set' of codes for specifying agriculture worker status for Patients.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "informative",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/uds-plus-birthsex-codes" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 74,
+    "source" : "input/resources/valueset-udsplus-birthsex-codes.xml",
+    "sourceTail" : "valueset-udsplus-birthsex-codes.xml",
+    "path" : "ValueSet-uds-plus-birthsex-codes.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-birthsex-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusBirthSexCodes",
+    "title" : "Uds Plus Birth Sex Codes",
+    "experimental" : false,
+    "date" : "2023-08-25",
+    "description" : "The Uds Plus Birth Sex Codes is a set of codes for identifying the birth sex of Patients.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "ValueSet/uds-plus-gender-identity-codes" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 75,
+    "source" : "input/resources/valueset-udsplus-gender-identity-codes.xml",
+    "sourceTail" : "valueset-udsplus-gender-identity-codes.xml",
+    "path" : "ValueSet-uds-plus-gender-identity-codes.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-gender-identity-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusGenderIdentityCodes",
+    "title" : "Uds Plus Gender Identity Codes",
+    "experimental" : false,
+    "date" : "2023-08-25",
+    "description" : "The Uds Plus Gender Identity Codes is a 'starter set' of codes for identifying the gender identity of Patients.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "ValueSet/udsplus-housing-status" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 76,
+    "source" : "input/resources/valueset-udsplus-housing-codes.xml",
+    "sourceTail" : "valueset-udsplus-housing-codes.xml",
+    "path" : "ValueSet-udsplus-housing-status.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-housing-status",
+    "version" : "1.0.2",
+    "name" : "UdsPlusHousingStatusCodes",
+    "title" : "Uds Plus Housing Status Codes",
+    "experimental" : true,
+    "date" : "2020-09-06",
+    "description" : "The Uds Plus Housing Status Codes is a 'starter set' of codes for identifying the Patient's housing status.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "informative",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/uds-plus-insurance-codes" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 77,
+    "source" : "input/resources/valueset-udsplus-insurance-codes.xml",
+    "sourceTail" : "valueset-udsplus-insurance-codes.xml",
+    "path" : "ValueSet-uds-plus-insurance-codes.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusInsuranceCodes",
+    "title" : "Uds Plus Insurance Codes",
+    "experimental" : true,
+    "date" : "2020-09-06",
+    "description" : "The Uds Plus Insurance Codes is a 'starter set' of codes for identifying the source of the insurance for Patients.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "informative",
+      "status" : "Draft"
+    }
+  },
+  "ValueSet/uds-plus-service-delivery-codes" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 78,
+    "source" : "input/resources/valueset-udsplus-service-delivery-codes.xml",
+    "sourceTail" : "valueset-udsplus-service-delivery-codes.xml",
+    "path" : "ValueSet-uds-plus-service-delivery-codes.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-service-delivery-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusServiceDeliveryCodes",
+    "title" : "Uds Plus Service Delivery Codes",
+    "experimental" : false,
+    "date" : "2023-08-25",
+    "description" : "The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  },
+  "ValueSet/uds-plus-sexual-orientation-codes" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 79,
+    "source" : "input/resources/valueset-udsplus-sexual-orientation-codes.xml",
+    "sourceTail" : "valueset-udsplus-sexual-orientation-codes.xml",
+    "path" : "ValueSet-uds-plus-sexual-orientation-codes.html",
+    "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-sexual-orientation-codes",
+    "version" : "1.0.2",
+    "name" : "UdsPlusSexualOrientationCodes",
+    "title" : "Uds Plus Sexual Orientation Codes",
+    "experimental" : false,
+    "date" : "2023-08-25",
+    "description" : "The Uds Plus Sexual Orientation Codes is a 'starter set' of codes for identifying the sexual orientation of Patients.",
+    "jurisdictions" : [
+      {
+        "code" : "001",
+        "name" : "International",
+        "flag" : "001"
+      }
+    ],
+    "status" : {
+      "class" : "colstu",
+      "owner" : "HRSA BPHC",
+      "link" : "https://bphc.hrsa.gov/",
+      "standards-status" : "trial-use",
+      "fmm" : "2",
+      "status" : "Active"
+    },
+    "fmm" : "2",
+    "fmmSource" : "FMM derived from: \r\nhttp://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+  }
+}

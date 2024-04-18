@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "udsplus-agriculture-worker-status-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">migratory<a name=\"udsplus-agriculture-worker-status-codes-migratory\"> </a></td><td>Migratory Agriculture Worker</td><td>Patients whose principal employment is in agriculture and who establish a temporary home for the purposes of such employment as a migratory agricultural worker,</td></tr><tr><td style=\"white-space:nowrap\">seasonal<a name=\"udsplus-agriculture-worker-status-codes-seasonal\"> </a></td><td>Seasonal Agriculture Worker</td><td>Patients whose principal employment is in agriculture on a seasonal basis (e.g., picking fruit during the limited months of a picking season), but who DO NOT establish a temporary home for purposes of such employment</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"^^xsd:anyURI ;
+           fhir:link <http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.2"] ; # 
+  fhir:name [ fhir:v "UDSPlusAgricultureWorkerStatusCodes"] ; # 
+  fhir:title [ fhir:v "UDS Plus Agriculter Worker Status Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HRSA BPHC"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://bphc.hrsa.gov/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying agriculture worker status for UDS+ program."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-agriculture-worker-status"^^xsd:anyURI ;
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-agriculture-worker-status>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "migratory" ] ;
+     fhir:display [ fhir:v "Migratory Agriculture Worker" ] ;
+     fhir:definition [ fhir:v "Patients whose principal employment is in agriculture and who establish a temporary home for the purposes of such employment as a migratory agricultural worker," ]
+  ] [
+     fhir:code [ fhir:v "seasonal" ] ;
+     fhir:display [ fhir:v "Seasonal Agriculture Worker" ] ;
+     fhir:definition [ fhir:v "Patients whose principal employment is in agriculture on a seasonal basis (e.g., picking fruit during the limited months of a picking season), but who DO NOT establish a temporary home for purposes of such employment" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

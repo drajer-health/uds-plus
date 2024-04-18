@@ -1,0 +1,47 @@
+---
+---
+{% include fragment-pagebegin.html %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='CapabilityStatement' id='uds-plus-data-receiver-server' active='content' %}
+  <a name="root"> </a>
+
+  <h2 id="root">CapabilityStatement: {{site.data.pages[page.path].title | escape_once}}
+{% if site.data.resources[resource_].experimental == true %}(Experimental){% endif %}
+  </h2>
+
+{% include fragment-resourceTable.html %}
+
+{%if site.data.resources[resource_].description %}
+<p>
+{{site.data.resources[resource_].description|markdownify}}
+</p>
+{% endif %}
+{%if site.data.resources[resource_].purpose %}
+<p>
+{{site.data.resources[resource_].purpose|markdownify}}
+</p>
+{% endif %}
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='CapabilityStatement' id='uds-plus-data-receiver-server' %}
+
+<!--  <p>
+  Formats: <a href="CapabilityStatement-uds-plus-data-receiver-server.xml.html">XML</a>, <a href="CapabilityStatement-uds-plus-data-receiver-server.json.html">JSON</a>, <a href="CapabilityStatement-uds-plus-data-receiver-server.ttl.html">Turtle</a>
+  </p>-->
+{% unless example %}
+  {% if 'CapabilityStatement' == 'CapabilityStatement' %}
+  <p>
+      <a href="uds-plus-data-receiver-server.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="uds-plus-data-receiver-server.openapi.json" download>Download</a>
+  </p>
+  {% endif %}
+{% endunless %}
+
+  {% include CapabilityStatement-uds-plus-data-receiver-server-html.xhtml %}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='CapabilityStatement' id='uds-plus-data-receiver-server' %}
+
+  {%include CapabilityStatement-uds-plus-data-receiver-server-history.xhtml%}
+
+</div>
+{% include fragment-pageend.html %}

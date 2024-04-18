@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="de-identified-smallpop-example"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="De-identified Patient Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a patient example for the *UDS+ Patient Profile*."/>
+    </extension>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-patient"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2106-3"/>
+        <display value="White"/>
+      </valueCoding>
+    </extension>
+    <extension url="detailed">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2108-9"/>
+        <display value="European"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="White"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2135-2"/>
+        <display value="Hispanic or Latino"/>
+      </valueCoding>
+    </extension>
+    <extension url="detailed">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2184-0"/>
+        <display value="Dominican"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Hispanic or Latino"/>
+    </extension>
+  </extension>
+  <extension url="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-birthsex-extension">
+    <valueCode value="F"/>
+  </extension>
+  <extension url="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension">
+    <valueQuantity>
+      <value value="36"/>
+      <unit value="yr"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="a"/>
+    </valueQuantity>
+  </extension>
+  <extension url="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <code value="NASK"/>
+        <display value="Not Asked"/>
+      </coding>
+      <text value="Not Asked"/>
+    </valueCodeableConcept>
+  </extension>
+  <active value="true"/>
+  <gender value="female"/>
+  <address>
+    <postalCode value="00000">
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </postalCode>
+  </address>
+</Patient>

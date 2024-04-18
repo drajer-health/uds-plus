@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="holy-healthcare"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Organization</b><a name="holy-healthcare"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;acme-payer&quot; </p><p style="margin-bottom: 0px"></p></div><p><b>identifier</b>: id: 55555</p><p><b>active</b>: true</p><p><b>type</b>: Payer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html">Organization type</a>#pay)</span></p><p><b>name</b>: Acme Health Plan</p><p><b>telecom</b>: ph: (+1) 555-555-5555, <a href="mailto:hq@acme.org">hq@acme.org</a></p><p><b>address</b>: 100 Insurance Avenue Amherst MA 01002 USA </p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.6.300"/>
+    <value value="55555"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="pay"/>
+    </coding>
+    <text value="Payer"/>
+  </type>
+  <name value="Holy Healthcare"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="(+1) 555-444-5555"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="hq@holyhealthcare.org"/>
+  </telecom>
+  <address>
+    <line value="100 Holy Healthcare Avenue"/>
+    <city value="Amherst"/>
+    <state value="MA"/>
+    <postalCode value="01002"/>
+    <country value="USA"/>
+  </address>
+</Organization>

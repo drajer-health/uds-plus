@@ -1,0 +1,127 @@
+{% raw %}<div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Data Source (e.g, EHR)</h2>
+      <p>(Requirements Definition Capability Statement)</p>
+      <p>Canonical URL: http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-data-source</p>
+      <p>Published by: <b>HL7 International - Public Health Work Group</b>
+      </p>
+      <p>This is a CapabilityStatement that defines the expected capabilities of the Data Source actor.  
+      </p>
+      <h2>General</h2>
+      <div class="table-wrapper">
+        <table>
+          <tbody>
+            <tr>
+              <th>FHIR Version:</th>
+              <td>4.0.1</td>
+            </tr>
+            <tr>
+              <th>Supported formats:</th>
+              <td>json</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>REST  behavior</h2>
+      <p>The primary focus of the Data Source is to identify the population of patients whose data needs to be reported to UDS+ program, and allow the export of UDS+ data using US Core and UDS+ profiles and US Core APIs.
+      Data Sources that incorporate the Trust Service Provider and the Data Submitter modules **SHOULD** support the UDS+ profiles.
+      Data Sources that provide data to external Data Submitters and Trust Service Providers **SHOULD** support US Core profiles and **MAY** support UDS+ profiles.
+      </p>
+      <p>
+        <b>Security:</b>
+      </p>
+      <p>Implementations must meet the general security requirements documented in FHIR <a href="http://hl7.org/fhir/security.html">Security guidance</a>.</p>
+      <p>In addition the Data Source actor needs to meet the security requirements as outlined in the <a href="spec.html#smart-on-fhir-backend-services-authorization">SMART on FHIR Backend Services Authorization</a></p>
+      <h3>Resource summary</h3>
+      <div class="table-wrapper">
+        <table class="grid">
+          <thead>
+            <tr>
+              <th>Resource</th>
+              <th>Search</th>
+              <th>Read</th>
+              <th>Read Version</th>
+              <th>Instance History</th>
+              <th>Resource History</th>
+              <th>Create</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>UDS+ or US Core profiles</th>
+              <td>
+                <a href="#UDS-search-type" title="Allows search of a specific UDS+ or US Core profile instances.">SHALL</a>
+              </td>
+              <td>
+                <a href="#UDS-read" title="Allows retrieval of a specific UDS+ or US Core profile instances.">SHALL</a>
+              </td>
+              <td>
+              </td>
+              <td>               
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+			  <td>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+     
+        <h3>FHIR Operations summary</h3>
+        <p>The following FHIR operations SHALL be supported by the Data Source.</p>
+      
+      <ul>
+        <li>
+          <a href="http://hl7.org/fhir/uv/bulkdata/OperationDefinition-group-export.html">Bulk Data Export ([BaseURL]/Group/[Id]/$export)</a>
+        </li>
+      </ul>
+      <br/>
+      <br/>
+      
+      <h3>
+        <a href="artifacts.html">UDS+ profiles</a>
+      </h3>
+      <p>Profiles: All UDS+ profiles
+      </p>
+      <h4>Interactions</h4>
+      <div class="table-wrapper">
+        <table class="list">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <a name="UDS-search-type"> </a>
+                <span>search</span>
+              </th>
+              <td>
+                <p>Allows searching of specific UDS+ or US Core profile instances.</p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a name="UDS-read"> </a>
+                <span>read</span>
+              </th>
+              <td>
+                <p>Allows retrieval of specific UDS+ or US Core profile instances</p>
+              </td>
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+      <br/>
+      <br/> 
+          
+    </div>{% endraw %}

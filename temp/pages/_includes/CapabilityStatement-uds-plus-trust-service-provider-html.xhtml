@@ -1,0 +1,43 @@
+{% raw %}<div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Data Source (e.g, EHR)</h2>
+      <p>(Requirements Definition Capability Statement)</p>
+      <p>Canonical URL: http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-trust-service-provider</p>
+      <p>Published by: <b>HL7 International - Public Health Work Group</b>
+      </p>
+      <p>This is a CapabilityStatement that defines the expected capabilities of the Trust Service Provider.  
+      </p>
+      <h2>General</h2>
+      <div class="table-wrapper">
+        <table>
+          <tbody>
+            <tr>
+              <th>FHIR Version:</th>
+              <td>4.0.1</td>
+            </tr>
+            <tr>
+              <th>Supported formats:</th>
+              <td>json</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>REST  behavior</h2>
+      <p>The primary focus of the Trust Service Provider is to support the de-identify operation.
+      </p>
+      <p>
+        <b>Security:</b>
+      </p>
+      <p>Implementations must meet the general security requirements documented in FHIR <a href="http://hl7.org/fhir/security.html">Security guidance</a>.</p>
+      <p>In addition the Trust Service Provider actor needs to meet the security requirements as outlined in the <a href="spec.html#smart-on-fhir-backend-services-authorization">SMART on FHIR Backend Services Authorization</a></p>
+       
+        <h3>FHIR Operations summary</h3>
+        <p>The following FHIR operations SHALL be supported by the Trust Service Provider</p>
+      
+      <ul>
+        <li>
+          <a href="OperationDefinition-udsplus-de-identify.html">De-identify operation ([BaseURL]/$deidentify)</a>
+        </li>
+      </ul>
+      <br/>
+      <br/>   
+    </div>{% endraw %}

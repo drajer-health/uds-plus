@@ -1,0 +1,47 @@
+---
+---
+{% include fragment-pagebegin.html %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='OperationDefinition' id='udsplus-de-identify' active='content' %}
+  <a name="root"> </a>
+
+  <h2 id="root">OperationDefinition: {{site.data.pages[page.path].title | escape_once}}
+{% if site.data.resources[resource_].experimental == true %}(Experimental){% endif %}
+  </h2>
+
+{% include fragment-resourceTable.html %}
+
+{%if site.data.resources[resource_].description %}
+<p>
+{{site.data.resources[resource_].description|markdownify}}
+</p>
+{% endif %}
+{%if site.data.resources[resource_].purpose %}
+<p>
+{{site.data.resources[resource_].purpose|markdownify}}
+</p>
+{% endif %}
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='OperationDefinition' id='udsplus-de-identify' %}
+
+<!--  <p>
+  Formats: <a href="OperationDefinition-udsplus-de-identify.xml.html">XML</a>, <a href="OperationDefinition-udsplus-de-identify.json.html">JSON</a>, <a href="OperationDefinition-udsplus-de-identify.ttl.html">Turtle</a>
+  </p>-->
+{% unless example %}
+  {% if 'OperationDefinition' == 'CapabilityStatement' %}
+  <p>
+      <a href="udsplus-de-identify.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="udsplus-de-identify.openapi.json" download>Download</a>
+  </p>
+  {% endif %}
+{% endunless %}
+
+  {% include OperationDefinition-udsplus-de-identify-html.xhtml %}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='OperationDefinition' id='udsplus-de-identify' %}
+
+  {%include OperationDefinition-udsplus-de-identify-history.xhtml%}
+
+</div>
+{% include fragment-pageend.html %}

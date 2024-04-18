@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "731e2483-00a3-4098-aa56-f838fdaa030b-9",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/731e2483-00a3-4098-aa56-f838fdaa030b-9",
+  "name" : "IntersectionUDSPlusHousingStatusCodesAndUDSPlusHousingStatusCodes",
+  "title" : "Intersection of UDS Plus Housing Status Codes And UDS Plus Housing Status Codes",
+  "status" : "active",
+  "date" : "2024-04-18T11:54:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "concept" : [{
+    "code" : "homeless-shelter",
+    "display" : "Patients in Homeless Shelters",
+    "definition" : "Patients who are living in a homeless shelter"
+  },
+  {
+    "code" : "transitional",
+    "display" : "Patients in transitional state",
+    "definition" : "Patients who do not have a house and are in a transitional state"
+  },
+  {
+    "code" : "doubling-up",
+    "display" : "Patients doubling up",
+    "definition" : "Patients who are doubling up with others."
+  },
+  {
+    "code" : "street",
+    "display" : "Patients who are on the streets",
+    "definition" : "Patients who do not have a house and are living on the streets"
+  },
+  {
+    "code" : "permanent-supportive-housing",
+    "display" : "Patients in permanent supportive housing",
+    "definition" : "Patients who are living in a permanent supportive housing"
+  },
+  {
+    "code" : "other",
+    "display" : "Patients who have other kinds of accomodation",
+    "definition" : "Patients who have other kinds of accomodation"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Patients with Unknown accomodation",
+    "definition" : "Patients with Unknown accomodation"
+  }]
+}

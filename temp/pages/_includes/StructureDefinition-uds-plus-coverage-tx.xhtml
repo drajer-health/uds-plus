@@ -1,0 +1,30 @@
+{% raw %}<h4>Terminology Bindings</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td></tr>
+<tr><td>Coverage.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    </td>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
+    </td>
+  </tr>
+</table>
+</td></tr>
+<tr><td>Coverage.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="A code specifying the state of the resource instance.">Fixed Value: active</td></tr>
+<tr><td>Coverage.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The set of codes to be used for UDS+ reporting."><a style="opacity: 1.0" href="ValueSet-uds-plus-insurance-codes.html">UdsPlusInsuranceCodes</a> (a valid code from <a href="CodeSystem-uds-plus-insurance-codes.html">UDS Plus Insurance Codes</a>)</td></tr>
+<tr><td>Coverage.beneficiary.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Aa resource (or, for logical models, the URI of the logical model)."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a></td></tr>
+<tr><td>Coverage.relationship</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The relationship between the Subscriber and the Beneficiary (insured/covered party/patient)."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-subscriber-relationship.html">SubscriberRelationshipCodes</a></td></tr>
+<tr><td>Coverage.payor.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Aa resource (or, for logical models, the URI of the logical model)."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a></td></tr>
+<tr><td>Coverage.class.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The policy classifications, eg. Group, Plan, Class, etc."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-coverage-class.html">CoverageClassCodes</a></td></tr>
+<tr><td>Coverage.costToBeneficiary.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The types of services to which patient copayments are specified."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-coverage-copay-type.html">CoverageCopayTypeCodes</a></td></tr>
+<tr><td>Coverage.costToBeneficiary.exception.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="The types of exceptions from the part or full value of financial obligations such as copays."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-coverage-financial-exception.html">ExampleCoverageFinancialExceptionCodes</a></td></tr>
+</table>
+{% endraw %}

@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/Location/hospital> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hospital"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
+     ] [
+       fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-location"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b> Location</b><a name=\"Holy Family hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;hospital&quot; </p><p style=\"margin-bottom: 0px\"></p></div><p><b>status</b>: active</p><p><b>name</b>: Holy Family Hospital</p><p><b>telecom</b>: ph: 9786870156</p><p><b>address</b>: 70 EAST STREET METHUEN MA 01844 US </p><p><b>managingOrganization</b>: <a href=\"Organization-holy-healthcare.html\">Organization/holy-healthcare: Holy Healthcare</a> &quot;Holy Healthcare&quot;</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Holy Family Hospital"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "9786870156" ]
+  ] ) ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "70 EAST STREET" ] ) ;
+     fhir:city [ fhir:v "METHUEN" ] ;
+     fhir:state [ fhir:v "MA" ] ;
+     fhir:postalCode [ fhir:v "01844" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/Organization/holy-healthcare> ;
+     fhir:reference [ fhir:v "Organization/holy-healthcare" ] ;
+     fhir:display [ fhir:v "Holy Healthcare" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

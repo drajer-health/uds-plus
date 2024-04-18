@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "uds-plus-insurance-codes",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2022-08-04T15:52:33.158+00:00",
+    "source" : "#3Te0anOrvocKgcow",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-uds-plus-insurance-codes.html\"><code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+      }]
+    }
+  }],
+  "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes",
+  "version" : "1.0.2",
+  "name" : "UdsPlusInsuranceCodes",
+  "title" : "Uds Plus Insurance Codes",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2020-09-06",
+  "publisher" : "HRSA BPHC",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://bphc.hrsa.gov/"
+    }]
+  }],
+  "description" : "The Uds Plus Insurance Codes is a 'starter set' of codes for identifying the source of the insurance for Patients.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"
+    }]
+  }
+}

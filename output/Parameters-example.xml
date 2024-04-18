@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="example"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="UDS+ Manifest File Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is an example of a Manifest file submitted as a parameter to the UDS+ $import operation."/>
+    </extension>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-import-manifest"/>
+  </meta>
+  <parameter>
+    <name value="inputFormat"/>
+    <valueCode value="fhir+ndjson"/>
+  </parameter>
+  <parameter>
+    <name value="submissionId"/>
+    <valueString value="234343-aaa-32432"/>
+  </parameter>
+  <parameter>
+    <name value="submissionTime"/>
+    <valueDateTime value="2023-01-14T07:15:07-08:00"/>
+  </parameter>
+  <parameter>
+    <name value="hcInformation"/>
+    <part>
+      <name value="uei"/>
+      <valueString value="12343434"/>
+    </part>
+    <part>
+      <name value="grantNumber"/>
+      <valueString value="H80CS34333"/>
+    </part>
+    <part>
+      <name value="hcName"/>
+      <valueString value="Example FQHC"/>
+    </part>
+    <part>
+      <name value="hcAddress"/>
+      <valueAddress>
+        <line value="123 Rocky point place"/>
+        <city value="Atlanta"/>
+        <state value="GA"/>
+        <postalCode value="23434"/>
+        <country value="US"/>
+      </valueAddress>
+    </part>
+    <part>
+      <name value="hcContactPerson"/>
+      <valueHumanName>
+        <family value="Taylor"/>
+        <given value="Elizabeth"/>
+      </valueHumanName>
+    </part>
+    <part>
+      <name value="hcContactPhone"/>
+      <valueContactPoint>
+        <system value="phone"/>
+        <value value="234-234-5648"/>
+      </valueContactPoint>
+    </part>
+    <part>
+      <name value="hcPrenatalCareByReferralOnly"/>
+      <valueBoolean value="true"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="importProtocol"/>
+    <valueCode value="https"/>
+  </parameter>
+  <parameter>
+    <name value="udsData"/>
+    <part>
+      <name value="type"/>
+      <valueCode value="Patient"/>
+    </part>
+    <part>
+      <name value="url"/>
+      <valueUrl value="http://www.fqhc.california.com/udsplus/storage/2023/Patient_1.ndjson"/>
+    </part>
+    <part>
+      <name value="expirationTime"/>
+      <valueDateTime value="2022-12-14T07:15:07-08:00"/>
+    </part>
+    <part>
+      <name value="bearer"/>
+      <valueString value="adfadfr3dsag3443"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="udsData"/>
+    <part>
+      <name value="type"/>
+      <valueCode value="Patient"/>
+    </part>
+    <part>
+      <name value="url"/>
+      <valueUrl value="http://www.fqhc.california.com/udsplus/storage/2023/Patient_2.ndjson"/>
+    </part>
+    <part>
+      <name value="expirationTime"/>
+      <valueDateTime value="2022-12-14T07:15:07-08:00"/>
+    </part>
+    <part>
+      <name value="bearer"/>
+      <valueString value="adfadfr3dsag3443"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="udsData"/>
+    <part>
+      <name value="type"/>
+      <valueCode value="Condition"/>
+    </part>
+    <part>
+      <name value="url"/>
+      <valueUrl value="http://www.fqhc.california.com/udsplus/storage/2023/Condition.ndjson"/>
+    </part>
+    <part>
+      <name value="expirationTime"/>
+      <valueDateTime value="2022-12-14T07:15:07-08:00"/>
+    </part>
+    <part>
+      <name value="bearer"/>
+      <valueString value="adfadfr3dsag3443"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="udsData"/>
+    <part>
+      <name value="type"/>
+      <valueCode value="Coverage"/>
+    </part>
+    <part>
+      <name value="url"/>
+      <valueUrl value="http://www.fqhc.california.com/udsplus/storage/2023/Coverage.ndjson"/>
+    </part>
+    <part>
+      <name value="expirationTime"/>
+      <valueDateTime value="2022-12-14T07:15:07-08:00"/>
+    </part>
+    <part>
+      <name value="bearer"/>
+      <valueString value="adfadfr3dsag3443"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="udsData"/>
+    <part>
+      <name value="type"/>
+      <valueCode value="Procedure"/>
+    </part>
+    <part>
+      <name value="url"/>
+      <valueUrl value="http://www.fqhc.california.com/udsplus/storage/2023/Procedure.ndjson"/>
+    </part>
+    <part>
+      <name value="expirationTime"/>
+      <valueDateTime value="2022-12-14T07:15:07-08:00"/>
+    </part>
+    <part>
+      <name value="bearer"/>
+      <valueString value="adfadfr3dsag3443"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="udsData"/>
+    <part>
+      <name value="type"/>
+      <valueCode value="Encounter"/>
+    </part>
+    <part>
+      <name value="url"/>
+      <valueUrl value="http://www.fqhc.california.com/udsplus/storage/2023/Encounter.ndjson"/>
+    </part>
+    <part>
+      <name value="expirationTime"/>
+      <valueDateTime value="2022-12-14T07:15:07-08:00"/>
+    </part>
+    <part>
+      <name value="bearer"/>
+      <valueString value="adfadfr3dsag3443"/>
+    </part>
+  </parameter>
+</Parameters>

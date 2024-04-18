@@ -1,0 +1,88 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "uds-plus-insurance-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">none-or-uninsured<a name=\"uds-plus-insurance-codes-none-or-uninsured\"> </a></td><td>None or Uninsured</td><td>Patient does not have insurance</td></tr><tr><td style=\"white-space:nowrap\">medicaid-title-19-21<a name=\"uds-plus-insurance-codes-medicaid-title-19-21\"> </a></td><td>Medicaid Title X1X</td><td>Patients with Medicaid (Title X1X) insurance</td></tr><tr><td style=\"white-space:nowrap\">chip-medicaid<a name=\"uds-plus-insurance-codes-chip-medicaid\"> </a></td><td>CHIP Medicaid</td><td>Patients with CHIP Medicaid insurance</td></tr><tr><td style=\"white-space:nowrap\">medicare<a name=\"uds-plus-insurance-codes-medicare\"> </a></td><td>Medicare</td><td>Patients with Medicare insurance</td></tr><tr><td style=\"white-space:nowrap\">dually-eligible-medicaid-medicare<a name=\"uds-plus-insurance-codes-dually-eligible-medicaid-medicare\"> </a></td><td>Dually Eligible</td><td>Patients with both Medicare and Medicaid</td></tr><tr><td style=\"white-space:nowrap\">medicare-and-private<a name=\"uds-plus-insurance-codes-medicare-and-private\"> </a></td><td>Medicare and Private</td><td>Patients with both Medicare and Private insurance such as Medigap</td></tr><tr><td style=\"white-space:nowrap\">other-non-chip-public-insurance<a name=\"uds-plus-insurance-codes-other-non-chip-public-insurance\"> </a></td><td>Other Non CHIP Public Insurance</td><td>Patients who have other public insurance which is non CHIP</td></tr><tr><td style=\"white-space:nowrap\">other-public-insurance-chip<a name=\"uds-plus-insurance-codes-other-public-insurance-chip\"> </a></td><td>Other Public Insurance CHIP</td><td>Patients who have other public insurance which is CHIP</td></tr><tr><td style=\"white-space:nowrap\">private-insurance<a name=\"uds-plus-insurance-codes-private-insurance\"> </a></td><td>Private Insurance</td><td>Patients has Private Insurance</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"
+      }]
+    }
+  }],
+  "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+  "version" : "1.0.2",
+  "name" : "UDSPlusInsuranceCodes",
+  "title" : "UDS Plus Insurance Codes",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-09-06",
+  "publisher" : "HRSA BPHC",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://bphc.hrsa.gov/"
+    }]
+  }],
+  "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying insurance types used by patients in UDS+ program.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "valueSet" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes",
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "none-or-uninsured",
+    "display" : "None or Uninsured",
+    "definition" : "Patient does not have insurance"
+  },
+  {
+    "code" : "medicaid-title-19-21",
+    "display" : "Medicaid Title X1X",
+    "definition" : "Patients with Medicaid (Title X1X) insurance"
+  },
+  {
+    "code" : "chip-medicaid",
+    "display" : "CHIP Medicaid",
+    "definition" : "Patients with CHIP Medicaid insurance"
+  },
+  {
+    "code" : "medicare",
+    "display" : "Medicare",
+    "definition" : "Patients with Medicare insurance"
+  },
+  {
+    "code" : "dually-eligible-medicaid-medicare",
+    "display" : "Dually Eligible",
+    "definition" : "Patients with both Medicare and Medicaid"
+  },
+  {
+    "code" : "medicare-and-private",
+    "display" : "Medicare and Private",
+    "definition" : "Patients with both Medicare and Private insurance such as Medigap"
+  },
+  {
+    "code" : "other-non-chip-public-insurance",
+    "display" : "Other Non CHIP Public Insurance",
+    "definition" : "Patients who have other public insurance which is non CHIP"
+  },
+  {
+    "code" : "other-public-insurance-chip",
+    "display" : "Other Public Insurance CHIP",
+    "definition" : "Patients who have other public insurance which is CHIP"
+  },
+  {
+    "code" : "private-insurance",
+    "display" : "Private Insurance",
+    "definition" : "Patients has Private Insurance"
+  }]
+}

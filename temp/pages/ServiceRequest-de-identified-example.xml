@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="de-identified-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-servicerequest"/>
+  </meta>
+  <status value="completed"/>
+  <intent value="order"/>
+  <doNotPerform value="false"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="76164006"/>
+      <display value="Biopsy of colon (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/de-identified-example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/de-identified-example"/>
+  </encounter>
+  <authoredOn value="2017"/>
+  <requester>
+    <reference value="Practitioner/example"/>
+  </requester>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="485005"/>
+      <display value="Transverse colon structure"/>
+    </coding>
+  </bodySite>
+</ServiceRequest>

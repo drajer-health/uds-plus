@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/AdverseEvent/de-identified-example> a fhir:AdverseEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "de-identified-example"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2017-05-26T11:56:57.250-04:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-adverseevent"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-adverseevent>
+     ] )
+  ] ; # 
+  fhir:actuality [ fhir:v "actual"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/adverse-event-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "medication-mishap" ] ;
+       fhir:display [ fhir:v "Medication Mishap" ]
+     ] ) ;
+     fhir:text [ fhir:v "Medication Mishap - Wrong Dose" ]
+  ] ) ; # 
+  fhir:event [
+     fhir:coding ( [
+       a sct:140004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "140004" ] ;
+       fhir:display [ fhir:v "Chronic Pharyngitis" ]
+     ] ) ;
+     fhir:text [ fhir:v "Chronic Pharyngitis" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/Patient/de-identified-example> ;
+     fhir:reference [ fhir:v "Patient/de-identified-example" ]
+  ] ; # 
+  fhir:date [ fhir:v "2015-11-01T17:00:14-05:00"^^xsd:dateTime] ; # 
+  fhir:recordedDate [ fhir:v "2017-11-01T17:00:14-05:00"^^xsd:dateTime] . # 
+
+# -------------------------------------------------------------------------------------
+

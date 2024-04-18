@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "731e2483-00a3-4098-aa56-f838fdaa030b-129",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/731e2483-00a3-4098-aa56-f838fdaa030b-129",
+  "name" : "IntersectionUdsPlusHousingStatusCodesAndUdsPlusHousingStatusCodes",
+  "title" : "Intersection of Uds Plus Housing Status Codes And Uds Plus Housing Status Codes",
+  "status" : "draft",
+  "date" : "2024-04-18T11:54:36+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+      "code" : "homeless-shelter",
+      "display" : "Patients in Homeless Shelters"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+      "code" : "transitional",
+      "display" : "Patients in transitional state"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+      "code" : "doubling-up",
+      "display" : "Patients doubling up"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+      "code" : "street",
+      "display" : "Patients who are on the streets"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+      "code" : "permanent-supportive-housing",
+      "display" : "Patients in permanent supportive housing"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+      "code" : "other",
+      "display" : "Patients who have other kinds of accomodation"
+    },
+    {
+      "system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+      "code" : "unknown",
+      "display" : "Patients with Unknown accomodation"
+    }]
+  }
+}

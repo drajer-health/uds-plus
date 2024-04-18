@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="reporting-parameters-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-patient-reporting-parameters"/>
+  </meta>
+  <parameter>
+    <name value="patientReference"/>
+    <valueReference>
+      <reference value="Patient/de-identified-example"/>
+    </valueReference>
+  </parameter>
+  <parameter>
+    <name value="combinedFundingStreams"/>
+    <valueString value="CHC,MHC"/>
+  </parameter>
+  <parameter>
+    <name value="reportNames"/>
+    <part>
+      <name value="patientsByZip"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table3A"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table3B"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table4"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6A"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line1-6-Age-Of-Prenatal-Care-Patients"/>
+      <valueBoolean value="false"/>
+    </part>
+    <part>
+      <name value="table6B-Line7-9-Early-Entry-Into-Prenatal-Care"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line10-Childhood-Immunization-Status-CMS117"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line11-Cervical-Cancer-Screening-CMS124"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line11a-Breast-Cancer-Screening-CMS125"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line12-Weight-Assessment-And-Counselling-CMS155"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line13-Preventive-Care-And-Screening-BMI-CMS69"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line14a-Preventive-Care-And-Screening-Tobacco-Use-CMS138"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line17a-Statin-Therapy-CMS347"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line18-Ischmic-Vascular-Disease-CMS164"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line19-Colorectal-Cancer-Screening-CMS130"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line20-HIV-Linkage-To-Care"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line20a-HIV-Screening-CMS349"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line21-Preventive-Care-And-Screening-For-Depression-CMS2"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line21a-Depression-Remission-At-Twelve-Months-CMS159"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table6B-Line22-Dental-Sealants-For-Children-CMS277"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table7-Line0-HIV-Positive-Pregnant-Patients"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table7-Line2-Deliveries-Performed-By-Health-Center"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table7-Line1a-d-Prenatal-Care-Patient-Deliveries"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table7-Line2a-c-Controlling-High-Blood-Pressure-CMS165"/>
+      <valueBoolean value="true"/>
+    </part>
+    <part>
+      <name value="table7-Line3a-f-HbA1c-Poor-Control-CMS122"/>
+      <valueBoolean value="true"/>
+    </part>
+  </parameter>
+</Parameters>

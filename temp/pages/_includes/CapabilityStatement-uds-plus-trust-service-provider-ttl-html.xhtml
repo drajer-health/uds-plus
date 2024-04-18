@@ -1,0 +1,51 @@
+{% raw %}<pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CapabilityStatement ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;uds-plus-trust-service-provider&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n      &lt;h2&gt;Data Source (e.g, EHR)&lt;/h2&gt;\n      &lt;p&gt;(Requirements Definition Capability Statement)&lt;/p&gt;\n      &lt;p&gt;Canonical URL: http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-trust-service-provider&lt;/p&gt;\n      &lt;p&gt;Published by: &lt;b&gt;HL7 International - Public Health Work Group&lt;/b&gt;\n      &lt;/p&gt;\n      &lt;p&gt;This is a CapabilityStatement that defines the expected capabilities of the Trust Service Provider.  \n      &lt;/p&gt;\n      &lt;h2&gt;General&lt;/h2&gt;\n      &lt;div class=\&quot;table-wrapper\&quot;&gt;\n        &lt;table&gt;\n          &lt;tbody&gt;\n            &lt;tr&gt;\n              &lt;th&gt;FHIR Version:&lt;/th&gt;\n              &lt;td&gt;4.0.1&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n              &lt;th&gt;Supported formats:&lt;/th&gt;\n              &lt;td&gt;json&lt;/td&gt;\n            &lt;/tr&gt;\n          &lt;/tbody&gt;\n        &lt;/table&gt;\n      &lt;/div&gt;\n      &lt;h2&gt;REST  behavior&lt;/h2&gt;\n      &lt;p&gt;The primary focus of the Trust Service Provider is to support the de-identify operation.\n      &lt;/p&gt;\n      &lt;p&gt;\n        &lt;b&gt;Security:&lt;/b&gt;\n      &lt;/p&gt;\n      &lt;p&gt;Implementations must meet the general security requirements documented in FHIR &lt;a href=\&quot;http://hl7.org/fhir/security.html\&quot;&gt;Security guidance&lt;/a&gt;.&lt;/p&gt;\n      &lt;p&gt;In addition the Trust Service Provider actor needs to meet the security requirements as outlined in the &lt;a href=\&quot;spec.html#smart-on-fhir-backend-services-authorization\&quot;&gt;SMART on FHIR Backend Services Authorization&lt;/a&gt;&lt;/p&gt;\n       \n        &lt;h3&gt;FHIR Operations summary&lt;/h3&gt;\n        &lt;p&gt;The following FHIR operations SHALL be supported by the Trust Service Provider&lt;/p&gt;\n      \n      &lt;ul&gt;\n        &lt;li&gt;\n          &lt;a href=\&quot;OperationDefinition-udsplus-de-identify.html\&quot;&gt;De-identify operation ([BaseURL]/$deidentify)&lt;/a&gt;\n        &lt;/li&gt;\n      &lt;/ul&gt;\n      &lt;br/&gt;\n      &lt;br/&gt;   \n    &lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.org/guides/hrsa/uds-plus/CapabilityStatement/uds-plus-trust-service-provider&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.2&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;UdsPlusTrustServiceProvider&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Uds Plus Trust Service Provider CapabilityStatement&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2020-12-06&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HRSA BPHC&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">fhir:contact</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://bphc.hrsa.gov/&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;This is a CapabilityStatement that defines the expected capabilities of the Trust Service Provider actor.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;001&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.kind">fhir:kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;requirements&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.fhirVersion">fhir:fhirVersion</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;4.0.1&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">fhir:format</a> ( [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;json&quot;] ) ; # 
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">fhir:rest</a> ( [
+<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">fhir:mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;server&quot; ] ;
+<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;The primary focus of the Trust Service Provider actor is to support the deidentify operation.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">fhir:security</a> [
+<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Implementations must meet the general security requirements documented in the security section of the implementation guide.&quot; ]     ] ;
+    ( <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.operation">fhir:operation</a> [
+<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.operation.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;deidentify&quot; ] ;
+<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.operation.definition">fhir:definition</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/udsplus-de-identify&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://fhir.org/guides/hrsa/uds-plus/OperationDefinition/udsplus-de-identify&gt;       ]     ] )
+  ] ) . # 
+
+</code></pre>
+
+{% endraw %}

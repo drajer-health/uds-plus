@@ -1,0 +1,21 @@
+---
+---
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='CapabilityStatement' id='uds-plus-data-receiver-server' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{type}}: UdsPlusDataReceiverServer - Change History</h2>
+  <p>History of changes for uds-plus-data-receiver-server {{type | downcase}}.</p>
+
+  {%include CapabilityStatement-uds-plus-data-receiver-server-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

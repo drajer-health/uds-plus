@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="de-identified-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-immunization"/>
+  </meta>
+  <status value="completed"/>
+  <statusReason>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+  </statusReason>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="197"/>
+      <display value="influenza, high-dose, quadrivalent"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/de-identified-example"/>
+  </patient>
+  <occurrenceDateTime value="2023"/>
+  <recorded value="2023"/>
+  <primarySource value="true"/>
+</Immunization>

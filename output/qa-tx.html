@@ -1,0 +1,32 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2>
+
+--- 1 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$expand?_limit=1000&_incomplete=true HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","id":"terminology-settings","parameter":[{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":true},{"name":"tx-resource","resource":{"resourceType":"CodeSystem","id":"udsplus-service-delivery-codes","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">public-housing<a name=\"udsplus-service-delivery-codes-public-housing\"> </a></td><td>Care was delivered in a Location that is considered public housing</td><td>Care was delivered in a Location that is considered public housing</td></tr></table></div>"},"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status","valueCode":"informative","_valueCode":{"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom","valueCanonical":"http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"}]}}],"url":"http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes","version":"1.0.2","name":"UDSPlusServiceDeliveryCodes","title":"UDS Plus Housing Service Delivery Codes","status":"active","experimental":true,"date":"2022-09-06","publisher":"HRSA BPHC","contact":[{"telecom":[{"system":"url","value":"https://bphc.hrsa.gov/"}]}],"description":"The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes.","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"caseSensitive":true,"content":"complete","count":1,"concept":[{"code":"public-housing","display":"Care was delivered in a Location that is considered public housing","definition":"Care was delivered in a Location that is considered public housing"}]}},{"name":"cache-id","valueString":"98b741b0-3044-42df-a874-1305d045df00"},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes","concept":[{"code":"public-housing","display":"Care was delivered in a Location that is considered public housing"}]}]}}},{"name":"_limit","valueString":"1000"},{"name":"_incomplete","valueString":"true"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:898
+content-type:application/fhir+json
+date:Thu, 18 Apr 2024 11:53:45 GMT
+last-modified:Thu, 18 Apr 2024 11:53:45 GMT
+pragma:no-cache
+server:nginx
+x-request-id:136-1280283
+
+{"resourceType" : "ValueSet","status" : "active","expansion" : {"identifier" : "urn:uuid:33996173-5303-40e5-b45c-0a72e240b7ef","timestamp" : "2024-04-18T11:53:45.401Z","total" : 1,"parameter" : [{"name" : "limitedExpansion","valueBoolean" : true},{"name" : "excludeNested","valueBoolean" : true},{"name" : "warning-experimental","valueUri" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes|1.0.2"},{"name" : "used-codesystem","valueUri" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes|1.0.2"},{"name" : "version","valueUri" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes|1.0.2"}],"contains" : [{"system" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes","code" : "public-housing","display" : "Care was delivered in a Location that is considered public housing"}]}}
+</head></html>

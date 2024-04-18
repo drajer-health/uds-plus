@@ -1,0 +1,30 @@
+{% raw %}<h4>Terminology Bindings</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td></tr>
+<tr><td>Patient.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    </td>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
+    </td>
+  </tr>
+</table>
+</td></tr>
+<tr><td>Patient.gender</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The gender of a person used for administrative purposes."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-administrative-gender.html">AdministrativeGender</a></td></tr>
+<tr><td>Patient.address.use</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The use of an address."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-address-use.html">AddressUse</a></td></tr>
+<tr><td>Patient.address.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The type of an address (physical / postal)."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-address-type.html">AddressType</a></td></tr>
+<tr><td>Patient.address.postalCode.extension:dataAbsentReason.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Used to specify why the normally expected content of the data element is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a></td></tr>
+<tr><td>Patient.contact.relationship</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The nature of the relationship between a patient and a contact person for that patient."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html">PatientContactRelationship</a></td></tr>
+<tr><td>Patient.contact.gender</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The gender of a person used for administrative purposes."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-administrative-gender.html">AdministrativeGender</a></td></tr>
+<tr><td>Patient.communication.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The set of languages that the patient uses"><a style="opacity: 1.0" href="http://hl7.org/fhir/us/core/STU6.1/ValueSet-simple-language.html">LanguageCodesWithLanguageAndOptionallyARegionModifier</a></td></tr>
+<tr><td>Patient.link.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The type of link between this patient resource and another patient resource."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-link-type.html">LinkType</a></td></tr>
+</table>
+{% endraw %}

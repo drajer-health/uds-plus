@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uds-plus-insurance-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">none-or-uninsured<a name=\"uds-plus-insurance-codes-none-or-uninsured\"> </a></td><td>None or Uninsured</td><td>Patient does not have insurance</td></tr><tr><td style=\"white-space:nowrap\">medicaid-title-19-21<a name=\"uds-plus-insurance-codes-medicaid-title-19-21\"> </a></td><td>Medicaid Title X1X</td><td>Patients with Medicaid (Title X1X) insurance</td></tr><tr><td style=\"white-space:nowrap\">chip-medicaid<a name=\"uds-plus-insurance-codes-chip-medicaid\"> </a></td><td>CHIP Medicaid</td><td>Patients with CHIP Medicaid insurance</td></tr><tr><td style=\"white-space:nowrap\">medicare<a name=\"uds-plus-insurance-codes-medicare\"> </a></td><td>Medicare</td><td>Patients with Medicare insurance</td></tr><tr><td style=\"white-space:nowrap\">dually-eligible-medicaid-medicare<a name=\"uds-plus-insurance-codes-dually-eligible-medicaid-medicare\"> </a></td><td>Dually Eligible</td><td>Patients with both Medicare and Medicaid</td></tr><tr><td style=\"white-space:nowrap\">medicare-and-private<a name=\"uds-plus-insurance-codes-medicare-and-private\"> </a></td><td>Medicare and Private</td><td>Patients with both Medicare and Private insurance such as Medigap</td></tr><tr><td style=\"white-space:nowrap\">other-non-chip-public-insurance<a name=\"uds-plus-insurance-codes-other-non-chip-public-insurance\"> </a></td><td>Other Non CHIP Public Insurance</td><td>Patients who have other public insurance which is non CHIP</td></tr><tr><td style=\"white-space:nowrap\">other-public-insurance-chip<a name=\"uds-plus-insurance-codes-other-public-insurance-chip\"> </a></td><td>Other Public Insurance CHIP</td><td>Patients who have other public insurance which is CHIP</td></tr><tr><td style=\"white-space:nowrap\">private-insurance<a name=\"uds-plus-insurance-codes-private-insurance\"> </a></td><td>Private Insurance</td><td>Patients has Private Insurance</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"^^xsd:anyURI ;
+           fhir:link <http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.2"] ; # 
+  fhir:name [ fhir:v "UDSPlusInsuranceCodes"] ; # 
+  fhir:title [ fhir:v "UDS Plus Insurance Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-09-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HRSA BPHC"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://bphc.hrsa.gov/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying insurance types used by patients in UDS+ program."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes"^^xsd:anyURI ;
+     fhir:link <http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "none-or-uninsured" ] ;
+     fhir:display [ fhir:v "None or Uninsured" ] ;
+     fhir:definition [ fhir:v "Patient does not have insurance" ]
+  ] [
+     fhir:code [ fhir:v "medicaid-title-19-21" ] ;
+     fhir:display [ fhir:v "Medicaid Title X1X" ] ;
+     fhir:definition [ fhir:v "Patients with Medicaid (Title X1X) insurance" ]
+  ] [
+     fhir:code [ fhir:v "chip-medicaid" ] ;
+     fhir:display [ fhir:v "CHIP Medicaid" ] ;
+     fhir:definition [ fhir:v "Patients with CHIP Medicaid insurance" ]
+  ] [
+     fhir:code [ fhir:v "medicare" ] ;
+     fhir:display [ fhir:v "Medicare" ] ;
+     fhir:definition [ fhir:v "Patients with Medicare insurance" ]
+  ] [
+     fhir:code [ fhir:v "dually-eligible-medicaid-medicare" ] ;
+     fhir:display [ fhir:v "Dually Eligible" ] ;
+     fhir:definition [ fhir:v "Patients with both Medicare and Medicaid" ]
+  ] [
+     fhir:code [ fhir:v "medicare-and-private" ] ;
+     fhir:display [ fhir:v "Medicare and Private" ] ;
+     fhir:definition [ fhir:v "Patients with both Medicare and Private insurance such as Medigap" ]
+  ] [
+     fhir:code [ fhir:v "other-non-chip-public-insurance" ] ;
+     fhir:display [ fhir:v "Other Non CHIP Public Insurance" ] ;
+     fhir:definition [ fhir:v "Patients who have other public insurance which is non CHIP" ]
+  ] [
+     fhir:code [ fhir:v "other-public-insurance-chip" ] ;
+     fhir:display [ fhir:v "Other Public Insurance CHIP" ] ;
+     fhir:definition [ fhir:v "Patients who have other public insurance which is CHIP" ]
+  ] [
+     fhir:code [ fhir:v "private-insurance" ] ;
+     fhir:display [ fhir:v "Private Insurance" ] ;
+     fhir:definition [ fhir:v "Patients has Private Insurance" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
