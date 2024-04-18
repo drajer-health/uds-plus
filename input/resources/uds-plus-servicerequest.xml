@@ -122,11 +122,5 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="ServiceRequest.bodySite">
-            <path value="ServiceRequest.bodySite"/>
-            <min value="0"/>
-            <max value="*"/>
-            <mustSupport value="true"/>
-        </element>
     </differential>
 </StructureDefinition>

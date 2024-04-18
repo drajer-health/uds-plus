@@ -46,7 +46,6 @@ The new capability allows the Health Centers to identify if the patient is part 
 
 
 
-
 </div>
 
 **Partial Submission Option**

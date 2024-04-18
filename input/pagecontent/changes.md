@@ -7,15 +7,21 @@ The following is a list of all the changes based on versions.
 1. Added support for Partial Submissions supporting Health Centers with multiple EHRs and/or multiple reporting sites.
 2. Added support for incremental submissions to support efficient data corrections during resubmissions.
 3. Added support for re-submissions with partial and incremental submission concepts
-4. Added uds-plus-observation to support Assessments, Vitals, Physical Exams and Social History observations.
+4. Added uds-plus-observation to support Assessments, Vitals, Physical Exams and Social History observations. - #24
 5. Added guidance for de-identification of patients > 89 years.
 6. Added Live Birth weight LOINC code to UDS Data Elements Mapping Table. - #32
 7. Updated Breast Cancer Screening Mappings to remove Result entries. - #33
+8. Updated Medication, Active mappings to use either MedicationStatement or MedicationRequest to align with US Core. - #26
+9. Added clarifications on UDS+ and US Core relationships. - #1 
+10. Added guidance on Encounter reason and service Provider organization. - #2
+11. Updated UDS+ Encounter profile to allow multiple participants to be compatible with US Core. - #4
+12. Updated UDS+ Data Elements Table Header to point to the right US Core version of 6.1.0 - #5
+13. Removed Bodysite data element from ServiceRequest as MUST SUPPORT - #30
+14. Added guidance on removing submitted files. - #23 
+15. Added additional guidance on quality reporting. - #15
 
-Added clarifications on UDS+ and US Core relationships. - #1 
-Added guidance on Encounter reason and service Provider organization. - #2
-Updated UDS+ Encounter profile to allow multiple participants to be compatible with US Core. - #4
-Updated UDS+ Data Elements Table Header to point to the right US Core version of 6.1.0 - #5
+
+
 
 #### Changes made from 1.0.0 to 1.0.1
 

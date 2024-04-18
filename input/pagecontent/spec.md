@@ -124,6 +124,15 @@ This section identifies the different requirements for Data Submitter system sup
 
 * When the Data Receiver provides a failure status for the $import operation, the Data Submitter **SHALL** rectify the errors and perform a re-submission. 
 
+{:.stu-note}
+The following is new content for 1.0.2.
+
+<div class="bg-success" markdown="1">
+
+" When the Data Receiver provides a status of completion,, the Data Submitter **MAY** remove the NDJSON files that were submitted via the manifest file.
+
+</div>
+
 * Data Submitters **SHOULD NOT** include any data elements that are not mandatory or are not specified as MUST SUPPORT in the UDS+ profiles.
 
 * Data Submitter **MAY** submit partial data as part of the $import operation for 2023 reporting cycle. 
@@ -138,8 +147,16 @@ This section identifies the different requirements for Data Submitter system sup
 	* Report data for at least 2 Quality Measures related to Table 6B 
 	* Report data for at least 2 Quality Measures related to Table 7
 	
-	
-* For Quality Measure data reporting, Data Submitters **SHALL** include only patients who meet the Initial Patient Population criteria. In other words, Data Submitters **should not** submit data for all patients visiting the HealthCenter or for patients who only meet the numerator criteria. 
+{:.stu-note}
+The following is changed content for 1.0.2.
+
+<div class="bg-success" markdown="1">
+
+* For Quality Measure data reporting, Data Submitters **SHALL** include patients who meet the Initial Patient Population criteria. However Data Submitters **MAY** omit patients who are excluded because of the denominator exceptions and exclusions. 
+
+**NOTE** The patients and the data included should allow the Data Receiver to accurately calculate the IPP, Denominator and the Numerator counts.
+
+</div>
 
 **NOTE:** The re-submission payload will be a complete payload and not a partial payload. 
 
