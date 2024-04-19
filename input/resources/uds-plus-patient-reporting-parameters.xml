@@ -340,29 +340,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexp">
-            <path value="Parameters.parameter.part.part"/>
-            <sliceName value="table6B-Line10-denexp"/>
-            <min value="0"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexp.name">
-            <path value="Parameters.parameter.part.part.name"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedString value="table6B-Line10-Childhood-Immunization-Status-CMS117-denexp"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexp.value[x]">
-            <path value="Parameters.parameter.part.part.value[x]"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-           	 	<code value="boolean"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-denexcl">
             <path value="Parameters.parameter.part.part"/>
             <sliceName value="table6B-Line10-denexcl"/>
@@ -409,52 +386,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexp">
-            <path value="Parameters.parameter.part.part"/>
-            <sliceName value="table6B-Line10-numexp"/>
-            <min value="0"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexp.name">
-            <path value="Parameters.parameter.part.part.name"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedString value="table6B-Line10-Childhood-Immunization-Status-CMS117-numexp"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexp.value[x]">
-            <path value="Parameters.parameter.part.part.value[x]"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-           	 	<code value="boolean"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexcl">
-            <path value="Parameters.parameter.part.part"/>
-            <sliceName value="table6B-Line10-numexcl"/>
-            <min value="0"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexcl.name">
-            <path value="Parameters.parameter.part.part.name"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedString value="table6B-Line10-Childhood-Immunization-Status-CMS117-numexcl"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line10.part:table6B-Line10-numexcl.value[x]">
-            <path value="Parameters.parameter.part.part.value[x]"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-           	 	<code value="boolean"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line11">
             <path value="Parameters.parameter.part"/>
             <sliceName value="table6B-Line11"/>
@@ -471,6 +402,88 @@
         </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line11.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part:table6B-Line11-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line11-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part:table6B-Line11-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line11-Cervical-Cancer-Screening-CMS124-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part:table6B-Line11-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part:table6B-Line11-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line11-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part:table6B-Line11-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line11-Cervical-Cancer-Screening-CMS124-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part:table6B-Line11-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part:table6B-Line11-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line11-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part:table6B-Line11-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line11-Cervical-Cancer-Screening-CMS124-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11.part:table6B-Line11-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -501,6 +514,88 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part:table6B-Line11a-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line11a-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part:table6B-Line11a-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line11a-Breast-Cancer-Screening-CMS125-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part:table6B-Line11a-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part:table6B-Line11a-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line11a-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part:table6B-Line11a-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line11a-Breast-Cancer-Screening-CMS125-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part:table6B-Line11a-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part:table6B-Line11a-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line11a-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part:table6B-Line11a-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line11a-Breast-Cancer-Screening-CMS125-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line11a.part:table6B-Line11a-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line12">
             <path value="Parameters.parameter.part"/>
             <sliceName value="table6B-Line12"/>
@@ -517,6 +612,88 @@
         </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line12.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part:table6B-Line12-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line12-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part:table6B-Line12-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line12-Weight-Assessment-And-Counselling-CMS155-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part:table6B-Line12-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part:table6B-Line12-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line12-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part:table6B-Line12-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line12-Weight-Assessment-And-Counselling-CMS155-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part:table6B-Line12-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part:table6B-Line12-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line12-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part:table6B-Line12-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line12-Weight-Assessment-And-Counselling-CMS155-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line12.part:table6B-Line12-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -547,6 +724,111 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line13-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line13-Preventive-Care-And-Screening-BMI-CMS69-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line13-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line13-Preventive-Care-And-Screening-BMI-CMS69-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-denexp">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line13-denexp"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-denexp.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line13-Preventive-Care-And-Screening-BMI-CMS69-denexp"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-denexp.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line13-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line13-Preventive-Care-And-Screening-BMI-CMS69-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line13.part:table6B-Line13-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line14a">
             <path value="Parameters.parameter.part"/>
             <sliceName value="table6B-Line14a"/>
@@ -554,7 +836,7 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Parameters.parameter:reportNames.part:table6B-Line13.name">
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.name">
             <path value="Parameters.parameter.part.name"/>
             <min value="1"/>
             <max value="1"/>
@@ -563,6 +845,88 @@
         </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line14a.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part:table6B-Line14a-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line14a-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part:table6B-Line14a-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line14a-Preventive-Care-And-Screening-Tobacco-Use-CMS138-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part:table6B-Line14a-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part:table6B-Line14a-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line14a-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part:table6B-Line14a-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line14a-Preventive-Care-And-Screening-Tobacco-Use-CMS138-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part:table6B-Line14a-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part:table6B-Line14a-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line14a-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part:table6B-Line14a-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line14a-Preventive-Care-And-Screening-Tobacco-Use-CMS138-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line14a.part:table6B-Line14a-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -593,6 +957,111 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line17a-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line17a-Statin-Therapy-CMS347-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line17a-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line17a-Statin-Therapy-CMS347-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-denexp">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line17a-denexp"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-denexp.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line17a-Statin-Therapy-CMS347-denexp"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-denexp.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line17a-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line137a-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line17a-Statin-Therapy-CMS347-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line17a.part:table6B-Line17a-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line18">
             <path value="Parameters.parameter.part"/>
             <sliceName value="table6B-Line18"/>
@@ -609,6 +1078,88 @@
         </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line18.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part:table6B-Line18-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line18-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part:table6B-Line18-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line18-Ischmic-Vascular-Disease-CMS164-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part:table6B-Line18-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part:table6B-Line18-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line18-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part:table6B-Line18-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line18-Ischmic-Vascular-Disease-CMS164-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part:table6B-Line18-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part:table6B-Line18-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line18-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part:table6B-Line18-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line18-Ischmic-Vascular-Disease-CMS164-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line18.part:table6B-Line18-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -639,6 +1190,88 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part:table6B-Line19-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line19-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part:table6B-Line19-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line19-Colorectal-Cancer-Screening-CMS130-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part:table6B-Line19-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part:table6B-Line19-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line19-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part:table6B-Line19-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line19-Colorectal-Cancer-Screening-CMS130-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part:table6B-Line19-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part:table6B-Line19-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line19-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part:table6B-Line19-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line19-Colorectal-Cancer-Screening-CMS130-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line19.part:table6B-Line19-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line20">
             <path value="Parameters.parameter.part"/>
             <sliceName value="table6B-Line20"/>
@@ -655,6 +1288,88 @@
         </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line20.value[x]">
             <path value="Parameters.parameter.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part">
+            <path value="Parameters.parameter.part.part"/>
+            <min value="0"/>
+            <max value="*"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="$this.name"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-den">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line20-den"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-den.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line19-Colorectal-Cancer-Screening-CMS130-den"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-den.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-denexcl">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line20-denexcl"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-denexcl.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line19-Colorectal-Cancer-Screening-CMS130-denexcl"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-denexcl.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="boolean"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-num">
+            <path value="Parameters.parameter.part.part"/>
+            <sliceName value="table6B-Line20-num"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-num.name">
+            <path value="Parameters.parameter.part.part.name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="table6B-Line19-Colorectal-Cancer-Screening-CMS130-num"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-num.value[x]">
+            <path value="Parameters.parameter.part.part.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
