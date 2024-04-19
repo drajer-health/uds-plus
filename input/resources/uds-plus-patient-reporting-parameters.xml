@@ -1319,7 +1319,7 @@
             <path value="Parameters.parameter.part.part.name"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedString value="table6B-Line19-Colorectal-Cancer-Screening-CMS130-den"/>
+            <fixedString value="table6B-Line20-HIV-Linkage-To-Care-den"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-den.value[x]">
@@ -1342,7 +1342,7 @@
             <path value="Parameters.parameter.part.part.name"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedString value="table6B-Line19-Colorectal-Cancer-Screening-CMS130-denexcl"/>
+            <fixedString value="table6B-Line20-HIV-Linkage-To-Care-denexcl"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-denexcl.value[x]">
@@ -1365,7 +1365,7 @@
             <path value="Parameters.parameter.part.part.name"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedString value="table6B-Line19-Colorectal-Cancer-Screening-CMS130-num"/>
+            <fixedString value="table6B-Line20-HIV-Linkage-To-Care-num"/>
             <mustSupport value="true"/>
         </element>
         <element id="Parameters.parameter:reportNames.part:table6B-Line20.part:table6B-Line20-num.value[x]">
