@@ -8,6 +8,6 @@
    "canonical": "http://fhir.udsplus.hrsa.gov/templates/fhir.udsplus.hrsa.gov.template",
    "base": "fhir.base.template",
    "dependencies": {
-      "fhir.base.template": "0.6.0"
+      "fhir.base.template": "current"
     }
 }
