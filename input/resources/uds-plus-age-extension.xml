@@ -64,6 +64,15 @@
             <type>
                 <code value="Quantity"/>
             </type>
+            <constraint>
+		        <key value="uds-plus-age-1"/>
+		        <severity value="error"/>
+		        <human value="All Patients aged more than 89 years, should be grouped together as 90+ years to meet de-identification requirements."/>
+		<!--        <expression
+		                    value="$this is Quantity implies $this.value &lt; 91"/> -->
+		            <expression
+		                    value="(($this.where(code = 'a').value &lt;= 89) or ($this.where(code = 'a' and comparator = '>=').value = 90)) or (($this.where(code = 'mo').value &lt;= 1068) or ($this.where(code = 'mo' and value &gt; 1068 and value &lt;= 1080).comparator = '>=')) or (($this.where(code = 'd').value &lt;= 32485) or ($this.where(code = 'd' and value &gt; 32485 and value &lt;= 32850).comparator = '>=')) or (($this.where(code = 'wk').value &lt; 4628) or ($this.where(code = 'wk' and value &gt; 4628 and value &lt;= 4680).comparator = '>='))" />
+		    </constraint>
         </element>
     </differential>
 </StructureDefinition>

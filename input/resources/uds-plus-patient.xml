@@ -209,6 +209,15 @@
             <short value="ZipCode must be included in the profile"/>
             <min value="1"/>
             <max value="1"/>
+            <constraint>
+		        <key value="uds-plus-patient-1"/>
+		        <severity value="error"/>
+		        <human value="De-identified Zipcodes can contain first 3 digits followed by 00 in the last two digits or have to be masked with 00000."/>
+		        <expression
+		                    value="$this.matches('[0-9]{3}00|00000')"/>
+		        <xpath
+		               value="f:matches(postalCode,(^[0-9]{3}00|00000)"/>
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.address.postalCode.extension:dataAbsentReason">

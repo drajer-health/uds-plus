@@ -74,7 +74,7 @@
     {
       "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension",
       "valueQuantity": {
-      	"value" : 36,
+      	"value" : 70,
     	"unit" : "yr",
     	"system" : "http://unitsofmeasure.org",
     	"code" : "a"

@@ -158,6 +158,13 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <constraint>
+		        <key value="uds-plus-diagnosis-1"/>
+		        <severity value="error"/>
+		        <human value="Datetime must have a maximum presision of year only"/>
+		        <expression
+		                    value="$this is DateTime implies $this.toString().length() = 4"/>
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Condition.abatement">
