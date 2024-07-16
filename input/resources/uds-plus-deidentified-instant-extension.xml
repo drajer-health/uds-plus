@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="uds-plus-gender-identity-extension"/>
+    <id value="uds-plus-deidentified-instant-extension"/>
     <meta>
         <versionId value="2"/>
         <lastUpdated value="2022-07-12T02:03:21.911+00:00"/>
         <source value="#IqyJCmUTqk2pvKFb"/>
     </meta>
-    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension"/>
+    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentified-instant-extension"/>
     <version value="0.1.0"/>
-    <name value="UDSPlusGenderIdentityExtension"/>
-    <title value="UDS Plus Gender Identity Extension"/>
+    <name value="UDSPlusDeidentifiedInstantExtension"/>
+    <title value="UDS Plus Deidentified Instant Extension"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2019-09-01"/>
+    <date value="2024-07-01"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <telecom>
@@ -21,7 +21,7 @@
             <value value="http://hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Indicates the gender identity of the patient at a specific time"/>
+    <description value="Indicates the time with a precision of only Year. This extension is to be used in lieu of data elements of type instant present within a FHIR Resource."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33,7 +33,11 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Patient"/>
+        <expression value="Observation"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Condition"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -41,8 +45,8 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Indicates the gender identity of the Patient."/>
-            <definition value="Indicates the gender identity of the Patient at a specific time"/>
+            <short value="Indicates the time with a precision of only Year."/>
+            <definition value="Indicates the time with a precision of only Year. This extension is to be used in lieu of data elements of type instant present within a FHIR Resource "/>
             <min value="1"/>
             <max value="1"/>
         </element>
@@ -51,20 +55,21 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension"/>
+            <fixedUri value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentified-instant-extension"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="CodeableConcept"/>
+                <code value="dateTime"/>
             </type>
-            <binding>
-                <strength value="extensible"/>
-                <description value="The set of codes to be used for UDS+ reporting."/>
-                <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-gender-identity-codes"/>
-            </binding>
+            <constraint>
+		        <key value="uds-plus-datetime-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
         </element>
     </differential>
 </StructureDefinition>

@@ -93,7 +93,25 @@
             <path value="AdverseEvent.date"/>
             <min value="0"/>
             <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <constraint>
+		        <key value="uds-plus-advevent-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
+        </element>
+        <element id="AdverseEvent.detected">
+            <path value="AdverseEvent.detected"/>
+            <constraint>
+		        <key value="uds-plus-advevent-2"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
         </element>
         <element id="AdverseEvent.recordedDate">
             <path value="AdverseEvent.recordedDate"/>
@@ -102,7 +120,18 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <constraint>
+		        <key value="uds-plus-advevent-3"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
+        </element>
+        <element id="AdverseEvent.recorder.display">
+            <path value="AdverseEvent.recorder.display"/>
+            <min value="0"/>
+            <max value="0"/>
         </element>
     </differential>
 </StructureDefinition>

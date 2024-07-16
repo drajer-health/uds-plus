@@ -93,7 +93,7 @@
       
       <ul>
         <li>
-          <a href="http://fhir.org/guides/hrsa/uds-plus/OperationDefinition-import.html">Bulk Data Import ([BaseURL]/$import)</a>
+          <a href="OperationDefinition-import.html">Bulk Data Import ([BaseURL]/$import)</a>
         </li>
       </ul>
       
