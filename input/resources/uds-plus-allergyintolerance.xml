@@ -122,6 +122,12 @@
             <type>
             	<code value="Age"/>
             </type>
+            <constraint>
+		        <key value="uds-plus-all-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="AllergyIntolerance.recordedDate">
@@ -131,7 +137,37 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <constraint>
+		        <key value="uds-plus-all-2"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
+        </element>
+        <element id="AllergyIntolerance.recorder.display">
+            <path value="AllergyIntolerance.recorder.display"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>
+        <element id="AllergyIntolerance.asserter.display">
+            <path value="AllergyIntolerance.asserter.display"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>
+        <element id="AllergyIntolerance.lastOccurrence">
+            <path value="AllergyIntolerance.lastOccurrence"/>
+            <constraint>
+		        <key value="uds-plus-all-3"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
+        </element>
+        <element id="AllergyIntolerance.note">
+            <path value="AllergyIntolerance.note"/>
+            <min value="0"/>
+            <max value="0"/>
         </element>
         <element id="AllergyIntolerance.reaction">
             <path value="AllergyIntolerance.reaction"/>
@@ -145,11 +181,25 @@
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
+        <element id="AllergyIntolerance.reaction.onset">
+            <path value="AllergyIntolerance.reaction.onset"/>
+            <constraint>
+		        <key value="uds-plus-all-4"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
+        </element>
         <element id="AllergyIntolerance.reaction.severity">
             <path value="AllergyIntolerance.reaction.severity"/>
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="AllergyIntolerance.reaction.note">
+            <path value="AllergyIntolerance.reaction.note"/>
+            <min value="0"/>
+            <max value="0"/>
         </element>
     </differential>
 </StructureDefinition>

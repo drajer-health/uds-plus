@@ -44,8 +44,8 @@
   "patient" : {
     "reference": "Patient/de-identified-example"
   },
-  "onsetDateTime": "2015-11-01T17:00:14-05:00",
-  "recordedDate": "2017-11-01T17:00:14-05:00",
+  "onsetDateTime": "2015",
+  "recordedDate": "2017",
   "reaction" : [
     {
       "manifestation" : [
