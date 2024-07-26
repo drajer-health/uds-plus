@@ -90,12 +90,24 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <constraint>
+		        <key value="uds-plus-imm-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Immunization.recorded">
             <path value="Immunization.recorded"/>
             <min value="0"/>
             <max value="1"/>
+            <constraint>
+		        <key value="uds-plus-iimm-2"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Immunization.primarySource">
@@ -103,6 +115,36 @@
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Immunization.expirationDate">
+            <path value="Immunization.expirationDate"/>
+            <min value="0"/>
+            <max value="1"/>
+            <constraint>
+		        <key value="uds-plus-iimm-3"/>
+		        <severity value="error"/>
+		        <human value="All date data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is date implies $this.toString().length() = 4" />
+		    </constraint>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Immunization.note">
+            <path value="Immunization.note"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Immunization.reaction.date">
+            <path value="Immunization.reaction.date"/>
+            <min value="0"/>
+            <max value="1"/>
+            <constraint>
+		        <key value="uds-plus-iimm-4"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is dateTime implies $this.toString().length() = 4" />
+		    </constraint>
+            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>

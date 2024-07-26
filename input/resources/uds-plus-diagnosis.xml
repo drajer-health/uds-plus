@@ -64,6 +64,12 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/condition-assertedDate"/>
             </type>
+            <constraint>
+		        <key value="uds-plus-diag-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this.value.ofType(dateTime) implies $this.value.ofType(dateTime).toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Condition.clinicalStatus">
@@ -71,12 +77,6 @@
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>  
-        </element>
-        <element id="Condition.clinicalStatus.text">
-            <path value="Condition.clinicalStatus.text"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>  
         </element>
         <element id="Condition.verificationStatus">
             <path value="Condition.verificationStatus"/>
@@ -151,36 +151,99 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
-        <element id="Condition.onset">
-            <path value="Condition.onsetDateTime"/>
+        <element id="Condition.onset[x]">
+            <path value="Condition.onset[x]"/>
             <min value="0"/>
             <max value="1"/>
             <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
                 <code value="dateTime"/>
             </type>
-            <constraint>
-		        <key value="uds-plus-diagnosis-1"/>
+             <type>
+                <code value="Period"/>
+            </type>
+		    <constraint>
+		        <key value="uds-plus-diag-2"/>
 		        <severity value="error"/>
-		        <human value="Datetime must have a maximum presision of year only"/>
-		        <expression
-		                    value="$this is DateTime implies $this.toString().length() = 4"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-diag-3"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-diag-4"/>
+		        <severity value="error"/>
+		        <human value="All Period.emd data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
 		    </constraint>
             <mustSupport value="true"/>
         </element>
-        <element id="Condition.abatement">
-            <path value="Condition.abatementDateTime"/>
+        <element id="Condition.abatement[x]">
+            <path value="Condition.abatement[x]"/>
             <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="dateTime"/>
             </type>
+            <type>
+                <code value="Period"/>
+            </type>
+            <constraint>
+		        <key value="uds-plus-diag-5"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-diag-6"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-diag-7"/>
+		        <severity value="error"/>
+		        <human value="All Period.emd data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Condition.recordedDate">
             <path value="Condition.recordedDate"/>
             <min value="0"/>
             <max value="1"/>
+            <constraint>
+		        <key value="uds-plus-diag-8"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
+        </element>
+        <element id="Condition.recorder.display">
+            <path value="Condition.recorder.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Condition.asserter.display">
+            <path value="Condition.asserter.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Condition.note">
+            <path value="Condition.note"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>

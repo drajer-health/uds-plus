@@ -35,6 +35,26 @@
             <short value="De-Identified UDS Plus Encounter"/>
             <definition value="The UDS+ profile is based on the Encounter resource and establishes the core elements, extensions, vocabularies and value sets for representing encounters,visit information for UDS+ program."/>
         </element>
+        <element id="Encounter.id">
+            <path value="Encounter.id"/>
+            <short value="The de-identified Encounter identifier created by the health center to send data to UDS+ Data Receiver"/>
+            <definition value="De-dentified Encounter resource identifier."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.text">
+            <path value="Encounter.text"/>
+            <short value="Cannot include any text in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Encounter.contained">
+            <path value="Encounter.contained"/>
+            <short value="Cannot include any contained resources in the resource as part of the de-identified data."/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Encounter.extension:age">
             <path value="Encounter.extension"/>
             <short value="Age of the Patient computed using birthDate and the visit dates of the encounter"/>
@@ -70,12 +90,6 @@
                 <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type"/>
             </binding>
         </element>
-        <element id="Encounter.type.text">
-            <path value="Encounter.type.text"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>  
-        </element>
         <element id="Encounter.subject">
             <path value="Encounter.subject"/>
             <min value="1"/>
@@ -104,16 +118,22 @@
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Encounter.participant.type.text">
-            <path value="Encounter.participant.type.text"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>  
-        </element>
         <element id="Encounter.participant.period">
             <path value="Encounter.participant.period"/>
             <min value="0"/>
             <max value="1"/>
+            <constraint>
+		        <key value="uds-plus-enc-1"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and $this.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-enc-2"/>
+		        <severity value="error"/>
+		        <human value="All Period.emd data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and $this.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Encounter.participant.individual">
@@ -130,6 +150,18 @@
             <path value="Encounter.period"/>
             <min value="0"/>
             <max value="1"/>
+            <constraint>
+		        <key value="uds-plus-enc-3"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and $this.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-enc-4"/>
+		        <severity value="error"/>
+		        <human value="All Period.emd data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and $this.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/> 
         </element>
         <element id="Encounter.reasonCode">
@@ -137,12 +169,6 @@
             <min value="0"/>
             <max value="*"/>
             <mustSupport value="true"/>
-        </element>
-        <element id="Encounter.reasonCode.text">
-            <path value="Encounter.reasonCode.text"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>
         </element>
         <element id="Encounter.reasonReference">
             <path value="Encounter.reasonReference"/>
@@ -153,12 +179,6 @@
                 <targetProfile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-diagnosis"/>
             </type>
             <mustSupport value="true"/>
-        </element>
-        <element id="Encounter.reasonReference.display">
-            <path value="Encounter.reasonReference.display"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>
         </element>
         <element id="Encounter.diagnosis">
             <path value="Encounter.diagnosis"/>
@@ -204,12 +224,6 @@
                 <description value="The set of codes indicating the discharge disposition"/>
                 <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition"/>
             </binding>
-        </element>
-        <element id="Encounter.hospitalization.dischargeDisposition.text">
-            <path value="Encounter.hospitalization.dischargeDisposition.text"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>
         </element>
         <element id="Encounter.location">
             <path value="Encounter.location"/>
