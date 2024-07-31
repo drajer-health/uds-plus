@@ -493,6 +493,18 @@
       <code value="no-narrative"/>
       <value value="Encounter/de-identified-example"/>
     </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Observation/de-identified-income-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Observation/de-identified-income-with-quantity-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Observation/de-identified-example"/>
+    </parameter>   
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>

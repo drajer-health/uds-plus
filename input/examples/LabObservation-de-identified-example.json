@@ -6,6 +6,12 @@
             "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-lab-observation"
         ]
     },
+    "extension": [
+      {
+        "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentified-instant-extension",
+        "valueDateTime": "2005"
+      }
+    ],
     "status": "final",
     "category": [
         {
@@ -34,7 +40,6 @@
         "reference": "Encounter/de-identified-example"
     },
     "effectiveDateTime" : "2005",
-    "issued": "2005-04-03T15:30:10+01:00",
     "performer": [
         {
             "reference": "Practitioner/example"

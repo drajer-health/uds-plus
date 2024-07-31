@@ -89,7 +89,7 @@
             <mustSupport value="true"/> 
             <binding>
                 <strength value="extensible"/>
-                <description value="The set of codes indicating the Observations"/>
+                <description value="The set of codes identifying the lab test"/>
                 <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
             </binding> 
         </element>
@@ -283,7 +283,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>
-                <description value="The set of codes indicating the Observations"/>
+                <description value="The set of codes identifying the lab test"/>
                 <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
             </binding> 
         </element>

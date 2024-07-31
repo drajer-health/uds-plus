@@ -112,6 +112,12 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <constraint>
+		        <key value="uds-plus-medreq-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is dateTime implies $this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="MedicationRequest.requester">
@@ -120,11 +126,47 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
+        <element id="MedicationRequest.requester.display">
+            <path value="MedicationRequest.requester.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="MedicationRequest.performer.display">
+            <path value="MedicationRequest.performer.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="MedicationRequest.note">
+            <path value="MedicationRequest.note"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="MedicationRequest.dosageInstruction">
             <path value="MedicationRequest.dosageInstruction"/>
             <min value="0"/>
             <max value="*"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="MedicationRequest.dispenseRequest.validityPeriod">
+            <path value="MedicationRequest.dispenseRequest.validityPeriod"/>
+            <min value="0"/>
+            <max value="1"/>
+            <constraint>
+		        <key value="uds-plus-medreq-2"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-medreq-3"/>
+		        <severity value="error"/>
+		        <human value="All Period.end data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
+            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>
