@@ -318,6 +318,14 @@
       <description value="An Example of a conformant UDS+ Encounter resource with de-identified information capturing the visit information."/>
       <exampleBoolean value="true"/>
    </resource>
+   <resource>
+      <reference>
+        <reference value="Observation/generic-observation-de-identified-example"/>
+      </reference>
+      <name value="UDS Plus Generic Observation Example"/>
+      <description value="An Example of a conformant UDS Plus Observation resource profile with de-identified information."/>
+      <exampleBoolean value="true"/>
+   </resource>
   
 
     <page>
@@ -504,7 +512,11 @@
     <parameter>
       <code value="no-narrative"/>
       <value value="Observation/de-identified-example"/>
-    </parameter>   
+    </parameter>  
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Observation/generic-observation-de-identified-example"/>
+    </parameter> 
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>

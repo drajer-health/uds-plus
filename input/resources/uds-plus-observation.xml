@@ -55,6 +55,16 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
+        <element id="Observation.extension:deidentifiedIssuedTime">
+            <path value="Observation.extension"/>
+            <sliceName value="deidentifiedIssuedTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentified-instant-extension"/>
+            </type>
+        </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
             <min value="1"/>
@@ -114,13 +124,56 @@
             <path value="Observation.effective[x]"/>
             <min value="0"/>
             <max value="1"/>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="dateTime"/>
+            </type>
+            <type>
+            	<code value="Period"/>
+            </type>
+            <type>
+            	<code value="Timing"/>
+            </type>
+            <constraint>
+		        <key value="uds-plus-obs-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-obs-2"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-obs-3"/>
+		        <severity value="error"/>
+		        <human value="All Period.emd data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-obs-4"/>
+		        <severity value="error"/>
+		        <human value="All Timing.event data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Timing and Timing.event.exists() implies $this.event.count() = 1" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-obs-5"/>
+		        <severity value="error"/>
+		        <human value="All Timing.event data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Timing and Timing.event.exists() implies $this.event.first().toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.issued">
             <path value="Observation.issued"/>
             <min value="0"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
@@ -128,11 +181,83 @@
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Observation.performer.display">
+            <path value="Observation.performer.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
             <min value="0"/>
             <max value="1"/>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="Quantity"/>
+            </type>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="CodeableConcept"/>
+            </type>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="string"/>
+            </type>
+            <type>
+            	<code value="boolean"/>
+            </type>
+            <type>
+            	<code value="integer"/>
+            </type>
+            <type>
+            	<code value="Range"/>
+            </type>
+            <type>
+            	<code value="Ratio"/>
+            </type>
+            <type>
+            	<code value="SampledData"/>
+            </type>
+            <type>
+            	<code value="dateTime"/>
+            </type>
+            <type>
+            	<code value="Period"/>
+            </type>
+            <constraint>
+		        <key value="uds-plus-obs-6"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is dateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-obs-7"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-obs-8"/>
+		        <severity value="error"/>
+		        <human value="All Period.end data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>           
             <mustSupport value="true"/>
+        </element>
+        <element id="Observation.note">
+            <path value="Observation.note"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Observation.bodySite">
             <path value="Observation.bodySite"/>
@@ -152,15 +277,75 @@
             <max value="1"/>
             <mustSupport value="true"/>
             <binding>
-                <strength value="extensible"/>
+                <strength value="preferred"/>
                 <description value="The set of codes indicating the Observations"/>
-                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
             </binding> 
         </element>
         <element id="Observation.component.value[x]">
             <path value="Observation.component.value[x]"/>
             <min value="0"/>
             <max value="1"/>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="Quantity"/>
+            </type>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="CodeableConcept"/>
+            </type>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="string"/>
+            </type>
+            <type>
+            	<code value="boolean"/>
+            </type>
+            <type>
+            	<code value="integer"/>
+            </type>
+            <type>
+            	<code value="Range"/>
+            </type>
+            <type>
+            	<code value="Ratio"/>
+            </type>
+            <type>
+            	<code value="SampledData"/>
+            </type>
+            <type>
+            	<code value="dateTime"/>
+            </type>
+            <type>
+            	<code value="Period"/>
+            </type>
+            <constraint>
+		        <key value="uds-plus-obs-9"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is dateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-obs-10"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-obs-11"/>
+		        <severity value="error"/>
+		        <human value="All Period.end data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
     </differential>
