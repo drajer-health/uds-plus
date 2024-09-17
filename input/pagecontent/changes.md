@@ -19,6 +19,9 @@ The following is a list of all the changes based on versions.
 13. Removed Bodysite data element from ServiceRequest as MUST SUPPORT - #30
 14. Added guidance on removing submitted files. - #23 
 15. Added additional guidance on quality reporting. - #15
+16. Updated Age related constraints in the profiles to follow de-identification requirements.
+17. Updated all profiles to add constraints related to dates, Periods and Timing to follow de-identification requirements.
+18. Added extension to support de-identified instant data type, which is used in Observations to capture instant with a precision upto YEAR only.
 
 
 
