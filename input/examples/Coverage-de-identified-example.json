@@ -40,8 +40,8 @@
         "reference": "Patient/de-identified-example"
     },
     "period": {
-        "start": "2019-03-17",
-        "end": "2023-03-17"
+        "start": "2019",
+        "end": "2023"
     },
     "payor": [
         {

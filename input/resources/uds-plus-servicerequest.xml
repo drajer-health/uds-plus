@@ -94,6 +94,12 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="ServiceRequest.subject.display">
+            <path value="ServiceRequest.subject.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="ServiceRequest.encounter">
             <path value="ServiceRequest.encounter"/>
             <min value="0"/>
@@ -103,17 +109,72 @@
                 <targetProfile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-encounter"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.encounter.display">
+            <path value="ServiceRequest.encounter.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>       
         <element id="ServiceRequest.occurrence[x]">
             <path value="ServiceRequest.occurrence[x]"/>
             <min value="0"/>
             <max value="1"/>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="dateTime"/>
+            </type>
+            <type>
+            	<code value="Period"/>
+            </type>
+            <type>
+            	<code value="Timing"/>
+            </type>
+            <constraint>
+		        <key value="uds-plus-svr-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-svr-2"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-svr-3"/>
+		        <severity value="error"/>
+		        <human value="All Period.emd data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-svr-4"/>
+		        <severity value="error"/>
+		        <human value="All Timing.event data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Timing and Timing.event.exists() implies $this.event.count() = 1" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-svr-5"/>
+		        <severity value="error"/>
+		        <human value="All Timing.event data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Timing and Timing.event.exists() implies $this.event.first().toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.authoredOn">
             <path value="ServiceRequest.authoredOn"/>
             <min value="0"/>
             <max value="1"/>
+            <constraint>
+		        <key value="uds-plus-svr-6"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.requester">
@@ -121,6 +182,24 @@
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.requester.display">
+            <path value="ServiceRequest.requester.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="ServiceRequest.performer.display">
+            <path value="ServiceRequest.performer.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="ServiceRequest.note">
+            <path value="ServiceRequest.note"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>

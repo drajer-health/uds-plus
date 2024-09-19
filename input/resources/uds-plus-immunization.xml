@@ -85,8 +85,8 @@
         </element>
         <element id="Immunization.patient.display">
             <path value="Immunization.patient.display"/>
-            <min value="1"/>
-            <max value="1"/>
+            <min value="0"/>
+            <max value="0"/>
             <mustSupport value="false"/>
         </element>
         <element id="Immunization.occurrence[x]">

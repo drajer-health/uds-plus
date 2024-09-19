@@ -126,6 +126,22 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
+        <element id="RelatedPerson.period">
+            <path value="RelatedPerson.period"/>
+            <constraint>
+		        <key value="uds-plus-res-10"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-res-11"/>
+		        <severity value="error"/>
+		        <human value="All Period.end data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>         
+            <mustSupport value="false"/>
+        </element>
         <element id="RelatedPerson.communication">
             <path value="RelatedPerson.communication"/>
             <short value="Cannot include any communication information in the resource as part of the de-identified data."/>

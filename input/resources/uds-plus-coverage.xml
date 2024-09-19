@@ -99,11 +99,11 @@
                 <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes"/>
             </binding>
         </element>
-        <element id="Coverage.type.text">
-            <path value="Coverage.type.text"/>
+        <element id="Coverage.policyHolder.display">
+            <path value="Coverage.policyHolder.display"/>
             <min value="0"/>
             <max value="0"/>
-            <mustSupport value="false"/>  
+            <mustSupport value="false"/>
         </element>
         <element id="Coverage.beneficiary">
             <path value="Coverage.beneficiary"/>
@@ -121,6 +121,18 @@
         </element>
         <element id="Coverage.period">
             <path value="Coverage.period"/>
+            <constraint>
+		        <key value="uds-plus-cov-1"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-cov-2"/>
+		        <severity value="error"/>
+		        <human value="All Period.emd data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Coverage.payor">
