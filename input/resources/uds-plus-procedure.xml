@@ -99,6 +99,12 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Procedure.subject.display">
+            <path value="Procedure.subject.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Procedure.encounter">
             <path value="Procedure.encounter"/>
             <min value="0"/>
@@ -108,12 +114,67 @@
                 <targetProfile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-encounter"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Procedure.encounter.display">
+            <path value="Procedure.encounter.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>       
         <element id="Procedure.performed[x]">
             <path value="Procedure.performed[x]"/>
             <min value="0"/>
             <max value="1"/>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="dateTime"/>
+            </type>
+            <type>
+            	<code value="Period"/>
+            </type>
+            <type>
+            	<code value="Age"/>
+            </type>
+            <type>
+            	<code value="string"/>
+            </type>
+            <type>
+            	<code value="Range"/>
+            </type>
+            <constraint>
+		        <key value="uds-plus-proc-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-proc-2"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-proc-3"/>
+		        <severity value="error"/>
+		        <human value="All Period.emd data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
+        </element>
+        <element id="Procedure.recorder.display">
+            <path value="Procedure.recorder.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Procedure.asserter.display">
+            <path value="Procedure.asserter.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Procedure.performer">
             <path value="Procedure.performer"/>
@@ -121,11 +182,23 @@
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Procedure.performer.actor.display">
+            <path value="Procedure.performer.actor.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Procedure.bodySite">
             <path value="Procedure.bodySite"/>
             <min value="0"/>
             <max value="*"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Procedure.note">
+            <path value="Procedure.note"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>

@@ -83,6 +83,12 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Immunization.patient.display">
+            <path value="Immunization.patient.display"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Immunization.occurrence[x]">
             <path value="Immunization.occurrence[x]"/>
             <min value="1"/>

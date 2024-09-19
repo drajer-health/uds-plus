@@ -112,6 +112,12 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
+        <element id="AllergyIntolerance.encounter.display">
+            <path value="AllergyIntolerance.encounter.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="AllergyIntolerance.onset[x]">
             <path value="AllergyIntolerance.onset[x]"/>
             <min value="0"/>

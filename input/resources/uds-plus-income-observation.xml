@@ -55,6 +55,16 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
+        <element id="Observation.extension:deidentifiedIssuedTime">
+            <path value="Observation.extension"/>
+            <sliceName value="deidentifiedIssuedTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-deidentified-instant-extension"/>
+            </type>
+        </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
             <min value="1"/>
@@ -86,6 +96,12 @@
         </element>
         <element id="Observation.subject.display">
             <path value="Observation.subject.display"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Observation.encounter.display">
+            <path value="Observation.encounter.display"/>
             <min value="0"/>
             <max value="0"/>
             <mustSupport value="false"/>
