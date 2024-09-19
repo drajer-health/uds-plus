@@ -168,17 +168,6 @@
                 <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-sexual-orientation-codes"/>
             </binding>
         </element>
-        <element id="Observation.value[x].extension:dataAbsentReason">
-            <path value="Observation.value[x].extension"/>
-            <sliceName value="dataAbsentReason"/>
-            <short value="Reason why the data is not present"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Observation.note">
             <path value="Observation.note"/>
             <min value="0"/>
