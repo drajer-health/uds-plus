@@ -22,6 +22,22 @@ A definition for CodeSystem 'http://www.nubc.org/patient-discharge' could not be
 
 # The binding in the FHIR Spec to an experimental value set exists for all resources, not related to UDSPlus 
 The definition for the element 'Observation.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Parameters.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Procedure.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Patient.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'MedicationStatement.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'MedicationRequest.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Location.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Immunization.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Encounter.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Condition.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Coverage.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'AllergyIntolerance.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'AdverseEvent.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'RelatedPerson.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'RelatedPerson.communication.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ServiceRequest.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+
 
 # Best Practice Recommendation which is not required by UDS+
 Best Practice Recommendation: In general, all observations should have a performer
