@@ -181,6 +181,26 @@
             <short value="Indicates if the Patient is deceased, it can be either a Boolean or a Date with a precision of year only."/>
             <min value="0"/>
             <max value="1"/>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="dateTime"/>
+            </type>
+            <type>
+            	<extension
+                   	url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+          			<valueBoolean value="true"/>
+        		</extension>
+            	<code value="boolean"/>
+            </type>
+            <constraint>
+		        <key value="uds-plus-pat-1"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
+		        <expression value="$this is dateTime implies $this.toString().length() = 4" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.address">

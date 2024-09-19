@@ -84,12 +84,6 @@
                 <valueSet value="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"/>
             </binding>
         </element>
-        <element id="RelatedPerson.relationship.text">
-            <path value="RelatedPerson.relationship.text"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>  
-        </element>
         <element id="RelatedPerson.name">
             <path value="RelatedPerson.name"/>
             <short value="Cannot include any name in the resource as part of the de-identified data."/>

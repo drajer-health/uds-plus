@@ -55,7 +55,7 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
-        <element id="Procedure.extension:assertedDate">
+        <element id="Procedure.extension:recordedDate">
             <path value="Procedure.extension"/>
             <sliceName value="recordedDate"/>
             <min value="0"/>

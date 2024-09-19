@@ -20,6 +20,9 @@ A definition for CodeSystem 'http://www.nubc.org/patient-discharge' could not be
 Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition|6.1.0' because the code system http://www.nubc.org/patient-discharge was not found
 A definition for CodeSystem 'http://www.nubc.org/patient-discharge' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition|6.1.0' because the code system http://www.nubc.org/patient-discharge was not found
 
+# The binding in the FHIR Spec to an experimental value set exists for all resources, not related to UDSPlus 
+The definition for the element 'Observation.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
+
 # Best Practice Recommendation which is not required by UDS+
 Best Practice Recommendation: In general, all observations should have a performer
 

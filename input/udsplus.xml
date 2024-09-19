@@ -433,6 +433,10 @@
         <generation value="markdown"/>
       </page>
     </page>
+ <!--    <parameter>
+   	 <code value="no-experimental-content"/>
+   	 <value value="false"/>
+    </parameter> -->
     <parameter>
       <code value="no-narrative"/>
       <value value="AdverseEvent/de-identified-example"/>

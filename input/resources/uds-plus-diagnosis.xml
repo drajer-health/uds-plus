@@ -84,23 +84,11 @@
             <max value="1"/>
             <mustSupport value="true"/>  
         </element>
-        <element id="Condition.verificationStatus.text">
-            <path value="Condition.verificationStatus.text"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>  
-        </element>
         <element id="Condition.category">
             <path value="Condition.category"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>  
-        </element>
-        <element id="Condition.category.text">
-            <path value="Condition.category.text"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>  
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
@@ -112,12 +100,6 @@
                 <description value="The set of codes indicating the diagnosis"/>
                 <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"/>
             </binding> 
-        </element>
-        <element id="Condition.code.text">
-            <path value="Condition.code.text"/>
-            <min value="0"/>
-            <max value="0"/>
-            <mustSupport value="false"/>  
         </element>
         <element id="Condition.subject">
             <path value="Condition.subject"/>

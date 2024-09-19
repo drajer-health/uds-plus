@@ -12,8 +12,8 @@
   <version value="1.0.0"/>
   <name value="UdsPlusAgricultureWorkerStatusCodes"/>
   <title value="Uds Plus Agriculture Worker Status Codes"/>
-  <status value="draft"/>
-  <experimental value="true"/>
+  <status value="trial-use"/>
+  <experimental value="false"/>
   <date value="2020-09-06"/>
   <publisher value="HL7 PHWG"/>
 	<contact>
