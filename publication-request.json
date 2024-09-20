@@ -1,8 +1,8 @@
 
 {
   "package-id" : "fhir.hrsa.uds-plus",
-  "version" : "1.0.2",
-  "path" : "http://fhir.org/guides/hrsa/uds-plus/STU1",
+  "version" : "1.1.0",
+  "path" : "http://fhir.org/guides/hrsa/uds-plus/STU1.1",
   "mode" : "milestone",
   "milestone" : "true",
   "status" : "trial-use",
