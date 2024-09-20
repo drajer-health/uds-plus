@@ -2,7 +2,7 @@
 
 The following is a list of all the changes based on versions.
 
-#### Changes made from 1.0.0 to 1.0.2
+#### Changes made from 1.0.0 to 1.1.0
 
 1. Added support for Partial Submissions supporting Health Centers with multiple EHRs and/or multiple reporting sites.
 2. Added support for incremental submissions to support efficient data corrections during resubmissions.
