@@ -21,7 +21,7 @@ For e.g A Patient who is part of "table6B-Line11-Cervical-Cancer-Screening-CMS12
 
 
 {:.stu-note}
-The following is new content for 1.0.2.
+The following is new content for 1.1.0
 
 <div class="bg-success" markdown="1">
 

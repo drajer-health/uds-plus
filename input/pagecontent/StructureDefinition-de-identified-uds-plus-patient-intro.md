@@ -31,7 +31,7 @@ The Data Submitter has to compute the age based as of December 31st of the previ
 The original patient resource id should not be included in the De-identified patient instance. Instead a new id should be created and provided as part of the FHIR resource. This Data Submitter should be capable of using the generated id to relink the data to the original patient. All resource references to the Patient submitted as part of the UDS+ report should refer to newly generated de-identified id.
 
 {:.stu-note}
-The following is new content for 1.0.2.
+The following is new content for 1.1.0
 
 <div class="bg-success" markdown="1">
 

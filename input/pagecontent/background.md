@@ -37,7 +37,7 @@ This guide is based on the [HL7 FHIR R4]({{site.data.fhir.path}}index.html) stan
 Implementers of the UDS+ IG must understand some basic information about the underlying specifications listed above.
 
 {:.stu-note}
-The following is new content for 1.0.2.
+The following is new content for 1.1.0
 
 <div class="bg-success" markdown="1">
 

@@ -35,7 +35,7 @@ The Data Submitter has to truncate the following dates to only have a precision 
 * participant.period
 
 {:.stu-note}
-The following is new content for 1.0.2.
+The following is new content for 1.1.0
 
 <div class="bg-success" markdown="1">
 

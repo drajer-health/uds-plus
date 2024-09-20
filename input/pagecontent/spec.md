@@ -125,7 +125,7 @@ This section identifies the different requirements for Data Submitter system sup
 * When the Data Receiver provides a failure status for the $import operation, the Data Submitter **SHALL** rectify the errors and perform a re-submission. 
 
 {:.stu-note}
-The following is new content for 1.0.2.
+The following is new content for 1.1.0
 
 <div class="bg-success" markdown="1">
 
@@ -148,7 +148,7 @@ The following is new content for 1.0.2.
 	* Report data for at least 2 Quality Measures related to Table 7
 	
 {:.stu-note}
-The following is changed content for 1.0.2.
+The following is changed content for 1.1.0
 
 <div class="bg-success" markdown="1">
 

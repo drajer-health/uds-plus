@@ -8,7 +8,7 @@ The [HHS De-identification Guidance](https://www.hhs.gov/sites/default/files/ocr
 According to the HHS guidance, for patients whose age is computed to be greater than 89 the de-identification rule requires it be reported as greater > 90 and not report the specific age. 
 
 {:.stu-note}
-The following is new content for 1.0.2.
+The following is new content for 1.1.0
 
 <div class="bg-success" markdown="1">
 
