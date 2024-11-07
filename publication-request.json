@@ -1,13 +1,13 @@
 
 {
   "package-id" : "fhir.hrsa.uds-plus",
-  "version" : "1.1.0",
-  "path" : "http://fhir.org/guides/hrsa/uds-plus/STU1.1",
+  "version" : "2.0.0",
+  "path" : "http://fhir.org/guides/hrsa/uds-plus/STU2",
   "mode" : "milestone",
   "milestone" : "true",
   "status" : "trial-use",
   "first" : "true",
-  "sequence" : "STU1",
+  "sequence" : "STU2",
   "desc" : "This UDS+ IG provides the ability for a FQHC to report UDS+ data to HRSA.",
   "changes" : "changes.html"
 }

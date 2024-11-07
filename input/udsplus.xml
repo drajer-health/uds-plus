@@ -10,9 +10,9 @@
   </extension>
   <url value="http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="1.1.0"/>
+  <version value="2.0.0"/>
   <name value="UdsPlusFhirIg"/>
-  <title value="HRSA 2023 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG"/>
+  <title value="HRSA 2024 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HRSA BPHC"/>
@@ -529,7 +529,7 @@
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code value="releaselabel"/>
-     <value value="STU1 Release 1.1 - Standard for Trial-Use"/>
+     <value value="STU2 Release 1 - Standard for Trial-Use"/>
     </parameter>
     <parameter>
       <code value="find-other-resources"/>
