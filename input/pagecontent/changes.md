@@ -2,6 +2,16 @@
 
 The following is a list of all the changes based on versions.
 
+#### Changes made from 1.1.0 to 2.0.0
+
+1. Added validations for ensuring dates are in the range between 1900 and 2030
+2. Added validations for postalCode to ensure only digits are supported for both regular and extended format.
+3. Added validations for Age to be > 0
+4. Aligned Birth Sex value set with US Core Birth Sex value set
+5. Allowed for null flavors in Coverage.type value set
+6. Added validations for income observations to ensure data is represented as per the specification
+7. Added example for income observation with only Range.high values
+
 #### Changes made from 1.0.0 to 1.1.0
 
 1. Added support for Partial Submissions supporting Health Centers with multiple EHRs and/or multiple reporting sites.

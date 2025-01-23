@@ -32,7 +32,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation"/>
+      <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-sexual-orientation"/>
     </include>
     <include>
       <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>

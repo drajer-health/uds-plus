@@ -102,6 +102,18 @@
 		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
 		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-imm-1a"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is DateTime implies $this.toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-imm-1b"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is DateTime implies $this.toString() &lt;= '2030'" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Immunization.recorded">
@@ -109,10 +121,22 @@
             <min value="0"/>
             <max value="1"/>
             <constraint>
-		        <key value="uds-plus-iimm-2"/>
+		        <key value="uds-plus-imm-2"/>
 		        <severity value="error"/>
 		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is DateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-imm-2a"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is DateTime implies $this.toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-imm-2b"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is DateTime implies $this.toString() &lt;= '2030'" />
 		    </constraint>
             <mustSupport value="true"/>
         </element>
@@ -127,10 +151,22 @@
             <min value="0"/>
             <max value="1"/>
             <constraint>
-		        <key value="uds-plus-iimm-3"/>
+		        <key value="uds-plus-imm-3"/>
 		        <severity value="error"/>
 		        <human value="All date data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is date implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-imm-3a"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is DateTime implies $this.toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-imm-3b"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &lt; 2050"/>        
+		        <expression value="$this is DateTime implies $this.toString() &lt;= '2050'" />
 		    </constraint>
             <mustSupport value="false"/>
         </element>
@@ -145,10 +181,22 @@
             <min value="0"/>
             <max value="1"/>
             <constraint>
-		        <key value="uds-plus-iimm-4"/>
+		        <key value="uds-plus-imm-4"/>
 		        <severity value="error"/>
 		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is dateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-imm-4a"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is DateTime implies $this.toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-imm-4b"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is DateTime implies $this.toString() &lt;= '2030'" />
 		    </constraint>
             <mustSupport value="false"/>
         </element>

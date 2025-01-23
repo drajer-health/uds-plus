@@ -210,6 +210,13 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Patient.address.extension">
+            <path value="Patient.address.extension"/>
+            <short value="Extension cannot be included in Address"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
+        </element>
         <element id="Patient.address.text">
             <path value="Patient.address.text"/>
             <short value="Text cannot be included in the profile"/>
@@ -232,11 +239,11 @@
             <constraint>
 		        <key value="uds-plus-patient-1"/>
 		        <severity value="error"/>
-		        <human value="De-identified Zipcodes can contain first 3 digits followed by 00 in the last two digits or have to be masked with 00000."/>
+		        <human value="De-identified Zipcodes can contain first 3 digits followed by 00 in the last two digits or have to be masked with 00000. If the extended ZipCode format is used the resulting format should be #####-####."/>
 		        <expression
-		                    value="$this.matches('[0-9]{3}00|00000')"/>
+		                    value="$this.matches('^[0-9]{5}(-[0-9]{4})?$')"/>
 		        <xpath
-		               value="f:matches(postalCode,(^[0-9]{3}00|00000)"/>
+		               value="f:matches(postalCode,'^[0-9]{5}(-[0-9]{4})?$')"/>
 		    </constraint>
             <mustSupport value="true"/>
         </element>
@@ -258,6 +265,13 @@
                 <code value="code"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Patient.address.period">
+            <path value="Patient.address.period"/>
+            <short value="Address period cannot be included in the profile"/>
+            <min value="0"/>
+            <max value="0"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Patient.maritalStatus">
             <path value="Patient.maritalStatus"/>

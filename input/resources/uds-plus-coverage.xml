@@ -10,7 +10,7 @@
     <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-coverage"/>
     <version value="1.0.0"/>
     <name value="DeIdentifiedUDSPlusCoverage"/>
-    <title value="DeIdentified UDS Plus Coverage"/>
+    <title value="De-Identified UDS Plus Coverage"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
@@ -128,10 +128,34 @@
 		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
 		    </constraint>
 		    <constraint>
+		        <key value="uds-plus-cov-1a"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString() &gt;= '1900'" />
+		    </constraint>
+		   <constraint>
+		        <key value="uds-plus-cov-1b"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString() &lt;= '2030'" />
+		    </constraint>		    
+		    <constraint>
 		        <key value="uds-plus-cov-2"/>
 		        <severity value="error"/>
 		        <human value="All Period.emd data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-cov-2a"/>
+		        <severity value="error"/>
+		        <human value="All Period.end data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-cov-2b"/>
+		        <severity value="error"/>
+		        <human value="All Period.end data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString() &lt;= '2030'" />
 		    </constraint>
             <mustSupport value="true"/>
         </element>

@@ -100,16 +100,52 @@
 		        <expression value="$this is dateTime implies $this.toString().length() = 4" />
 		    </constraint>
 		    <constraint>
+		        <key value="uds-plus-medstat-1a"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is DateTime implies $this.toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-medstat-1b"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is DateTime implies $this.toString() &lt;= '2030'" />
+		    </constraint>
+		    <constraint>
 		        <key value="uds-plus-medstat-2"/>
 		        <severity value="error"/>
 		        <human value="All Period.start data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString().length() = 4" />
 		    </constraint>
 		    <constraint>
+		        <key value="uds-plus-medstat-2a"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString() &gt;= '1900'" />
+		    </constraint>
+		   <constraint>
+		        <key value="uds-plus-medstat-2b"/>
+		        <severity value="error"/>
+		        <human value="All Period.start data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is Period and Period.start.exists() implies $this.start.toString() &lt;= '2030'" />
+		    </constraint>
+		    <constraint>
 		        <key value="uds-plus-medstat-3"/>
 		        <severity value="error"/>
 		        <human value="All Period.end data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-medstat-3a"/>
+		        <severity value="error"/>
+		        <human value="All Period.end data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-medstat-3b"/>
+		        <severity value="error"/>
+		        <human value="All Period.end data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is Period and Period.end.exists() implies $this.end.toString() &lt;= '2030'" />
 		    </constraint>
             <mustSupport value="true"/>
         </element>
@@ -125,6 +161,18 @@
 		        <severity value="error"/>
 		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is dateTime implies $this.toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-medstat-4a"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is DateTime implies $this.toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-medstat-4b"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is DateTime implies $this.toString() &lt;= '2030'" />
 		    </constraint>
             <mustSupport value="true"/>
         </element>
@@ -161,6 +209,18 @@
 		        <severity value="error"/>
 		        <human value="All Timing.event data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is Timing and Timing.event.exists() implies $this.event.first().toString().length() = 4" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-medstat-7"/>
+		        <severity value="error"/>
+		        <human value="All Timing data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is Timing and Timing.event.exists() implies $this.event.first().toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-medstat-8"/>
+		        <severity value="error"/>
+		        <human value="All Timing data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is Timing and Timing.event.exists() implies $this.event.first().toString() &lt;= '2030'" />
 		    </constraint>
             <mustSupport value="false"/>
         </element>

@@ -17,7 +17,7 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes"/>
+ <!--  <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes"/> -->
   <content value="complete"/>
   <count value="9"/>
   <concept>

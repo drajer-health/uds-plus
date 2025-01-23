@@ -200,10 +200,18 @@
    </resource>
    <resource>
       <reference>
+        <reference value="Observation/de-identified-low-income-example"/>
+      </reference>
+      <name value="Uds Plus Low Income Observation Example"/>
+      <description value="An Example of a conformant UDS Plus Observation resource with de-identified income information to represent income &lt;= 100%."/>
+      <exampleBoolean value="true"/>
+   </resource>
+   <resource>
+      <reference>
         <reference value="Observation/de-identified-income-with-quantity-example"/>
       </reference>
       <name value="Uds Plus Income Observation Example using Quantity"/>
-      <description value="An Example of a conformant UDS Plus Observation resource with de-identified income information showing the usage of Quantity."/>
+      <description value="An Example of a conformant UDS Plus Observation resource with de-identified income information showing the usage of Quantity to represent income >= 200%."/>
       <exampleBoolean value="true"/>
    </resource>
    <resource>
@@ -508,6 +516,10 @@
     <parameter>
       <code value="no-narrative"/>
       <value value="Observation/de-identified-income-example"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Observation/de-identified-low-income-example"/>
     </parameter>
     <parameter>
       <code value="no-narrative"/>

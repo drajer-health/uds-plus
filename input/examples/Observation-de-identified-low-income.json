@@ -1,0 +1,27 @@
+{
+    "resourceType": "Observation",
+    "id": "de-identified-low-income-example",
+    "meta": {
+        "profile": [
+            "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/de-identified-uds-plus-income-observation"
+        ]
+    },
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "63058-2"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/de-identified-example"
+    },
+    "effectiveDateTime": "2016",
+    "valueRange": {
+    	"high": {
+    		"value": 100
+    	}
+    }
+}

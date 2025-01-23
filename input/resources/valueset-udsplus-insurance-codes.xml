@@ -34,6 +34,21 @@
     <include>
       <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
     </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+      	<code value="UNK"/>
+      	<display value="Unknown"/>
+      </concept>
+      <concept>
+      	<code value="ASKU"/>
+      	<display value="Asked but Unknown"/>
+      </concept>
+      <concept>
+      	<code value="NASK"/>
+      	<display value="Not Asked"/>
+      </concept>
+    </include>
   </compose>
 </ValueSet>
 

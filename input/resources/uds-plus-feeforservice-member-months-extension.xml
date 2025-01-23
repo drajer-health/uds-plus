@@ -60,6 +60,13 @@
             <type>
                 <code value="Quantity"/>
             </type>
+            <constraint>
+		        <key value="uds-plus-ffs-1"/>
+		        <severity value="error"/>
+		        <human value="All values should be greater than or equal to 0"/>
+		            <expression
+		                    value="($this.value &gt;= 0)" />
+		    </constraint>
         </element>
     </differential>
 </StructureDefinition>

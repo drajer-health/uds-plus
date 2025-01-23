@@ -63,7 +63,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="The set of codes to be used for UDS+ reporting."/>
-                <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-birthsex-codes"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/birthsex"/>
             </binding>
         </element>
     </differential>
