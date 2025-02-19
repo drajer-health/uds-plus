@@ -40,5 +40,6 @@
     "reference": "Patient/de-identified-example"
   },
   "date": "2015",
+   "detected": "2030",
   "recordedDate": "2017"
 }

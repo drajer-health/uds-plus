@@ -270,7 +270,7 @@
             <path value="Patient.address.period"/>
             <short value="Address period cannot be included in the profile"/>
             <min value="0"/>
-            <max value="0"/>
+            <max value="1"/>
             <mustSupport value="false"/>
         </element>
         <element id="Patient.maritalStatus">

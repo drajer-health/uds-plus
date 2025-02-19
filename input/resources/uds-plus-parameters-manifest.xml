@@ -101,6 +101,84 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Parameters.parameter:productInformation">
+            <path value="Parameters.parameter"/>
+            <sliceName value="productInformation"/>
+            <short value="Parameter to convey the product acting as the UDS+ data source actor."/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:productInformation.name">
+            <path value="Parameters.parameter.name"/>
+            <short value="The Parameter name for submitters to populate the data source name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="productName"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:productInformation.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <short value="UDS+ Data Source Actor name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:developerInformation">
+            <path value="Parameters.parameter"/>
+            <sliceName value="developerInformation"/>
+            <short value="Parameter to convey the vendor who is providing the UDS+ Data Source system"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:developerInformation.name">
+            <path value="Parameters.parameter.name"/>
+            <short value="The Parameter name for vendor providing the UDS+ Data Source system"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="developerName"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:developerInformation.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <short value="The vendor's name who is providing the UDS+ Data Source system"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:submitterEntityInformation">
+            <path value="Parameters.parameter"/>
+            <sliceName value="submitterEntityInformation"/>
+            <short value="Parameter to convey the entity who is submitting the data on behalf of the health center"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:submitterEntityInformation.name">
+            <path value="Parameters.parameter.name"/>
+            <short value="The Parameter name for the entity who is submitting the data on behalf of the health center"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="submitterEntityName"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Parameters.parameter:submitterEntityInformation.value[x]">
+            <path value="Parameters.parameter.value[x]"/>
+            <short value="The entity's name who is submitting the data on behalf of the health center"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+           	 	<code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Parameters.parameter:submissionTime">
             <path value="Parameters.parameter"/>
             <sliceName value="submissionTime"/>
