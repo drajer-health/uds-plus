@@ -7,10 +7,14 @@ The following is a list of all the changes based on versions.
 1. Added validations for ensuring dates are in the range between 1900 and 2030
 2. Added validations for postalCode to ensure only digits are supported for both regular and extended format.
 3. Added validations for Age to be > 0
-4. Aligned Birth Sex value set with US Core Birth Sex value set
 5. Allowed for null flavors in Coverage.type value set
 6. Added validations for income observations to ensure data is represented as per the specification
 7. Added example for income observation with only Range.high values
+8. Removed Gender Identity extension and related artifacts
+9. Removed Sexual Orientation profile and related artifacts
+10. Added school-based site as a service delivery location
+11. Added uds-plus-sex-extension to be used instead of uds-plus-birthsex-extension.
+12. Updated uds-plus-sex-codes to accommodate the CMS Sex codes value set.
 
 #### Changes made from 1.0.0 to 1.1.0
 

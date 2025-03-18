@@ -55,6 +55,18 @@
             <max value="0"/>
             <mustSupport value="false"/>
         </element>
+        <element id="Condition.extension:age">
+            <path value="Condition.extension"/>
+            <short value="Age of the Patient computed using birthDate."/>
+            <sliceName value="uds-plus-age-extension"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Condition.extension:assertedDate">
             <path value="Condition.extension"/>
             <sliceName value="assertedDate"/>

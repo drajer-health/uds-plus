@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="uds-plus-gender-identity-extension"/>
+    <id value="uds-plus-sex-extension"/>
     <meta>
         <versionId value="2"/>
         <lastUpdated value="2022-07-12T02:03:21.911+00:00"/>
-        <source value="#IqyJCmUTqk2pvKFb"/>
+        <source value="#IqyJCmUTqk2prKFb"/>
     </meta>
-    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension"/>
+    <url value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-sex-extension"/>
     <version value="0.1.0"/>
-    <name value="UDSPlusGenderIdentityExtension"/>
-    <title value="UDS Plus Gender Identity Extension"/>
+    <name value="UDSPlusSexExtension"/>
+    <title value="UDS Plus Sex Extension"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-09-01"/>
@@ -21,7 +21,7 @@
             <value value="http://hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Indicates the gender identity of the patient at a specific time"/>
+    <description value="Indicates the sex of the patient"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41,8 +41,8 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Indicates the gender identity of the Patient."/>
-            <definition value="Indicates the gender identity of the Patient at a specific time"/>
+            <short value="Indicates the sex of the Patient."/>
+            <definition value="Indicates the sex of the Patient"/>
             <min value="1"/>
             <max value="1"/>
         </element>
@@ -51,19 +51,19 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension"/>
+            <fixedUri value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-sex-extension"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="CodeableConcept"/>
+                <code value="code"/>
             </type>
             <binding>
-                <strength value="extensible"/>
-                <description value="The set of codes to be used for UDS+ reporting."/>
-                <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-gender-identity-codes"/>
+                <strength value="required"/>
+                <description value="The set of CMS sex codes to be used for UDS+ reporting."/>
+                <valueSet value="https://cts.nlm.nih.gov/fhir/res/ValueSet/2.16.840.1.113762.1.4.1021.121"/>
             </binding>
         </element>
     </differential>

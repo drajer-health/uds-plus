@@ -216,14 +216,6 @@
    </resource>
    <resource>
       <reference>
-        <reference value="Observation/de-identified-sexual-orientation-example"/>
-      </reference>
-      <name value="Uds Plus Sexual Orientation Observation Example"/>
-      <description value="An Example of a conformant UDS Plus Observation resource with de-identified sexual orientation information."/>
-      <exampleBoolean value="true"/>
-   </resource>
-   <resource>
-      <reference>
         <reference value="ServiceRequest/de-identified-example"/>
       </reference>
       <name value="Uds Plus ServiceRequest Example"/>
@@ -504,10 +496,6 @@
     <parameter>
       <code value="no-narrative"/>
       <value value="ServiceRequest/de-identified-example"/>
-    </parameter>
-    <parameter>
-      <code value="no-narrative"/>
-      <value value="Observation/de-identified-sexual-orientation-example"/>
     </parameter>
     <parameter>
       <code value="no-narrative"/>

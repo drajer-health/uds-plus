@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="uds-plus-birthsex-codes"/> 
+  <id value="uds-plus-sex-codes"/> 
   <meta>
     <versionId value="1"/>
     <lastUpdated value="2022-08-04T15:52:33.158+00:00"/>
@@ -8,10 +8,10 @@
     <profile
              value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-birthsex-codes"/>
+  <url value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-sex-codes"/>
   <version value="1.0.0"/>
-  <name value="UdsPlusBirthSexCodes"/>
-  <title value="Uds Plus Birth Sex Codes"/>
+  <name value="UdsPlusSexCodes"/>
+  <title value="Uds Plus Sex Codes"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2023-08-25"/>
@@ -39,6 +39,17 @@
       </concept>
       <concept>
       	<code value="M"/>
+      	<display value="Male"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+      	<code value="248152002"/>
+      	<display value="Female"/>
+      </concept>
+      <concept>
+      	<code value="248153007"/>
       	<display value="Male"/>
       </concept>
     </include>

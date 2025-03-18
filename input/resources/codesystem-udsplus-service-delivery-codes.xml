@@ -19,10 +19,15 @@
   <caseSensitive value="true"/>
  <!-- <valueSet value="http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-service-delivery-codes"/> -->
   <content value="complete"/>
-  <count value="1"/>
+  <count value="2"/>
   <concept>
     <code value="public-housing"/>
     <display value="Care was delivered in a Location that is considered public housing"/>
     <definition value="Care was delivered in a Location that is considered public housing"/>
+  </concept>
+  <concept>
+    <code value="school"/>
+    <display value="Care was delivered in a Location that is considered a school"/>
+    <definition value="Care was delivered in a Location that is considered a school"/>
   </concept>
  </CodeSystem>

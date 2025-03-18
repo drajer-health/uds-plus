@@ -80,11 +80,22 @@
         <element id="Patient.extension:birthSex">
             <path value="Patient.extension"/>
             <sliceName value="uds-plus-birthsex"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-birthsex-extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.extension:sex">
+            <path value="Patient.extension"/>
+            <sliceName value="uds-plus-sex"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-sex-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -97,18 +108,6 @@
             <type>
                 <code value="Extension"/>
                 <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Patient.extension:genderIdentity">
-            <path value="Patient.extension"/>
-            <short value="Gender Identity of the pateient"/>
-            <sliceName value="uds-plus-gender-identity-extension"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension"/>
             </type>
             <mustSupport value="true"/>
         </element>

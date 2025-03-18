@@ -57,13 +57,9 @@ NullFlavors are not allowed for BirthSex reporting for UDS+ even though they are
 
 US Core allows Race and Ethnicity to be described as only text or rolled up to the OMB categories, however for UDS+ reporting detailed race and ethnicity have to be captured and reported as part of the profile. If the reported race and ethncity values are not null flavors then detailed values are mandatory.
 
-**Sexual Orientation Additional Constraints**
+**Birth Sex vs Sex**
 
-Health Centers which have not implemented the methods to capture Sexual Orientation, should use the null flavor coded value of "NASK" specifically. 
-
-**Gender Identity Additional Constraints**
-
-Health Centers which have not implemented the methods to capture Gender Identity, should use the null flavor coded value of "NASK" specifically. 
+Healthcenters are enouraged to use the uds-plus-sex-extension to capture the sex of the patient. This is in alignment with the CMS Sex codes and the UDS Manual. However, this change was implemented recently and in order to allow Healthcenters and their vendors who have already tested the 2024 reporting changes the uds-plus-birthsex-extension is still part of the patient profile. The uds-plus-birthsex-extension is also enhanced to allow the CMS sex codes in addition to the HL7 AdministrativeGender codes that were previously allowed. The cardinality is relaxed from 1..1 to 0..1 but one of either uds-plus-sex or uds-plus-birthsex-extension should be present.
   
 
 **Examples** 

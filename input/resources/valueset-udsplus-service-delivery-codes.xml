@@ -40,6 +40,10 @@
       	<code value="public-housing"/>
       	<display value="Care was delivered in a Location that is considered public housing"/>
       </concept>
+      <concept>
+      	<code value="school"/>
+      	<display value="Care was delivered in a Location that is considered a school"/>
+      </concept>
     </include>
   </compose>
 </ValueSet>
