@@ -72,6 +72,10 @@
       "valueCode": "F"
     },
     {
+      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-sex-extension",
+      "valueCode": "248152002"
+    },
+    {
       "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-age-extension",
       "valueQuantity": {
       	"value" : 37,

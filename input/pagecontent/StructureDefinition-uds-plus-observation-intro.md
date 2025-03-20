@@ -1,7 +1,3 @@
-{:.stu-note}
-The following is new content for 1.1.0
-
-<div class="bg-success" markdown="1">
 
 ### Introduction
 
@@ -29,4 +25,3 @@ The Data Submitter has to truncate the following dates to only have a precision 
 
 * effective[x] 
 
-</div>

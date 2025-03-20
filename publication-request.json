@@ -6,8 +6,7 @@
   "mode" : "milestone",
   "milestone" : "true",
   "status" : "trial-use",
-  "first" : "true",
   "sequence" : "STU2",
-  "desc" : "This UDS+ IG provides the ability for a FQHC to report UDS+ data to HRSA.",
+  "desc" : "This UDS+ IG provides the ability for a FQHC to report UDS+ data to HRSA for 2024 reporting period.",
   "changes" : "changes.html"
 }

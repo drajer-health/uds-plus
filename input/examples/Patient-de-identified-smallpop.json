@@ -80,19 +80,6 @@
     	"system" : "http://unitsofmeasure.org",
     	"code" : "a"
  	 }
-    },
-    {
-      "url": "http://fhir.org/guides/hrsa/uds-plus/StructureDefinition/uds-plus-gender-identity-extension",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "code": "NASK",
-            "display": "Not Asked"
-          }
-        ],
-        "text": "Not Asked"
-      }
     }
   ],
   "active": true,

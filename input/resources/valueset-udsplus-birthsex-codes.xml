@@ -22,7 +22,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-  <description value="The Uds Plus Birth Sex Codes is a set of codes for identifying the birth sex of Patients."/>
+  <description value="The Uds Plus Birth Sex Codes is a set of codes for identifying the birth sex of Patients, This ValueSet will deprecated in the future in favor of the CMS Sex codes value set used as part of the uds-plus-sex-extension."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

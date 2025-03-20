@@ -34,10 +34,6 @@ The Data Submitter has to truncate the following dates to only have a precision 
 * period and its sub elements.
 * participant.period
 
-{:.stu-note}
-The following is new content for 1.1.0
-
-<div class="bg-success" markdown="1">
 
 **Guidance on Encounter reason**
 
@@ -49,7 +45,6 @@ The Encounter resource can represent a reason using either a code with Encounter
 
 The Encounter.serviceProvider organization reference should point to the Organization resource that represents the FQHC which is responsible for rendering the services to the Patient.
 
-</div>
 
 **Examples**
  

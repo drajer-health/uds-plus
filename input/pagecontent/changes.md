@@ -15,6 +15,7 @@ The following is a list of all the changes based on versions.
 10. Added school-based site as a service delivery location
 11. Added uds-plus-sex-extension to be used instead of uds-plus-birthsex-extension.
 12. Updated uds-plus-sex-codes to accommodate the CMS Sex codes value set.
+13. Updated eCQM versions in DataElements table to match the 2024 UDS Manual.
 
 #### Changes made from 1.0.0 to 1.1.0
 

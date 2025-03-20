@@ -22,10 +22,6 @@ Health Centers have to provide the following information as part of the manifest
 
 A Health Center may wish to make sure that the HRSA Data Receiver provide a security token during the download of the UDS Plus data. In order to facilitate these tokens, the Data Submitter may echo a "security token" of type "bearer" in the manifest file for each UDS Plus file that needs to be downloaded. This bearer token will be echo'ed back by the Data Receiver in the HTTP header during the download process. This further enhances the security protocols between the Data Submitter and the Data Receiver systems. 
 
-{:.stu-note}
-The following is new content for 1.1.0
-
-<div class="bg-success" markdown="1">
 
 **Submitting data for multiple sites and/or EHRs that are part of a Health Center**
 
@@ -62,5 +58,4 @@ The DataReceiver performs the following activities:
 
 NOTE: Incremental submissions will be accepted in the future. It is included in this version of the IG to collect feedback from the vendor community of the approach.
 
-</div>
 

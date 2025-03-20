@@ -30,10 +30,6 @@ The Data Submitter has to compute the age based as of December 31st of the previ
 
 The original patient resource id should not be included in the De-identified patient instance. Instead a new id should be created and provided as part of the FHIR resource. This Data Submitter should be capable of using the generated id to relink the data to the original patient. All resource references to the Patient submitted as part of the UDS+ report should refer to newly generated de-identified id.
 
-{:.stu-note}
-The following is new content for 1.1.0
-
-<div class="bg-success" markdown="1">
 
 **Date Truncation** 
 
@@ -41,7 +37,6 @@ The Data Submitter has to truncate the following dates to only have a precision 
 
 * deceased[x] when the data type used is dateTime.
 
-</div>
 
 **Usage of Data Absent Reason Extension**
 
@@ -49,9 +44,6 @@ For the UDS+ reporting, the patient data is de-identified and in the process zip
 If the zip code is not known, a value of "00000" must be sent with a dataAbsentReason of "unknown".
 If the zip code is outside the country, a value of "00000" must be sent with a dataAbsentReason of "unsupported".
 
-**Birth Sex Additional Constraints**
-
-NullFlavors are not allowed for BirthSex reporting for UDS+ even though they are allowed in US Core.
 
 **Race and Ethnicity Additional Constraints**
 
@@ -59,7 +51,11 @@ US Core allows Race and Ethnicity to be described as only text or rolled up to t
 
 **Birth Sex vs Sex**
 
-Healthcenters are enouraged to use the uds-plus-sex-extension to capture the sex of the patient. This is in alignment with the CMS Sex codes and the UDS Manual. However, this change was implemented recently and in order to allow Healthcenters and their vendors who have already tested the 2024 reporting changes the uds-plus-birthsex-extension is still part of the patient profile. The uds-plus-birthsex-extension is also enhanced to allow the CMS sex codes in addition to the HL7 AdministrativeGender codes that were previously allowed. The cardinality is relaxed from 1..1 to 0..1 but one of either uds-plus-sex or uds-plus-birthsex-extension should be present.
+Healthcenters are enouraged to use the uds-plus-sex-extension to capture the sex of the patient. This is in alignment with the CMS Sex codes and the UDS Manual. However, this change was implemented recently and in order to allow Healthcenters and their vendors who have already tested the 2024 reporting changes the uds-plus-birthsex-extension can be used to convey sex in the patient profile. The uds-plus-birthsex-extension is also enhanced to allow the CMS sex codes in addition to the HL7 AdministrativeGender codes that were previously allowed. The cardinality is relaxed from 1..1 to 0..1 but one of either uds-plus-sex or uds-plus-birthsex-extension should be present.
+
+**Birth Sex/Sex Additional Constraints**
+
+NullFlavors are not allowed for BirthSex reporting for UDS+ even though they are allowed in US Core.
   
 
 **Examples** 

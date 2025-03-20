@@ -20,11 +20,6 @@ The reportNames attribute contains the information that links the patient to the
 For e.g A Patient who is part of "table6B-Line11-Cervical-Cancer-Screening-CMS124" quality measure will have the valueBoolean set to true for the corresponding line item. For the same patient if the data does not apply to "table6B-Line11a-Breast-Cancer-Screening-CMS125" report, then the valueBoolean will be set to false. This is applicable to all measures and tables specified in the UDS Manual.
 
 
-{:.stu-note}
-The following is new content for 1.1.0
-
-<div class="bg-success" markdown="1">
-
 **eCQM/Quality Measure Flags in Reporting Parameters** 
 
 The Reporting Parameters profile below is used to indicate which Patients have to be considered for the measure calculations. For CMS 117 this is performed as follows:
@@ -46,7 +41,6 @@ The new capability allows the Health Centers to identify if the patient is part 
 
 
 
-</div>
 
 **Partial Submission Option**
 

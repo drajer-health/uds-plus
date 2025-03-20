@@ -7,10 +7,7 @@ The [HHS De-identification Guidance](https://www.hhs.gov/sites/default/files/ocr
 
 According to the HHS guidance, for patients whose age is computed to be greater than 89 the de-identification rule requires it be reported as greater > 90 and not report the specific age. 
 
-{:.stu-note}
-The following is new content for 1.1.0
 
-<div class="bg-success" markdown="1">
 
 **Representing Age > 89 **
 
@@ -18,4 +15,3 @@ Since Age is represented as a valueQuantity data type the following method shoul
 
 	* Age > 89 : use valueQuantity.value to represent 90, units of a and comparator of ">="
 	
-</div>

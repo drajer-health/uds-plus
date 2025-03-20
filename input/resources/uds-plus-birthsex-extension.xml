@@ -21,7 +21,7 @@
             <value value="http://hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Indicates the Birth sex of the patient"/>
+    <description value="Indicates the Birth sex of the patient, this extension will be deprecated in the future in-lieu of uds-plus-sex-extension"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

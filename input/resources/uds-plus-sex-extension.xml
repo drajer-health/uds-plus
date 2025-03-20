@@ -63,7 +63,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="The set of CMS sex codes to be used for UDS+ reporting."/>
-                <valueSet value="https://cts.nlm.nih.gov/fhir/res/ValueSet/2.16.840.1.113762.1.4.1021.121"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.121/expansion/"/>
             </binding>
         </element>
     </differential>
