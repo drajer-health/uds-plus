@@ -200,6 +200,18 @@
 		        <human value="All dateTime data elements should be truncated to a year only for de-identified resources."/>        
 		        <expression value="$this is dateTime implies $this.toString().length() = 4" />
 		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-pat-1a"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &gt; 1900"/>        
+		        <expression value="$this is dateTime implies $this.toString() &gt;= '1900'" />
+		    </constraint>
+		    <constraint>
+		        <key value="uds-plus-pat-1b"/>
+		        <severity value="error"/>
+		        <human value="All dateTime data elements should have valid year &lt; 2030"/>        
+		        <expression value="$this is dateTime implies $this.toString() &lt;= '2030'" />
+		    </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Patient.address">
@@ -240,9 +252,9 @@
 		        <severity value="error"/>
 		        <human value="De-identified Zipcodes can contain first 3 digits followed by 00 in the last two digits or have to be masked with 00000. If the extended ZipCode format is used the resulting format should be #####-####."/>
 		        <expression
-		                    value="$this.matches('^[0-9]{5}(-[0-9]{4})?$')"/>
+		                    value="$this.matches('^[0-9]{3}[0]{2}(-[0-9]{4})?$')"/>
 		        <xpath
-		               value="f:matches(postalCode,'^[0-9]{5}(-[0-9]{4})?$')"/>
+		               value="f:matches(postalCode,'^[0-9]{3}[0]{2}(-[0-9]{4})?$')"/>
 		    </constraint>
             <mustSupport value="true"/>
         </element>
