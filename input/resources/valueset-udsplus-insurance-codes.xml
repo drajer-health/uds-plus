@@ -35,7 +35,7 @@
       <system value="http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"/>
     </include>
     <include>
-      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
       <concept>
       	<code value="UNK"/>
       	<display value="Unknown"/>

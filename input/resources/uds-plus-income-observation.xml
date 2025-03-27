@@ -252,7 +252,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason|4.0.1"/>
             </type>
             <mustSupport value="true"/>
         </element>

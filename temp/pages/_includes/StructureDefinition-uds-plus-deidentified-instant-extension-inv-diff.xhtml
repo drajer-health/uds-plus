@@ -1,0 +1,8 @@
+{% raw %}<h4>Constraints</h4>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>uds-plus-datetime-1</td><td>error</td><td>Extension.value[x]</td><td>All dateTime data elements should be truncated to a year only for de-identified resources.<br/>: $this is DateTime implies $this.toString().length() = 4</td><td></td></tr>
+<tr><td>uds-plus-res-1a</td><td>error</td><td>Extension.value[x]</td><td>All dateTime data elements should have valid year &gt; 1900<br/>: $this is DateTime implies $this.toString() &gt;= '1900'</td><td></td></tr>
+<tr><td>uds-plus-res-1b</td><td>error</td><td>Extension.value[x]</td><td>All dateTime data elements should have valid year &lt; 2030<br/>: $this is DateTime implies $this.toString() &lt;= '2030'</td><td></td></tr>
+</table>
+{% endraw %}

@@ -32,7 +32,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender|3.0.0"/>
       <concept>
       	<code value="F"/>
       	<display value="Female"/>

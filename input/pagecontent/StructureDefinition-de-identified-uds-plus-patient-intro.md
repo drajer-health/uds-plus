@@ -20,7 +20,7 @@ According to the HHS guidance the following data elements have to be removed or 
 * Business identifiers such as MRNs, certificate numbers, Account numbers
 * Biometrics such as fingerprints, photos
 
-In FHIR Resources, text elements which provide human readable information to the providers may be generated using programs and tools from the data present within the resource. For e.g a Patient resource text element may contain information such as the full name, Gender and Date of Birth. This type of information will enable identification of the individuals. In order to avoid inadvertent revealing of PII/PHI, text elements cannot be included in the De-identified FHIR resource and the submission will be rejected when text elements are present by the validation process.  
+In FHIR Resources, text elements which provide human readable information to the providers may be generated using programs and tools from the data present within the resource. For e.g a Patient resource text element may contain information such as the full name and Date of Birth. This type of information will enable identification of the individuals. In order to avoid inadvertent revealing of PII/PHI, text elements cannot be included in the De-identified FHIR resource and the submission will be rejected when text elements are present by the validation process.  
 
 **Age Computation** 
 
@@ -51,11 +51,11 @@ US Core allows Race and Ethnicity to be described as only text or rolled up to t
 
 **Birth Sex vs Sex**
 
-Healthcenters are enouraged to use the uds-plus-sex-extension to capture the sex of the patient. This is in alignment with the CMS Sex codes and the UDS Manual. However, this change was implemented recently and in order to allow Healthcenters and their vendors who have already tested the 2024 reporting changes the uds-plus-birthsex-extension can be used to convey sex in the patient profile. The uds-plus-birthsex-extension is also enhanced to allow the CMS sex codes in addition to the HL7 AdministrativeGender codes that were previously allowed. The cardinality is relaxed from 1..1 to 0..1 but one of either uds-plus-sex or uds-plus-birthsex-extension should be present.
+Healthcenters are enouraged to use the uds-plus-sex-extension to capture the sex of the patient. This is in alignment with the CMS Sex codes and the UDS Manual. However, this change was implemented recently and in order to allow Healthcenters and their vendors who have already tested the 2024 reporting changes the uds-plus-birthsex-extension can be used to convey sex in the patient profile. The uds-plus-birthsex-extension is also enhanced to allow the SNOMED sex codes in addition to the HL7 AdministrativeGender codes that were previously allowed. The cardinality is relaxed from 1..1 to 0..1 but one of either uds-plus-sex or uds-plus-birthsex-extension should be present.
 
-**Birth Sex/Sex Additional Constraints**
+**Birth Sex/Sex Null Flavors**
 
-NullFlavors are not allowed for BirthSex reporting for UDS+ even though they are allowed in US Core.
+NullFlavors are allowed to be sent for this reporting cycle even though they are not in the valueset. The NullFlavor support will be removed in future versions of the IG.
   
 
 **Examples** 

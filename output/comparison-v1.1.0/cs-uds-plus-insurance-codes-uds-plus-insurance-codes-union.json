@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "1f194241-94f0-4061-a355-5cba61b3f646-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1f194241-94f0-4061-a355-5cba61b3f646-2",
+  "name" : "UnionUDSPlusInsuranceCodesAndUDSPlusInsuranceCodes",
+  "title" : "Union of UDS Plus Insurance Codes And UDS Plus Insurance Codes",
+  "status" : "active",
+  "date" : "2025-03-27T02:58:14+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "concept" : [{
+    "code" : "none-or-uninsured",
+    "display" : "None or Uninsured",
+    "definition" : "Patient does not have insurance"
+  },
+  {
+    "code" : "medicaid-title-19-21",
+    "display" : "Medicaid Title X1X",
+    "definition" : "Patients with Medicaid (Title X1X) insurance"
+  },
+  {
+    "code" : "chip-medicaid",
+    "display" : "CHIP Medicaid",
+    "definition" : "Patients with CHIP Medicaid insurance"
+  },
+  {
+    "code" : "medicare",
+    "display" : "Medicare",
+    "definition" : "Patients with Medicare insurance"
+  },
+  {
+    "code" : "dually-eligible-medicaid-medicare",
+    "display" : "Dually Eligible",
+    "definition" : "Patients with both Medicare and Medicaid"
+  },
+  {
+    "code" : "medicare-and-private",
+    "display" : "Medicare and Private",
+    "definition" : "Patients with both Medicare and Private insurance such as Medigap"
+  },
+  {
+    "code" : "other-non-chip-public-insurance",
+    "display" : "Other Non CHIP Public Insurance",
+    "definition" : "Patients who have other public insurance which is non CHIP"
+  },
+  {
+    "code" : "other-public-insurance-chip",
+    "display" : "Other Public Insurance CHIP",
+    "definition" : "Patients who have other public insurance which is CHIP"
+  },
+  {
+    "code" : "private-insurance",
+    "display" : "Private Insurance",
+    "definition" : "Patients has Private Insurance"
+  }]
+}

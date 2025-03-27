@@ -1,0 +1,222 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UDSPlusInsuranceCodes",
+      "title" : "UDS Plus Insurance Codes",
+      "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying insurance types used by patients in UDS+ program.",
+      "uses" : {
+      },
+      "ValueSet-uds-plus-insurance-codes.html" : "Uds Plus Insurance Codes"
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UDSPlusAgricultureWorkerStatusCodes",
+      "title" : "UDS Plus Agriculter Worker Status Codes",
+      "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying agriculture worker status for UDS+ program.",
+      "uses" : {
+      },
+      "ValueSet-udsplus-agriculture-worker-status.html" : "Uds Plus Agriculture Worker Status Codes"
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UDSPlusHousingStatusCodes",
+      "title" : "UDS Plus Housing Status Codes",
+      "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying Housing status of patients in UDS+ program.",
+      "uses" : {
+      },
+      "ValueSet-udsplus-housing-status.html" : "Uds Plus Housing Status Codes"
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UDSPlusServiceDeliveryCodes",
+      "title" : "UDS Plus Housing Service Delivery Codes",
+      "description" : "The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes.",
+      "uses" : {
+      },
+      "ValueSet-uds-plus-service-delivery-codes.html" : "Uds Plus Service Delivery Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Icd10CM",
+      "title" : "International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)",
+      "description" : "The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM), describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases. The ICD-10-CM codes can be used as the value of the Act.cd attribute.",
+      "oids" : ["2.16.840.1.113883.6.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ICD9CMProcedureCodes",
+      "title" : "ICD-9-CM (procedure codes)",
+      "description" : "The International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM), Volumes I, II (diagnoses) and III (procedures) describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases and procedures. The ICD-9-CM codes can be used as the value of the Act.cd attribute.",
+      "oids" : ["2.16.840.1.113883.6.104"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "ValueSet-uds-plus-sex-codes.html" : "Uds Plus Sex Codes",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-clinical-result-observation-category.html" : "US Core Clinical Result Observation Category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for adminstrative purposes (as opposed to clinical gender)",
+      "oids" : ["2.16.840.1.113883.5.1"],
+      "uses" : {
+      },
+      "ValueSet-uds-plus-sex-codes.html" : "Uds Plus Sex Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "ValueSet-uds-plus-insurance-codes.html" : "Uds Plus Insurance Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    },
+    {
+      "url" : "http://www.ada.org/cdt",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "CDT",
+      "title" : "Code on Dental Procedures and Nomenclature",
+      "description" : "The purpose of the CDT Code is to achieve uniformity, consistency and specificity in accurately documenting dental treatment. One use of the CDT Code is to provide for the efficient processing of dental claims, and another is to populate an Electronic Health Record.",
+      "oids" : ["2.16.840.1.113883.6.13"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+    },
+    {
+      "url" : "http://www.ama-assn.org/go/cpt",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "CPT",
+      "title" : "Current Procedural Terminology (CPT®)",
+      "description" : "The Current Procedural Terminology (CPT) code set, created and maintained by the American Medical Association, is the language of medicine today and the code to its future. This system of terminology is the most widely accepted medical nomenclature used to report medical procedures and services under public and private health insurance programs. CPT coding is also used for administrative management purposes such as claims processing and developing guidelines for medical care review. Each year, via a rigorous, evidence-based and transparent process, the independent CPT Editorial Panel revises, creates or deletes hundreds of codes in order to reflect current medical practice.\r\n\r\nDesignated by the U.S. Department of Health and Human Services under the Health Insurance Portability and Accountability Act (HIPAA) as a national coding set for physician and other health care professional services and procedures, CPT’s evidence-based codes accurately encompass the full range of health care services.\r\n\r\nAll CPT codes are five-digits and can be either numeric or alphanumeric, depending on the category. CPT code descriptors are clinically focused and utilize common standards so that a diverse set of users can have common understanding across the clinical health care paradigm.\r\n\r\nThere are various types of CPT codes:\r\n\r\nCategory I: These codes have descriptors that correspond to a procedure or service. Codes range from 00100–99499 and are generally ordered into sub-categories based on procedure/service type and anatomy.\r\n\r\nCategory II: These alphanumeric tracking codes are supplemental codes used for performance measurement. Using them is optional and not required for correct coding.\r\n\r\nCategory III: These are temporary alphanumeric codes for new and developing technology, procedures and services. They were created for data collection, assessment and in some instances, payment of new services and procedures that currently don’t meet the criteria for a Category I code.\r\n\r\nProprietary Laboratory Analyses (PLA) codes: These codes describe proprietary clinical laboratory analyses and can be either provided by a single (“solesource”) laboratory or licensed or marketed to multiple providing laboratories that are cleared or approved by the Food and Drug Administration (FDA)). This category includes but is not limited to Advanced Diagnostic Laboratory Tests (ADLTs) and Clinical Diagnostic Laboratory Tests (CDLTs), as defined under the Protecting Access to Medicare Act of 2014 (PAMA).",
+      "oids" : ["2.16.840.1.113883.6.12"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type"
+    },
+    {
+      "url" : "http://www.cms.gov/Medicare/Coding/ICD10",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Icd10PCS",
+      "title" : "ICD-10 Procedure Codes",
+      "description" : "ICD Procedure Coding System (ICD 10 PCS)",
+      "oids" : ["2.16.840.1.113883.6.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+    },
+    {
+      "url" : "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "HCPCSLevelII",
+      "title" : "Healthcare Common Procedure Coding System (HCPCS) level II alphanumeric codes",
+      "description" : "The Level II HCPCS codes, which are established by CMS's Alpha-Numeric Editorial Panel, primarily represent items and supplies and non-physician services not covered by the American Medical Association's Current Procedural Terminology-4 (CPT-4) codes; Medicare, Medicaid, and private health insurers use HCPCS procedure and modifier codes for claims processing.  Level II alphanumeric procedure and modifier codes comprise the A to V range.",
+      "oids" : ["2.16.840.1.113883.6.285"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
+    }
+  ]
+}

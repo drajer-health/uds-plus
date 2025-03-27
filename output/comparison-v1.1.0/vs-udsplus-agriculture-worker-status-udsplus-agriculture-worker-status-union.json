@@ -1,0 +1,15 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "1f194241-94f0-4061-a355-5cba61b3f646-119",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/1f194241-94f0-4061-a355-5cba61b3f646-119",
+  "name" : "UnionUdsPlusAgricultureWorkerStatusCodesAndUdsPlusAgricultureWorkerStatusCodes",
+  "title" : "Union of Uds Plus Agriculture Worker Status Codes And Uds Plus Agriculture Worker Status Codes",
+  "status" : "active",
+  "date" : "2025-03-27T02:58:16+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }]
+}

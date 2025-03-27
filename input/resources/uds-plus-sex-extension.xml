@@ -61,8 +61,8 @@
                 <code value="code"/>
             </type>
             <binding>
-                <strength value="required"/>
-                <description value="The set of CMS sex codes to be used for UDS+ reporting."/>
+                <strength value="extensible"/>
+                <description value="The set of sex codes to be used for UDS+ reporting."/>
                 <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.121/expansion/"/>
             </binding>
         </element>

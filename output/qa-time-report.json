@@ -1,0 +1,3575 @@
+{
+  "date" : "Thu, 27 Mar, 2025 02:56:53 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "\\input\\udsplus.xml",
+      "size" : 23123,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 60,
+          "length" : 45
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 63,
+          "length" : 263
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 17802
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 152,
+          "length" : 256
+        },
+        {
+          "activity" : "generate2",
+          "start" : 169,
+          "length" : 425
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/AdverseEvent-deidentified-example.json",
+      "size" : 1407,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 44
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 149,
+          "length" : 24
+        },
+        {
+          "activity" : "generate1",
+          "start" : 152,
+          "length" : 43
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 64
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/AllergyIntolerance-deidentified-example.json",
+      "size" : 1904,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 36
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 149,
+          "length" : 27
+        },
+        {
+          "activity" : "generate1",
+          "start" : 152,
+          "length" : 44
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 121
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/ClinicalResult-de-identified-example.json",
+      "size" : 1448,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 36
+        },
+        {
+          "activity" : "validate",
+          "start" : 149,
+          "length" : 29
+        },
+        {
+          "activity" : "generate1",
+          "start" : 152,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 69
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Condition-de-identified-diagnosis.json",
+      "size" : 1776,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 37
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 149,
+          "length" : 39
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 40
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 49
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Condition-us-core-diagnosis.json",
+      "size" : 2019,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 36
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 149,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 53
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 46
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Coverage-de-identified-example.json",
+      "size" : 1491,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 149,
+          "length" : 24
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 53
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Deidentify-data-operation-urls-example.json",
+      "size" : 763,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 149,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 37
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 46
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Encounter-de-identified-example.json",
+      "size" : 1766,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 36
+        },
+        {
+          "activity" : "validate",
+          "start" : 149,
+          "length" : 348
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 40
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 55
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Encounter-example.json",
+      "size" : 2600,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 38
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 46
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 48
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/GenericObservation-de-identified-example.json",
+      "size" : 1027,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 37
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 46
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Immunization-de-identified-example.json",
+      "size" : 906,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 39
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 46
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/LabObservation-de-identified-example.json",
+      "size" : 1617,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 59
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Location..json",
+      "size" : 1478,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 36
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 54
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/MedicationRequest-de-identified-example.json",
+      "size" : 1200,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 36
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 44
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 75
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/MedicationStatement-de-identified-example.json",
+      "size" : 1059,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 41
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 50
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 61
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-de-identified-income-with-quantity.json",
+      "size" : 736,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 41
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 39
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 46
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 401,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-de-identified-income.json",
+      "size" : 674,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 36
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 37
+        },
+        {
+          "activity" : "generate2",
+          "start" : 170,
+          "length" : 48
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Observation-de-identified-low-income.json",
+      "size" : 634,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 35
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 46
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Organization-healthcare-example.json",
+      "size" : 1771,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 45
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 39
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Organization.json",
+      "size" : 1746,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 38
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 46
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 37
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Parameters-manifest.json",
+      "size" : 4632,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 39
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 57
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 50
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 93
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 399,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Patient-de-identified-age89.json",
+      "size" : 2631,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 41
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 196
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 44
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 44
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Patient-de-identified-smallpop.json",
+      "size" : 2636,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 38
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 146
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 46
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 42
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Patient-de-identified.json",
+      "size" : 3042,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 38
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 141
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 45
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 40
+        },
+        {
+          "activity" : "generateLogicals",
+          "start" : 289,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Patient-us-core-example-smallpop.json",
+      "size" : 5131,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 39
+        },
+        {
+          "activity" : "validate",
+          "start" : 150,
+          "length" : 321
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 47
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 42
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Patient-us-core-example.json",
+      "size" : 5124,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 39
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 151,
+          "length" : 248
+        },
+        {
+          "activity" : "generate1",
+          "start" : 153,
+          "length" : 46
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 36
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Practitioner-example.json",
+      "size" : 1155,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 36
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 151,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 39
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 37
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Procedure-de-identified-example.json",
+      "size" : 1260,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 151,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 38
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 61
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/RelatedPerson-de-identified-example.json",
+      "size" : 625,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 36
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 151,
+          "length" : 44
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 40
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 47
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Reporting-Parameters-example.json",
+      "size" : 4681,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 151,
+          "length" : 41
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 45
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 44
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/ServiceRequest-de-identified-example.json",
+      "size" : 1051,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 35
+        },
+        {
+          "activity" : "load",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 151,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 37
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 60
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/capabilitystatement-datareceiver-server.xml",
+      "size" : 3830,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 55,
+          "length" : 60
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 58
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 59
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 64
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/capabilitystatement-datasource.xml",
+      "size" : 6183,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 54
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 58
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 65
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 37
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/capabilitystatement-datasubmitter-client.xml",
+      "size" : 6493,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 54
+        },
+        {
+          "activity" : "load",
+          "start" : 60,
+          "length" : 58
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 67
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 36
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/capabilitystatement-trust-service-provider.xml",
+      "size" : 3440,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 45
+        },
+        {
+          "activity" : "load",
+          "start" : 60,
+          "length" : 55
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 61
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 37
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/codesystem-udsplus-agriculture-worker-status-codes.xml",
+      "size" : 1679,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 40
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 45
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 46
+        },
+        {
+          "activity" : "validate",
+          "start" : 67,
+          "length" : 2422
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 122,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 60
+        },
+        {
+          "activity" : "generate2",
+          "start" : 171,
+          "length" : 68372
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/codesystem-udsplus-housing-status-codes.xml",
+      "size" : 2350,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 42
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 37
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 52
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 43
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 66
+        },
+        {
+          "activity" : "generate2",
+          "start" : 240,
+          "length" : 789
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/codesystem-udsplus-insurance-codes.xml",
+      "size" : 2635,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 43
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 37
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 41
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 45
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 63
+        },
+        {
+          "activity" : "generate2",
+          "start" : 241,
+          "length" : 759
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/codesystem-udsplus-service-delivery-codes.xml",
+      "size" : 1495,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 40
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 36
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 41
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 56
+        },
+        {
+          "activity" : "generate2",
+          "start" : 241,
+          "length" : 751
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/operationdefintion-deidentify.xml",
+      "size" : 1804,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 42
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 49
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 43
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 36
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 62
+        },
+        {
+          "activity" : "generate2",
+          "start" : 242,
+          "length" : 54
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/operationdefintion-import.xml",
+      "size" : 1387,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 41
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 38
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 40
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 25
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 55
+        },
+        {
+          "activity" : "generate2",
+          "start" : 242,
+          "length" : 50
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-adverseevent.xml",
+      "size" : 8230,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 50
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 45
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 60,
+          "length" : 270
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 101
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 1432
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 154,
+          "length" : 361
+        },
+        {
+          "activity" : "generate2",
+          "start" : 242,
+          "length" : 773
+        },
+        {
+          "activity" : "generate2",
+          "start" : 273,
+          "length" : 757
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-age-extension.xml",
+      "size" : 3630,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 46
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 38
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 60,
+          "length" : 38
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 55
+        },
+        {
+          "activity" : "validate",
+          "start" : 72,
+          "length" : 239
+        },
+        {
+          "activity" : "generate1",
+          "start" : 155,
+          "length" : 105
+        },
+        {
+          "activity" : "generate2",
+          "start" : 243,
+          "length" : 345
+        },
+        {
+          "activity" : "generate2",
+          "start" : 274,
+          "length" : 76
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-allergyintolerance.xml",
+      "size" : 11913,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 54
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 46
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 60,
+          "length" : 97
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 98
+        },
+        {
+          "activity" : "validate",
+          "start" : 72,
+          "length" : 1281
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 155,
+          "length" : 460
+        },
+        {
+          "activity" : "generate2",
+          "start" : 243,
+          "length" : 1008
+        },
+        {
+          "activity" : "generate2",
+          "start" : 274,
+          "length" : 424
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 14
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 457,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-birthsex-extension.xml",
+      "size" : 2737,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 43
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 37
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 60,
+          "length" : 35
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 113
+        },
+        {
+          "activity" : "validate",
+          "start" : 73,
+          "length" : 172
+        },
+        {
+          "activity" : "generate1",
+          "start" : 155,
+          "length" : 96
+        },
+        {
+          "activity" : "generate2",
+          "start" : 244,
+          "length" : 253
+        },
+        {
+          "activity" : "generate2",
+          "start" : 275,
+          "length" : 64
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-capitated-member-months-extension.xml",
+      "size" : 2882,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 43
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 37
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 60,
+          "length" : 38
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 53
+        },
+        {
+          "activity" : "validate",
+          "start" : 73,
+          "length" : 194
+        },
+        {
+          "activity" : "generate1",
+          "start" : 155,
+          "length" : 101
+        },
+        {
+          "activity" : "generate2",
+          "start" : 245,
+          "length" : 252
+        },
+        {
+          "activity" : "generate2",
+          "start" : 275,
+          "length" : 63
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-clinical-result-observation.xml",
+      "size" : 22173,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 62
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 50
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 60,
+          "length" : 332
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 171
+        },
+        {
+          "activity" : "validate",
+          "start" : 73,
+          "length" : 1673
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 122,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 155,
+          "length" : 629
+        },
+        {
+          "activity" : "generate2",
+          "start" : 245,
+          "length" : 949
+        },
+        {
+          "activity" : "generate2",
+          "start" : 275,
+          "length" : 428
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 400,
+          "length" : 1
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 401,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 19
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-coverage.xml",
+      "size" : 8714,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 49
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 42
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 145
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 78
+        },
+        {
+          "activity" : "validate",
+          "start" : 75,
+          "length" : 1009
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 156,
+          "length" : 382
+        },
+        {
+          "activity" : "generate2",
+          "start" : 246,
+          "length" : 598
+        },
+        {
+          "activity" : "generate2",
+          "start" : 275,
+          "length" : 303
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-de-identify-data-urls-parameter.xml",
+      "size" : 6208,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 48
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 40
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 76
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 195
+        },
+        {
+          "activity" : "validate",
+          "start" : 76,
+          "length" : 981
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 156,
+          "length" : 282
+        },
+        {
+          "activity" : "generate2",
+          "start" : 246,
+          "length" : 714
+        },
+        {
+          "activity" : "generate2",
+          "start" : 275,
+          "length" : 179
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-deidentified-instant-extension.xml",
+      "size" : 3735,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 46
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 37
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 38
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 54
+        },
+        {
+          "activity" : "validate",
+          "start" : 77,
+          "length" : 141
+        },
+        {
+          "activity" : "generate1",
+          "start" : 157,
+          "length" : 99
+        },
+        {
+          "activity" : "generate2",
+          "start" : 247,
+          "length" : 264
+        },
+        {
+          "activity" : "generate2",
+          "start" : 276,
+          "length" : 52
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 399,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-diagnosis.xml",
+      "size" : 16168,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 59
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 47
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 55
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 81
+        },
+        {
+          "activity" : "validate",
+          "start" : 77,
+          "length" : 1155
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 157,
+          "length" : 473
+        },
+        {
+          "activity" : "generate2",
+          "start" : 247,
+          "length" : 899
+        },
+        {
+          "activity" : "generate2",
+          "start" : 276,
+          "length" : 243
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 14
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-encounter.xml",
+      "size" : 14039,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 57
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 45
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 55
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 88
+        },
+        {
+          "activity" : "validate",
+          "start" : 78,
+          "length" : 1377
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 157,
+          "length" : 493
+        },
+        {
+          "activity" : "generate2",
+          "start" : 248,
+          "length" : 821
+        },
+        {
+          "activity" : "generate2",
+          "start" : 276,
+          "length" : 264
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 16
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-ethnicity-extension.xml",
+      "size" : 2063,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 56,
+          "length" : 42
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 36
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 38
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 61
+        },
+        {
+          "activity" : "validate",
+          "start" : 80,
+          "length" : 551
+        },
+        {
+          "activity" : "generate1",
+          "start" : 158,
+          "length" : 132
+        },
+        {
+          "activity" : "generate2",
+          "start" : 249,
+          "length" : 326
+        },
+        {
+          "activity" : "generate2",
+          "start" : 276,
+          "length" : 82
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 3
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 457,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-feeforservice-member-months-extension.xml",
+      "size" : 2914,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 42
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 37
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 35
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 54
+        },
+        {
+          "activity" : "validate",
+          "start" : 80,
+          "length" : 138
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 158,
+          "length" : 96
+        },
+        {
+          "activity" : "generate2",
+          "start" : 249,
+          "length" : 247
+        },
+        {
+          "activity" : "generate2",
+          "start" : 276,
+          "length" : 47
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-housing-status-extension.xml",
+      "size" : 2651,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 41
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 37
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 35
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 53
+        },
+        {
+          "activity" : "validate",
+          "start" : 80,
+          "length" : 133
+        },
+        {
+          "activity" : "generate1",
+          "start" : 158,
+          "length" : 94
+        },
+        {
+          "activity" : "generate2",
+          "start" : 250,
+          "length" : 245
+        },
+        {
+          "activity" : "generate2",
+          "start" : 276,
+          "length" : 42
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-immunization.xml",
+      "size" : 9415,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 46
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 42
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 95
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 75
+        },
+        {
+          "activity" : "validate",
+          "start" : 81,
+          "length" : 1064
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 122,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 158,
+          "length" : 376
+        },
+        {
+          "activity" : "generate2",
+          "start" : 250,
+          "length" : 624
+        },
+        {
+          "activity" : "generate2",
+          "start" : 276,
+          "length" : 225
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-income-observation.xml",
+      "size" : 14205,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 50
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 44
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 116
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 111
+        },
+        {
+          "activity" : "validate",
+          "start" : 82,
+          "length" : 1366
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 159,
+          "length" : 535
+        },
+        {
+          "activity" : "generate2",
+          "start" : 250,
+          "length" : 660
+        },
+        {
+          "activity" : "generate2",
+          "start" : 277,
+          "length" : 248
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 18
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-lab-observation.xml",
+      "size" : 2876,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 41
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 38
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 59
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 74
+        },
+        {
+          "activity" : "validate",
+          "start" : 83,
+          "length" : 1224
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 159,
+          "length" : 402
+        },
+        {
+          "activity" : "generate2",
+          "start" : 251,
+          "length" : 789
+        },
+        {
+          "activity" : "generate2",
+          "start" : 277,
+          "length" : 225
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 13
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-location.xml",
+      "size" : 2164,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 40
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 37
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 50
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 64
+        },
+        {
+          "activity" : "validate",
+          "start" : 84,
+          "length" : 781
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 159,
+          "length" : 237
+        },
+        {
+          "activity" : "generate2",
+          "start" : 252,
+          "length" : 569
+        },
+        {
+          "activity" : "generate2",
+          "start" : 277,
+          "length" : 137
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-medicationrequest.xml",
+      "size" : 9845,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 46
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 42
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 112
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 79
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 1391
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 160,
+          "length" : 493
+        },
+        {
+          "activity" : "generate2",
+          "start" : 252,
+          "length" : 773
+        },
+        {
+          "activity" : "generate2",
+          "start" : 277,
+          "length" : 353
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 15
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 457,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-medicationstatement.xml",
+      "size" : 11318,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 46
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 44
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 94
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 75
+        },
+        {
+          "activity" : "validate",
+          "start" : 86,
+          "length" : 1071
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 160,
+          "length" : 387
+        },
+        {
+          "activity" : "generate2",
+          "start" : 253,
+          "length" : 655
+        },
+        {
+          "activity" : "generate2",
+          "start" : 278,
+          "length" : 179
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 14
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-observation.xml",
+      "size" : 21916,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 47
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 49
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 62,
+          "length" : 112
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 97
+        },
+        {
+          "activity" : "validate",
+          "start" : 87,
+          "length" : 1491
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 161,
+          "length" : 600
+        },
+        {
+          "activity" : "generate2",
+          "start" : 254,
+          "length" : 941
+        },
+        {
+          "activity" : "generate2",
+          "start" : 278,
+          "length" : 203
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 20
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-parameters-manifest.xml",
+      "size" : 31144,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 55
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 59
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 62,
+          "length" : 236
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 154
+        },
+        {
+          "activity" : "validate",
+          "start" : 89,
+          "length" : 3237
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 122,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 161,
+          "length" : 1201
+        },
+        {
+          "activity" : "generate2",
+          "start" : 255,
+          "length" : 2237
+        },
+        {
+          "activity" : "generate2",
+          "start" : 278,
+          "length" : 503
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 307,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 34
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-patient-reporting-parameters.xml",
+      "size" : 79329,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 77
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 93
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 62,
+          "length" : 569
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 290
+        },
+        {
+          "activity" : "validate",
+          "start" : 92,
+          "length" : 6536
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 122,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 162,
+          "length" : 2979
+        },
+        {
+          "activity" : "generate2",
+          "start" : 257,
+          "length" : 3980
+        },
+        {
+          "activity" : "generate2",
+          "start" : 278,
+          "length" : 1161
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 81
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 457,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-patient.xml",
+      "size" : 15771,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 45
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 51
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 62,
+          "length" : 59
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 98
+        },
+        {
+          "activity" : "validate",
+          "start" : 99,
+          "length" : 1130
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 165,
+          "length" : 500
+        },
+        {
+          "activity" : "generate2",
+          "start" : 261,
+          "length" : 703
+        },
+        {
+          "activity" : "generate2",
+          "start" : 280,
+          "length" : 307
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 16
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-procedure.xml",
+      "size" : 10666,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 42
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 44
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 62,
+          "length" : 122
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 85
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 1358
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 166,
+          "length" : 496
+        },
+        {
+          "activity" : "generate2",
+          "start" : 262,
+          "length" : 676
+        },
+        {
+          "activity" : "generate2",
+          "start" : 280,
+          "length" : 203
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 15
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-race-extension.xml",
+      "size" : 2023,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 40
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 37
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 63,
+          "length" : 41
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 57
+        },
+        {
+          "activity" : "validate",
+          "start" : 101,
+          "length" : 515
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 166,
+          "length" : 139
+        },
+        {
+          "activity" : "generate2",
+          "start" : 262,
+          "length" : 308
+        },
+        {
+          "activity" : "generate2",
+          "start" : 280,
+          "length" : 62
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-recordedDate-extension.xml",
+      "size" : 3390,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 39
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 38
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 63,
+          "length" : 41
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 52
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 137
+        },
+        {
+          "activity" : "generate1",
+          "start" : 166,
+          "length" : 103
+        },
+        {
+          "activity" : "generate2",
+          "start" : 263,
+          "length" : 244
+        },
+        {
+          "activity" : "generate2",
+          "start" : 280,
+          "length" : 34
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-relatedperson.xml",
+      "size" : 8709,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 41
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 41
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 63,
+          "length" : 44
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 67
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 534
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 122,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 167,
+          "length" : 268
+        },
+        {
+          "activity" : "generate2",
+          "start" : 263,
+          "length" : 385
+        },
+        {
+          "activity" : "generate2",
+          "start" : 280,
+          "length" : 95
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 7
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-servicerequest.xml",
+      "size" : 12622,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 42
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 44
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 63,
+          "length" : 99
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 72
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 1147
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 167,
+          "length" : 454
+        },
+        {
+          "activity" : "generate2",
+          "start" : 263,
+          "length" : 628
+        },
+        {
+          "activity" : "generate2",
+          "start" : 280,
+          "length" : 186
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 14
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-sex-extension.xml",
+      "size" : 2625,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 38
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 38
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 63,
+          "length" : 40
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 53
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 160
+        },
+        {
+          "activity" : "generate1",
+          "start" : 167,
+          "length" : 100
+        },
+        {
+          "activity" : "generate2",
+          "start" : 264,
+          "length" : 482
+        },
+        {
+          "activity" : "generate2",
+          "start" : 281,
+          "length" : 34
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-veteran-status-extension.xml",
+      "size" : 2466,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 39
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 37
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 63,
+          "length" : 42
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 52
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 131
+        },
+        {
+          "activity" : "generate1",
+          "start" : 167,
+          "length" : 111
+        },
+        {
+          "activity" : "generate2",
+          "start" : 264,
+          "length" : 364
+        },
+        {
+          "activity" : "generate2",
+          "start" : 281,
+          "length" : 34
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/uds-plus-worker-status-extension.xml",
+      "size" : 2689,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 39
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 38
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 63,
+          "length" : 39
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 55
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 132
+        },
+        {
+          "activity" : "generate1",
+          "start" : 168,
+          "length" : 107
+        },
+        {
+          "activity" : "generate2",
+          "start" : 265,
+          "length" : 229
+        },
+        {
+          "activity" : "generate2",
+          "start" : 281,
+          "length" : 33
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/valueset-udsplus-agriculture-worker-status.xml",
+      "size" : 1400,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 38
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 38
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 209
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 52
+        },
+        {
+          "activity" : "generate1",
+          "start" : 168,
+          "length" : 59
+        },
+        {
+          "activity" : "generate2",
+          "start" : 265,
+          "length" : 1624
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/valueset-udsplus-birthsex-codes.xml",
+      "size" : 1861,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 39
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 37
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 70
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 61
+        },
+        {
+          "activity" : "generate1",
+          "start" : 168,
+          "length" : 60
+        },
+        {
+          "activity" : "generate2",
+          "start" : 267,
+          "length" : 1262
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/valueset-udsplus-housing-codes.xml",
+      "size" : 1326,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 57,
+          "length" : 39
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 36
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 51
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 49
+        },
+        {
+          "activity" : "generate1",
+          "start" : 168,
+          "length" : 57
+        },
+        {
+          "activity" : "generate2",
+          "start" : 268,
+          "length" : 1277
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/valueset-udsplus-insurance-codes.xml",
+      "size" : 1746,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 58,
+          "length" : 38
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 36
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 50
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 149,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 168,
+          "length" : 61
+        },
+        {
+          "activity" : "generate2",
+          "start" : 269,
+          "length" : 1344
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 400,
+          "length" : 1
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 401,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 457,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/valueset-udsplus-service-delivery-codes.xml",
+      "size" : 1827,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 58,
+          "length" : 38
+        },
+        {
+          "activity" : "load",
+          "start" : 58,
+          "length" : 36
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 67,
+          "length" : 119
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 51
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 168,
+          "length" : 63
+        },
+        {
+          "activity" : "generate2",
+          "start" : 271,
+          "length" : 2703
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 402,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

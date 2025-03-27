@@ -1,0 +1,19 @@
+{
+  "url" : "http://fhir.org/guides/hrsa/uds-plus/ImplementationGuide/fhir.hrsa.uds-plus",
+  "name" : "UdsPlusFhirIg",
+  "title" : "HRSA 2024 Uniform Data System (UDS) Patient Level Submission (PLS) (UDS+) FHIR IG",
+  "description" : "A brief description of what udsplus is about (probably the same text as in your readme)",
+  "status" : "active",
+  "package-id" : "fhir.hrsa.uds-plus",
+  "ig-ver" : "2.0.0",
+  "date" : "Thu, 27 Mar, 2025 02:56:53 +0000",
+  "dateISO8601" : "2025-03-27T02:56:53+00:00",
+  "errs" : 0,
+  "warnings" : 0,
+  "hints" : 0,
+  "suppressed-hints" : 2,
+  "suppressed-warnings" : 41,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 6701275360
+}

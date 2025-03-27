@@ -1,0 +1,62 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusInsuranceCodes",
+      "title" : "Uds Plus Insurance Codes",
+      "description" : "The Uds Plus Insurance Codes is a 'starter set' of codes for identifying the source of the insurance for Patients.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0",
+        "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-service-delivery-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusServiceDeliveryCodes",
+      "title" : "Uds Plus Service Delivery Codes",
+      "description" : "The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-sex-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusSexCodes",
+      "title" : "Uds Plus Sex Codes",
+      "description" : "The Uds Plus Birth Sex Codes is a set of codes for identifying the birth sex of Patients, This ValueSet will deprecated in the future in favor of the CMS Sex codes value set used as part of the uds-plus-sex-extension.",
+      "systems" : [
+        "http://snomed.info/sct",
+        "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender|3.0.0"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-agriculture-worker-status",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusAgricultureWorkerStatusCodes",
+      "title" : "Uds Plus Agriculture Worker Status Codes",
+      "description" : "The Uds Plus Agriculture Worker Status Codes is a 'starter set' of codes for specifying agriculture worker status for Patients.",
+      "systems" : [
+        "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-housing-status",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusHousingStatusCodes",
+      "title" : "Uds Plus Housing Status Codes",
+      "description" : "The Uds Plus Housing Status Codes is a 'starter set' of codes for identifying the Patient's housing status.",
+      "systems" : [
+        "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"
+      ]
+    }
+  ]
+}

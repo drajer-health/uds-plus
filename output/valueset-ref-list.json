@@ -1,0 +1,236 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8",
+      "version" : "20210622",
+      "status" : "active",
+      "name" : "CommonSubstancesForAllergyAndIntoleranceDocumentationIncludingRefutations",
+      "title" : "Common substances for allergy and intolerance documentation including refutations",
+      "description" : "As noted in https://jira.hl7.org/browse/FHIR-32953, Drug class value set changed 2021-06-21 to align with C-CDA member value set 2.16.840.1.113762.1.4.1114.14",
+      "systems" : [
+        "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113762.1.4.1186.8"],
+      "sources" : ["2.16.840.1.113762.1.4.1186.8"],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-allergyintolerance.html" : "De-Identified UDS Plus AllergyIntolerance"
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-insurance-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusInsuranceCodes",
+      "title" : "Uds Plus Insurance Codes",
+      "description" : "The Uds Plus Insurance Codes is a 'starter set' of codes for identifying the source of the insurance for Patients.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0",
+        "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-coverage.html" : "De-Identified UDS Plus Coverage"
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-service-delivery-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusServiceDeliveryCodes",
+      "title" : "Uds Plus Service Delivery Codes",
+      "description" : "The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-location.html" : "UDS Plus Location"
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/uds-plus-sex-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusSexCodes",
+      "title" : "Uds Plus Sex Codes",
+      "description" : "The Uds Plus Birth Sex Codes is a set of codes for identifying the birth sex of Patients, This ValueSet will deprecated in the future in favor of the CMS Sex codes value set used as part of the uds-plus-sex-extension.",
+      "systems" : [
+        "http://snomed.info/sct",
+        "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender|3.0.0"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-birthsex-extension.html" : "UDS Plus Birth Sex Extension"
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-agriculture-worker-status",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusAgricultureWorkerStatusCodes",
+      "title" : "Uds Plus Agriculture Worker Status Codes",
+      "description" : "The Uds Plus Agriculture Worker Status Codes is a 'starter set' of codes for specifying agriculture worker status for Patients.",
+      "systems" : [
+        "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-udsplus-agriculture-worker-status.html" : "UDS Plus Agriculture Worker Status Extension"
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/ValueSet/udsplus-housing-status",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UdsPlusHousingStatusCodes",
+      "title" : "Uds Plus Housing Status Codes",
+      "description" : "The Uds Plus Housing Status Codes is a 'starter set' of codes for identifying the Patient's housing status.",
+      "systems" : [
+        "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-housing-status-extension.html" : "UDS Plus Housing Status Extension"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-clinical-result-observation.html" : "De-Identified UDS Plus Clinical Result Observation",
+      "StructureDefinition-uds-plus-observation.html" : "De-Identified UDS Plus Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PatientRelationshipType",
+      "title" : "Patient relationship type",
+      "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.449"],
+      "sources" : ["2.16.840.1.113883.4.642.3.449"],
+      "uses" : {
+      },
+      "StructureDefinition-de-identified-uds-plus-relatedperson.html" : "De-Identified UDS Plus RelatedPerson"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
+      "version" : "6.1.0",
+      "status" : "active",
+      "name" : "LanguageCodesWithLanguageAndOptionallyARegionModifier",
+      "title" : "Language codes with language and optionally a region modifier",
+      "description" : "This value set includes codes from [BCP-47](http://tools.ietf.org/html/bcp47). This value set matches the ONC 2015 Edition LanguageCommunication data element value set within C-CDA to use a 2 character language code if one exists,   and a 3 character code if a 2 character code does not exist. It points back to [RFC 5646](https://tools.ietf.org/html/rfc5646), however only the language codes are required, all other elements are optional.",
+      "systems" : ["urn:ietf:bcp:47"],
+      "uses" : {
+      },
+      "StructureDefinition-de-identified-uds-plus-patient.html" : "De-Identified UDS Plus Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category",
+      "version" : "6.1.0",
+      "status" : "active",
+      "name" : "USCoreClinicalResultObservationCategory",
+      "title" : "US Core Clinical Result Observation Category",
+      "description" : "Used to classify the context of clinical result observations.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-clinical-result-observation.html" : "De-Identified UDS Plus Clinical Result Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code",
+      "version" : "6.1.0",
+      "status" : "active",
+      "name" : "USCoreConditionCodes",
+      "title" : "US Core Condition Codes",
+      "description" : "This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions). ICD-10 is appropriate for Diagnosis information, and ICD-9 for historical information.",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://hl7.org/fhir/sid/icd-9-cm",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-diagnosis.html" : "De-Identified UDS Plus Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition",
+      "version" : "6.1.0",
+      "status" : "active",
+      "name" : "USCoreDischargeDisposition",
+      "title" : "US Core Discharge Disposition",
+      "description" : "[National Uniform Billing Committee](http://www.nubc.org/), manual UB-04, UB form locator 17.",
+      "systems" : ["http://www.nubc.org/patient-discharge"],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-encounter.html" : "De-Identified UDS Plus Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type",
+      "version" : "6.1.0",
+      "status" : "active",
+      "name" : "USCoreEncounterType",
+      "title" : "US Core Encounter Type",
+      "description" : "The type of encounter: a specific code indicating type of service provided. This value set includes codes from SNOMED CT decending from the concept 308335008 (Patient encounter procedure (procedure)) and codes from the Current Procedure and Terminology (CPT) found in the following CPT sections:\n- 99201-99499 E/M - 99500-99600 home health (mainly nonphysician, such as newborn care in home) - 99605-99607 medication management - 98966-98968 non physician telephone services\n(subscription to AMA Required)",
+      "systems" : ["http://www.ama-assn.org/go/cpt", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-encounter.html" : "De-Identified UDS Plus Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes",
+      "version" : "6.1.0",
+      "status" : "active",
+      "name" : "USCoreLaboratoryTestCodes",
+      "title" : "US Core Laboratory Test Codes",
+      "description" : "Laboratory LOINC codes: From the introduction to August 2022 LOINC Users' guide; \"The current scope of the existing laboratory portion of the LOINC  database includes all observations reported by clinical laboratories, including the specialty areas: chemistry, including therapeutic drug monitoring and toxicology; hematology; serology; blood bank; microbiology; cytology; surgical pathology; and fertility.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-lab-observation.html" : "De-Identified UDS Plus Lab Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code",
+      "version" : "6.1.0",
+      "status" : "active",
+      "name" : "USCoreProcedureCodes",
+      "title" : "US Core Procedure Codes",
+      "description" : "Concepts from CPT, SNOMED CT, HCPCS Level II Alphanumeric Codes, ICD-10-PCS,CDT and LOINC code systems that can be used to indicate the type of procedure performed.",
+      "systems" : [
+        "http://www.ada.org/cdt",
+        "http://www.ama-assn.org/go/cpt",
+        "http://loinc.org",
+        "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "http://www.cms.gov/Medicare/Coding/ICD10",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uds-plus-servicerequest.html" : "De-Identified UDS Plus ServiceRequest",
+      "StructureDefinition-uds-plus-procedure.html" : "De-Identified UDS Plus Procedure"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "ValueSet-uds-plus-service-delivery-codes.html" : "Uds Plus Service Delivery Codes"
+    }
+  ]
+}

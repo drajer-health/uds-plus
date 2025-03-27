@@ -74,7 +74,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/condition-assertedDate"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/condition-assertedDate|4.0.1"/>
             </type>
             <constraint>
 		        <key value="uds-plus-diag-1"/>

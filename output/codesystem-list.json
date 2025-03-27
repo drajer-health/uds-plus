@@ -1,0 +1,36 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/uds-plus-insurance-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UDSPlusInsuranceCodes",
+      "title" : "UDS Plus Insurance Codes",
+      "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying insurance types used by patients in UDS+ program."
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-agriculture-worker-status-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UDSPlusAgricultureWorkerStatusCodes",
+      "title" : "UDS Plus Agriculter Worker Status Codes",
+      "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying agriculture worker status for UDS+ program."
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-housing-status-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UDSPlusHousingStatusCodes",
+      "title" : "UDS Plus Housing Status Codes",
+      "description" : "The UDS Plus CodeSystem is a 'starter set' of codes supported for identifying Housing status of patients in UDS+ program."
+    },
+    {
+      "url" : "http://fhir.org/guides/hrsa/uds-plus/CodeSystem/udsplus-service-delivery-codes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "UDSPlusServiceDeliveryCodes",
+      "title" : "UDS Plus Housing Service Delivery Codes",
+      "description" : "The UDS Plus CodeSystem is an 'addition set' of one code to the existing Location Service Delivery Codes value set for UDS+ purposes."
+    }
+  ]
+}
